@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GoLang on 情報部門　勉強会ブログ</title>
+    <link>https://ryotakobayash.github.io/hugo-public-test/tags/golang/</link>
+    <description>Recent content in GoLang on 情報部門　勉強会ブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 17 Jan 2021 23:15:36 +0900</lastBuildDate>
+    
+	<atom:link href="https://ryotakobayash.github.io/hugo-public-test/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GoLang使ってみた</title>
+      <link>https://ryotakobayash.github.io/hugo-public-test/articles/golang%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Sun, 17 Jan 2021 23:15:36 +0900</pubDate>
+      
+      <guid>https://ryotakobayash.github.io/hugo-public-test/articles/golang%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>環境 OS:macOS Catalina Terminal:iterm2 基本操作 編集 【編集モード】 ファイルを開いた段階では編集が行えないので、キーボードのiを入力することで編集モードに切り替わります。 上記は基本操作で以下が応用になります。 【カーソルの後ろから編集】 iではなくキーボードのaを押下 【行末から編集】 シフトキーとaを押下 【行頭から編</description>
+    </item>
+    
+  </channel>
+</rss>
