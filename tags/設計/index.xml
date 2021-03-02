@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>設計 on 情報部門　勉強会ブログ</title>
-    <link>https://ryotakobayash.github.io/hugo-public-test/tags/%E8%A8%AD%E8%A8%88/</link>
+    <link>https://nutfes.github.io/blog/tags/%E8%A8%AD%E8%A8%88/</link>
     <description>Recent content in 設計 on 情報部門　勉強会ブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 17 Jan 2021 23:16:24 +0900</lastBuildDate>
     
-	<atom:link href="https://ryotakobayash.github.io/hugo-public-test/tags/%E8%A8%AD%E8%A8%88/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nutfes.github.io/blog/tags/%E8%A8%AD%E8%A8%88/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>コーディングの前に設計をしよう</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/articles/%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%89%8D%E3%81%AB%E8%A8%AD%E8%A8%88%E3%82%92%E3%81%97%E3%82%88%E3%81%86/</link>
+      <link>https://nutfes.github.io/blog/articles/%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%89%8D%E3%81%AB%E8%A8%AD%E8%A8%88%E3%82%92%E3%81%97%E3%82%88%E3%81%86/</link>
       <pubDate>Sun, 17 Jan 2021 23:16:24 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/articles/%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%89%8D%E3%81%AB%E8%A8%AD%E8%A8%88%E3%82%92%E3%81%97%E3%82%88%E3%81%86/</guid>
+      <guid>https://nutfes.github.io/blog/articles/%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E5%89%8D%E3%81%AB%E8%A8%AD%E8%A8%88%E3%82%92%E3%81%97%E3%82%88%E3%81%86/</guid>
       <description>環境 OS:macOS Catalina Terminal:iterm2 基本操作 編集 【編集モード】 ファイルを開いた段階では編集が行えないので、キーボードのiを入力することで編集モードに切り替わります。 上記は基本操作で以下が応用になります。 【カーソルの後ろから編集】 iではなくキーボードのaを押下 【行末から編集】 シフトキーとaを押下 【行頭から編</description>
     </item>
     
     <item>
       <title>設計をしよう</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/articles/%E8%A8%AD%E8%A8%88%E3%82%92%E3%81%97%E3%82%88%E3%81%86/</link>
+      <link>https://nutfes.github.io/blog/articles/%E8%A8%AD%E8%A8%88%E3%82%92%E3%81%97%E3%82%88%E3%81%86/</link>
       <pubDate>Sun, 17 Jan 2021 18:25:50 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/articles/%E8%A8%AD%E8%A8%88%E3%82%92%E3%81%97%E3%82%88%E3%81%86/</guid>
+      <guid>https://nutfes.github.io/blog/articles/%E8%A8%AD%E8%A8%88%E3%82%92%E3%81%97%E3%82%88%E3%81%86/</guid>
       <description>概要 この記事ではVim入門的な内容となっており、自身の備忘録や初学者の役に立てればと思い執筆しました。 主にVimを用いた基本操作が中心です。 環境 OS:macOS Catalina Terminal:iterm2 import numpy as np print (np.array([0,1,2])) 基本操作 編集 【編集モード】 ファイルを開いた段階では編集が行えないので、キーボードのiを入力することで編集モードに切り替</description>
     </item>
     

@@ -2,93 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 情報部門　勉強会ブログ</title>
-    <link>https://ryotakobayash.github.io/hugo-public-test/tags/</link>
+    <link>https://nutfes.github.io/blog/tags/</link>
     <description>Recent content in Tags on 情報部門　勉強会ブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 17 Jan 2021 23:18:17 +0900</lastBuildDate>
     
-	<atom:link href="https://ryotakobayash.github.io/hugo-public-test/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nutfes.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>サーバー</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
+      <link>https://nutfes.github.io/blog/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
       <pubDate>Sun, 17 Jan 2021 23:18:17 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</guid>
+      <guid>https://nutfes.github.io/blog/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ニューモフィズム</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/tags/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%82%BA%E3%83%A0/</link>
+      <link>https://nutfes.github.io/blog/tags/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%82%BA%E3%83%A0/</link>
       <pubDate>Sun, 17 Jan 2021 23:18:03 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/tags/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%82%BA%E3%83%A0/</guid>
+      <guid>https://nutfes.github.io/blog/tags/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A2%E3%83%95%E3%82%A3%E3%82%BA%E3%83%A0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>プレゼン</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/tags/%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3/</link>
+      <link>https://nutfes.github.io/blog/tags/%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3/</link>
       <pubDate>Sun, 17 Jan 2021 23:17:44 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/tags/%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3/</guid>
+      <guid>https://nutfes.github.io/blog/tags/%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>設計</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/tags/%E8%A8%AD%E8%A8%88/</link>
+      <link>https://nutfes.github.io/blog/tags/%E8%A8%AD%E8%A8%88/</link>
       <pubDate>Sun, 17 Jan 2021 23:16:24 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/tags/%E8%A8%AD%E8%A8%88/</guid>
+      <guid>https://nutfes.github.io/blog/tags/%E8%A8%AD%E8%A8%88/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vim</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/tags/vim/</link>
+      <link>https://nutfes.github.io/blog/tags/vim/</link>
       <pubDate>Sun, 17 Jan 2021 23:15:52 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/tags/vim/</guid>
+      <guid>https://nutfes.github.io/blog/tags/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GoLang</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/tags/golang/</link>
+      <link>https://nutfes.github.io/blog/tags/golang/</link>
       <pubDate>Sun, 17 Jan 2021 23:15:36 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/tags/golang/</guid>
+      <guid>https://nutfes.github.io/blog/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fulutter</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/tags/fulutter/</link>
+      <link>https://nutfes.github.io/blog/tags/fulutter/</link>
       <pubDate>Sun, 17 Jan 2021 23:15:01 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/tags/fulutter/</guid>
+      <guid>https://nutfes.github.io/blog/tags/fulutter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>json-server</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/tags/json-server/</link>
+      <link>https://nutfes.github.io/blog/tags/json-server/</link>
       <pubDate>Sun, 17 Jan 2021 23:15:01 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/tags/json-server/</guid>
+      <guid>https://nutfes.github.io/blog/tags/json-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>フロントエンド</title>
-      <link>https://ryotakobayash.github.io/hugo-public-test/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/</link>
+      <link>https://nutfes.github.io/blog/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/</link>
       <pubDate>Sun, 17 Jan 2021 23:15:01 +0900</pubDate>
       
-      <guid>https://ryotakobayash.github.io/hugo-public-test/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/</guid>
+      <guid>https://nutfes.github.io/blog/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/</guid>
       <description></description>
     </item>
     
