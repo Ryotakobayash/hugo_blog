@@ -1,165 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://nutfes.github.io/blog/blog/</loc>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2021-09-01T00:49:11+09:00</lastmod>
+  </url><url>
+    <loc>http://example.org/blog/lt%E9%96%8B%E5%82%AC/</loc>
+    <lastmod>2021-09-01T00:49:11+09:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</loc>
+    <lastmod>2021-09-01T00:49:11+09:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2021-09-01T00:49:11+09:00</lastmod>
+  </url><url>
+    <loc>http://example.org/blog/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/search/</loc>
+  </url><url>
+    <loc>http://example.org/search/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/about/</loc>
+  </url><url>
+    <loc>http://example.org/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/</loc>
-    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/categories/android-and-gaming/</loc>
+  </url><url>
+    <loc>http://example.org/categories/android-and-gaming/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/game/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/new/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/photos/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/python/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/react/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/blog/post-hackmd/</loc>
     <lastmod>2019-10-29T10:07:47+06:00</lastmod>
   </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/categories/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/tags/game/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/categories/go-language/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/tags/html/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/categories/html/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/categories/html-css/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/tags/new/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/tags/photos/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/categories/programming-language/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/tags/python/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/categories/python/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/tags/react/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/tags/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/categories/web-design/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-10/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-11/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-12/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-13/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-4/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-1/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-2/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-3/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-5/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-6/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-7/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-8/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nutfes.github.io/blog/blog/post-9/</loc>
-    <lastmod>2019-10-29T10:07:47+06:00</lastmod>
-  </url>
-  
 </urlset>

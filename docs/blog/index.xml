@@ -2,141 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on エンジニアブログ | 技大祭実行委員会 情報局</title>
-    <link>https://nutfes.github.io/blog/blog/</link>
+    <link>http://example.org/blog/</link>
     <description>Recent content in blog on エンジニアブログ | 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
-    
-	<atom:link href="https://nutfes.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="http://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ポスト10 How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-10/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <title>LT会を開催しました</title>
+      <link>http://example.org/blog/lt%E9%96%8B%E5%82%AC/</link>
+      <pubDate>Wed, 01 Sep 2021 00:49:11 +0900</pubDate>
       
-      <guid>https://nutfes.github.io/blog/blog/post-10/</guid>
-      <description>ポスト10post
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト11 How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-11/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-11/</guid>
-      <description>ポスト11post
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト12 How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-12/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-12/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト13 How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-13/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-13/</guid>
-      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト4 How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-4/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-4/</guid>
-      <description>ポスト４post
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <guid>http://example.org/blog/lt%E9%96%8B%E5%82%AC/</guid>
+      <description>ＬT会を開催しました NUTMEGのデザイン担当 小林です。 夏季休業前から企画していたLT(ライトニングトーク)会を開催しました。 テーマは自由、各々が興味を持ったことを発表する事にし、一人につき3~5分、質疑応答の時間も制限なしと自由な形で行いました。 全員の発表終了後、面白かった発表に投票を行い後日何か景品があるかもしれないそうです。 LT会としては初めての開催でしたがオフライン、オンライン合わせて9名もの参加者が集まりました！
+目次 発表順はルーレットアプリでランダムに決定しました。
+ はじめに 発表内容の紹介  VSCODEのススメ/百々 Dockerで開発/久々江 安全なパスワードって知ってる？/真下 マインドセット/鵜澤 簡単！技大祭ロゴで学ぶ著作権の使い方！/小林 サウナについて/藤崎 寮の扉をスマートロックにしてみた/塚田 寮でデプロイする/大浦 デザインとプロダクトマネージャー/大場   投票結果 さいごに  はじめに アウトプットに慣れること、個人個人が興味を持っている分野について発表してメンバーの知見・交流を深めることを目標としてＬＴ会を開催しました。 発表時に使用した資料は出来る限り公開していますが、公開が難しい形式、発表者より辞退があったものは非公開とさせて頂きました。</description>
     </item>
     
     <item>
       <title>ポスト１How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-1/</link>
+      <link>http://example.org/blog/post-hackmd/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
       
-      <guid>https://nutfes.github.io/blog/blog/post-1/</guid>
-      <description>ポスト１featured1
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト２featured01How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-2/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-2/</guid>
-      <description>ポスト２featured
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト３How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-3/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-3/</guid>
-      <description>ポスト３featured3
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト５ How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-5/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-5/</guid>
-      <description>ポスト５post
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト６ How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-6/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-6/</guid>
-      <description>ポスト６post
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト７ How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-7/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-7/</guid>
-      <description>ポスト7post
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト８ How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-8/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-8/</guid>
-      <description>ポスト8post
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
-    </item>
-    
-    <item>
-      <title>ポスト９ How To Use Checklists To Improve Your UX</title>
-      <link>https://nutfes.github.io/blog/blog/post-9/</link>
-      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
-      
-      <guid>https://nutfes.github.io/blog/blog/post-9/</guid>
-      <description>ポスト9post
-Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+      <guid>http://example.org/blog/post-hackmd/</guid>
+      <description>HackMDから投稿してみた 文字 あいうえお あいうえお あいうえお あいうえお
+図 表とリンク    あいうえお からはじまるもの     あ -   い -   う うどん   え -   お -    リスト  あ い うどん え お   うどん ラーメン そば そういうこと   うどんチェック 朝食うどん 昼食うどん 夕食うどん  絵文字 🍔</description>
     </item>
     
   </channel>

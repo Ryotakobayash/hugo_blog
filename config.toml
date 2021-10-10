@@ -1,5 +1,8 @@
 ######################## default configuration ####################
-baseURL = "https://nutfes.github.io/blog/"
+# テスト用URL(公開する前にコメント戻す)
+baseURL = "http://example.org/"
+# 公開用URL
+# baseURL = "https://nutfes.github.io/blog/"
 canonifyurls = true
 languageCode = "en-us"
 title = "エンジニアブログ | 技大祭実行委員会 情報局"
@@ -85,6 +88,8 @@ email = "仮demo@email.com"
 location = "仮Dhaka, Bangladedsh"
 # copyright
 copyright = "&copy; 第４０回技大祭実行委員会"
+# レイアウト変更用css
+customCSS = ["css/custom_post.css"]
 
   # Preloader
   [params.preloader]
@@ -123,3 +128,10 @@ link = "https://www.instagram.com/nutfes/?hl=ja"
 title = "github"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
 link = "https://github.com/orgs/NUTFes"
+
+
+###
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
