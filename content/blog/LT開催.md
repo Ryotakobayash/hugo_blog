@@ -19,7 +19,7 @@ tags:
 
 # post-type
 # "featured"だとサイトの一番上にランダムで表示されるようになる
-type: "post"
+type: "featured"
 ---
 # ＬT会を開催しました
 
