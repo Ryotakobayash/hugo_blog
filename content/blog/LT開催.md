@@ -56,7 +56,7 @@ Reveal.jsで資料を作成し、VScode内で発表と実践を同時に行う�
 
 ### Dockerで開発/久々江
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTG5FWMYgP6XBmTiWEd--s_E6dvRwTMp572blafkLv1TWrwIZVxkv43lM3FvwNzwSnd731cJGNCoJb2/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTG5FWMYgP6XBmTiWEd--s_E6dvRwTMp572blafkLv1TWrwIZVxkv43lM3FvwNzwSnd731cJGNCoJb2/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 Dockerを使ってローカルを汚さずにNext.jsを始める方法を解説です。
 私はDockerについてあまり勉強をしてこなかったのですが、それでも聞いていてわかりやすかったです。発表後の質疑応答やコメントでは
