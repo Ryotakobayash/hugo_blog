@@ -1,0 +1,14 @@
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  margin: 50px 0px 10px;
+}
+
+p {
+  line-height: 28px;
+}
+/* google slides 埋め込み */
+iframe {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+}

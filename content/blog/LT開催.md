@@ -72,13 +72,13 @@ Dockerを使ってローカルを汚さずにNext.jsを始める方法を解説�
 鵜澤さん自身の人生を変えた考え方の発表とのこともあってか、熱のこもった発表で引き込まれてしまいました。ご自身以外にいくつかの実例も併せての紹介だったため精神面のお話でしたが説得力があって楽しかったです。
 
 ### 簡単！技大祭ロゴで学ぶ著作権の使い方/小林
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfbJMW_G3xSrsTHlnRXezOqgQ-Q_P7Roh5DWZlEUJZkKrX7_LQYfzMOooh1QRSOB-G-NpWOlKtCGSA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="300px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfbJMW_G3xSrsTHlnRXezOqgQ-Q_P7Roh5DWZlEUJZkKrX7_LQYfzMOooh1QRSOB-G-NpWOlKtCGSA/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 私小林が制作した技大祭実行委員会のロゴを例にとり、著作物に生じる権利とcreative commonsの使い方について紹介しました。参加されていた皆さんにとってはあまり馴染みのない分野だったためかたくさん質問してもらえて嬉しかったです。著作物を作る側になる経験はサークル内で受けた恩恵なのでこういった機会に他の方々へ還元していけたらなと思っています。
 
 ### サウナについて/藤崎
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRwCkpUo73mGA2Vyo2Zf80vG4EN3NuZ193n_x1fnpdgQF_JMTYPiTmY9L41zI8lmA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRwCkpUo73mGA2Vyo2Zf80vG4EN3NuZ193n_x1fnpdgQF_JMTYPiTmY9L41zI8lmA/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 藤崎さんの趣味であるサウナ活動、通称サ活について解説していただきました。サウナに入る目的である「整う」とは？サウナのメリットは？などサ活の初心者にも優しい形で興味を掻き立てられました。発表の最後には藤崎さんのおすすめサウナを数店紹介してあり、サ活に引き込もうという意思がひしひしと感じられます。
 
@@ -87,7 +87,7 @@ Dockerを使ってローカルを汚さずにNext.jsを始める方法を解説�
 
 ### 寮でデプロイする/大浦
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQhFYZDt8nJRqcr9MH92pxKKcOyL2o3KFOGzJPhefnekJ08IvcLpIpjxY5iZQNA9A/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQhFYZDt8nJRqcr9MH92pxKKcOyL2o3KFOGzJPhefnekJ08IvcLpIpjxY5iZQNA9A/embed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 特殊なネットワーク環境の大学寮内でデプロイを行うために行った様々な試行錯誤の結果を発表していただきました。私は少ししか理解出来なかったのですが丁寧な補足説明やネットワーク構築の図があり、初心者でも興味を搔き立てられる内容でした。前提知識がある方々からは
 - リバースプロキシを使うための原理がちゃんと分かりやすかった
@@ -102,6 +102,7 @@ Dockerを使ってローカルを汚さずにNext.jsを始める方法を解説�
 紹介した発表の中から、1人2票で良かった発表に投票した結果
 - 簡単！技大祭ロゴで学ぶ著作権の使い方/小林
 - デザインとプロダクトマネージャー/大場
+
 が同率1位の結果になりました。やったぜ
 
 
