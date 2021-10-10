@@ -4,7 +4,7 @@ date: 2021-09-01T00:49:11+09:00
 draft: false
 
 # メイン画像画像
-image: "images/"
+image: "images/post/20210901/20210901-1.jpeg"
 
 # meta description
 description: "this is meta description"
