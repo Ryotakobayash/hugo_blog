@@ -1,8 +1,8 @@
 ######################## default configuration ####################
 # テスト用URL(公開する前にコメント戻す)
-baseURL = "http://example.org/"
+# baseURL = "http://example.org/"
 # 公開用URL
-# baseURL = "https://nutfes.github.io/blog/"
+baseURL = "https://nutfes.github.io/blog/"
 canonifyurls = true
 languageCode = "en-us"
 title = "エンジニアブログ | 技大祭実行委員会 情報局"
@@ -77,11 +77,11 @@ publishDir = "docs"
 
 #################### default parameters ################################
 [params]
-logo = "images/top-logo.png"
+logo = "images/NUTMEG-logo_all_color_horizontal.png"
 home = "Home"
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = "NUTMEG"
 # Google Analitycs
 googleAnalitycsID = "Your ID"
 # Contact Information
