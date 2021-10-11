@@ -4,7 +4,7 @@
 # 公開用URL
 baseURL = "https://nutfes.github.io/blog/"
 canonifyurls = true
-languageCode = "en-us"
+languageCode = "ja"
 title = "エンジニアブログ | 技大祭実行委員会 情報局"
 theme = "liva-hugo"
 summaryLength = "5"
@@ -61,6 +61,11 @@ publishDir = "docs"
   URL = "blog"
   weight = 2
 
+  [[menu.main]]
+  name = "Products"
+  URL = "products"
+  weight = 3
+
 
   # footer menu
   [[menu.footer]]
@@ -73,7 +78,10 @@ publishDir = "docs"
   URL = "blog"
   weight = 2
 
-
+  [[menu.footer]]
+  name = "Products"
+  URL = "products"
+  weight = 3
 
 #################### default parameters ################################
 [params]
@@ -137,3 +145,8 @@ link = "https://github.com/orgs/NUTFes"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+author = "authors"
