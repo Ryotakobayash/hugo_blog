@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nutfes.github.io/blog/products/</loc>
+    <lastmod>2021-10-11T11:06:34+09:00</lastmod>
+  </url><url>
+    <loc>https://nutfes.github.io/blog/</loc>
+    <lastmod>2021-10-11T11:06:34+09:00</lastmod>
+  </url><url>
+    <loc>https://nutfes.github.io/blog/authors/</loc>
+    <lastmod>2021-09-01T00:49:11+09:00</lastmod>
+  </url><url>
     <loc>https://nutfes.github.io/blog/categories/</loc>
     <lastmod>2021-09-01T00:49:11+09:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/blog/lt%E9%96%8B%E5%82%AC/</loc>
     <lastmod>2021-09-01T00:49:11+09:00</lastmod>
   </url><url>
+    <loc>https://nutfes.github.io/blog/authors/r.kobayashi/</loc>
+    <lastmod>2021-09-01T00:49:11+09:00</lastmod>
+  </url><url>
     <loc>https://nutfes.github.io/blog/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</loc>
     <lastmod>2021-09-01T00:49:11+09:00</lastmod>
   </url><url>
-    <loc>https://nutfes.github.io/blog/</loc>
-    <lastmod>2021-09-01T00:49:11+09:00</lastmod>
+    <loc>https://nutfes.github.io/blog/about/</loc>
+    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/blog/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/search/</loc>
-    <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url><url>
-    <loc>https://nutfes.github.io/blog/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/tags/</loc>

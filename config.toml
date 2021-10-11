@@ -4,7 +4,7 @@
 # 公開用URL
 baseURL = "https://nutfes.github.io/blog/"
 canonifyurls = true
-languageCode = "en-us"
+languageCode = "ja"
 title = "エンジニアブログ | 技大祭実行委員会 情報局"
 theme = "liva-hugo"
 summaryLength = "5"
@@ -145,3 +145,8 @@ link = "https://github.com/orgs/NUTFes"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+author = "authors"

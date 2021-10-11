@@ -16,6 +16,8 @@ tags:
   - ""
   - ""
   - ""
+authors:
+  - "r.kobayashi"
 
 # post-type
 # "featured"だとサイトの一番上にランダムで表示されるようになる
