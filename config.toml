@@ -61,6 +61,11 @@ publishDir = "docs"
   URL = "blog"
   weight = 2
 
+  [[menu.main]]
+  name = "Products"
+  URL = "products"
+  weight = 3
+
 
   # footer menu
   [[menu.footer]]
@@ -73,7 +78,10 @@ publishDir = "docs"
   URL = "blog"
   weight = 2
 
-
+  [[menu.footer]]
+  name = "Products"
+  URL = "products"
+  weight = 3
 
 #################### default parameters ################################
 [params]
