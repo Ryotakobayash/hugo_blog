@@ -27,8 +27,6 @@ publishDir = "docs"
   URL = "plugins/themify-icons/themify-icons.css"
   [[params.plugins.css]]
   URL = "plugins/venobox/venobox.css"
-  [[params.plugins.css]]
-  URL = "../../../static/css/custom_post.css"
 
   # JS Plugins
   [[params.plugins.js]]
@@ -99,7 +97,7 @@ googleAnalitycsID = "Your ID"
 # copyright
 copyright = "&copy; NUTMEG 2021"
 # レイアウト変更用css
-customCSS = ["/css/custom_post.css"]
+customCSS = ["css/custom_post.css"]
 
   # Preloader
   [params.preloader]
