@@ -12,3 +12,6 @@ iframe {
   margin: 0 auto;
   aspect-ratio: 16/9;
 }
+.Gallery-container {
+  margin-bottom: 50px;
+}
