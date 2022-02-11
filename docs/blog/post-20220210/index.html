@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is meta description">
+  <meta name="description" content="NUTMEGでDartを広めようとしている真下です。 前々から計画していたのですが技大祭当日などに実行委員が使用するシフト確認アプリのSeeFTのバックエンドをGoからDartに変更しました。 まだまだ完成しているわけではないですが，これを機にNUTMEG内でもDartが浸透できるように頑張りたいです。">
   <meta name="author" content="NUTMEG">
   <meta name="generator" content="Hugo 0.83.1" />
 
@@ -130,19 +130,95 @@
 </header>
 <!-- /navigation -->
 
-<section class="section">
+<section class="section-sm">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div id="search-results"></div>
-        <script id="search-result-template" type="text/x-js-template">
-          <div class="py-4 border-bottom" id="summary-${key}">
-            <h4><a href="${link}">${title}</a></h4>
-            <p>${snippet}</p>
-            ${ isset tags }<p>Tags: ${tags}</p>${ end }
-            ${ isset categories }<p>Categories: ${categories}</p>${ end }
-          </div>
-        </script>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://nutfes.github.io/blog/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90"
+          class="text-primary">活動の様子</a>
+        
+        <h2>バックエンドにDartを採用しました</h2>
+        <div class="mb-3 post-meta">
+          <span>By NUTMEG</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>11 February 2022</span>
+          
+        </div>
+        
+        <img src="https://nutfes.github.io/blog/images/post/20220210/1.jpeg" class="img-fluid w-100 mb-4" alt="バックエンドにDartを採用しました">
+        
+        <div class="content mb-5">
+          <p>LT会としては初めての開催でしたがオフライン、オンライン合わせて9名もの参加者が集まりました！NUTMEGでDartを広めようとしている真下です。
+前々から計画していたのですが技大祭当日などに実行委員が使用するシフト確認アプリのSeeFTのバックエンドをGoからDartに変更しました。
+まだまだ完成しているわけではないですが，これを機にNUTMEG内でもDartが浸透できるように頑張りたいです。</p>
+<h2 id="目次">目次</h2>
+<ol>
+<li>はじめに</li>
+<li>前提</li>
+<li>選択肢とそれぞれのメリット・デメリット</li>
+<li>Dartに変更した理由</li>
+<li>さいごに</li>
+</ol>
+<h2 id="はじめに">はじめに</h2>
+<p>今回バックエンドの言語を変更したアプリは技大祭の当日などに実行委員が使用するシフトを確認するアプリSeeFTです。
+また，現在Dartでは変更途中できちんと動かせるものはまだGoで動いています。</p>
+<h2 id="前提">前提</h2>
+<p>まず，Goをバックエンドの言語として採用していた理由として以下の2つがあげられます。</p>
+<ol>
+<li>リリースまでの期間が1か月と急だった</li>
+<li>自分一人で好き勝手に作っていた</li>
+</ol>
+<p>このようなところから当時勉強していたGoを使って開発しました。</p>
+<p>そういった自分一人で背負っていたことやアーキテクチャなどの理由があってきちんと作り直す話が出ていました。</p>
+<h2 id="選択肢とそれぞれのメリットデメリット">選択肢とそれぞれのメリット・デメリット</h2>
+<p>SeeFTではモバイル開発にFlutterを使用していることから選択肢のひとつにDartが，以前のようにGoという2択があがっていました。
+それぞれのメリットデメリットを簡単に挙げていきます。</p>
+<p>Dartを選ぶメリットとして</p>
+<ul>
+<li>フロント・モバイルの人がバックエンドも扱える</li>
+<li>javascriptをメインで書いてる人も書きやすい</li>
+<li>Interfaceを気にする必要がほかの言語に比べて弱い</li>
+</ul>
+<p>Dartを選ぶデメリットとして</p>
+<ul>
+<li>Goと比べて遅い（重い）</li>
+<li>コードのネストが深くなりやすい</li>
+<li>フレームワークの選択肢がほぼない</li>
+</ul>
+<p>Goを選ぶメリット</p>
+<ul>
+<li>コードがシンプル</li>
+<li>他のチームのバックエンドの助けを呼びやすい</li>
+<li>フレームワークが柔軟</li>
+</ul>
+<p>Goを選ぶデメリット</p>
+<ul>
+<li>チーム内でフロント・モバイルの人が扱いにくい</li>
+<li>デフォルトの関数が微妙</li>
+<li>高級なものを作るのが大変</li>
+</ul>
+<p>どちらの言語もGoogleが開発した言語という前提があるので今後サポートされないみたいな心配はあまりありませんでした。
+また，ほかのプロダクトと連携したいためにgRPCを導入したいという私個人の願望があるのですがどちらも問題なくできそうなのでそこはクリアしていました。</p>
+<h2 id="dartを選んだ理由">Dartを選んだ理由</h2>
+<p>フロント・モバイルのエンジニアでもバックエンドを触るのが容易なこと，Dartという言語がそこそこ使いやすいことが決定打となってDartを選びました。</p>
+<p>また，背景としてこのプロダクトには現在バックエンドを構築できる人間が私しかいないというのもあってフロントから興味をもってくれた人がバックエンドをはじめやすい環境を作りたかったというのがあります。
+プログラミングに慣れている人はあまりないと思いますが初心者には言語の壁がやはり大きいです。
+さらに非同期の概念も理解するためにきちんと書いてほしいというのもあります。</p>
+<p>また，デメリットで書いたフレームワークの選択肢は少ないというところですが正直現在はひとつで，公式から出ているshelfのみです。
+この点は逆に調べると公式でもしっかりフォローしてくれているのでなんとかなるんじゃないかなと思いました。
+というかDartは<a href="https://pub.dev">pub.dev</a>からパッケージを調べてAPI Referenceってところに飛ぶとかなりしっかりとしたReferenceが存在します。
+なので基礎さえしっかりしてればほとんどは何とかなるのかなと思います。</p>
+<h2 id="さいごに">さいごに</h2>
+<p>実際にこれからこの選択がよかったのかは来年実際に稼働してからわかることなのでどっちにしても何がよかったのかを考察します。それもブログに公開できたらいいなあって感じです。</p>
+<p>やっぱりDartは言語として非常に使いやすく優秀な言語だと思うのでこれを機にバックエンドが気になった人はバックエンドの勉強もしてほしいのでそのきっかけにしてほしいです。</p>
+<p>あとNUTMEGでもNUTMEG外でもDartを使ってほしいです（切実）</p>
+
+        </div>
+
+        
+        
       </div>
     </div>
   </div>

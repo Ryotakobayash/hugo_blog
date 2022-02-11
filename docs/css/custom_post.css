@@ -1,6 +1,7 @@
 @charset "utf-8";
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-  margin: 50px 0px 10px;
+  margin: 50px 0px 25px;
+  border-bottom: solid 3px #00aaa1;
 }
 p {
   line-height: 28px;

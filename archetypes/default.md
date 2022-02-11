@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+draft: farse
 
 # メイン画像画像
 image: "images/"
