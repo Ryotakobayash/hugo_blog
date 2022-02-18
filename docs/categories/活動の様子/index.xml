@@ -6,7 +6,16 @@
     <description>Recent content in 活動の様子 on エンジニアブログ | 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 11 Feb 2022 10:32:54 +0900</lastBuildDate><atom:link href="https://nutfes.github.io/blog/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Feb 2022 23:37:39 +0900</lastBuildDate><atom:link href="https://nutfes.github.io/blog/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>最近のMT方法について</title>
+      <link>https://nutfes.github.io/blog/blog/post-20220218/</link>
+      <pubDate>Fri, 18 Feb 2022 23:37:39 +0900</pubDate>
+      
+      <guid>https://nutfes.github.io/blog/blog/post-20220218/</guid>
+      <description>みなさんこんにちは。NUTMEG局長の藤崎です!最近またコロナウイルスが猛威を振るっており、対面でのMTなどできませんよね。また、ZoomやDiscordなどは少し、味気なくないですか？　そんな中、私たち、NUTMEGはGatherを使ったMTを採用しています！今日はそんなGatherのいいところなどお伝え出来たらいいなと思ってます！！</description>
+    </item>
+    
     <item>
       <title>バックエンドにDartを採用しました</title>
       <link>https://nutfes.github.io/blog/blog/post-20220210/</link>
