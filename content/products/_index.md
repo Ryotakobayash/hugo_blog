@@ -28,8 +28,7 @@ type: "about"
 技大祭に出店する団体から申請される情報を受け取り，実行委員内で管理しやすくするアプリ．<br>
 参加側運営側で生まれる技大祭に関するストレスを減らすために生まれた．
 
-[github/group-manager-2](https://github.com/NUTFes/group-manager-2)<br>
-[github/group-manager-2-ubuntu](https://github.com/NUTFes/group-manager-2-ubuntu)
+[github/group-manager-2](https://github.com/NUTFes/group-manager-2)
 
 <!-- stickee -->
 ## stickee

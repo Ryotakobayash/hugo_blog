@@ -63,6 +63,10 @@ publishDir = "docs"
   URL = "products"
   weight = 3
 
+  [[menu.main]]
+  name = "Members"
+  URL = "members"
+  weight = 4
 
   # footer menu
   [[menu.footer]]
@@ -79,6 +83,11 @@ publishDir = "docs"
   name = "Products"
   URL = "products"
   weight = 3
+  
+  [[menu.footer]]
+  name = "Members"
+  URL = "members"
+  weight =4
 
 #################### default parameters ################################
 [params]
@@ -94,7 +103,7 @@ googleAnalitycsID = "Your ID"
 # email = "仮demo@email.com"
 # location = "仮Dhaka, Bangladedsh"
 # copyright
-copyright = "&copy; NUTMEG 2021"
+copyright = "&copy; NUTMEG 2022"
 # レイアウト変更用css
 customCSS = ["css/custom_post.css"]
 

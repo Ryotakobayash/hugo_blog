@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nutfes.github.io/blog/categories/</loc>
-    <lastmod>2022-02-18T23:37:39+09:00</lastmod>
+    <loc>https://nutfes.github.io/blog/members/</loc>
+    <lastmod>2022-02-26T18:15:55+09:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/</loc>
+    <lastmod>2022-02-26T18:15:55+09:00</lastmod>
+  </url><url>
+    <loc>https://nutfes.github.io/blog/categories/</loc>
     <lastmod>2022-02-18T23:37:39+09:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/blog/post-20220218/</loc>
