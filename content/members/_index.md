@@ -16,7 +16,7 @@ type: "about"
 <div class="members-flex-box">
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/oba.png">
+    <image class="members-flex-box__card__img"src="../images/members/oba.png">
     <p class="members-flex-box__card__name">m.oba</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check1" class="acd-check" type="checkbox">
@@ -31,7 +31,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/mashimo.png">
+    <image class="members-flex-box__card__img"src="../images/members/mashimo.png">
     <p class="members-flex-box__card__name">ました</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check2" class="acd-check" type="checkbox">
@@ -47,7 +47,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/fujisaki.png">
+    <image class="members-flex-box__card__img"src="../images/members/fujisaki.png">
     <p class="members-flex-box__card__name">ふじっぴ</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check3" class="acd-check" type="checkbox">
@@ -63,7 +63,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/oura.png">
+    <image class="members-flex-box__card__img"src="../images/members/oura.png">
     <p class="members-flex-box__card__name">つさば</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check4" class="acd-check" type="checkbox">
@@ -75,7 +75,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/dodo.png">
+    <image class="members-flex-box__card__img"src="../images/members/dodo.png">
     <p class="members-flex-box__card__name">dodo</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check5" class="acd-check" type="checkbox">
@@ -92,7 +92,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/uzawa.png">
+    <image class="members-flex-box__card__img"src="../images/members/uzawa.png">
     <p class="members-flex-box__card__name">t.uzawa</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check6" class="acd-check" type="checkbox">
@@ -108,7 +108,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/kobayashi.png">
+    <image class="members-flex-box__card__img"src="../images/members/kobayashi.png">
     <p class="members-flex-box__card__name">r.kobayashi</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check7" class="acd-check" type="checkbox">
@@ -125,7 +125,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/tsukada.png">
+    <image class="members-flex-box__card__img"src="../images/members/tsukada.png">
     <p class="members-flex-box__card__name">つかでん</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check8" class="acd-check" type="checkbox">
@@ -142,7 +142,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/kotake.png">
+    <image class="members-flex-box__card__img"src="../images/members/kotake.png">
     <p class="members-flex-box__card__name">ソウタ</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check9" class="acd-check" type="checkbox">
@@ -158,7 +158,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/ikarashi.png">
+    <image class="members-flex-box__card__img"src="../images/members/ikarashi.png">
     <p class="members-flex-box__card__name">noa</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check10" class="acd-check" type="checkbox">
@@ -171,7 +171,7 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="images/members/ogawa.png">
+    <image class="members-flex-box__card__img"src="../images/members/ogawa.png">
     <p class="members-flex-box__card__name">youichiro</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check11" class="acd-check" type="checkbox">
