@@ -22,11 +22,12 @@ type: "about"
       <input id="acd-check1" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check1">about</label>
       <div class="acd-content">
-        <p>総務局情報処理部門長→副委員長→NUTMEGを創る学祭のDXに貢献しながら，NUTMEGを最高の学生エンジニア団体にしたい．組織作りやマネジメントにも興味あり．</p>
+        <p>総務局情報処理部門長→副委員長→NUTMEGを創る学祭のDXに貢献しながら，NUTMEGを最高の学生エンジニア団体にしたい.組織作りやマネジメントにも興味あり.</p>
       </div>
     </div>
     <div class="members-flex-box__card__link">
-      <a href="https://www.masashi-oba.nethttps://twitter.com/masashi00018">Twitter</a>
+      <a href="https://www.masashi-oba.nethttps://twitter.com/masashi00018">Twitter</a><br>
+      <a href="https://oba18.github.io/">Portfolio</a>
     </div>
   </div>
 
@@ -37,7 +38,7 @@ type: "about"
       <input id="acd-check2" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check2">about</label>
       <div class="acd-content">
-        <p>第40回技大祭情報局長→NUTMEGを創る。SeeFTをメインにアーキテクチャなどでいろいろなプロジェクトにかかわっています。Emacsやfish, dartについてすこしだけ話せます。フルスタック志望ですがデザインからインフラまで手を出しかけています。</p>
+        <p>第40回技大祭情報局長→NUTMEGを創る.<br>SeeFTをメインにアーキテクチャなどでいろいろなプロジェクトにかかわっています.Emacsやfish,dartについてすこしだけ話せます.フルスタック志望ですがデザインからインフラまで手を出しかけています.</p>
       </div>
     </div>
     <div class="members-flex-box__card__link">
@@ -69,7 +70,7 @@ type: "about"
       <input id="acd-check4" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check4">about</label>
       <div class="acd-content">
-        <p>ユーザー管理サービス[Stickee]のPMしてます．君も管理してやろうか．サーバーがすきです．趣味でマイクラ鯖，録画鯖などを立ててます．つさばのマイクラ鯖実況というチャンネル名でYoutube動画投稿をしたいです．</p>
+        <p>ユーザー管理サービス[Stickee]のPMしてます.君も管理してやろうか.サーバーがすきです.趣味でマイクラ鯖,録画鯖などを立ててます.つさばのマイクラ鯖実況というチャンネル名でYoutube動画投稿をしたいです.</p>
       </div>
     </div>
   </div>
@@ -98,7 +99,7 @@ type: "about"
       <input id="acd-check6" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check6">about</label>
       <div class="acd-content">
-        <p>NUTMEG バックエンド部門所属.場所ごとの混雑状況を可視化するアプリ「tracking_support(トラサポ)」の開発をメインに活動しています.Rails，Elasticsearch，Pythonを少しずつ勉強しています.<br>趣味はロードバイクに乗ること，ピアノを弾くこと，音楽を聞くこと，開発をすることです.
+        <p>NUTMEG バックエンド部門所属.場所ごとの混雑状況を可視化するアプリ「tracking_support(トラサポ)」の開発をメインに活動しています.Rails，Elasticsearch,Pythonを少しずつ勉強しています.<br>趣味はロードバイクに乗ること,ピアノを弾くこと,音楽を聞くこと,開発をすることです.
         </p>
       </div>
     </div>
@@ -114,7 +115,7 @@ type: "about"
       <input id="acd-check7" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check7">about</label>
       <div class="acd-content">
-        <p>NUTMEG デザイナー部門所属,41st技大祭実行委員会副委員長．FigmaでのUI/UXデザインをやったり,イラレやAffinity Designerというソフトでロゴを作ったりしています.好きな映画は風立ちぬ．好きなテレビ番組は大改造ビフォーアフターと地球ドラマチックと美の壺とがっちりマンデー．
+        <p>NUTMEG デザイナー部門所属,41st技大祭実行委員会副委員長.FigmaでのUI/UXデザインをやったり,イラレやAffinity Designerというソフトでロゴを作ったりしています.好きな映画は風立ちぬ.好きなテレビ番組は大改造ビフォーアフターと地球ドラマチックと美の壺とがっちりマンデー.
         </p>
       </div>
     </div>
@@ -131,7 +132,7 @@ type: "about"
       <input id="acd-check8" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check8">about</label>
       <div class="acd-content">
-        <p>NUTMEG最年少JDです.インフラ勉強中です。ラズパイも触ってます.情報教育に関心があります.趣味はお笑いを観ることで、好きな芸人はダイアンです.座右の銘は、グー、チョキ、パー、チョキでいこう.
+        <p>NUTMEG最年少JDです.インフラ勉強中です.ラズパイも触ってます.情報教育に関心があります.趣味はお笑いを観ることで,好きな芸人はダイアンです.座右の銘は,グー,チョキ,パー,チョキでいこう.
         </p>
       </div>
     </div>
@@ -164,7 +165,7 @@ type: "about"
       <input id="acd-check10" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check10">about</label>
       <div class="acd-content">
-        <p>NUTMEG バックエンド部門所属.Rails勉強中です。group_managerに関わってます.好きなYouTuber：東海オンエアです.<br>唯一全巻揃えた漫画：トリコです。特に膳王ユダが好きです.<br>好きな次郎：鉄平に地球をノッキングする方法を教える次郎（二狼）です.
+        <p>NUTMEG バックエンド部門所属.Rails勉強中です.group_managerに関わってます.好きなYouTuber:東海オンエアです.<br>唯一全巻揃えた漫画:トリコです.特に膳王ユダが好きです.<br>好きな次郎:鉄平に地球をノッキングする方法を教える次郎(二狼)です.
         </p>
       </div>
     </div>
@@ -180,5 +181,22 @@ type: "about"
         <p>後輩たちのslackに入り浸っているOBです.教育サービスの開発に携わっています.長岡のラーメンが恋しいお年頃.
         </p>
       </div>
+    </div>
+  </div>
+
+  <div class="members-flex-box__card">
+    <image class="members-flex-box__card__img"src="../images/members/kugue.png">
+    <p class="members-flex-box__card__name">99A</p>
+    <div class="members-flex-box__card__body">
+      <input id="acd-check11" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check11">about</label>
+      <div class="acd-content">
+        <p>NUTMEG フロントエンド部門所属好きな二郎:東池袋店,好きなMS:ジ・O,Skills:Fortran,C,Python,JavaScript,TypeScript.
+        </p>
+      </div>
+    </div>
+    <div class="members-flex-box__card__link">
+      <a href="https://twitter.com/KugueY">Twitter</a><br>
+      <a href="https://kugue99a.github.io/">Portfolio</a>
     </div>
   </div>
