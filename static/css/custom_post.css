@@ -57,6 +57,7 @@ iframe {
   padding: 0 10px;
   transition: .5s;
   visibility: hidden;
+  word-wrap: break-word
 }
 .acd-check:checked + .acd-label + .acd-content{
   height: max-content;
