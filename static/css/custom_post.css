@@ -1,5 +1,5 @@
 @charset "utf-8";
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+.content h1, .content h2, .content h3, .content h4, .content h5 {
   /* margin: 50px 0px 25px;
   border-bottom: solid 3px #00aaa1; */
   display: inline-block;
@@ -7,6 +7,14 @@
   border-bottom: 0.5px solid #00aaa1;
   padding: 10px 0;
   margin: 50px 0 25px;
+}
+.content h6 {
+  display: block;
+  font-size: 14px;
+  color:#00aaa1;
+  text-align: center;
+  padding: 10px 0 0;
+  margin: 30px auto 5px;
 }
 p {
   line-height: 28px;
@@ -22,7 +30,7 @@ iframe {
   margin-bottom: 50px;
 }
 
-/* membersページ ----------------------------- */
+/* membersページ */
 .members-flex-box {
   display: flex;
   flex-direction: row;

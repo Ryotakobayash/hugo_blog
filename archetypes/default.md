@@ -22,7 +22,6 @@ tags:
 autors:
   - ""
 
-# post type
-# "featured"だとサイトの一番上にランダムで表示されるようになる
+
 type: "post"
 ---
