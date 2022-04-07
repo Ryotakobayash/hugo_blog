@@ -25,6 +25,9 @@
   <link rel="stylesheet" href="{{ . | absURL}}">
   {{ end }}
 
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+
   {{ "<!-- google analitycs -->" | safeHTML }}
   <script>
     (function (i, s, o, g, r, a, m) {

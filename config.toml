@@ -104,6 +104,11 @@ googleAnalitycsID = "Your ID"
 # location = "仮Dhaka, Bangladedsh"
 # copyright
 copyright = "&copy; NUTMEG 2022"
+images = ["images/NUTMEG-logo_all_color_horizontal.png"]
+
+
+
+
 # レイアウト変更用css
 customCSS = ["css/custom_post.css"]
 
