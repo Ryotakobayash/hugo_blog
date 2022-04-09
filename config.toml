@@ -135,7 +135,7 @@ expire_days = 2
 [[params.social]]
 title = "twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "https://twitter.com/nut_fes?s=20"
+link = "https://twitter.com/nutfes_nutmeg"
 
 [[params.social]]
 title = "instagram"
