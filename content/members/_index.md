@@ -57,10 +57,6 @@ type: "about"
         <p>NUTMEG フロントエンド部門所属.<br>第40回技大祭の副委員長やってました.スノボと筋トレが趣味です.キラキラマッチョエンジニアを目指してます.</p>
       </div>
     </div>
-    <div class="members-flex-box__card__link">
-      <a href="https://twitter.com/txMneN9dh2AH8fY">Twitter</a><br>
-      <a href="https://ryuseifujisaki.github.io/">Portfolio</a>
-    </div>
   </div>
 
   <div class="members-flex-box__card">
@@ -119,10 +115,6 @@ type: "about"
         </p>
       </div>
     </div>
-    <div class="members-flex-box__card__link">
-      <a href="https://twitter.com/dodo_yu_1234">Twitter</a><br>
-      <a href="https://yushirododo63.github.io/portfolio/">Portfolio</a>
-    </div>
   </div>
 
   <div class="members-flex-box__card">
@@ -168,10 +160,6 @@ type: "about"
         <p>NUTMEG最年少JDです.インフラ勉強中です.ラズパイも触ってます.情報教育に関心があります.趣味はお笑いを観ることで,好きな芸人はダイアンです.座右の銘は,グー,チョキ,パー,チョキでいこう.
         </p>
       </div>
-    </div>
-    <div class="members-flex-box__card__link">
-      <a href="https://twitter.com/dodo_yu_1234">Twitter</a><br>
-      <a href="https://yushirododo63.github.io/portfolio/">Portfolio</a>
     </div>
   </div>
 
