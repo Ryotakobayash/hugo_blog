@@ -151,24 +151,11 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="../images/members/tsukada.png">
-    <p class="members-flex-box__card__name">つかでん</p>
-    <div class="members-flex-box__card__body">
-      <input id="acd-check10" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check10">about</label>
-      <div class="acd-content">
-        <p>NUTMEG最年少JDです.インフラ勉強中です.ラズパイも触ってます.情報教育に関心があります.趣味はお笑いを観ることで,好きな芸人はダイアンです.座右の銘は,グー,チョキ,パー,チョキでいこう.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="members-flex-box__card">
     <image class="members-flex-box__card__img"src="../images/members/kotake.png">
     <p class="members-flex-box__card__name">ソウタ</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check11" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check11">about</label>
+      <input id="acd-check10" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check10">about</label>
       <div class="acd-content">
         <p>NUTMEG フロントエンド部門所属.homepageに関わってます.NARUTO割と好きです.
         </p>
@@ -183,8 +170,8 @@ type: "about"
     <image class="members-flex-box__card__img"src="../images/members/ikarashi.png">
     <p class="members-flex-box__card__name">noa</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check12" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check12">about</label>
+      <input id="acd-check11" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check11">about</label>
       <div class="acd-content">
         <p>NUTMEG バックエンド部門所属.Rails勉強中です.group_managerに関わってます.好きなYouTuber:東海オンエアです.<br>唯一全巻揃えた漫画:トリコです.特に膳王ユダが好きです.<br>好きな次郎:鉄平に地球をノッキングする方法を教える次郎(二狼)です.
         </p>
@@ -196,8 +183,8 @@ type: "about"
     <image class="members-flex-box__card__img"src="../images/members/ogawa.png">
     <p class="members-flex-box__card__name">youichiro</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check13" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check13">about</label>
+      <input id="acd-check12" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check12">about</label>
       <div class="acd-content">
         <p>後輩たちのslackに入り浸っているOBです.教育サービスの開発に携わっています.長岡のラーメンが恋しいお年頃.
         </p>
@@ -209,8 +196,8 @@ type: "about"
     <image class="members-flex-box__card__img"src="../images/members/kugue.png">
     <p class="members-flex-box__card__name">99A</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check14" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check14">about</label>
+      <input id="acd-check13" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check13">about</label>
       <div class="acd-content">
         <p>NUTMEG フロントエンド部門所属好きな二郎:東池袋店,好きなMS:ジ・O,Skills:Fortran,C,Python,JavaScript,TypeScript.
         </p>
