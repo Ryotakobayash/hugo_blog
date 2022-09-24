@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HTML on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://nutfes.github.io/blog/tags/html/</link>
+    <link>http://example.org/tags/html/</link>
     <description>Recent content in HTML on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 20 Mar 2022 03:33:04 +0900</lastBuildDate><atom:link href="https://nutfes.github.io/blog/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Mar 2022 03:33:04 +0900</lastBuildDate><atom:link href="http://example.org/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NUTMEG-Seedsリリースしました！！！</title>
-      <link>https://nutfes.github.io/blog/blog/post-20220319/</link>
+      <link>http://example.org/blog/post-20220319/</link>
       <pubDate>Sun, 20 Mar 2022 03:33:04 +0900</pubDate>
       
-      <guid>https://nutfes.github.io/blog/blog/post-20220319/</guid>
+      <guid>http://example.org/blog/post-20220319/</guid>
       <description>NUTMEGで主にフロントエンドを担当している99Aです． 2022.3.18にNUTMEG-Seedsという学習管理もとい人材管理のアプリケーションをリリースしました！ このアプリはメンバーの学習記録，技術スタック，プロジェクトの参加状況を参照し，チームの管理に特化したアプリです．以下に主な機能を紹介します．</description>
     </item>
     
