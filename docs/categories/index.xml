@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://example.org/categories/</link>
+    <link>https://nutfes.github.io/blog/categories/</link>
     <description>Recent content in Categories on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 23 Sep 2022 21:39:44 +0900</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Sep 2022 21:39:44 +0900</lastBuildDate><atom:link href="https://nutfes.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>活動の様子</title>
-      <link>http://example.org/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</link>
+      <link>https://nutfes.github.io/blog/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</link>
       <pubDate>Fri, 23 Sep 2022 21:39:44 +0900</pubDate>
       
-      <guid>http://example.org/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</guid>
+      <guid>https://nutfes.github.io/blog/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</guid>
       <description></description>
     </item>
     
     <item>
       <title>対外活動</title>
-      <link>http://example.org/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</link>
+      <link>https://nutfes.github.io/blog/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</link>
       <pubDate>Thu, 11 Aug 2022 18:28:48 +0900</pubDate>
       
-      <guid>http://example.org/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</guid>
+      <guid>https://nutfes.github.io/blog/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</guid>
       <description></description>
     </item>
     
     <item>
       <title>イベント</title>
-      <link>http://example.org/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</link>
+      <link>https://nutfes.github.io/blog/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</link>
       <pubDate>Wed, 01 Sep 2021 00:49:11 +0900</pubDate>
       
-      <guid>http://example.org/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</guid>
+      <guid>https://nutfes.github.io/blog/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</guid>
       <description></description>
     </item>
     

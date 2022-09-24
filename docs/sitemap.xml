@@ -2,124 +2,124 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://nutfes.github.io/blog/categories/</loc>
     <lastmod>2022-09-23T21:39:44+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://nutfes.github.io/blog/</loc>
     <lastmod>2022-09-23T21:39:44+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220916/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220916/</loc>
     <lastmod>2022-09-23T21:39:44+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</loc>
+    <loc>https://nutfes.github.io/blog/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</loc>
     <lastmod>2022-09-23T21:39:44+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220806/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220806/</loc>
     <lastmod>2022-08-11T18:28:48+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</loc>
+    <loc>https://nutfes.github.io/blog/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</loc>
     <lastmod>2022-08-11T18:28:48+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/docker/</loc>
+    <loc>https://nutfes.github.io/blog/tags/docker/</loc>
     <lastmod>2022-07-31T21:57:18+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/python/</loc>
+    <loc>https://nutfes.github.io/blog/tags/python/</loc>
     <lastmod>2022-07-31T21:57:18+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/raspberry-pi/</loc>
+    <loc>https://nutfes.github.io/blog/tags/raspberry-pi/</loc>
     <lastmod>2022-07-31T21:57:18+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://nutfes.github.io/blog/tags/</loc>
     <lastmod>2022-07-31T21:57:18+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220731/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220731/</loc>
     <lastmod>2022-07-31T21:57:18+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/ubuntu/</loc>
+    <loc>https://nutfes.github.io/blog/tags/ubuntu/</loc>
     <lastmod>2022-07-31T21:57:18+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220701/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220701/</loc>
     <lastmod>2022-07-14T18:40:53+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220414/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220414/</loc>
     <lastmod>2022-04-15T04:30:10+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220402/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220402/</loc>
     <lastmod>2022-04-02T15:30:15+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/css/</loc>
+    <loc>https://nutfes.github.io/blog/tags/css/</loc>
     <lastmod>2022-03-20T03:33:04+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/html/</loc>
+    <loc>https://nutfes.github.io/blog/tags/html/</loc>
     <lastmod>2022-03-20T03:33:04+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/javascript/</loc>
+    <loc>https://nutfes.github.io/blog/tags/javascript/</loc>
     <lastmod>2022-03-20T03:33:04+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/next.js/</loc>
+    <loc>https://nutfes.github.io/blog/tags/next.js/</loc>
     <lastmod>2022-03-20T03:33:04+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220319/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220319/</loc>
     <lastmod>2022-03-20T03:33:04+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/react.js/</loc>
+    <loc>https://nutfes.github.io/blog/tags/react.js/</loc>
     <lastmod>2022-03-20T03:33:04+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/ruby/</loc>
+    <loc>https://nutfes.github.io/blog/tags/ruby/</loc>
     <lastmod>2022-03-20T03:33:04+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/ruby-on-rails/</loc>
+    <loc>https://nutfes.github.io/blog/tags/ruby-on-rails/</loc>
     <lastmod>2022-03-20T03:33:04+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/typescript/</loc>
+    <loc>https://nutfes.github.io/blog/tags/typescript/</loc>
     <lastmod>2022-03-20T03:33:04+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/authors/</loc>
+    <loc>https://nutfes.github.io/blog/authors/</loc>
     <lastmod>2022-03-18T19:14:21+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/authors/%E3%81%B5%E3%81%98%E3%81%A3%E3%81%B4/</loc>
+    <loc>https://nutfes.github.io/blog/authors/%E3%81%B5%E3%81%98%E3%81%A3%E3%81%B4/</loc>
     <lastmod>2022-03-18T19:14:21+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220318/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220318/</loc>
     <lastmod>2022-03-18T19:14:21+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/members/</loc>
+    <loc>https://nutfes.github.io/blog/members/</loc>
     <lastmod>2022-02-26T18:15:55+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220218/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220218/</loc>
     <lastmod>2022-02-18T23:37:39+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/dart/</loc>
+    <loc>https://nutfes.github.io/blog/tags/dart/</loc>
     <lastmod>2022-02-11T10:32:54+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/authors/mashita0123%C3%9F/</loc>
+    <loc>https://nutfes.github.io/blog/authors/mashita0123%C3%9F/</loc>
     <lastmod>2022-02-11T10:32:54+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89/</loc>
+    <loc>https://nutfes.github.io/blog/tags/%E3%83%90%E3%83%83%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%89/</loc>
     <lastmod>2022-02-11T10:32:54+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20220210/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20220210/</loc>
     <lastmod>2022-02-11T10:32:54+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/products/</loc>
+    <loc>https://nutfes.github.io/blog/products/</loc>
     <lastmod>2021-10-11T11:06:34+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/post-20210901/</loc>
+    <loc>https://nutfes.github.io/blog/blog/post-20210901/</loc>
     <lastmod>2021-09-01T00:49:11+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/authors/r.kobayashi/</loc>
+    <loc>https://nutfes.github.io/blog/authors/r.kobayashi/</loc>
     <lastmod>2021-09-01T00:49:11+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</loc>
+    <loc>https://nutfes.github.io/blog/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</loc>
     <lastmod>2021-09-01T00:49:11+09:00</lastmod>
   </url><url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://nutfes.github.io/blog/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/blog/</loc>
+    <loc>https://nutfes.github.io/blog/blog/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
-    <loc>http://example.org/search/</loc>
+    <loc>https://nutfes.github.io/blog/search/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url>
 </urlset>
