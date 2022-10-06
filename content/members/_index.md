@@ -153,15 +153,47 @@ type: "about"
 
 <!-- B3 -->
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="https://i.imgur.com/3YP74Yr.png">
-    <p class="members-flex-box__card__name">ichinose</p>
+    <image class="members-flex-box__card__img"src="https://i.imgur.com/fVkQ1WK.png">
+    <p class="members-flex-box__card__name"></p>
     <div class="members-flex-box__card__body">
       <input id="acd-check10" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check10">about</label>
       <div class="acd-content">
         <p>
+          デザインを勉強中です。最終的にwebページ作れるようになりたいです。学科は生物系です。NUTMEG楽しいです。
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="members-flex-box__card">
+    <image class="members-flex-box__card__img"src="https://i.imgur.com/JaXQNfx.jpg">
+    <p class="members-flex-box__card__name">つかさ</p>
+    <div class="members-flex-box__card__body">
+      <input id="acd-check11" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check11">about</label>
+      <div class="acd-content">
+        <p>
+        趣味はスノボ、サイクリング、ゲーム等でポジティブと効率をモットーに生きてます。
+        プログラミング初心者なので、これからたくさん学んでいきます。
+        </p>
+      </div>
+    </div>
+    <div class="members-flex-box__card__link">
+      <a href="https://twitter.com/akanam521T">Twitter</a>
+    </div>
+  </div>
+
+  <div class="members-flex-box__card">
+    <image class="members-flex-box__card__img"src="https://i.imgur.com/3YP74Yr.png">
+    <p class="members-flex-box__card__name">ichinose</p>
+    <div class="members-flex-box__card__body">
+      <input id="acd-check12" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check12">about</label>
+      <div class="acd-content">
+        <p>
         プログラミング初心者です。色々勉強して自分のやりたいことを固めていきたいです。
-現在は画像解析に興味があります。趣味はキャンプ、スノボ、麻雀です。
+        現在は画像解析に興味があります。趣味はキャンプ、スノボ、麻雀です。
         </p>
       </div>
     </div>
@@ -174,13 +206,11 @@ type: "about"
     <image class="members-flex-box__card__img"src="https://i.imgur.com/KUOftRl.png">
     <p class="members-flex-box__card__name">いまいまい</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check11" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check11">about</label>
+      <input id="acd-check13" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check13">about</label>
       <div class="acd-content">
         <p>
-        フロントエンド勉強中。
-競プロ・Arduino・簡単なWebページやゲーム制作など浅く広くやってます。
-ゲームはシミュレーションとOWが好きです。
+        フロントエンド勉強中。競プロ・Arduino・簡単なWebページやゲーム制作など浅く広くやってます。ゲームはシミュレーションとOWが好きです。
         </p>
       </div>
     </div>
@@ -191,17 +221,13 @@ type: "about"
 
 <!-- /B3 -->
 
-
-
-
-
-
+<!-- B2 -->
   <div class="members-flex-box__card">
     <image class="members-flex-box__card__img"src="../images/members/kotake.png">
     <p class="members-flex-box__card__name">ソウタ</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check12" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check12">about</label>
+      <input id="acd-check14" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check14">about</label>
       <div class="acd-content">
         <p>NUTMEG フロントエンド部門所属.homepageに関わってます.NARUTO割と好きです.
         </p>
@@ -216,8 +242,8 @@ type: "about"
     <image class="members-flex-box__card__img"src="../images/members/ikarashi.png">
     <p class="members-flex-box__card__name">noa</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check13" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check13">about</label>
+      <input id="acd-check15" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check15">about</label>
       <div class="acd-content">
         <p>NUTMEG バックエンド部門所属.Rails勉強中です.group_managerに関わってます.好きなYouTuber:東海オンエアです.<br>唯一全巻揃えた漫画:トリコです.特に膳王ユダが好きです.<br>好きな次郎:鉄平に地球をノッキングする方法を教える次郎(二狼)です.
         </p>
@@ -229,8 +255,8 @@ type: "about"
     <image class="members-flex-box__card__img"src="../images/members/ogawa.png">
     <p class="members-flex-box__card__name">youichiro</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check14" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check14">about</label>
+      <input id="acd-check16" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check16">about</label>
       <div class="acd-content">
         <p>後輩たちのslackに入り浸っているOBです.教育サービスの開発に携わっています.長岡のラーメンが恋しいお年頃.
         </p>
@@ -242,8 +268,8 @@ type: "about"
     <image class="members-flex-box__card__img"src="../images/members/kugue.png">
     <p class="members-flex-box__card__name">99A</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check15" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check15">about</label>
+      <input id="acd-check17" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check17">about</label>
       <div class="acd-content">
         <p>NUTMEG フロントエンド部門所属好きな二郎:東池袋店,好きなMS:ジ・O,Skills:Fortran,C,Python,JavaScript,TypeScript.
         </p>
