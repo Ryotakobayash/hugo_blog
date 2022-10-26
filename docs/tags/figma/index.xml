@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Figma on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+    <link>https://nutfes.github.io/blog/tags/figma/</link>
+    <description>Recent content in Figma on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 27 Oct 2022 00:36:50 +0900</lastBuildDate><atom:link href="https://nutfes.github.io/blog/tags/figma/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Figmaの学生プラン・Figjamを導入します</title>
+      <link>https://nutfes.github.io/blog/blog/post-20221027/</link>
+      <pubDate>Thu, 27 Oct 2022 00:36:50 +0900</pubDate>
+      
+      <guid>https://nutfes.github.io/blog/blog/post-20221027/</guid>
+      <description>こんにちは！NUTMEGデザインチーム、小林です！
+この度、NUTMEGでは一部のメンバーのみしか利用していなかったFigma・Figjamをメンバー全員に導入することにしました。</description>
+    </item>
+    
+  </channel>
+</rss>
