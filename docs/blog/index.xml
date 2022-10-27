@@ -8,11 +8,29 @@
     <language>ja</language>
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://nutfes.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Figmaの学生プラン・Figjamを導入します</title>
-      <link>https://nutfes.github.io/blog/blog/post-20221027/</link>
-      <pubDate>Thu, 27 Oct 2022 00:36:50 +0900</pubDate>
+      <title>NUTMEGに参加して</title>
+      <link>https://nutfes.github.io/blog/blog/post-20221027-2/</link>
+      <pubDate>Thu, 27 Oct 2022 17:20:53 +0900</pubDate>
       
-      <guid>https://nutfes.github.io/blog/blog/post-20221027/</guid>
+      <guid>https://nutfes.github.io/blog/blog/post-20221027-2/</guid>
+      <description>初めまして。NUTMEGに10月から参加した窪坂です。 今回ブログ担当に任命されましたので、参加した理由やNUTMEGについてなどを長々と書いていきます。</description>
+    </item>
+    
+    <item>
+      <title>JPHACKを振り返る</title>
+      <link>https://nutfes.github.io/blog/blog/post-20221027-1/</link>
+      <pubDate>Wed, 26 Oct 2022 17:20:46 +0900</pubDate>
+      
+      <guid>https://nutfes.github.io/blog/blog/post-20221027-1/</guid>
+      <description>こんにちは！NUTMEGの藤崎です！ 今回は先日行われたJPHACKSを振り返ろうかと思います。</description>
+    </item>
+    
+    <item>
+      <title>Figmaの学生プラン・Figjamを導入します</title>
+      <link>https://nutfes.github.io/blog/blog/post-20221026/</link>
+      <pubDate>Wed, 26 Oct 2022 00:36:50 +0900</pubDate>
+      
+      <guid>https://nutfes.github.io/blog/blog/post-20221026/</guid>
       <description>こんにちは！NUTMEGデザインチーム、小林です！
 この度、NUTMEGでは一部のメンバーのみしか利用していなかったFigma・Figjamをメンバー全員に導入することにしました。</description>
     </item>
