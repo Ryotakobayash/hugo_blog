@@ -1,10 +1,11 @@
 @charset "utf-8";
 .content h1, .content h2, .content h3, .content h4, .content h5 {
-  display: inline-block;
+  display: block;
+  width: max-content;
   border-top: 0.5px solid #00aaa1;
   border-bottom: 0.5px solid #00aaa1;
-  padding: 10px 0;
-  margin: 50px 0 25px;
+  padding:  10px 10px 5px;
+  margin: 20px 0px;
 }
 .content h6 {
   display: block;
@@ -14,6 +15,29 @@
   padding: 10px 0 0;
   margin: 30px auto 5px;
 }
+/* font-size */
+.content h1 {
+  font-size: 35px;
+}
+.content h2 {
+  padding: 10px 10px 5px;
+  margin: 80px 0px 30px 0px;
+  font-size: min(6vw, 30px);
+}
+.content h3 {
+  font-size: min(5vw, 25px);
+  margin: 50px 0px 20px;
+}
+.content h4 {
+  font-size: 20px;
+}
+.content h5 {
+  font-size: 15px;
+}
+
+
+
+
 p {
   line-height: 28px;
 }
