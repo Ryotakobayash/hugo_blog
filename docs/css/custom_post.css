@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+/* 全体 ------------------------- */
 .content h1, .content h2, .content h3, .content h4, .content h5 {
   display: block;
   width: max-content;
@@ -34,14 +36,18 @@
 .content h5 {
   font-size: 15px;
 }
-
-
-
-
 p {
   line-height: 28px;
 }
-/* google slides 埋め込み */
+
+/* productページ ------------------------- */
+.product-flex-box__card > h2 {
+  padding: 10px 10px 5px;
+  margin: 60px auto 30px;
+  font-size: min(6vw, 30px);
+}
+
+/* google slides 埋め込み ------------------------- */
 iframe {
   display: block;
   width: 90%;
@@ -52,7 +58,7 @@ iframe {
   margin-bottom: 50px;
 }
 
-/* membersページ */
+/* membersページ ------------------------- */
 .members-flex-box {
   display: flex;
   flex-direction: row;
