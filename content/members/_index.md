@@ -154,7 +154,7 @@ type: "about"
 <!-- B3 -->
   <div class="members-flex-box__card">
     <image class="members-flex-box__card__img"src="https://i.imgur.com/fVkQ1WK.png">
-    <p class="members-flex-box__card__name"></p>
+    <p class="members-flex-box__card__name">りん</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check10" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check10">about</label>
