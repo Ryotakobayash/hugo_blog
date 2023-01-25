@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="slackの無料プランだと3ヶ月間でチャンネルのメッセージは表示されなくなります。学祭やチーム開発では3ヶ月より前のことを振り返りたいことも多々あります。そのため、今回は無料プランでも3ヶ月間以前のメッセージも遡れるような開発をしてみました。">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.83.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://nutfes.github.io/blog/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://nutfes.github.io/blog/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/css/custom_post.css">
+  
+
+  <meta property="og:title" content="slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する" />
+<meta property="og:description" content="slackの無料プランだと3ヶ月間でチャンネルのメッセージは表示されなくなります。学祭やチーム開発では3ヶ月より前のことを振り返りたいことも多々あります。そのため、今回は無料プランでも3ヶ月間以前のメッセージも遡れるような開発をしてみました。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nutfes.github.io/blog/blog/post-20230125/" /><meta property="og:image" content="https://nutfes.github.io/blog/images/OGP.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-01-25T17:02:09&#43;09:00" />
+<meta property="article:modified_time" content="2023-01-25T17:02:09&#43;09:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nutfes.github.io/blog/images/OGP.png"/>
+
+<meta name="twitter:title" content="slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する"/>
+<meta name="twitter:description" content="slackの無料プランだと3ヶ月間でチャンネルのメッセージは表示されなくなります。学祭やチーム開発では3ヶ月より前のことを振り返りたいことも多々あります。そのため、今回は無料プランでも3ヶ月間以前のメッセージも遡れるような開発をしてみました。"/>
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://nutfes.github.io/blog/"><img class="img-fluid"
+          src="https://nutfes.github.io/blog/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://nutfes.github.io/blog/"><img class="img-fluid"
+            src="https://nutfes.github.io/blog/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nutfes.github.io/blog/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nutfes.github.io/blog/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nutfes.github.io/blog/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nutfes.github.io/blog/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://nutfes.github.io/blog//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://nutfes.github.io/blog/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90"
+          class="text-primary">活動の様子</a>
+        
+        <h2>slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する</h2>
+        <div class="mb-3 post-meta">
+          <span>By NUTMEG</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>25 January 2023</span>
+          
+        </div>
+        
+        <img src="https://i.imgur.com/LXYdVjP.png" class="img-fluid w-100 mb-4" alt="slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する">
+        
+        <div class="content mb-5">
+          <h2 id="はじめに">はじめに</h2>
+<p>こんにちは。NUTMEGの藤崎です。先日NUTMEG内でLT会が行われ、slack無料プランのメッセージが3ヶ月間で表示されなくなるのをweb+slackAPIを利用してwebアプリを作成し解決した話をしました。今回はその話をもう少し具体的に話していきます。</p>
+<h2 id="開発背景">開発背景</h2>
+<p>slackの無料プランでは、3ヶ月間でメッセージ表示されなくなってしまいます。自分達NUTMEGや学祭実行委員会内では、3ヶ月前のメッセージも遡りたいこともありますが、利用しているslackは無料プランなので見ることができません。私たちNUTMEGや学祭実行委員会では、予算の関係上slackの有料プランを利用することが困難です。
+そのため、有料プランを使用せずに、3ヶ月前のslackを遡る方法としてslackAPI + web技術を使い解決できると考え開発を開始しました。</p>
+<h2 id="開発人数と開発期間">開発人数と開発期間</h2>
+<p>本プロジェクトは12月から開始し、個人開発で行っていました。
+現在は、興味あるメンバーがいて二人で進めています。</p>
+<h2 id="構成と選定理由">構成と選定理由</h2>
+<p>今回利用した技術、選定理由としては以下のようになります。</p>
+<h3 id="slackbot">SlackBot</h3>
+<p><strong>Bolt for Python</strong> <img src="https://i.imgur.com/rgxeY4e.png" width="30"></p>
+<p>チャンネルのメッセージの監視してくれるbotと収集するロジックはBolt for Pythonを利用しました。
+Bolt for PythonはSlack 連携アプリを作るための公式フレームワークです。BoltはWebAPIを利用して簡単にメッセージなどの情報を取得することが簡単にできます。
+今回は簡単に早く開発したいのもあり、普段から使い慣れているPythonで書くことのできるBoltを採用しました。</p>
+<h3 id="バックエンド">バックエンド</h3>
+<p><strong>Golang</strong> <img src="https://i.imgur.com/dM8utQ1.png" width="60"></p>
+<p>バックエンドはGolangを利用しました。また、APIサーバーはEchoを利用しました。EchoはWebアプリケーションフレームワークであり、3分ほどでAPIサーバーを構築しやすく、普段から使い慣れているので採用しました。
+DBからデータを取ってきて、可視化するだけを考えるとバックエンドは不必要そうですが、slackbot, バックエンド, フロントエンドの三層にして、監視、ロジック、可視化の責務を分けることで今後の保守が楽になると考え、導入しました。</p>
+<h3 id="フロントエンド">フロントエンド</h3>
+<p><strong>Vue</strong> <img src="https://i.imgur.com/hxPCi2K.png" width="30"></p>
+<p>フロントエンドはVue.jsを採用しました。私は普段はバックエンドを基本的に書いているので、フロントエンドはあまり得意ではなかったのですが、Vueはフロント初心者でも扱いやすいということで採用しました。</p>
+<h3 id="db">DB</h3>
+<p><strong>MongoDB</strong> <img src="https://i.imgur.com/jmwMeKf.png" width="33"></p>
+<p>データベースはMongoDBを採用しました。MongoDBはNoSqlなので、json形式でデータを保存することが可能です。
+slack APIを利用して返ってくるresponseは結構複雑なjsonであり、正規化したりするのは大変だと考えました。そこで取得したjsonをそのままDBに入れられるNoSqlを採用することでこの問題を解決しました。</p>
+<h3 id="インフラ">インフラ</h3>
+<p><strong>NUTMEG Cloud</strong> <img src="https://i.imgur.com/kpnQ11B.png" width="30"></p>
+<p>デプロイ先には、NUTMEGのインフラチームが開発しているNUTMEG Cloudを採用しました。NUTMEG CloudとはNUTMEGで運用しているオンプレミスサーバーのことです。複数のミニPCを用いて製作してあり、NUTMEGのプロダクトは基本的にここにデプロイされます。</p>
+<p>NUTMEGクラウドをもっと詳しく →<a href="https://docs.google.com/presentation/d/e/2PACX-1vQiXSXvk4nYba0lhzgyWuvbgXbqtQbRIW7RfrFsiShCHgs4tOw5sckmG1y-ZqijIyEySKrRnyw4t1xw/embed?start=false&amp;loop=false&amp;delayms=3000">NUTMEG クラウド</a></p>
+<h2 id="構成図と流れ">構成図と流れ</h2>
+<h3 id="構成図">構成図</h3>
+<p>イメージに表すと以下のようになります。
+<img src="https://i.imgur.com/r5Vxh48.png" alt=""></p>
+<h3 id="流れ">流れ</h3>
+<p>大まかな流れは以下のようになります。</p>
+<p>①botがいるチャンネルで誰かがメッセージを投稿する
+②botがチャンネルを監視しており、投稿されたメッセージをMongoDBに保存する
+③誰かが、本プロダクトにアクセスする。
+④フロントがAPI requestを行う
+⑤バックエンドがDBから必要なデータを取り出し、データを整形する
+⑥整形されたデータをフロントに返す
+⑦フロントによるメッセージの可視化</p>
+<h2 id="苦戦した点">苦戦した点</h2>
+<h3 id="golangにおけるデータの整形">Golangにおけるデータの整形</h3>
+<p>このプロダクトで最も苦戦したところは、MongoDBから取り出したデータから必要なデータだけに整形するところでした。
+MongoDBにはslack APIのレスポンスがそのまま入っています。
+DBには以下のようなデータが入っています。<a href="https://api.slack.com/methods/conversations.history">slack API message.channelsより引用</a></p>
+<pre><code>{
+    &quot;token&quot;: &quot;one-long-verification-token&quot;,
+    &quot;team_id&quot;: &quot;T061EG9R6&quot;,
+    &quot;api_app_id&quot;: &quot;A0PNCHHK2&quot;,
+    &quot;event&quot;: {
+        &quot;type&quot;: &quot;message&quot;,
+        &quot;channel&quot;: &quot;C024BE91L&quot;,
+        &quot;user&quot;: &quot;U2147483697&quot;,
+        &quot;text&quot;: &quot;Live long and prospect.&quot;,
+        &quot;ts&quot;: &quot;1355517523.000005&quot;,
+        &quot;event_ts&quot;: &quot;1355517523.000005&quot;,
+        &quot;channel_type&quot;: &quot;channel&quot;
+    },
+    &quot;type&quot;: &quot;event_callback&quot;,
+    &quot;authed_teams&quot;: [
+        &quot;T061EG9R6&quot;
+    ],
+    &quot;event_id&quot;: &quot;Ev0PV52K21&quot;,
+    &quot;event_time&quot;: 1355517523
+}message.channels
+</code></pre><p>しかし、実際に必要なデータは、<code>event</code>key内の<code>value</code>だけでした。そのためMongoDBから取り出したデータから<code>event</code>key内の要素だけを取り出し、新しく連想配列に入れていこうとしましたが、なかなかうまくいきませんでした。
+原因はmongoDB内で保存されているデータが<a href="https://bsonspec.org/">bson形式</a>だからです。そのため取り出して新しい変数に入れたり、連想配列に格納する際にはキャストする必要がありました。</p>
+<p>実際に連想配列に格納するメソッドです。</p>
+<pre><code>func (u *mongoDBUsecase) FetchData() []map[string]string {
+	docs, err := u.repository.AllCollection()
+	usersInfoMap, err := u.repository.GetUserInfo()
+	channelsInfoMap, err := u.repository.GetChannelInfo()
+
+	usersInfo := usersInfoMap[0]
+	channelsInfo := channelsInfoMap[0]
+	var data []map[string]string
+
+	for _, v := range docs {
+		var m = make(map[string]string)
+		eventTs := v[&quot;event&quot;].(bson.M)[&quot;event_ts&quot;].(string)
+		channel := v[&quot;event&quot;].(bson.M)[&quot;channel&quot;].(string)
+		text := v[&quot;event&quot;].(bson.M)[&quot;text&quot;]
+		threadTs := v[&quot;event&quot;].(bson.M)[&quot;thread_ts&quot;]
+		user := v[&quot;event&quot;].(bson.M)[&quot;user&quot;]
+
+		m[&quot;eventTs&quot;] = eventTs
+
+		channelName := channelsInfo[channel]
+		m[&quot;channelName&quot;] = channelName.(string)
+		m[&quot;channelId&quot;] = channel
+
+		if threadTs != nil {
+			m[&quot;threadTs&quot;] = threadTs.(string)
+		}
+
+		if text != nil {
+			m[&quot;text&quot;] = text.(string)
+		}
+
+		if user != nil {
+			userName := usersInfo[user.(string)]
+			m[&quot;user&quot;] = userName.(string)
+		}
+
+		data = append(data, m)
+	}
+	if err != nil {
+		panic(err)
+	}
+	return data
+}
+</code></pre><p>もしかしたらもう少し上手にする方法があるかもしれません。本プロダクトではここが一番困難だと感じましたが、改めてgolangの型定義などを学び直すことになりとても勉強になりました。</p>
+<h2 id="実際のプロダクト">実際のプロダクト</h2>
+<p>現在はこんな感じになっています。
+サイドバーにはNUTMEGにあるチャンネル一覧があり、クリックするとそのチャンネルの今までのメッセージが見れるページに飛びます。(一部プライバシーのため黒塗りしています。)</p>
+<p><img src="https://i.imgur.com/aeO2mLI.png" alt=""></p>
+<h2 id="今後の展望">今後の展望</h2>
+<p>まだ完成していない点がいくつかあります。</p>
+<ul>
+<li>スレッド機能の作成</li>
+<li>ログイン機能</li>
+<li>HOMEのようなページ</li>
+</ul>
+<h3 id="スレッド機能">スレッド機能</h3>
+<p>現在はスレッドにあるメッセージもそのまま並べられているだけです。今後はスレッド機能をつけて、会話の流れを見やすくしたいと考えています。
+<img src="https://i.imgur.com/SIshjbO.png" alt=""></p>
+<h3 id="ログイン機能">ログイン機能</h3>
+<p>ログイン機能がないため、現在誰でもアクセスできる状態です。そのためログイン機能をつけてNUTMEGメンバーだけが見れるようにしていきたいと考えています。</p>
+<h3 id="home画面">Home画面</h3>
+<p>メイン機能はほぼできていますが、HOME画面のようなものがないので、簡単でいいので作成していきたいと思います。</p>
+<p>優先順としては、HOME→ログイン機能→スレッド機能くらいで考えています。</p>
+<h2 id="感想">感想</h2>
+<p>久しぶりに個人開発をしてみました。最近勉強しているGolangを利用してwebアプリケーションを1から作れたのはいい経験だと思います。またMongoDBやBoltなどの初めて触る技術も多く、とても楽しんで開発できました。また、フロントエンドはほぼ未経験でしたが、先輩に聞きつつ開発を進め、理解度を深めることができました。さらにフロントエンドを触ることで、いつもフロント陣がどのようなことを考えて開発しているのか少しは理解できたのではないかと思っています。
+まだ開発段階ではありますが、完成に向けて頑張ります！！
+また、この記事の技術のところでデタラメをいってたら申し訳ありません。</p>
+<h2 id="最後に">最後に</h2>
+<p>最後まで読んでいただき、ありがとうございました。
+LT会で利用した資料とgithubのリンクも添付するので、宜しければ、こちらもご覧ください。</p>
+<h3 id="nutmeg-slackhttpsgithubcomnutfesnutmeg-slackimg-srchttpsiimgurcomalsfkyppng-width50"><a href="https://github.com/NUTFes/nutmeg-slack">nutmeg-slack</a><img src="https://i.imgur.com/aLSFkyP.png" width="50"></h3>
+<h3 id="lt会で使用した資料">LT会で使用した資料</h3>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSZEz_HEp1XTRjDEfxIGOPuRlfiI5-LutnmP05-K8CaXUToat7-VCSCEhjaJg9Jv-LIv-cMc3yZIri2/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://nutfes.github.io/blog/"><img src="https://nutfes.github.io/blog/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://nutfes.github.io/blog/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://nutfes.github.io/blog/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://nutfes.github.io/blog/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://nutfes.github.io/blog/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nutfes.github.io/blog/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nutfes.github.io/blog/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nutfes.github.io/blog/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://nutfes.github.io/blog/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://nutfes.github.io/blog/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/slick/slick.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/search/fuse.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/search/mark.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://nutfes.github.io/blog/js/script.min.js"></script>
+
+
+
+</body>
+</html>

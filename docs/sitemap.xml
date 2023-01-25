@@ -2,20 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nutfes.github.io/blog/blog/post-20230104/</loc>
-    <lastmod>2023-01-09T16:25:21+09:00</lastmod>
-  </url><url>
     <loc>https://nutfes.github.io/blog/categories/</loc>
-    <lastmod>2023-01-09T16:25:21+09:00</lastmod>
+    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
+  </url><url>
+    <loc>https://nutfes.github.io/blog/tags/docker/</loc>
+    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
+  </url><url>
+    <loc>https://nutfes.github.io/blog/tags/go/</loc>
+    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/</loc>
-    <lastmod>2023-01-09T16:25:21+09:00</lastmod>
+    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
   </url><url>
-    <loc>https://nutfes.github.io/blog/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</loc>
-    <lastmod>2023-01-09T16:25:21+09:00</lastmod>
+    <loc>https://nutfes.github.io/blog/tags/python/</loc>
+    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
+  </url><url>
+    <loc>https://nutfes.github.io/blog/blog/post-20230125/</loc>
+    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/tags/</loc>
-    <lastmod>2022-11-10T20:08:11+09:00</lastmod>
+    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
+  </url><url>
+    <loc>https://nutfes.github.io/blog/tags/vue.js/</loc>
+    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
+  </url><url>
+    <loc>https://nutfes.github.io/blog/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</loc>
+    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
+  </url><url>
+    <loc>https://nutfes.github.io/blog/blog/post-20230104/</loc>
+    <lastmod>2023-01-09T16:25:21+09:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/tags/web-design/</loc>
     <lastmod>2022-11-10T20:08:11+09:00</lastmod>
@@ -28,9 +43,6 @@
   </url><url>
     <loc>https://nutfes.github.io/blog/blog/post-20221027-2/</loc>
     <lastmod>2022-10-27T17:20:53+09:00</lastmod>
-  </url><url>
-    <loc>https://nutfes.github.io/blog/tags/go/</loc>
-    <lastmod>2022-10-26T17:20:46+09:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/blog/post-20221027-1/</loc>
     <lastmod>2022-10-26T17:20:46+09:00</lastmod>
@@ -67,12 +79,6 @@
   </url><url>
     <loc>https://nutfes.github.io/blog/blog/post-20220806/</loc>
     <lastmod>2022-08-11T18:28:48+09:00</lastmod>
-  </url><url>
-    <loc>https://nutfes.github.io/blog/tags/docker/</loc>
-    <lastmod>2022-07-31T21:57:18+09:00</lastmod>
-  </url><url>
-    <loc>https://nutfes.github.io/blog/tags/python/</loc>
-    <lastmod>2022-07-31T21:57:18+09:00</lastmod>
   </url><url>
     <loc>https://nutfes.github.io/blog/tags/raspberry-pi/</loc>
     <lastmod>2022-07-31T21:57:18+09:00</lastmod>
