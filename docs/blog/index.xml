@@ -8,6 +8,15 @@
     <language>ja</language>
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://nutfes.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>型を意識する</title>
+      <link>https://nutfes.github.io/blog/blog/post-20230216/</link>
+      <pubDate>Fri, 17 Feb 2023 19:37:22 +0900</pubDate>
+      
+      <guid>https://nutfes.github.io/blog/blog/post-20230216/</guid>
+      <description>初めまして、NUTMEGの五十嵐です。 プログラミング2年目にして、はじめて触った静的型付けについてお話しします。</description>
+    </item>
+    
+    <item>
       <title>slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する</title>
       <link>https://nutfes.github.io/blog/blog/post-20230125/</link>
       <pubDate>Wed, 25 Jan 2023 17:02:09 +0900</pubDate>
