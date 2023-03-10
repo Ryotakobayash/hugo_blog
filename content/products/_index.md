@@ -1,13 +1,13 @@
 ---
-title: "Products"
+title: "TwitterAPIのすゝめ"
 date: 2021-10-11T11:06:34+09:00
 draft: false
 
 # メイン画像画像
-image: "images/"
+image: "https://i.imgur.com/McA4nDj.png"
 
 # meta description
-description: "情報局が開発しているプロダクトについて紹介します。"
+description: "初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。"
 
 # taxonomies
 categories:
