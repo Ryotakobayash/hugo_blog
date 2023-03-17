@@ -1,13 +1,13 @@
 ---
-title: "TwitterAPIのすゝめ"
+title: "Products"
 date: 2021-10-11T11:06:34+09:00
 draft: false
 
 # メイン画像画像
-image: "https://i.imgur.com/McA4nDj.png"
+image: "../images/NUTMEG-logo_all_color_vertical.png"
 
 # meta description
-description: "初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。"
+description: "NUTMEGで開発進行中のプロダクトを紹介するページです。"
 
 # taxonomies
 categories:
