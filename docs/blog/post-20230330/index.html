@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="フロントつよつよになる方法について。 なんだかんだNUTMEGはフロント人材が少し不足しつつあります。 フロントエンドをこれから勉強する後輩に向けて書きました。 ">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.83.1" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://nutfes.github.io/blog/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://nutfes.github.io/blog/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://nutfes.github.io/blog/css/custom_post.css">
+  
+
+  <meta property="og:title" content="フロントエンドってどうやって強くなるの？教えていまいまい！" />
+<meta property="og:description" content="フロントつよつよになる方法について。 なんだかんだNUTMEGはフロント人材が少し不足しつつあります。 フロントエンドをこれから勉強する後輩に向けて書きました。 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nutfes.github.io/blog/blog/post-20230330/" /><meta property="og:image" content="https://nutfes.github.io/blog/images/OGP.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-03-30T17:55:52&#43;09:00" />
+<meta property="article:modified_time" content="2023-03-30T17:55:52&#43;09:00" />
+
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://nutfes.github.io/blog/images/OGP.png"/>
+
+<meta name="twitter:title" content="フロントエンドってどうやって強くなるの？教えていまいまい！"/>
+<meta name="twitter:description" content="フロントつよつよになる方法について。 なんだかんだNUTMEGはフロント人材が少し不足しつつあります。 フロントエンドをこれから勉強する後輩に向けて書きました。 "/>
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://nutfes.github.io/blog/"><img class="img-fluid"
+          src="https://nutfes.github.io/blog/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://nutfes.github.io/blog/"><img class="img-fluid"
+            src="https://nutfes.github.io/blog/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nutfes.github.io/blog/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nutfes.github.io/blog/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nutfes.github.io/blog/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://nutfes.github.io/blog/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://nutfes.github.io/blog//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://nutfes.github.io/blog/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90"
+          class="text-primary">活動の様子</a>
+        
+        <h2>フロントエンドってどうやって強くなるの？教えていまいまい！</h2>
+        <div class="mb-3 post-meta">
+          <span>By NUTMEG</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>30 March 2023</span>
+          
+        </div>
+        
+        <img src="https://i.imgur.com/MxUxLg7.png" class="img-fluid w-100 mb-4" alt="フロントエンドってどうやって強くなるの？教えていまいまい！">
+        
+        <div class="content mb-5">
+          <p>なんだかんだNUTMEGはフロント人材が少し不足しつつあります。
+フロントエンドをこれから勉強する後輩に向けて書きました。</p>
+<h2 id="書け慣れろ以上">書け！慣れろ！以上！</h2>
+<p>~ fin ~</p>
+<h2 id="くわしく">くわしく</h2>
+<p>ごめんなさい</p>
+<h3 id="viewについて">viewについて</h3>
+<p>人に見える箇所の実装をviewと言います。ザ・フロントな部分です。
+これに関しては、しょうみプログラミングというよりはパズルゲームに近いです。</p>
+<p>冗談ではなくて、テトリスやパズドラとあまり変わらず、書いて慣れるしかないと思います。逆に慣れたら脳死で書けます。</p>
+<p>例えとしてヘッダーを考えてみます。</p>
+<p><img src="https://i.imgur.com/eOJUATp.png" alt=""></p>
+<p>これはどういうDOMになるか考えてみましょう。
+DOMはHTMLとかで見る下のような入れ子構造のことです。</p>
+<pre><code class="language-htmlembedded" data-lang="htmlembedded">&lt;div&gt;
+    &lt;p&gt;test&lt;/p&gt;
+    &lt;div&gt;
+        &lt;p&gt;hogehoge&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>ヘッダーをDOMにしたいので、ざっとそれぞれの要素をタグに置き換えて考えてみましょう。</p>
+<p><img src="https://i.imgur.com/l0LLXAJ.png" alt=""></p>
+<p>赤枠がdivタグ、緑枠がpタグやらaタグです。
+おそらく大体こんな感じになると思います。（勘）
+Portfolioをdivで囲むかどうかは任せます。ロゴなので、ロゴ画像などが追加されるのを想定してdivで囲んでいます。
+<strong>これができたら、あとは書き起こすだけです。</strong></p>
+<pre><code class="language-htmlembedded" data-lang="htmlembedded">&lt;div&gt;
+    &lt;div&gt;
+        &lt;div&gt;
+            &lt;p&gt;Portfolio&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;p&gt;About&lt;/p&gt;
+            &lt;p&gt;Work&lt;/p&gt;
+            &lt;p&gt;Link&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>上のコードの入れ子構造と、ヘッダーの図の入れ子構造が一致しているのがわかるでしょうか。これが僕がview部分をパズルゲームと言っている理由です。</p>
+<p><strong>実装したいviewのどの部分がどの塊になっているかを取られることができれば、自然とコードを書くことができます。</strong></p>
+<p>あとはCSSを当てるだけですが、これも慣れで、全体の内容を上下左右中央揃えにして、ロゴとメニューは端に寄せて、メニューは1remごとの隙間を開けたらそれっぽくなると思います。
+大体はflexやgridが解決してくれます。</p>
+<p>実際にコードに起こすと以下のページみたいになります。</p>
+<p><a href="https://codepen.io/imaimai17468/pen/GRXPyer">https://codepen.io/imaimai17468/pen/GRXPyer</a></p>
+<h4 id="viewに強くなる方法">Viewに強くなる方法</h4>
+<p><strong>ただひたすら書きまくること</strong></p>
+<ul>
+<li>パズドラと同じ、俺はできんけど</li>
+</ul>
+<p><strong>個人開発をしまくる</strong></p>
+<ul>
+<li>自分で考えてコードを書く</li>
+<li>CSSの沼に落ちて無限に苦しむといい</li>
+</ul>
+<p><strong><del>競プロをやる</del></strong></p>
+<ul>
+<li>アルゴリズムが身につくってだけじゃない</li>
+<li>自分の思考、文字をコードに落とし込む速度が段違いに上がる</li>
+</ul>
+<h3 id="logicについて">Logicについて</h3>
+<p>「ViewとLogicを分離する」とよく言われるLogicくんです。
+apiから受け取った値を処理したり、フォームなどで入力した値を処理したり、フロント側で処理する部分を指します。</p>
+<p><img src="https://i.imgur.com/Eu30pzi.png" alt=""></p>
+<p>フロントは一見人に見える部分を作るだけに思われがちですが、<strong>それらを描画するために必要な情報を、裏でapiから送受信して処理するのもフロントの仕事です。</strong></p>
+<p>フロントエンドはこいつが沼です。
+これに比べればviewなんて赤ちゃんです。
+ロジックになると途端に「プログラミングぽさ」が増します。</p>
+<p>Logicの例を挙げます。</p>
+<h4 id="api処理">api処理</h4>
+<ul>
+<li>apiから受け取った値を、フロントで表示する形にコネコネして表示する</li>
+<li>apiに送るために、formなどから得た情報を指定の形にして送信する</li>
+<li>エラーハンドリング
+<ul>
+<li>正常にget / postできたか、できなかった場合はどうするか</li>
+</ul>
+</li>
+</ul>
+<h4 id="型定義">型定義</h4>
+<ul>
+<li>apiに送るデータが本当に指定の型になっているか</li>
+<li>表示したいデータの型がundefinedになり得ないか
+<ul>
+<li>なり得るならそのハンドリングはなされているか</li>
+</ul>
+</li>
+</ul>
+<h3 id="logicに強くなるには">Logicに強くなるには</h3>
+<p><strong>プログラミング</strong>に慣れる</p>
+<ul>
+<li>C言語、JavaScript、TypeScript、Python、なんでもいい</li>
+<li>プログラミングの基礎文法の流れを知っていれば最低限何とかなる</li>
+<li>単純にプログラミングが好きなほどLogicは強い</li>
+</ul>
+<p>Arrayのprototype関数を知る</p>
+<ul>
+<li>TypeScriptのロジックは大抵map関数とかfilter関数とかが役にたつ</li>
+<li>for文で10何行かかるコードが1行になることだってある</li>
+</ul>
+<p>型について知る</p>
+<ul>
+<li>そのデータはstringなのか、intなのか、booleanなのか</li>
+<li>nullにしとくのか、undefinedじゃないか</li>
+<li>型定義で型安全に</li>
+<li>型推論で開発を安全に</li>
+</ul>
+<p><del>競プロをやる</del></p>
+<ul>
+<li>プログラミングの問題を解くことに慣れることができる</li>
+<li>アルゴリズム知識は単純に強い</li>
+<li>「この実装したいな〜」からの本実装までが早くなる</li>
+</ul>
+<h2 id="htmlcssjsの立ち位置について">HTML/CSS+JSの立ち位置について</h2>
+<p>僕はこの記事で、HTML/CSSは簡単だぜ〜な旨の文章を書いています。
+ただ、簡単だからといって、これを飛ばしてReactやVueを触ることはお勧めしません。</p>
+<p><strong>それが簡単であることとなおざりにしていいことは別</strong>だからです。</p>
+<p>HTML/CSS+JSの知識は、すべてのフロント知識の根底に紐づいています。
+なので、<strong>これをやらずに先端的な技術を学ぶと、挫折する確率が高いです。</strong></p>
+<p>どの技術にしても、チェーンの繋がってない、関係性の薄い技術に急に触れようとすると、挫折率が高くなることを覚えておいてください。</p>
+<p>といっても、最近の技術はチュートリアルが充実していて、初心者でも触れやすいようになっているので、とっかかり自体は掴みやすくなっています。</p>
+<p>ですが、その技術をより深く潜ろうと思うほど、<strong>根底にあるHTML/CSS+JSについての知識量が露呈していきます。</strong></p>
+<p>軟弱な地盤に立派な家は立たないので、基礎知識を固めることはとても重要です。</p>
+<h3 id="もっと具体的に">もっと具体的に</h3>
+<p>CSSを使わず簡単にスタイルを記述する方法がいくつもあります。</p>
+<ul>
+<li>TailwindCSS</li>
+<li>MaterialUI</li>
+<li>ChakraUI</li>
+<li>Mantine</li>
+</ul>
+<p>これらのライブラリは、<code>&lt;Card&gt;</code>とか<code>&lt;Button&gt;</code>とかのコンポーネントがあり、スタイルを書かなくてもおしゃれなUIを実装することができます。
+(TailwindCSSはclassNameに記述するのでちょっと違う)</p>
+<p>でも、それらをカスタマイズしたい時、結局はstyleを指定してあげなくてはいけません。
+これらのライブラリにはあらかじめ、カスタマイズするために、CSS likeな書き方をするための方法があります。</p>
+<p>例えば、<strong>中にある要素を縦に中央揃えで整列させたい</strong>時、TailwindCSSなら</p>
+<pre><code class="language-htmlembedded" data-lang="htmlembedded">&lt;div className=&quot;flex flex-col items-center&quot;&gt;
+    &lt;div&gt;hoge&lt;/div&gt;
+    &lt;div&gt;huga&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>MaterialUIなら</p>
+<pre><code class="language-htmlembedded" data-lang="htmlembedded">&lt;Box sx={{dispaly: 'flex', flexDirection: 'column', alignItems: 'center'}}&gt;
+    &lt;Box&gt;hoge&lt;/Box&gt;
+    &lt;Box&gt;huga&lt;/Box&gt;
+&lt;/Box&gt;
+</code></pre><p>のようになります。
+CSSに慣れていると1分足らずでかけますが、そうでないと普通に悩みます。
+結局、先端的技術であってもCSSの知識は必要であることがわかります。</p>
+<p>ちなみにゆめみのフロントエンドコーディングテストでは、CSSの知識を見るために、<strong>こういったCSS系のライブラリの使用を禁止されています。</strong></p>
+<h3 id="誤解を生まないために">誤解を生まないために</h3>
+<p>別に、<code>HTML/CSS+JS</code>もできないのに新しい技術を触るな！😠という訳では全くありません。新しい技術にたくさん触ることは重要ですし、いつまでも足踏みしている暇はないと思います。</p>
+<p><strong>基礎は大事だという単純な話だと捉えてください。</strong></p>
+<p>サービス開発でReactなんかを学びながら、暇な時に、ポートフォリオなんかをHTML/CSS+JSなんかで書いてみたりして、成長した頃に、それをReactなんかでリプレイスしてみてください。</p>
+<p>最初にReactを触った時より基礎ができてきて、少しは書きやすくなってるんじゃないかなと思います。</p>
+<h2 id="フロントを怖いと思わないで">フロントを怖いと思わないで</h2>
+<p>色々と難しいことをいってきましたが、フロントはそこまで怖いものじゃありません。基本的に結果は視覚的に現れますし、バックエンドより直感的に書けると思います。</p>
+<p>それに、量子コンピュータやディープラーニングの最先端よりかは、<strong>よっぽど一般人でも挑戦しやすい技術でもあります。</strong></p>
+<h2 id="たくさんの技術を学ぶことについて">たくさんの技術を学ぶことについて</h2>
+<p><strong>学んで損のある技術はありません。</strong></p>
+<p>テストで点を取るために学んだ行列の回転が、ゲームの3D処理の原理と関わっていたり、Pythonが使えるからという理由で適当に採用したFastAPIに、実はSwaggerが標準搭載されているのを後から知ったり、<strong>どの技術がどれと繋がっているのかは、とても判断できません。</strong></p>
+<p><strong>僕が今フロントエンド1つの技術に特化できているのは、その裏で何十もの技術を殺してきたからに他なりません。</strong></p>
+<p>フロントエンドはweb開発の基礎となる技術なので、ぜひ触れてみて欲しいなと思います。</p>
+<p>これは技術以外にも言えます。思いつきで加入したバイト先が協賛企業になってくれたり、<strong>人やイベントでの繋がりだって何に発展するかわかりません。</strong></p>
+<p>NUTMEGという巨大な支援を背に、この先の１年というの短い間も、アクションを起こし続けていきたいなと思います。</p>
+<h2 id="おわりに">おわりに</h2>
+<p><strong>NUTMEGに入ったみんなは特急券を持っています。</strong></p>
+<p>成功の反対は何もしないことだって、好きな厳ついラッパーが言ってました。
+技術に自分から触れることを恐れないでください。</p>
+<p>金を稼げるレベルまではいけなくとも、何か1つアウトプット行くところまでは、ある程度の技術は独学でいけるものと思っています。</p>
+<p><strong>先輩から振られた技術やタスクだけじゃなく、気になった技術を積極的に触っていって欲しいなと思います。</strong>
+そして、触れた経験から、こんなものが作れそうだな、活かせそうだなというアイデアを生み出して、個人制作なりNUTMEGのプロジェクトなりに落とし込んでくれたらなと思います。</p>
+<p>以上、3000文字以上のポエムを読んでいただきありがとうございました。</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://nutfes.github.io/blog/"><img src="https://nutfes.github.io/blog/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://nutfes.github.io/blog/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://nutfes.github.io/blog/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://nutfes.github.io/blog/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://nutfes.github.io/blog/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://nutfes.github.io/blog/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nutfes.github.io/blog/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nutfes.github.io/blog/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://nutfes.github.io/blog/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://nutfes.github.io/blog/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://nutfes.github.io/blog/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/slick/slick.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/search/fuse.min.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/search/mark.js"></script>
+
+<script src="https://nutfes.github.io/blog/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://nutfes.github.io/blog/js/script.min.js"></script>
+
+
+
+</body>
+</html>
