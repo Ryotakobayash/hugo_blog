@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vue.js on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://nutfes.github.io/blog/tags/vue.js/</link>
+    <link>https://blog.nutmeg.cloud/tags/vue.js/</link>
     <description>Recent content in Vue.js on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Jan 2023 17:02:09 +0900</lastBuildDate><atom:link href="https://nutfes.github.io/blog/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 17:02:09 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する</title>
-      <link>https://nutfes.github.io/blog/blog/post-20230125/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20230125/</link>
       <pubDate>Wed, 25 Jan 2023 17:02:09 +0900</pubDate>
       
-      <guid>https://nutfes.github.io/blog/blog/post-20230125/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20230125/</guid>
       <description>はじめに こんにちは。NUTMEGの藤崎です。先日NUTMEG内でLT会が行われ、slack無料プランのメッセージが3ヶ月間で表示されなくなるのをweb+slackAPIを利用してwebアプリを作成し解決した話をしました。今回はその話をもう少し具体的に話していきます。</description>
     </item>
     
