@@ -13,4 +13,5 @@ AddOutputFilterByType DEFLATE image/png
 AddOutputFilterByType DEFLATE image/gif
 AddOutputFilterByType DEFLATE image/jpeg
 AddOutputFilterByType DEFLATE image/svg+xml
+Redirect permanent / https://blog.nutmeg.cloud/
 </IfModule>
