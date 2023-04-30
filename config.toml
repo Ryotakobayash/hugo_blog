@@ -2,9 +2,9 @@
 # テスト用URL(公開する前にコメント戻す)
 # baseURL = "http://example.org/"
 # 公開用URL(github-pages)
-# baseURL = "https://nutfes.github.io/blog/"
+baseURL = "https://nutfes.github.io/blog/"
 # 公開用URL(nutmeg.cloud)
-baseURL = "https://blog.nutmeg.cloud/"
+# baseURL = "https://blog.nutmeg.cloud/"
 
 canonifyurls = true
 languageCode = "ja"
