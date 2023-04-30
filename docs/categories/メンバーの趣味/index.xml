@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>メンバーの趣味 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/categories/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AE%E8%B6%A3%E5%91%B3/</link>
+    <link>https://nutfes.github.io/blog/categories/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AE%E8%B6%A3%E5%91%B3/</link>
     <description>Recent content in メンバーの趣味 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 10 Mar 2023 10:40:40 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/categories/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AE%E8%B6%A3%E5%91%B3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Mar 2023 10:40:40 +0900</lastBuildDate><atom:link href="https://nutfes.github.io/blog/categories/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AE%E8%B6%A3%E5%91%B3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TwitterAPIのすゝめ</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20230306/</link>
+      <link>https://nutfes.github.io/blog/blog/post-20230306/</link>
       <pubDate>Fri, 10 Mar 2023 10:40:40 +0900</pubDate>
       
-      <guid>https://blog.nutmeg.cloud/blog/post-20230306/</guid>
+      <guid>https://nutfes.github.io/blog/blog/post-20230306/</guid>
       <description>初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。
 有料化問題について 有料化はされたのか？ TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。</description>
     </item>

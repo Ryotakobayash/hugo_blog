@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Search Result on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/search/</link>
+    <link>https://nutfes.github.io/blog/search/</link>
     <description>Recent content in Search Result on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/search/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate><atom:link href="https://nutfes.github.io/blog/search/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
