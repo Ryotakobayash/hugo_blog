@@ -5,7 +5,12 @@
 記事の記述：markdown
 
 ## Hugoをまだダウンロードしてない方
- [こちら](https://)
+以下のURLからダウンロードしてください。
+https://github.com/gohugoio/hugo/releases
+
+Latestと書かれてあるバージョンのインストーラーをDLする
+- Ubuntu 20.04なら→hugo_0.95.0_Linux-64bit.deb
+- Windowsであればhugo_0.95.0_Windows-64bit.zipをDLして中のインストーラを実行する。
 
 ## git_cloneするときの注意
 初めてダウンロードする時
