@@ -16,50 +16,6 @@ type: "about"
 <div class="members-flex-box">
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="../images/members/oba.png">
-    <p class="members-flex-box__card__name">m.oba</p>
-    <div class="members-flex-box__card__body">
-      <input id="acd-check1" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check1">about</label>
-      <div class="acd-content">
-        <p>総務局情報処理部門長→副委員長→NUTMEGを創る学祭のDXに貢献しながら，NUTMEGを最高の学生エンジニア団体にしたい.組織作りやマネジメントにも興味あり.</p>
-      </div>
-    </div>
-    <div class="members-flex-box__card__link">
-      <a href="https://www.masashi-oba.nethttps://twitter.com/masashi00018">Twitter</a><br>
-      <a href="https://oba18.github.io/">Portfolio</a>
-    </div>
-  </div>
-
-  <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="../images/members/mashimo.png">
-    <p class="members-flex-box__card__name">ました</p>
-    <div class="members-flex-box__card__body">
-      <input id="acd-check2" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check2">about</label>
-      <div class="acd-content">
-        <p>第40回技大祭情報局長→NUTMEGを創る.<br>SeeFTをメインにアーキテクチャなどでいろいろなプロジェクトにかかわっています.Emacsやfish,dartについてすこしだけ話せます.フルスタック志望ですがデザインからインフラまで手を出しかけています.</p>
-      </div>
-    </div>
-    <div class="members-flex-box__card__link">
-      <a href="http://twitter.com/mashita1023">Twitter</a><br>
-      <a href="https://mashita1023.github.io/">Portfolio</a>
-    </div>
-  </div>
-
-  <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="../images/members/sasaki.png">
-    <p class="members-flex-box__card__name">ささだい</p>
-    <div class="members-flex-box__card__body">
-      <input id="acd-check3" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check3">about</label>
-      <div class="acd-content">
-        <p>NUTMEG フロントエンド部門所属.<br>第40回技大祭の副委員長やってました.スノボと筋トレが趣味です.キラキラマッチョエンジニアを目指してます.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="members-flex-box__card">
     <image class="members-flex-box__card__img"src="../images/members/fujisaki.png">
     <p class="members-flex-box__card__name">藤崎 竜成</p>
     <div class="members-flex-box__card__body">
@@ -160,7 +116,7 @@ type: "about"
       <label class="acd-label" for="acd-check10">about</label>
       <div class="acd-content">
         <p>
-          デザインを勉強中です。最終的にwebページ作れるようになりたいです。学科は生物系です。NUTMEG楽しいです。
+          デザインを勉強中です.最終的にwebページ作れるようになりたいです.学科は生物系です.NUTMEG楽しいです.
         </p>
       </div>
     </div>
@@ -174,8 +130,8 @@ type: "about"
       <label class="acd-label" for="acd-check11">about</label>
       <div class="acd-content">
         <p>
-        趣味はスノボ、サイクリング、ゲーム等でポジティブと効率をモットーに生きてます。
-        プログラミング初心者なので、これからたくさん学んでいきます。
+        趣味はスノボ,サイクリング,ゲーム等でポジティブと効率をモットーに生きてます.
+        プログラミング初心者なので、これからたくさん学んでいきます.
         </p>
       </div>
     </div>
@@ -185,15 +141,15 @@ type: "about"
   </div>
 
   <div class="members-flex-box__card">
-    <image class="members-flex-box__card__img"src="https://i.imgur.com/3YP74Yr.png">
+    <image class="members-flex-box__card__img"src="https://hackmd.io/_uploads/ByjRgBuLn.png">
     <p class="members-flex-box__card__name">ichinose</p>
     <div class="members-flex-box__card__body">
       <input id="acd-check12" class="acd-check" type="checkbox">
       <label class="acd-label" for="acd-check12">about</label>
       <div class="acd-content">
         <p>
-        プログラミング初心者です。色々勉強して自分のやりたいことを固めていきたいです。
-        現在は画像解析に興味があります。趣味はキャンプ、スノボ、麻雀です。
+        プログラミング初心者です.色々勉強して自分のやりたいことを固めていきたいです.
+        現在は画像解析に興味があります.趣味はキャンプ,スノボ,麻雀です.
         </p>
       </div>
     </div>
@@ -210,7 +166,7 @@ type: "about"
       <label class="acd-label" for="acd-check13">about</label>
       <div class="acd-content">
         <p>
-        フロントエンド勉強中。競プロ・Arduino・簡単なWebページやゲーム制作など浅く広くやってます。ゲームはシミュレーションとOWが好きです。
+        フロントエンド勉強中,競プロ・Arduino・簡単なWebページやゲーム制作など浅く広くやってます.ゲームはシミュレーションとOWが好きです.
         </p>
       </div>
     </div>
@@ -238,7 +194,7 @@ type: "about"
     </div>
   </div>
 
-  <div class="members-flex-box__card">
+<!--   <div class="members-flex-box__card">
     <image class="members-flex-box__card__img"src="../images/members/ikarashi.png">
     <p class="members-flex-box__card__name">noa</p>
     <div class="members-flex-box__card__body">
@@ -249,14 +205,33 @@ type: "about"
         </p>
       </div>
     </div>
+  </div> -->
+
+  <div class="members-flex-box__card">
+    <image class="members-flex-box__card__img"src="https://hackmd.io/_uploads/rkLLkrdLh.png">
+    <p class="members-flex-box__card__name">JOJO</p>
+    <div class="members-flex-box__card__body">
+      <input id="acd-check16" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check16">about</label>
+      <div class="acd-content">
+        <p>NUTMEGデザイナー部門,Seeds所属,NUTMEGのプロダクトのデザインやロゴ,技大祭のポスターなどをFigma,Affinty Designerなどのデザインツールで作ったりしています.
+好きなドラマはリーガルハイで,好きな食べ物はオムライスです.
+        </p>
+      </div>
+    </div>
+    <div class="members-flex-box__card__link">
+      <a href="https://instagram.com/jeu_norappe?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+    </div>
   </div>
+
+<!-- /B2 -->
 
   <div class="members-flex-box__card">
     <image class="members-flex-box__card__img"src="../images/members/ogawa.png">
     <p class="members-flex-box__card__name">youichiro</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check16" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check16">about</label>
+      <input id="acd-check17" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check17">about</label>
       <div class="acd-content">
         <p>後輩たちのslackに入り浸っているOBです.教育サービスの開発に携わっています.長岡のラーメンが恋しいお年頃.
         </p>
@@ -268,8 +243,8 @@ type: "about"
     <image class="members-flex-box__card__img"src="../images/members/kugue.png">
     <p class="members-flex-box__card__name">99A</p>
     <div class="members-flex-box__card__body">
-      <input id="acd-check17" class="acd-check" type="checkbox">
-      <label class="acd-label" for="acd-check17">about</label>
+      <input id="acd-check18" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check18">about</label>
       <div class="acd-content">
         <p>NUTMEG フロントエンド部門所属好きな二郎:東池袋店,好きなMS:ジ・O,Skills:Fortran,C,Python,JavaScript,TypeScript.
         </p>
@@ -278,5 +253,49 @@ type: "about"
     <div class="members-flex-box__card__link">
       <a href="https://twitter.com/KugueY">Twitter</a><br>
       <a href="https://kugue99a.github.io/">Portfolio</a>
+    </div>
+  </div>
+
+  <div class="members-flex-box__card">
+    <image class="members-flex-box__card__img"src="../images/members/oba.png">
+    <p class="members-flex-box__card__name">m.oba</p>
+    <div class="members-flex-box__card__body">
+      <input id="acd-check1" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check1">about</label>
+      <div class="acd-content">
+        <p>総務局情報処理部門長→副委員長→NUTMEGを創る学祭のDXに貢献しながら，NUTMEGを最高の学生エンジニア団体にしたい.組織作りやマネジメントにも興味あり.</p>
+      </div>
+    </div>
+    <div class="members-flex-box__card__link">
+      <a href="https://www.masashi-oba.nethttps://twitter.com/masashi00018">Twitter</a><br>
+      <a href="https://oba18.github.io/">Portfolio</a>
+    </div>
+  </div>
+
+  <div class="members-flex-box__card">
+    <image class="members-flex-box__card__img"src="../images/members/mashimo.png">
+    <p class="members-flex-box__card__name">ました</p>
+    <div class="members-flex-box__card__body">
+      <input id="acd-check2" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check2">about</label>
+      <div class="acd-content">
+        <p>第40回技大祭情報局長→NUTMEGを創る.<br>SeeFTをメインにアーキテクチャなどでいろいろなプロジェクトにかかわっています.Emacsやfish,dartについてすこしだけ話せます.フルスタック志望ですがデザインからインフラまで手を出しかけています.</p>
+      </div>
+    </div>
+    <div class="members-flex-box__card__link">
+      <a href="http://twitter.com/mashita1023">Twitter</a><br>
+      <a href="https://mashita1023.github.io/">Portfolio</a>
+    </div>
+  </div>
+
+  <div class="members-flex-box__card">
+    <image class="members-flex-box__card__img"src="../images/members/sasaki.png">
+    <p class="members-flex-box__card__name">ささだい</p>
+    <div class="members-flex-box__card__body">
+      <input id="acd-check3" class="acd-check" type="checkbox">
+      <label class="acd-label" for="acd-check3">about</label>
+      <div class="acd-content">
+        <p>NUTMEG フロントエンド部門所属.<br>第40回技大祭の副委員長やってました.スノボと筋トレが趣味です.キラキラマッチョエンジニアを目指してます.</p>
+      </div>
     </div>
   </div>
