@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="初めまして、NUTMEG所属の廣池です。 今回はLinuxサーバーにsshする時、configファイルを使ってsshする方法を紹介したいと思います。">
   <meta name="author" content="NUTMEG">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.114.1">
 
   <!-- plugins -->
   
@@ -36,9 +36,8 @@
 <meta property="og:description" content="初めまして、NUTMEG所属の廣池です。 今回はLinuxサーバーにsshする時、configファイルを使ってsshする方法を紹介したいと思います。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-20221019/" /><meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png"/><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-10-19T02:02:04&#43;09:00" />
-<meta property="article:modified_time" content="2022-10-19T02:02:04&#43;09:00" />
-
+<meta property="article:published_time" content="2022-10-19T02:02:04+09:00" />
+<meta property="article:modified_time" content="2022-10-19T02:02:04+09:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png"/>
@@ -188,7 +187,7 @@
 <p>サーバーにログインする上で、悪意を持った人が勝手に操作できないようにするため、安全にログインするためにsshを使用します。</p>
 <h2 id="sshの方法">sshの方法</h2>
 <p>sshをする時にはshellに以下のように入力すると実行できます。</p>
-<pre><code>$ ssh -i ~/.ssh/id_rsa -l nutmeg 192.168.20.1
+<pre tabindex="0"><code>$ ssh -i ~/.ssh/id_rsa -l nutmeg 192.168.20.1
 </code></pre><p>今回のケースでは-iで秘密鍵の場所の指定をして、-lでユーザー名とアドレスを指定しています。もっと短くsshをする書き方もありますが、いちいち一定の情報を覚えておかないといけないというデメリットがあります。</p>
 <p>この問題を解決するためにconfigを使い予め設定を記憶させておく方法があります。</p>
 <p>以下の項にやり方を書いていきます。</p>
@@ -197,17 +196,17 @@
 <p><strong>githubなどを使用している人で、鍵を既に作成した人が新しく鍵を作ってしまうと、公開鍵を登録し直す手間が発生してしまいます。
 必ずチェックしてから作成してください。</strong></p>
 <p>以下のコマンドを実行していきます。</p>
-<pre><code>$ cd ~/.ssh
+<pre tabindex="0"><code>$ cd ~/.ssh
 $ ssh-keygen
 </code></pre><p>ssh-keygenを実行すると以下のようなのが表示され、ファイルの場所とパスワードを聞かれますが、全てエンターを押して実行してもらって大丈夫です。</p>
-<pre><code>Generating public/private rsa key pair.
+<pre tabindex="0"><code>Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/ユーザー名/.ssh/id_rsa): 
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in id_rsa.
 Your public key has been saved in id_rsa.pub.
 </code></pre><p>ここで.sshの中に入り、以下のようなコマンドを実行してみてください。</p>
-<pre><code>$ ls -a
+<pre tabindex="0"><code>$ ls -a
 id_rsa  id_rsa.pub
 </code></pre><p>id_rsaとid_rsa.pubがあれば鍵の作成は成功です。
 id_rsaが秘密鍵でid_rsa.pubが公開鍵です。vscodeで開きたい時にはcodeコマンドで開けば中身が見れます。vimなどでも同様に確認できます。</p>
@@ -218,10 +217,10 @@ id_rsaが秘密鍵でid_rsa.pubが公開鍵です。vscodeで開きたい時に�
 <p>ようやくconfigファイルの作成です。
 cinfigファイルは自分のPCの.sshファイルに作成します。</p>
 <p>今回はvscodeを使って書いていきます。エディタごとに作成のコマンドは違いますが、configの書き方は同じです。</p>
-<pre><code>$ cd ~/.ssh    *ホームディレクトリから.sshまで移動
+<pre tabindex="0"><code>$ cd ~/.ssh    *ホームディレクトリから.sshまで移動
 $ code config  *configの作成  
 </code></pre><p>ここで作成したconfigに以下の文法に従い入力していきます。</p>
-<pre><code>Host 任意の接続名
+<pre tabindex="0"><code>Host 任意の接続名
     HostName ホスト名
     User ユーザー名
     Port ポート番号
@@ -229,7 +228,7 @@ $ code config  *configの作成
 </code></pre><p>これでconfigファイルの設定は終了です。
 sshしたいサーバーが増えれば、公開鍵をサーバーに登録して今回作成したconfigファイルに続けて記載していけば大丈夫です。</p>
 <p>configの記入例</p>
-<pre><code>Host nutmeg
+<pre tabindex="0"><code>Host nutmeg
     HostName ホスト名
     User ユーザー名
     Port ポート番号
@@ -242,7 +241,7 @@ Host gidai
     IdentityFile 鍵へのPATH
 </code></pre><p>configの設定が終了したらあとは任意の接続名を使うだけで簡単にsshができます。</p>
 <p>接続名をnutmegに設定した場合だと</p>
-<pre><code>$ ssh nutmeg
+<pre tabindex="0"><code>$ ssh nutmeg
 </code></pre><p>これでアクセスできれば設定は無事に終了です。
 今度からはストレスなくサーバーにログインできるようになります！</p>
 <h2 id="終わりに">終わりに</h2>

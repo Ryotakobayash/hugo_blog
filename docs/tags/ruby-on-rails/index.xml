@@ -6,7 +6,16 @@
     <description>Recent content in Ruby on Rails on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 20 Mar 2022 03:33:04 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jul 2023 18:57:12 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>初めて限界開発に参加しました</title>
+      <link>https://blog.nutmeg.cloud/blog/post-20230609/</link>
+      <pubDate>Sun, 09 Jul 2023 18:57:12 +0900</pubDate>
+      
+      <guid>https://blog.nutmeg.cloud/blog/post-20230609/</guid>
+      <description>はじめに 初めまして。NUTMEG新入生B3の若月耕紀です。 今回は初めてNUTMEGの限界開発に参加した感想と、私の同期にあたる新入生へ向けて、ちょっとしたメッセージを書いていきます。</description>
+    </item>
+    
     <item>
       <title>NUTMEG-Seedsリリースしました！！！</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220319/</link>

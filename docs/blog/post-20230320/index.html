@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="NUTMEGのプロダクトメンバーが誰でも簡単に立ち上げられるステージング環境をCloudflared（Cloudflare Argo Tunnel）を使用して構築しました。DockerコンテナとDocker Composeを使用することで簡単に環境を立ち上げられます。これはNUTMEGインフラチームが悩まされていた開発・本番環境差異で起こるバグ問題の解決に貢献します。">
   <meta name="author" content="NUTMEG">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.114.1">
 
   <!-- plugins -->
   
@@ -36,9 +36,8 @@
 <meta property="og:description" content="NUTMEGのプロダクトメンバーが誰でも簡単に立ち上げられるステージング環境をCloudflared（Cloudflare Argo Tunnel）を使用して構築しました。DockerコンテナとDocker Composeを使用することで簡単に環境を立ち上げられます。これはNUTMEGインフラチームが悩まされていた開発・本番環境差異で起こるバグ問題の解決に貢献します。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-20230320/" /><meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png"/><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-03-20T18:11:48&#43;09:00" />
-<meta property="article:modified_time" content="2023-03-20T18:11:48&#43;09:00" />
-
+<meta property="article:published_time" content="2023-03-20T18:11:48+09:00" />
+<meta property="article:modified_time" content="2023-03-20T18:11:48+09:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png"/>
@@ -213,12 +212,12 @@
 <li>起動時にtunnelを起動</li>
 </ul>
 <p><code>docker-compose.stage.yaml</code></p>
-<pre><code class="language-yaml=" data-lang="yaml=">version: '3'
+<pre tabindex="0"><code class="language-yaml=" data-lang="yaml=">version: &#39;3&#39;
 services:
   cloudflare:
-    image: 'cloudflare/cloudflared:latest'
-    container_name: &quot;cloudflare&quot;
-    volumes: ['./cloudflare/staging:/home/nonroot/.cloudflared']
+    image: &#39;cloudflare/cloudflared:latest&#39;
+    container_name: &#34;cloudflare&#34;
+    volumes: [&#39;./cloudflare/staging:/home/nonroot/.cloudflared&#39;]
     command: tunnel run
 
   service-1:
@@ -231,7 +230,7 @@ services:
     ...
  
 </code></pre><p>ここで<code>./cloudflare/stage</code>ディレクトリをDockerユーザーでも書き込み可能にしておきます。</p>
-<pre><code>chmod o+rwx ./cloudflare/stage/
+<pre tabindex="0"><code>chmod o+rwx ./cloudflare/stage/
 </code></pre><h3 id="cloudflareの設定">Cloudflareの設定</h3>
 <p>あとはcloudflareの設定です。</p>
 <h4 id="ログイン">ログイン</h4>
@@ -239,15 +238,14 @@ services:
 ここではアカウント作成手順は省略します。</p>
 <h4 id="cloudflareを認証">cloudflareを認証</h4>
 <p>以下のコマンドを入力し，立ち上げるcloudflareコンテナを認証します。</p>
-<pre><code class="language-bash=" data-lang="bash=">docker compose -f docker-compose.stage.yml run --rm cloudflare tunnel login
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">docker compose -f docker-compose.stage.yml run --rm cloudflare tunnel login
 </code></pre><p>コマンドを入力するとログインURLが表示されるのでログイン。</p>
-<pre><code># 出力
+<pre tabindex="0"><code># 出力
 
 Please open the following URL and log in with your Cloudflare account:
 https://dash.cloudflare.com/argotunnel...
 Leave cloudflared running to download the cert automatically.
 ...
-
 </code></pre><p>URLの先に飛ぶと以下の画面に遷移し，使用したいドメインで認証。
 <img src="https://i.imgur.com/rOynYak.png" alt=""></p>
 <p>以上でcloudflareの認証が完了します。</p>
@@ -257,7 +255,7 @@ Leave cloudflared running to download the cert automatically.
 名前通りコンテナとClouflareをつなぐトンネルです。
 これによって，外部からのアクセスを可能にします。</p>
 <p>今回はNUTMEGで開発しているgroup-manager-2のステージング環境を作成するため，<code>&lt;tunnel-name&gt;</code>は<code>gm2-stg</code>という名前に設定しました。</p>
-<pre><code class="language-bash=" data-lang="bash=">docker compose -f docker-compose.stage.yml run --rm cloudflare tunnel create &lt;tunnel-name&gt;
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">docker compose -f docker-compose.stage.yml run --rm cloudflare tunnel create &lt;tunnel-name&gt;
 </code></pre><p>以上が正常に完了すると<code>./cloudflare/stage/&lt;tunnel-id&gt;.json</code>が保存されます。</p>
 <h4 id="dnsリバースプロキシの設定">DNS・リバースプロキシの設定</h4>
 <p>最後にDNS・リバースプロキシの設定です。</p>
@@ -267,7 +265,7 @@ Leave cloudflared running to download the cert automatically.
 <p>例：service-1.stg.nutfes.net にアクセスすると<code>docker-compose.stage.yml</code>の<code>service-1</code>の8080番ポートに飛ぶ。</p>
 </blockquote>
 <p><code>cloudflare/staging/config.yaml</code></p>
-<pre><code class="language-yaml=" data-lang="yaml=">tunnel: &lt;tunnel-id&gt;
+<pre tabindex="0"><code class="language-yaml=" data-lang="yaml=">tunnel: &lt;tunnel-id&gt;
 credentials-file: /home/nonroot/.cloudflared/&lt;tunnel-id&gt;.json
 protocol: http2
 
@@ -280,13 +278,13 @@ ingress:
     service: http://service-3:3000
   - service: http_status:404
 </code></pre><p>configで設定したすべてのhostmameに対して以下のコマンドを実行し，CloudflareのDNSを設定します。</p>
-<pre><code class="language-bash=" data-lang="bash=">docker compose -f docker-compose.stage.yml run --rm cloudflare tunnel route dns &lt;tunnel-name&gt; &lt;hostname(example.hoge.net)&gt;
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">docker compose -f docker-compose.stage.yml run --rm cloudflare tunnel route dns &lt;tunnel-name&gt; &lt;hostname(example.hoge.net)&gt;
 </code></pre><h3 id="起動">起動</h3>
 <p>以上の設定を済ませてしまえば，今後は以下コマンドで起動するだけです。</p>
-<pre><code class="language-bash=" data-lang="bash=">docker compose -f docker-compose.stage.yml up
+<pre tabindex="0"><code class="language-bash=" data-lang="bash=">docker compose -f docker-compose.stage.yml up
 </code></pre><p>うまくできていれば以下のログが確認できるはずです。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">INF Connection &lt;tunnel-id&gt; registered with protocol: http2
-</code></pre></div><p>ブラウザで<code>&lt;hostname&gt;</code>を確認してみるとちゃんと表示できますね。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>INF Connection &lt;tunnel-id&gt; registered with protocol: http2
+</span></span></code></pre></div><p>ブラウザで<code>&lt;hostname&gt;</code>を確認してみるとちゃんと表示できますね。</p>
 <p><img src="https://i.imgur.com/OoKUV0U.png" alt=""></p>
 <h3 id="最後に">最後に</h3>
 <p>以上がNUTMEGにステージング環境を導入した経緯とその方法でした。</p>

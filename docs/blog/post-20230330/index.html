@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="フロントつよつよになる方法について。 なんだかんだNUTMEGはフロント人材が少し不足しつつあります。 フロントエンドをこれから勉強する後輩に向けて書きました。 ">
   <meta name="author" content="NUTMEG">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.114.1">
 
   <!-- plugins -->
   
@@ -36,9 +36,8 @@
 <meta property="og:description" content="フロントつよつよになる方法について。 なんだかんだNUTMEGはフロント人材が少し不足しつつあります。 フロントエンドをこれから勉強する後輩に向けて書きました。 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-20230330/" /><meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png"/><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-03-30T17:55:52&#43;09:00" />
-<meta property="article:modified_time" content="2023-03-30T17:55:52&#43;09:00" />
-
+<meta property="article:published_time" content="2023-03-30T17:55:52+09:00" />
+<meta property="article:modified_time" content="2023-03-30T17:55:52+09:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png"/>
@@ -195,7 +194,7 @@
 <p><img src="https://i.imgur.com/eOJUATp.png" alt=""></p>
 <p>これはどういうDOMになるか考えてみましょう。
 DOMはHTMLとかで見る下のような入れ子構造のことです。</p>
-<pre><code class="language-htmlembedded" data-lang="htmlembedded">&lt;div&gt;
+<pre tabindex="0"><code class="language-htmlembedded" data-lang="htmlembedded">&lt;div&gt;
     &lt;p&gt;test&lt;/p&gt;
     &lt;div&gt;
         &lt;p&gt;hogehoge&lt;/p&gt;
@@ -207,7 +206,7 @@ DOMはHTMLとかで見る下のような入れ子構造のことです。</p>
 おそらく大体こんな感じになると思います。（勘）
 Portfolioをdivで囲むかどうかは任せます。ロゴなので、ロゴ画像などが追加されるのを想定してdivで囲んでいます。
 <strong>これができたら、あとは書き起こすだけです。</strong></p>
-<pre><code class="language-htmlembedded" data-lang="htmlembedded">&lt;div&gt;
+<pre tabindex="0"><code class="language-htmlembedded" data-lang="htmlembedded">&lt;div&gt;
     &lt;div&gt;
         &lt;div&gt;
             &lt;p&gt;Portfolio&lt;/p&gt;
@@ -316,12 +315,12 @@ apiから受け取った値を処理したり、フォームなどで入力し�
 <p>でも、それらをカスタマイズしたい時、結局はstyleを指定してあげなくてはいけません。
 これらのライブラリにはあらかじめ、カスタマイズするために、CSS likeな書き方をするための方法があります。</p>
 <p>例えば、<strong>中にある要素を縦に中央揃えで整列させたい</strong>時、TailwindCSSなら</p>
-<pre><code class="language-htmlembedded" data-lang="htmlembedded">&lt;div className=&quot;flex flex-col items-center&quot;&gt;
+<pre tabindex="0"><code class="language-htmlembedded" data-lang="htmlembedded">&lt;div className=&#34;flex flex-col items-center&#34;&gt;
     &lt;div&gt;hoge&lt;/div&gt;
     &lt;div&gt;huga&lt;/div&gt;
 &lt;/div&gt;
 </code></pre><p>MaterialUIなら</p>
-<pre><code class="language-htmlembedded" data-lang="htmlembedded">&lt;Box sx={{dispaly: 'flex', flexDirection: 'column', alignItems: 'center'}}&gt;
+<pre tabindex="0"><code class="language-htmlembedded" data-lang="htmlembedded">&lt;Box sx={{dispaly: &#39;flex&#39;, flexDirection: &#39;column&#39;, alignItems: &#39;center&#39;}}&gt;
     &lt;Box&gt;hoge&lt;/Box&gt;
     &lt;Box&gt;huga&lt;/Box&gt;
 &lt;/Box&gt;

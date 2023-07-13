@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="slackの無料プランだと3ヶ月間でチャンネルのメッセージは表示されなくなります。学祭やチーム開発では3ヶ月より前のことを振り返りたいことも多々あります。そのため、今回は無料プランでも3ヶ月間以前のメッセージも遡れるような開発をしてみました。">
   <meta name="author" content="NUTMEG">
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.114.1">
 
   <!-- plugins -->
   
@@ -36,9 +36,8 @@
 <meta property="og:description" content="slackの無料プランだと3ヶ月間でチャンネルのメッセージは表示されなくなります。学祭やチーム開発では3ヶ月より前のことを振り返りたいことも多々あります。そのため、今回は無料プランでも3ヶ月間以前のメッセージも遡れるような開発をしてみました。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-20230125/" /><meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png"/><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2023-01-25T17:02:09&#43;09:00" />
-<meta property="article:modified_time" content="2023-01-25T17:02:09&#43;09:00" />
-
+<meta property="article:published_time" content="2023-01-25T17:02:09+09:00" />
+<meta property="article:modified_time" content="2023-01-25T17:02:09+09:00" />
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png"/>
@@ -229,30 +228,30 @@ slack APIを利用して返ってくるresponseは結構複雑なjsonであり�
 <p>このプロダクトで最も苦戦したところは、MongoDBから取り出したデータから必要なデータだけに整形するところでした。
 MongoDBにはslack APIのレスポンスがそのまま入っています。
 DBには以下のようなデータが入っています。<a href="https://api.slack.com/methods/conversations.history">slack API message.channelsより引用</a></p>
-<pre><code>{
-    &quot;token&quot;: &quot;one-long-verification-token&quot;,
-    &quot;team_id&quot;: &quot;T061EG9R6&quot;,
-    &quot;api_app_id&quot;: &quot;A0PNCHHK2&quot;,
-    &quot;event&quot;: {
-        &quot;type&quot;: &quot;message&quot;,
-        &quot;channel&quot;: &quot;C024BE91L&quot;,
-        &quot;user&quot;: &quot;U2147483697&quot;,
-        &quot;text&quot;: &quot;Live long and prospect.&quot;,
-        &quot;ts&quot;: &quot;1355517523.000005&quot;,
-        &quot;event_ts&quot;: &quot;1355517523.000005&quot;,
-        &quot;channel_type&quot;: &quot;channel&quot;
+<pre tabindex="0"><code>{
+    &#34;token&#34;: &#34;one-long-verification-token&#34;,
+    &#34;team_id&#34;: &#34;T061EG9R6&#34;,
+    &#34;api_app_id&#34;: &#34;A0PNCHHK2&#34;,
+    &#34;event&#34;: {
+        &#34;type&#34;: &#34;message&#34;,
+        &#34;channel&#34;: &#34;C024BE91L&#34;,
+        &#34;user&#34;: &#34;U2147483697&#34;,
+        &#34;text&#34;: &#34;Live long and prospect.&#34;,
+        &#34;ts&#34;: &#34;1355517523.000005&#34;,
+        &#34;event_ts&#34;: &#34;1355517523.000005&#34;,
+        &#34;channel_type&#34;: &#34;channel&#34;
     },
-    &quot;type&quot;: &quot;event_callback&quot;,
-    &quot;authed_teams&quot;: [
-        &quot;T061EG9R6&quot;
+    &#34;type&#34;: &#34;event_callback&#34;,
+    &#34;authed_teams&#34;: [
+        &#34;T061EG9R6&#34;
     ],
-    &quot;event_id&quot;: &quot;Ev0PV52K21&quot;,
-    &quot;event_time&quot;: 1355517523
+    &#34;event_id&#34;: &#34;Ev0PV52K21&#34;,
+    &#34;event_time&#34;: 1355517523
 }message.channels
 </code></pre><p>しかし、実際に必要なデータは、<code>event</code>key内の<code>value</code>だけでした。そのためMongoDBから取り出したデータから<code>event</code>key内の要素だけを取り出し、新しく連想配列に入れていこうとしましたが、なかなかうまくいきませんでした。
 原因はmongoDB内で保存されているデータが<a href="https://bsonspec.org/">bson形式</a>だからです。そのため取り出して新しい変数に入れたり、連想配列に格納する際にはキャストする必要がありました。</p>
 <p>実際に連想配列に格納するメソッドです。</p>
-<pre><code>func (u *mongoDBUsecase) FetchData() []map[string]string {
+<pre tabindex="0"><code>func (u *mongoDBUsecase) FetchData() []map[string]string {
 	docs, err := u.repository.AllCollection()
 	usersInfoMap, err := u.repository.GetUserInfo()
 	channelsInfoMap, err := u.repository.GetChannelInfo()
@@ -263,29 +262,29 @@ DBには以下のようなデータが入っています。<a href="https://api.
 
 	for _, v := range docs {
 		var m = make(map[string]string)
-		eventTs := v[&quot;event&quot;].(bson.M)[&quot;event_ts&quot;].(string)
-		channel := v[&quot;event&quot;].(bson.M)[&quot;channel&quot;].(string)
-		text := v[&quot;event&quot;].(bson.M)[&quot;text&quot;]
-		threadTs := v[&quot;event&quot;].(bson.M)[&quot;thread_ts&quot;]
-		user := v[&quot;event&quot;].(bson.M)[&quot;user&quot;]
+		eventTs := v[&#34;event&#34;].(bson.M)[&#34;event_ts&#34;].(string)
+		channel := v[&#34;event&#34;].(bson.M)[&#34;channel&#34;].(string)
+		text := v[&#34;event&#34;].(bson.M)[&#34;text&#34;]
+		threadTs := v[&#34;event&#34;].(bson.M)[&#34;thread_ts&#34;]
+		user := v[&#34;event&#34;].(bson.M)[&#34;user&#34;]
 
-		m[&quot;eventTs&quot;] = eventTs
+		m[&#34;eventTs&#34;] = eventTs
 
 		channelName := channelsInfo[channel]
-		m[&quot;channelName&quot;] = channelName.(string)
-		m[&quot;channelId&quot;] = channel
+		m[&#34;channelName&#34;] = channelName.(string)
+		m[&#34;channelId&#34;] = channel
 
 		if threadTs != nil {
-			m[&quot;threadTs&quot;] = threadTs.(string)
+			m[&#34;threadTs&#34;] = threadTs.(string)
 		}
 
 		if text != nil {
-			m[&quot;text&quot;] = text.(string)
+			m[&#34;text&#34;] = text.(string)
 		}
 
 		if user != nil {
 			userName := usersInfo[user.(string)]
-			m[&quot;user&quot;] = userName.(string)
+			m[&#34;user&#34;] = userName.(string)
 		}
 
 		data = append(data, m)
