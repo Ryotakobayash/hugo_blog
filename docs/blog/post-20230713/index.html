@@ -193,17 +193,31 @@
 <p><img src="https://hackmd.io/_uploads/HJxXs46tn.png" alt=""></p>
 <p><img src="https://hackmd.io/_uploads/S1IEjVpY2.png" alt=""></p>
 <h2 id="slackbotの仕組み">SlackBotの仕組み</h2>
+<ol>
+<li>
 <p>Botが入っているチャンネル上でメッセージが送信されたら,SlackがBotのサーバーにリクエストを送信する.</p>
+</li>
+<li>
 <p>Botのサーバーは処理を行い,Slackに結果を送信(チャンネルにメッセージを送信とか)する.</p>
+</li>
+</ol>
 <p><img src="https://hackmd.io/_uploads/Sy5IoV6Yn.png" alt=""></p>
 <h2 id="ngrokのインストール">ngrokのインストール</h2>
-<p><a href="https://ngrok.com/download">ngrok - download</a>からインストールする.</p>
+<ol>
+<li><a href="https://ngrok.com/download">ngrok - download</a>からインストールする.</li>
+</ol>
 <p>(ngrokをローカルにインストールせず,Dockerを使用する方法でもできそうなので,そっちのほうが簡単かも)</p>
 <pre><code> docker run -it -e NGROK_AUTHTOKEN=&lt;token&gt; ngrok/ngrok http 3000 
 </code></pre>
+<ol start="2">
+<li>
 <p>Slackはイベントに対応するHTTP POSTリクエストを”Request URL”エンドポイントに送信する.
 そのため,ワークスペースに常駐しているSlackBotがローカルPCのポートにアクセスする必要がある.</p>
+</li>
+<li>
 <p>ローカルPCのネットワークを外部に公開し,アクセスできるようにするためにngrokを使用する.</p>
+</li>
+</ol>
 <p>参考 : <a href="https://zenn.dev/peg/articles/a3597550a61006">Slack BotをBoltで開発した</a></p>
 <h2 id="git-cloneする">git cloneする</h2>
 <p><code>git clone git@github.com:NUTFes/nutmeg-slack.git</code></p>
