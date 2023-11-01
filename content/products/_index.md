@@ -4,7 +4,7 @@ date: 2021-10-11T11:06:34+09:00
 draft: false
 
 # メイン画像画像
-image: "../images/NUTMEG-logo_all_color_vertical.png"
+image: "images/NUTMEG-logo_symbol_color.png"
 
 # meta description
 description: "NUTMEGで開発進行中のプロダクトを紹介するページです。"
