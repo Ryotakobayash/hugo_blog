@@ -3,10 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.nutmeg.cloud/categories/</loc>
-    <lastmod>2023-11-01T15:13:03+09:00</lastmod>
+    <lastmod>2023-11-10T10:59:17+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/</loc>
-    <lastmod>2023-11-01T15:13:03+09:00</lastmod>
+    <lastmod>2023-11-10T10:59:17+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.nutmeg.cloud/categories/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AE%E8%B6%A3%E5%91%B3/</loc>
+    <lastmod>2023-11-10T10:59:17+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.nutmeg.cloud/blog/post-20231110/</loc>
+    <lastmod>2023-11-10T10:59:17+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-20230928/</loc>
     <lastmod>2023-11-01T15:13:03+09:00</lastmod>
@@ -99,9 +105,6 @@
     <lastmod>2023-03-10T10:40:40+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-20230306/</loc>
-    <lastmod>2023-03-10T10:40:40+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/categories/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AE%E8%B6%A3%E5%91%B3/</loc>
     <lastmod>2023-03-10T10:40:40+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-20230302/</loc>
