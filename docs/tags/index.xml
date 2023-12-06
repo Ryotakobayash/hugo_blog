@@ -6,7 +6,16 @@
     <description>Recent content in Tags on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 28 Jul 2023 21:12:45 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Dec 2023 18:47:25 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webデザイン</title>
+      <link>https://blog.nutmeg.cloud/tags/web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/</link>
+      <pubDate>Wed, 06 Dec 2023 18:47:25 +0900</pubDate>
+      
+      <guid>https://blog.nutmeg.cloud/tags/web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>looker studio</title>
       <link>https://blog.nutmeg.cloud/tags/looker-studio/</link>
@@ -76,15 +85,6 @@
       <pubDate>Sun, 09 Jul 2023 18:57:12 +0900</pubDate>
       
       <guid>https://blog.nutmeg.cloud/tags/vue.js/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Webデザイン</title>
-      <link>https://blog.nutmeg.cloud/tags/web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/</link>
-      <pubDate>Thu, 20 Apr 2023 13:56:57 +0900</pubDate>
-      
-      <guid>https://blog.nutmeg.cloud/tags/web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/</guid>
       <description></description>
     </item>
     
