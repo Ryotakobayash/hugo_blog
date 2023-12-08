@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="自分は昨年(2022)の10月にNUTMEG(技大祭実行委員会情報局)に参加したため、丁度1年が過ぎました。そこで、この記事では開発未経験だった自分がNUTMEGに参加してからどのような1年を送って、どのような経験をしてきたかを簡単に書いていこうと思います。本当は技術ブログを書きたかったのですが、思ったより公開日が早かったのもあり、今回のテーマは「1年の振り返り」にしようと思います。">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.115.3">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:title" content="学校祭運営のDX化団体に参加してからの1年を振り返る" />
+<meta property="og:description" content="自分は昨年(2022)の10月にNUTMEG(技大祭実行委員会情報局)に参加したため、丁度1年が過ぎました。そこで、この記事では開発未経験だった自分がNUTMEGに参加してからどのような1年を送って、どのような経験をしてきたかを簡単に書いていこうと思います。本当は技術ブログを書きたかったのですが、思ったより公開日が早かったのもあり、今回のテーマは「1年の振り返り」にしようと思います。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-ac-20231208/" /><meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-12-08T17:20:01+09:00" />
+<meta property="article:modified_time" content="2023-12-08T17:20:01+09:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png"/>
+
+<meta name="twitter:title" content="学校祭運営のDX化団体に参加してからの1年を振り返る"/>
+<meta name="twitter:description" content="自分は昨年(2022)の10月にNUTMEG(技大祭実行委員会情報局)に参加したため、丁度1年が過ぎました。そこで、この記事では開発未経験だった自分がNUTMEGに参加してからどのような1年を送って、どのような経験をしてきたかを簡単に書いていこうと思います。本当は技術ブログを書きたかったのですが、思ったより公開日が早かったのもあり、今回のテーマは「1年の振り返り」にしようと思います。"/>
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/nutmeg-adovent-calendar-2023"
+          class="text-primary">Nutmeg adovent calendar 2023</a>
+        
+        <h2>学校祭運営のDX化団体に参加してからの1年を振り返る</h2>
+        <div class="mb-3 post-meta">
+          <span>By NUTMEG</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>08 December 2023</span>
+          
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/HyoG4UgIp.jpg" class="img-fluid w-100 mb-4" alt="学校祭運営のDX化団体に参加してからの1年を振り返る">
+        
+        <div class="content mb-5">
+          <h2 id="概要">概要</h2>
+<p>こんにちは。NUTMEGのB4の窪坂(Kubosaka)です。今年はNUMEGの活動としてアドベントカレンダー方式でブログを公開しています。今日は12月8日(金)で3日目です。</p>
+<p>自分は昨年(2022)の10月からNUTMEG(技大祭実行委員会情報局)に参加したため、丁度1年が過ぎました。そこで、この記事では開発未経験だった自分がNUTMEGに参加してからどのような1年を送って、どのような経験をしてきたかを簡単に書いていこうと思います。</p>
+<p>本当は技術ブログを書きたかったのですが、思ったより公開日が早かったのもあり、今回のテーマは「1年の振り返り」にしようと思います。</p>
+<h2 id="自己紹介">自己紹介</h2>
+<ul>
+<li>2001年生まれ</li>
+<li>現在 長岡技術科学大学 学部4年(3年次編入)</li>
+<li>フロント・バックエンドエンジニア志望(勉強中)</li>
+<li>開発経験1年ほど</li>
+<li>昨年の10月あたりからNUTMEGに参加</li>
+</ul>
+<p>NUTMEG(技大祭実行委員会情報局)には創始者であるOBAさんから誘っていただきました。情報局の紹介+(熱い？)話に感銘を受けて開発の道に進むことを決めました。</p>
+<h2 id="背景">背景</h2>
+<p>新入生はもちろんメンバーの多くが、自分がNUTMEGに加入してからどのような活動をしていたか知らないと思います。また、1年間の活動の振り返りも含めて書こうかなって思ったのがこのブログを書くきっかけです。まだ自分の進む道に不安であったり、何をすればいいかわからない人もいると思うので参考にしていただけたらなと思います。</p>
+<h2 id="2022">2022</h2>
+<h3 id="1012月">10~12月</h3>
+<p>　この時は入ったばかりで技術も何もなく、あまり活動ができていない状態でした。主な活動としては、当時メンターをしていただいたdd先輩と週1程度の1on1の勉強会が多かったです。バックエンドエンジニアを志望していたため内容は主に<a href="https://go-tour-jp.appspot.com/welcome/1">A Tour Of Go</a>をやっていました。意慾はあったので勉強会以外も時間を見つけてやったのを覚えています。</p>
+<p>また、この時期にはJPHACKSがあり、NUTMEGのメンバーの多くが参加していました。みんなで集まって作業をする姿を見て、すごく羨ましかったのを覚えています。自分も一緒に開発をしたいと感じ、早く技術を身に着けようと心に決めました。</p>
+<p>さらに、勉強会が終わった頃に「FinanSu」という技大祭(学校祭)のお金周りを管理するアプリの開発チームに参加しました。最初の方は環境構築で精一杯で、使用技術を理解がとても難しかったです。そのため、当時タスクはほとんどできませんでした。</p>
+<p>参加して一ヶ月のときに書いたブログがあるので、貼っときます。
+<a href="https://blog.nutmeg.cloud/blog/post-20221027-2/">https://blog.nutmeg.cloud/blog/post-20221027-2/</a></p>
+<h2 id="2023">2023</h2>
+<h3 id="1月">1月</h3>
+<p>NUTMEG創始者のOBAさんから誘われ、初めてハッカソンに参加してみました。オンラインで開催しているサポーターズのマンスリーハッカソンです。テーマが「はじめてのハッカソン」だったので、ハードルが低く気軽に参加できました。このハッカソンにはNUTMEG2人と愛工大の方2人で4人のチームを組んで出場しました。NUTMEGからは自分と同じく昨年の10月に入ったB1の子が参加しました。全員開発がほとんど未経験の状態で挑戦しました。</p>
+<p>本当に右も左もわからない状態でしたが、一応自分がリーダー的な立場で開発は進みました、この時はQRコードを使用した出席管理システムを開発しました。</p>
+<p>以下使用した技術等です。</p>
+<ul>
+<li>Dockerで開発環境の構築</li>
+<li>GoによるAPIサーバーを作成</li>
+<li>HTML+CSS+JavaScriptでフロントエンドを作成</li>
+</ul>
+<p>基本的な技術構成は自分が参加していたプロジェクトのFinanSuと同じになりました。自分がリーダーで進めてしまったため、このようになってしまったと考えられます。もう少し話し合えた可能性もあり、反省しています。また、どのように作れば良いのかもイメージができなかったことも原因の1つです。しかし、ここで0からアプリ開発の経験を詰めたことで、FinanSuで振られたタスクができるようになっていきました。</p>
+<p>ある程度動くものが作れていたので、発表の時まで自信はありました。しかし、他に参加していたチームのレベルが高く入賞にかすりもしなかったです。本当にテーマが「はじめてのハッカソン」か疑いました。悔しく残念な気持ちもありましたが、すごく良い刺激を受けることが出来ました。これからも頑張ろうと思ったことを覚えています。</p>
+<p><img src="https://hackmd.io/_uploads/rkP_NfJ8T.png" alt="スクリーンショット 2023-12-07 18.42.51"></p>
+<h3 id="23月">2・3月</h3>
+<p>この時期は主にFinanSuのタスクをしていました。タスク内容はAPIのリファクタリングが多かったです。1月のハッカソンで成長したことから、徐々にこなせるタスクが増えていき、自分の自信アップに繋がりました。</p>
+<h3 id="4月">4月</h3>
+<p>4月は新入生が入ってくる時期でした。新入生にはみんな良い子で、これから一緒にがんばりたいと思いました。一方で当時のNUTMEGの主力の方たちがいる最後の年であることも実感させられました。来年、自分はM1でNUTMEGを率いる側になるため、技術力を挙げなければという焦りも生まれました。</p>
+<h3 id="5月">5月</h3>
+<p>個人的に技術力を上げることと経験のために、1週間の短期インターンに参加しました。このインターンでは実務は行わず、オンラインでハッカソン形式の個人開発のインターンでした。このハッカソンのテーマは「問い合わせフォーム」でとても興味深かったです。</p>
+<p>このインターンでは、スクラッチ開発かローコード開発かを選択することが出来ました。自分は前回のハッカソンで悔しい思いをしたため、完成度を高めるためにローコード開発を選択しました。ローコード開発はインターン先会社の出しているローコード開発プラットフォームを使用して行います。ホームページなどを作ったため、基本的なHTML+CSS+JavaScriptは使用しました。</p>
+<p>ローコード開発であったことから、そこまで開発期間はかからず、完成度と発表準備に時間をさくことが出来ました。その結果、このインターンでは優秀賞を受賞させて頂きました。初めて結果が出たことから、素直に嬉しかったです。しかし、大きな技術的な成長はあまりなかったことから、賞より成長を優先し、スクラッチ開発で挑戦してみるのも良かったかもしれないと今でも思います。</p>
+<p><img src="https://hackmd.io/_uploads/r1lx8UfJ8a.png" alt="スクリーンショット 2023-12-07 18.54.08"></p>
+<p>また、この時期に基本情報技術者試験を受験し合格しました。広い知識を学べるので、ITの分野に進む人は資格を持っていて損はないと思います。何なら、資格を取らなくても軽く試験の内容を勉強するでもアリかなと思います。</p>
+<h3 id="6月">6月</h3>
+<p>7月頭に研究の中間発表があったため、準備に追われていました。4月に研究テーマが決まってから、ほとんど進捗を出せていなかった状態なので、発表できるように急いで研究を進めました。やっておけばよかったとすごく後悔したことを覚えています。コアタイムのない研究室でもコツコツ研究はやっておいたほうが良いです。絶対に。今年の中でもだいぶしんどかった時期でした。</p>
+<h3 id="7月">7月</h3>
+<p>研究の中間発表がありました。<del>先生に詰められて泣きそうでした。</del> 緊張でめっちゃ汗をかいたのを覚えています。発表が終わった後は本当に自由の身になった気分でした。</p>
+<p>少し経って金沢のキャラバンハッカソンに参加しました。テーマはフリーだったため、話し合いで便利で使えるアプリを作ろうとチームで決まりました。このハッカソンで作成したアプリは<a href="https://chosei-chan-rom4.vercel.app/">調整ちゃん</a>です。デプロイしているのでリンクから飛んで使っていただけます。技術構成は主にNext.js+Firebase(DB)です。1週間で完成度の高いアプリにするため、フロントエンドに絞って開発するという方向で進めました。また、デプロイには<a href="https://vercel.com/">vercel</a>を使いました。Next.jsのデプロイがすごく簡単にできるためおすすめです。</p>
+<p>個人的に納得し、便利だと思うものを作ることが出来たと思いました。開発期間中は徹夜も続き大変でした。しかし、一緒にチームのメンバーと開発することはとても楽しかったです。自信はありましたが、今回も入賞はできませんでした。悔しかったです。他のチームの成果物もレベルが高く、アイデアも優れていたと思うので仕方はなかったです。もっと頑張ろうと思いました。</p>
+<p>この経験でフロントエンドの技術(React×TypeScript)を触ることができて、とてもいい経験になりました。今でもNUTMEGの日程調整で調整ちゃんを使っていただいているのは嬉しいです。</p>
+<p>ハッカソン終了後の懇親会はとても楽しかったです。</p>
+<p><img src="https://hackmd.io/_uploads/HkffBz1Lp.jpg" alt="F9B6977F-8DB3-4AE9-8C64-1A9ADE813DF3_1_105_c"></p>
+<h3 id="89月">8・9月</h3>
+<p>9/16・17に技大祭(学校祭)があったため準備に追われていました。NUTMEGは学校祭の実行委員の組織であるため、もちろん実行委員として学校祭を成功させなくてはなりません。僕は実行委員の情報局に入るまで、渉外局に所属していました。現在は渉外局と情報局を兼局しています。渉外局は主に広報・企業協賛・ゲスト運営・外部誘致など外部と直接関わる大切な局で技大祭の成功には不可欠です。この渉外局の局長が都合で技大祭当日に参加出来なくなり、自分が急遽渉外局の局長代理に任命されました。</p>
+<p>局長であるため、渉外局という1団体をマネジメントするというとても貴重な体験をすることができました。また、他局とも連携をとり準備を進めることが出来ました。当日が近づくにつれ、どんどん忙しくなりました。とても大変だったのを覚えています。</p>
+<p>広報・ゲストなどの効果もあり、当日の来場者数は16・17日両方あわせてのべ4000人ほど達成することが出来ました。また、多くの企業協賛も頂き技大祭当日は大成功を収めました。協力して頂いた皆様本当に感謝申し上げます。</p>
+<p>とても楽しかったです。また、技大祭の運営について深く知ることが出来て良かったです。NUTMEGは技大祭のためにあると再確認できました。</p>
+<p><img src="https://hackmd.io/_uploads/Sylluzy8p.jpg" alt="0E9C5530-0F89-414A-8D7C-10F97DA5DFDC_1_105_c"></p>
+<h3 id="10月現在">10月〜現在</h3>
+<p>NUTMEGの組織体制が一新し、新体制になりました。自分はFinanSuのPMに任命されました。プロジェクトをマネジメントする経験はまだなかったので、わからないことだらけですが、頑張ってやっています。目的を達成できるように頑張りたいです。</p>
+<p>また、10月から実務訓練(長期インターン)がスタートしました。実務訓練は修士に進む学生が対象で、研究の振替で行くことが出来ます。実際に企業で働くことを経験できるとても貴重な経験です。</p>
+<p>自分は東京の企業でwebアプリの開発業務を行っています。主にRuby on Rails+Reactで開発をしています。これまでにReactは触ったことがあるため、開発のキャッチアップが早くにでき、すぐに業務に入れました。また、Ruby on Railsもほとんど触ったことはなかったのですが、これまでのwebアプリの開発経験から、理解がしやすかったです。</p>
+<p>引き続き、タスクをこなし、多くのことを吸収したいと思います。また、タスクをこなすだけでなく積極的にプロジェクトに関わり、意見・提案もしていきたいです。</p>
+<h2 id="これからの目標">これからの目標</h2>
+<p>先輩から多くのものを与えてもらったので自分も返していきたいです。また、プロジェクトのリーダーであるため、そのプロジェクトが成功するように導きたいと思います。</p>
+<p>更に、卒業するまでに次のことをチャレンジしてみたいです。</p>
+<ul>
+<li>
+<p>後輩の教育</p>
+<p>自分も勉強の身ですが、学んだことや身につけたことを後輩に教えてNUTMEGに多くのものを残したいです。</p>
+</li>
+<li>
+<p>NUTMEGのプロジェクトをより質の高いものにするように技術を提案+導入</p>
+<ul>
+<li>積極的な新技術の導入</li>
+<li>付加価値の高いリファクタリング</li>
+<li>顧客主義のアプリ開発方法の検討・実践</li>
+<li>CI/CDの導入</li>
+<li>セキュリティ面の改良</li>
+</ul>
+</li>
+</ul>
+<p>全部を達成することは難しいかもしれませんが、NUTMEGをよりいいチームにするため、積極的に貢献したいです。</p>
+<h2 id="最後に">最後に</h2>
+<p>長々とありがとうございました。こうやって1年間を振り返ると本当に密度が濃く、色々なことを経験し、成長できたと感じます。しかし、自分の技術を過信せず入りたての謙虚な気持ちを持って、引き続き自分の成長に貪欲に行こうと思います。これからもよろしくお願いします。</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-adovent-calendar-2023">Nutmeg adovent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
