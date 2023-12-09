@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="ROCK PI 4B &#43; DietPi &#43; NextCloud で作るファイルサーバー構築メモ">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.115.3">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:title" content="ROCK PI 4B &#43; DietPi &#43; NextCloud &#43; Onion Service で作るファイルサーバー構築" />
+<meta property="og:description" content="ROCK PI 4B &#43; DietPi &#43; NextCloud で作るファイルサーバー構築メモ" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-ac-20231209/" /><meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2023-12-09T17:32:08+09:00" />
+<meta property="article:modified_time" content="2023-12-09T17:32:08+09:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png"/>
+
+<meta name="twitter:title" content="ROCK PI 4B &#43; DietPi &#43; NextCloud &#43; Onion Service で作るファイルサーバー構築"/>
+<meta name="twitter:description" content="ROCK PI 4B &#43; DietPi &#43; NextCloud で作るファイルサーバー構築メモ"/>
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/nutmeg-adovent-calendar-2023"
+          class="text-primary">Nutmeg adovent calendar 2023</a>
+        
+        <h2>ROCK PI 4B + DietPi + NextCloud + Onion Service で作るファイルサーバー構築</h2>
+        <div class="mb-3 post-meta">
+          <span>By NUTMEG</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>09 December 2023</span>
+          
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/B1MvW3bL6.jpg" class="img-fluid w-100 mb-4" alt="ROCK PI 4B &#43; DietPi &#43; NextCloud &#43; Onion Service で作るファイルサーバー構築">
+        
+        <div class="content mb-5">
+          <h2 id="はじめに">はじめに</h2>
+<p><strong>NUTMEG アドベントカレンダー 12月09日</strong> を担当します。<strong>B1</strong>の「<strong>やま</strong>」です！</p>
+<p>今回は手持ちのSBCを使って、寮の自部屋にあるファイルサーバーをLAN外からセキュアに使うための奮闘記録を紹介したいと思います。</p>
+<p>ブログ記事を書くのが初めてなのでお手柔らかにお願いします！</p>
+<h3 id="背景">背景</h3>
+<p>長岡技大の寮で契約できる有料インターネット回線は動的IPです。
+動的IPはPCやルータ等の再起動によってIPアドレスの切り替わりが発生します。</p>
+<p>これはファイルサーバーを外部公開するにあたって、停電や機器の再起動が発生した際に外部からアクセスできなくなる可能性が発生します。</p>
+<p>そのためサーバーのポート開放に頼らず、ネットワーク上にデプロイできる仕組みを模索しました。</p>
+<p>(結論から言うと今回の手法は安全性を意識しすぎて超絶遅く使い物になりません。大人しくTailscaleを使いましょう！)</p>
+<h3 id="実行環境">実行環境</h3>
+<blockquote>
+<p>Rock Pi 4B</p>
+<ul>
+<li>Soc Rockchip RK3399
+(2018年に購入しましたがRPi4超えるくらいの性能です。)</li>
+<li>RAM 4GB</li>
+<li>Hanye 512GB SSD</li>
+</ul>
+<p>ROG Zephyrus G14 GA402RJ</p>
+<ul>
+<li>Windows 11 22H2
+(SBCへのSSH接続に利用)</li>
+</ul>
+</blockquote>
+<p><img src="https://hackmd.io/_uploads/BJHB1FkUT.jpg" alt="PXL_20231208_021922205.MV"></p>
+<h2 id="環境構築">環境構築</h2>
+<h3 id="dietpi-のインストール"><strong>DietPi</strong> のインストール</h3>
+<p>高速動作を実現するため、Debianを最適化した「DietPi」OSを採用しました。</p>
+<h4 id="osのダウンロード">OSのダウンロード</h4>
+<p>まずはMicroSDカードに書き込むOSのimgファイルを以下のリンクからダウンロードします。</p>
+<p>DietPiは数多のSBCとに対応しており、他のSOCでも同様の手順でセットアップできると思います。</p>
+<p>URL：<a href="https://dietpi.com/#download">https://dietpi.com/#download</a></p>
+<p><img src="https://hackmd.io/_uploads/SJHvtZkIp.jpg" alt="FireShot Capture 143 - DietPi - Lightweight justice for your SBC! - dietpi.com"></p>
+<hr>
+<h4 id="microsdカードへ書き込む">MicroSDカードへ書き込む</h4>
+<p>imgファイルのダウンロードが完了したら <strong>Rufus</strong> を利用してMicroSDカードに書き込みます。Rufusは以下のリンクからダウンロードできます。</p>
+<p>Rufusはブート可能なimgファイルをもとにブータブルUSBメモリを簡単に作成できるソフトです。</p>
+<p>URL:<a href="https://rufus.ie/ja/">https://rufus.ie/ja/</a></p>
+<p><img src="https://hackmd.io/_uploads/BJBuTW18T.png" alt="FireShot Capture 144 - Rufus - 起動可能なUSBドライブを簡単に作成できます - rufus.ie"></p>
+<table>
+<thead>
+<tr>
+<th>①Rufusを起動しOSのimgを選択し、スタートを押します。</th>
+<th>②初期化の警告をOKします。</th>
+<th>③Rufusのステータスが「準備完了」に変われば書き込み完了です。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://hackmd.io/_uploads/HJZgkfkU6.png" alt="スクリーンショット 2023-12-07 003915"></td>
+<td><img src="https://hackmd.io/_uploads/H16KkzJLp.png" alt="スクリーンショット 2023-12-07 004223"></td>
+<td><img src="https://hackmd.io/_uploads/B1VhZGJIa.png" alt="スクリーンショット 2023-12-07 004441"></td>
+</tr>
+</tbody>
+</table>
+<p>OSの書き込みが完了したら、SSH接続に備えてWiFiを設定します。
+インストール時に生成されるファイルを編集します。</p>
+<p><img src="https://hackmd.io/_uploads/HJXVSfy86.png" alt="image"></p>
+<p><strong>dietpi.txt</strong>
+WiFiを利用したインストールを有効にします。</p>
+<blockquote>
+<p>24行をAUTO_SETUP_NET_WIFI_ENABLED=1に変更</p>
+</blockquote>
+<pre tabindex="0"><code>##### Network options #####
+# Enable Ethernet or WiFi adapter: 1=enable | 0=disable
+# - If both Ethernet and WiFi are enabled, WiFi will take priority and Ethernet will be disabled.
+# - If using WiFi, please edit dietpi-wifi.txt to pre-enter credentials.
+AUTO_SETUP_NET_ETHERNET_ENABLED=1
++AUTO_SETUP_NET_WIFI_ENABLED=1
+</code></pre><p><strong>dietpi-wifi.txt</strong></p>
+<blockquote>
+<p>利用しているWiFiのSSIDとPASSをEntry 0の以下の項目に追加します。
+aWIFI_SSID[0]=&rsquo;'
+aWIFI_KEY[0]=''</p>
+</blockquote>
+<pre tabindex="0"><code>#---------------------------------------------------------------
+# Entry 0
+# - WiFi SSID: required, case sensitive
++aWIFI_SSID[0]=&#39;SSID&#39;
+# - WiFi key: If no key/open, leave this blank
+# - In case of WPA-PSK, alternatively enter the 64-digit hexadecimal key returned by wpa_passphrase
+# - Please replace single quote characters &#39; in your key with &#39;\&#39;&#39;. No other escaping is required.
++aWIFI_KEY[0]=&#39;PASSWORD&#39;
+# - Key type: NONE (no key/open) | WPA-PSK | WEP | WPA-EAP (then use settings below)
+aWIFI_KEYMGR[0]=&#39;WPA-PSK&#39;
+# - WPA-EAP options: Only fill if WPA-EAP is set above
+aWIFI_PROTO[0]=&#39;&#39;
+aWIFI_PAIRWISE[0]=&#39;&#39;
+aWIFI_AUTH_ALG[0]=&#39;&#39;
+aWIFI_EAP[0]=&#39;&#39;
+aWIFI_IDENTITY[0]=&#39;&#39;
+aWIFI_PASSWORD[0]=&#39;&#39;
+aWIFI_PHASE1[0]=&#39;&#39;
+aWIFI_PHASE2[0]=&#39;&#39;
+# - Path to the certificate file, e.g.: /boot/mycert.cer
+aWIFI_CERT[0]=&#39;&#39;
+#---------------------------------------------------------------
+</code></pre><hr>
+<h4 id="ipアドレスの確認">IPアドレスの確認</h4>
+<p>接続先のIPアドレスをネットワークスキャンができるソフトで確認してください。</p>
+<p><a href="https://angryip.org/"><strong>Angry IP Scanner</strong></a></p>
+<p><img src="https://hackmd.io/_uploads/HJmz_41UT.png" alt="スクリーンショット 2023-12-07 211623"></p>
+<p><a href="https://angryip.org/"><strong>GlassWire</strong></a></p>
+<p><img src="https://hackmd.io/_uploads/SyZh74kUT.png" alt="スクリーンショット 2023-12-07 193900"></p>
+<hr>
+<h4 id="sshで接続">SSHで接続</h4>
+<p>またSSHクライアントは好きなものを使ってください。今回はOSSの<a href="https://github.com/TeraTermProject/teraterm/releases"><strong>TeraTerm</strong></a>を使用しました。(PowerShellのsshコマンドでもできます。)</p>
+<p>デフォルトのユーザー名とパスワードは下記のとおりです。</p>
+<ul>
+<li>ログイン：root</li>
+<li>パスワード：dietpi</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>①TeraTermを起動し、接続先のIPアドレスをホスト欄に入力してOKしてください。</th>
+<th>②ユーザー名とパスワードを入力してOKしてください。</th>
+<th>③セキュリティ警告の表示には続行を選択してください。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://hackmd.io/_uploads/H1lkcNy8p.png" alt="スクリーンショット 2023-12-07 212540"></td>
+<td><img src="https://hackmd.io/_uploads/ry6YjN1La.png" alt="スクリーンショット 2023-12-07 202045"></td>
+<td><img src="https://hackmd.io/_uploads/B1KYjEJIp.png" alt="スクリーンショット 2023-12-07 202021"></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>私の環境ではBluetoothがデフォルトでOFFになる仕様に伴う不具合から、WiFiが認識していませんでした。</p>
+<p>解決策はBluetoothをONにすることです。</p>
+<p>① 一度モニターに接続してシェルに<code>dietpi-config</code>と入力し、<strong>4:Advanced Options</strong> を選択してください。</p>
+<p><img src="https://hackmd.io/_uploads/S1BQ7SyIp.png" alt="スクリーンショット 2023-12-07 220445"></p>
+<p>② 一番下にあるBlutoothオプションをONにして再起動してください。</p>
+<p><img src="https://hackmd.io/_uploads/B1JLMrkU6.png" alt="スクリーンショット 2023-12-07 203644"></p>
+</blockquote>
+<p>SSHでの接続が成功すると自動で初期セットアップが始まります。
+セットアップ画面に沿って下の画面まで進めて下さい。</p>
+<p>ここで<strong>Install</strong>を選択することで一番ミニマムな初期セットアップが完了します。</p>
+<p><img src="https://hackmd.io/_uploads/ByFIgrJLa.png" alt="スクリーンショット 2023-12-07 203450"></p>
+<p>下の画面が表示されればインストール完了です。</p>
+<p><img src="https://hackmd.io/_uploads/HktRIrJUa.png" alt="スクリーンショット 2023-12-07 222104"></p>
+<hr>
+<h2 id="nextcloudのセットアップ">NextCloudのセットアップ</h2>
+<p>Nextcloudは、オンラインストレージの作成と使用のためのクライアント・サーバ型のソフトウェアです。</p>
+<h3 id="snapのインストール">Snapのインストール</h3>
+<p>Snapはディストリビューションを問わず利用できるユニバーサルパッケージ管理システムです。NextCloudのインストールがDB含めて一発で完了できるので利用します。</p>
+<p>パッケージ一覧を更新します。</p>
+<pre tabindex="0"><code>sudo apt update
+</code></pre><p>Snapをインストールします。</p>
+<pre tabindex="0"><code>sudo apt install snapd -y
+sudo snap install core
+</code></pre><hr>
+<h3 id="nextcloudのインストール">NextCloudのインストール</h3>
+<p>SnapコマンドでNextCloudをインストールします。</p>
+<pre tabindex="0"><code>sudo snap install nextcloud
+</code></pre><p><code>Nextcloud installed</code>が表示されれば完了です。</p>
+<hr>
+<h3 id="外付けストレージのセットアップ">外付けストレージのセットアップ</h3>
+<p>外付けストレージをマウントするディレクトリを作成します。</p>
+<pre tabindex="0"><code>sudo mkdir /media/USBSSD
+</code></pre><p>外付けストレージをマウントします。</p>
+<pre tabindex="0"><code>sudo mount /dev/sda1 /media/USBSSD
+</code></pre><p>NextCloudのデータ保存ディレクトリを作成します。</p>
+<pre tabindex="0"><code>sudo mkdir /media/USBSSD/nextcloud
+sudo chmod 0770 /media/USBSSD/nextcloud/
+sudo touch /media/USBSSD/nextcloud/.ocdata
+</code></pre><p>NextCloudの<strong>autoconfig.php</strong>ファイルを編集して外付けストレージを参照するように設定します。</p>
+<p>ファイル編集のためお好みのエディターをインストールしてください。今回はvimを使用しました。</p>
+<p><code>sudo apt install vim -y</code></p>
+<pre tabindex="0"><code>vim /var/snap/nextcloud/current/nextcloud/config/autoconfig.php
+</code></pre><p>設定したストレージのマウント先にアドレスを変更します。</p>
+<pre tabindex="0"><code>-$data_path = getenv(&#39;SNAP_DATA_DIR&#39;)
++$data_path = getenv(&#39;/media/USBSSD/nextcloud&#39;)
+</code></pre><p>NextCloudに外付けストレージを接続します。</p>
+<pre tabindex="0"><code>sudo snap connect nextcloud:removable-media
+</code></pre><p>NextCloudを起動します。</p>
+<pre tabindex="0"><code>sudo snap start nextcloud
+</code></pre><p>ローカルLAN内で動作確認をするためにポート開放を行います。</p>
+<p>Ubuntuにデフォルトで使用されているファイアウォールの管理プログラムである<strong>ufw</strong>をインストールしてポート開放を行います。</p>
+<p><code>sudo apt install ufw -y</code></p>
+<p>NextCloudが起動する80番ポートを開放します。</p>
+<pre tabindex="0"><code>sudo ufw allow 80
+</code></pre><hr>
+<h3 id="nextcloudの初回セットアップ">NextCloudの初回セットアップ</h3>
+<p>SBCのIPアドレスの80番ポートにアクセスします。画面に従って管理者アカウントを作成してください。</p>
+<p><img src="https://hackmd.io/_uploads/rkyeFUJ86.png" alt="スクリーンショット 2023-12-07 232549"></p>
+<p>DBへの接続でエラーが出る場合はNextCloudを再起動してください。</p>
+<pre tabindex="0"><code>snap restart nextcloud
+</code></pre><p>以下のように表示されていればセットアップ完了です。</p>
+<p><img src="https://hackmd.io/_uploads/ByuutUkLa.png" alt="スクリーンショット 2023-12-07 234010"></p>
+<p>イントラネットで利用する場合はここまででOKです！</p>
+<p><img src="https://hackmd.io/_uploads/S12_YU1Ia.png" alt="スクリーンショット 2023-12-07 234019"></p>
+<blockquote>
+<p>追記
+<strong>Snap版NextCloudでCLI管理コマンドoccが利用出来ない問題について</strong>
+絶対パスを指定することで解決できます。
+<code>sudo /snap/bin/nextcloud.occ</code></p>
+</blockquote>
+<hr>
+<h2 id="tor-onion-service-で利用する">Tor Onion Service で利用する</h2>
+<p>目的としているセキュアにLAN外から自宅鯖のNextCloudに接続するため、<strong>Tor</strong>の<strong>Onion Service</strong>を利用します。</p>
+<p>まず <strong>Tor</strong> とは、インタネット上で匿名の通信を行うためのシステムです。Torは「The Onion Router」の略で、玉ねぎのように何重にも層を重ねて暗号化をし、接続経路の匿名化をします。また接続経路にある中継地点の経由時のリレーにはログを残らず、アクセス経路の出口以外は全て暗号化されているため、発信源が不明になり匿名性が保たれます。</p>
+<p>少し前にダークウェブ上の違法なサイトが問題視されていたことが記憶に新しいですね。</p>
+<p>これを活用することでサーバー側も接続側も匿名でセキュアな接続ができます。またグローバルIPが必要なく、ルーターのポート開放も必要ないことから選択しました。</p>
+<h3 id="torのインストール">Torのインストール</h3>
+<pre tabindex="0"><code>sudo apt install tor -y
+</code></pre><p>Onion Serviceを開始するためにtorrcファイルを編集します。</p>
+<pre tabindex="0"><code>vim /etc/tor/torrc
+</code></pre><p>71・72行目のコメントアウトを外します。</p>
+<pre tabindex="0"><code class="language-diff=" data-lang="diff=">+HiddenServiceDir /var/lib/tor/hidden_service/
++HiddenServicePort 80 127.0.0.1:80
+-#HiddenServiceDir /var/lib/tor/hidden_service/
+-#HiddenServicePort 80 127.0.0.1:80
+</code></pre><p>Torを再起動します。</p>
+<pre tabindex="0"><code>sudo systemctl restart tor
+</code></pre><p>.onionアドレスを確認します。</p>
+<pre tabindex="0"><code>cat /var/lib/tor/hidden_service/hostname
+</code></pre><p>今の状態でTorブラウザから.onionアドレスへアクセスしても接続できません。</p>
+<p><img src="https://hackmd.io/_uploads/Skd84dyU6.jpg" alt="スクリーンショット 2023-12-08 012916"></p>
+<p>Tor経由での接続をするためにNextCloudの<strong>trusted_domains</strong>に.onionアドレスを<strong>config.php</strong>に追加します。</p>
+<pre tabindex="0"><code>vim /var/snap/nextcloud/current/nextcloud/config/config.php
+</code></pre><p><strong>config.php</strong></p>
+<pre tabindex="0"><code>&#39;trusted_domains&#39; =&gt;
+array (
+    0 =&gt; &#39;YOUR_IP_ADDRESS&#39;
++   1 =&gt; &#39;YOUR_ONION_ADDRESS&#39;
+)
+</code></pre><p>Torを再起動します。</p>
+<pre tabindex="0"><code>sudo systemctl restart tor
+</code></pre><p>再度Torブラウザから.onionアドレスへアクセスして以下のようにログイン画面が表示されていればLAN外から接続できています！</p>
+<p><img src="https://hackmd.io/_uploads/HJXLw_1Lp.jpg" alt="スクリーンショット 2023-12-08 014739"></p>
+<p><img src="https://hackmd.io/_uploads/S1izj_yLp.jpg" alt="スクリーンショット 2023-12-08 020346"></p>
+<p><img src="https://hackmd.io/_uploads/ryjNc_k8T.png" alt="スクリーンショット 2023-12-08 014732"></p>
+<p>正直Torを用いた接続は安全性が高いですが、弊害として世界中のサーバーを経由しているために通信速度が極めて遅く、ファイルサーバーとしての利用には向いていませんでした。速度を求めるなら大人しく固定IPを取得するなり、Tailscaleを使いましょう。</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-adovent-calendar-2023">Nutmeg adovent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
