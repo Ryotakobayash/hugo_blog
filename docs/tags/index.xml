@@ -6,7 +6,25 @@
     <description>Recent content in Tags on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 22 Dec 2023 18:21:01 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Dec 2023 21:00:37 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>https://blog.nutmeg.cloud/tags/javascript/</link>
+      <pubDate>Sun, 24 Dec 2023 21:00:37 +0900</pubDate>
+      
+      <guid>https://blog.nutmeg.cloud/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NUTMEG Advent Calendar 2023</title>
+      <link>https://blog.nutmeg.cloud/tags/nutmeg-advent-calendar-2023/</link>
+      <pubDate>Sun, 24 Dec 2023 21:00:37 +0900</pubDate>
+      
+      <guid>https://blog.nutmeg.cloud/tags/nutmeg-advent-calendar-2023/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Webデザイン</title>
       <link>https://blog.nutmeg.cloud/tags/web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/</link>
@@ -31,15 +49,6 @@
       <pubDate>Thu, 21 Dec 2023 20:39:42 +0900</pubDate>
       
       <guid>https://blog.nutmeg.cloud/tags/html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JavaScript</title>
-      <link>https://blog.nutmeg.cloud/tags/javascript/</link>
-      <pubDate>Thu, 21 Dec 2023 20:39:42 +0900</pubDate>
-      
-      <guid>https://blog.nutmeg.cloud/tags/javascript/</guid>
       <description></description>
     </item>
     
