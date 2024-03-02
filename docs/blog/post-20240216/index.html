@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="NUTMEGのブログが生まれた背景と具体的な運営方法についての記事です！静的サイトジェネレーター「Hugo」を使用してどのように運営しているかをざっくり解説しているので、団体ブログの開設を考えている方はぜひご覧ください！">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.115.3">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:title" content="NUTMEGブログのこれまでとこれから" />
+<meta property="og:description" content="NUTMEGのブログが生まれた背景と具体的な運営方法についての記事です！静的サイトジェネレーター「Hugo」を使用してどのように運営しているかをざっくり解説しているので、団体ブログの開設を考えている方はぜひご覧ください！" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-20240216/" /><meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-03-02T03:32:31+09:00" />
+<meta property="article:modified_time" content="2024-03-02T03:32:31+09:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png"/>
+
+<meta name="twitter:title" content="NUTMEGブログのこれまでとこれから"/>
+<meta name="twitter:description" content="NUTMEGのブログが生まれた背景と具体的な運営方法についての記事です！静的サイトジェネレーター「Hugo」を使用してどのように運営しているかをざっくり解説しているので、団体ブログの開設を考えている方はぜひご覧ください！"/>
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e6%99%ae%e6%ae%b5%e3%81%ae%e6%b4%bb%e5%8b%95"
+          class="text-primary">普段の活動</a>
+        
+        <h2>NUTMEGブログのこれまでとこれから</h2>
+        <div class="mb-3 post-meta">
+          <span>By NUTMEG</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>02 March 2024</span>
+          
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/ryJlgPlaa.png" class="img-fluid w-100 mb-4" alt="NUTMEGブログのこれまでとこれから">
+        
+        <div class="content mb-5">
+          <p>こんにちは。就活がひと段落しそうな修士1年r.kobayashiです。</p>
+<p>今回は後輩への引き継ぎも兼ねて、このNUTMEGブログが生まれた背景や歴史、運営方法についてまとめてみようと思います。</p>
+<p>せっかくだし就活についてのブログを書いてみようと思ったのですが、企業に記事内容のチェックを頼んだり結構大変そうだったのでまたの機会に。</p>
+<h2 id="nutmegブログの目的">NUTMEGブログの目的</h2>
+<p>2021年の夏、NUTMEGでは団体の成長に伴い、メンバー内で以下のような考え・要望を持つようになりました。</p>
+<ul>
+<li>メンバーが就職活動をする際、どのような団体なのか簡単に紹介できるようにしたい。</li>
+<li>外部の人（新入生や他団体、企業の方etc）が団体に興味を持ったとき、団体の活動内容・雰囲気を知ってもらえるような場が欲しい。</li>
+<li>メンバーがアウトプットの練習をする場を作りたい。</li>
+</ul>
+<p>2021年8月頃、当時のNUTMEG代表者から鶴の一声があり、上記のような状況を改善できるブログを作ろう！という運びになりました。</p>
+<h2 id="制作過程の昔話">制作過程の昔話</h2>
+<p>当時、学部3年生だった私がブログの作成・運用を任されました。どのように作るか、どのように運用するかも任されたので結構大変だった記憶があります。「更新が簡単であれば何でもいい」みたいなざっくりとした指定だったような気がします。</p>
+<p>学部1年の頃、修士2年の先輩から静的サイトジェネレーター「Hugo」の使い方を学んでおり、markdownで簡単に記事を作成できるサイトの作り方には心当たりがあったので、Hugoを使用して作ることに決めました。</p>
+<blockquote>
+<p>Hugoとは ──
+The world’s fastest framework for building websites
+Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+<a href="https://gohugo.io/">公式サイト</a>より</p>
+</blockquote>
+<p>英語が苦手な方向けに翻訳した記事も用意してあげました。優しいね。</p>
+<blockquote>
+<p>ヒューゴとは ──
+ウェブサイトを構築するための世界最速のフレームワーク
+Hugoは、最も人気のあるオープンソースの静的サイト ジェネレーターの1つです。Hugoの驚くべきスピードと柔軟性により、Webサイトの構築が再び楽しくなります。</p>
+</blockquote>
+<p>ヒューゴかもしれませんが、私は今後もフゴで通します。</p>
+<p>後述しますが、Hugoは配布されているテーマを選んで、ちょちょっとカスタムするだけで簡単にサイトを作成できます。完全にHTML、CSSだけで編集できるわけではありませんが、独学で何とかできる程度のものです。</p>
+<p>これから始めてみたい方は以下のサイトを見るだけで大体の問題は解決できます。このサイトはかなり上手にまとめられているので、私が引き継ぎもなく蒸発した場合がここを参考にしてください。</p>
+<p>→<a href="https://knowledge.sakura.ad.jp/22908/">静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る</a></p>
+<p>技術面はそんな感じですぐに大枠が決まりました。</p>
+<p>しかし、ブログ完成後、文章の管理方法など運営の部分で悩むことに…。2021年の夏、HomepageチームのPM以外特に役職のなかった自分の試行錯誤が始まりました。</p>
+<h2 id="nutmeg-流運用方法">NUTMEG 流運用方法</h2>
+<p>試行錯誤の歴史については覚えてないので割愛。出来上がったものがこちらになります。</p>
+<h3 id="技術的な部分">技術的な部分</h3>
+<p>ブログの作成に使用しているものは以下の通りです。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>使用したもの</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>静的サイトジェネレーター</td>
+<td>hugo</td>
+</tr>
+<tr>
+<td>Hugoテーマ</td>
+<td><a href="https://github.com/gethugothemes/liva-hugo">liva-hugo</a></td>
+</tr>
+<tr>
+<td>ブログ記事の作成・管理</td>
+<td>HackMD</td>
+</tr>
+<tr>
+<td>文章の校閲</td>
+<td>VScodeプラグイン<a href="https://marketplace.visualstudio.com/items?itemName=ICS.japanese-proofreading">テキスト校正くん</a></td>
+</tr>
+<tr>
+<td>デプロイ</td>
+<td>GitHub pagesを経由したのちNUTMEGのURLで公開（あまり深く理解できてません。インフラチームありがとう！）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="運用的な部分">運用的な部分</h3>
+<p>運用に関する部分では何も難しいことはしていません。長く続けるためにあまり厳格にはせず、できる限りゆるくすることを意識していました。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>記事の更新</td>
+<td>NUTMEG定例MTでブログ発表後に投稿者が指名（テレフォンショッキング形式）暇な人がいなければスキップ</td>
+</tr>
+<tr>
+<td>著者名</td>
+<td>ペンネーム方式（本名出したくない人に配慮）。年1更新。書きたくない人は書かなくてOK。</td>
+</tr>
+<tr>
+<td>記事のリジェクト</td>
+<td>基本なし。著作権的に問題がある画像を使用している場合は変更。時間があったら文章クオリティアップのために声をかけることも…。</td>
+</tr>
+<tr>
+<td>記事の投稿</td>
+<td>記事作成後なるはやで。日付の指定はなし。</td>
+</tr>
+<tr>
+<td>ネタがないときの対応</td>
+<td>HackMDにネタ帳を作ってストック。ネタを思いついた人が誰でも書き加えられるようにslackの#blogチャンネルに固定</td>
+</tr>
+</tbody>
+</table>
+<h3 id="具体的な更新作業">具体的な更新作業</h3>
+<p>NUTMEG外の方にはあまり役に立たないかと思いますが、私が行う作業量の目安として具体的な更新作業をまとめます。</p>
+<ol>
+<li>コマンドプロンプトで&rsquo;hugo new content post-yyyymmdd.md&rsquo;と入力してblogリポジトリ内にmarkdownファイルを作成。</li>
+<li>作成したmarkdownファイルにHackMDへ投稿された記事の内容をコピペ。
+画像のリンクはHackMDで使われているものをそのままでOK（絶対パスの扱いになりデータ容量の削減、ダウンロードする手間の省略が可能に）。</li>
+<li>コピペした後文書校正プラグインなどを使って、簡単な誤字は修正。</li>
+<li>コマンドプロンプトで&rsquo;hugo&rsquo;と入力。新しい記事がHTML形式で生成される。</li>
+<li>GitHubにpushしたら自動的に更新！インフラエンジニアありがとう！</li>
+</ol>
+<p>時間がかかるのは文章校正の部分です。ここに手間が掛からなければ5分程度で投稿は終了します。</p>
+<p>昔は私自身、文章を書くのが上手いわけではなかったので他人の文章を添削することに気が引けてしまい、HackMDにあげられた文章をそのまま公開していました。そのようなやり方を初めて数ヶ月過ぎた頃、公開記事を見た先輩から「ある程度のクオリティに満たない物は修正しないと、著者のためにもならない」のような要旨のコメントをいただき、現在では上記のようなスタイルで多少の校正を行っています。</p>
+<h2 id="最後に">最後に</h2>
+<p>現時点でも運用はできていますが、まだまだ改善点は多いです。少し考えただけでも…</p>
+<ul>
+<li>現状では更新できるメンバーが少ない</li>
+<li>メンバーページの更新が少し手間</li>
+<li>コードを添付したときのレイアウトが醜い</li>
+<li>著者名から過去のブログ記事を参照できるページが未実装</li>
+<li>Productsページが古い</li>
+</ul>
+<p>次の担当者が決まったら、恒常的な更新作業はお願いして改善してみたいなー。</p>
+<p>終わり。</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%99%ae%e6%ae%b5%e3%81%ae%e6%b4%bb%e5%8b%95">普段の活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
