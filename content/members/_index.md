@@ -14,7 +14,6 @@ type: "about"
 構成メンバー
 
 <div class="members-flex-box">
-
   <div class="members-flex-box__card">
     <image class="members-flex-box__card__img"src="https://hackmd.io/_uploads/rJcDjId82.png">
     <p class="members-flex-box__card__name">藤崎 竜成</p>
