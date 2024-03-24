@@ -6,41 +6,42 @@
     <description>Recent content in フロントエンド on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-<<<<<<< HEAD
-    <lastBuildDate>Fri, 22 Mar 2024 20:14:13 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Mar 2024 20:14:13 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>新しいページでSeedsを使いやすく</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240322/</link>
       <pubDate>Fri, 22 Mar 2024 20:14:13 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20240322/</guid>
       <description>はじめに こんにちわ。今頃、スイカゲームにはまったNUTMEGのななです。スイカ2コ作るのがこれからの目標です。ちなみに、私はスイカがあまり好きではありません🍉</description>
     </item>
+    
     <item>
-=======
-    <lastBuildDate>Fri, 15 Mar 2024 20:20:27 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
-    <item>
->>>>>>> 1155478aa837b387c994d0d7886ecb5c2e286d60
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
       <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
+    
     <item>
       <title>フロントエンド未経験者が仕事をするためにやった1ヶ月の勉強</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231221/</link>
       <pubDate>Thu, 21 Dec 2023 20:39:42 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231221/</guid>
       <description>はじめに はじめまして。NUTMEGで普段インフラ・バックエンドをしている市之瀬と申します。</description>
     </item>
+    
     <item>
       <title>フロントエンドってどうやって強くなるの？教えていまいまい！</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230330/</link>
       <pubDate>Thu, 30 Mar 2023 17:55:52 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20230330/</guid>
       <description>なんだかんだNUTMEGはフロント人材が少し不足しつつあります。 フロントエンドをこれから勉強する後輩に向けて書きました。</description>
     </item>
+    
   </channel>
 </rss>

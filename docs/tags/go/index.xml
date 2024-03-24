@@ -6,21 +6,24 @@
     <description>Recent content in Go on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Jan 2023 17:02:09 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Jan 2023 17:02:09 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230125/</link>
       <pubDate>Wed, 25 Jan 2023 17:02:09 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20230125/</guid>
       <description>はじめに こんにちは。NUTMEGの藤崎です。先日NUTMEG内でLT会が行われ、slack無料プランのメッセージが3ヶ月間で表示されなくなるのをweb+slackAPIを利用してwebアプリを作成し解決した話をしました。今回はその話をもう少し具体的に話していきます。</description>
     </item>
+    
     <item>
       <title>JPHACKを振り返る</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221027-1/</link>
       <pubDate>Wed, 26 Oct 2022 17:20:46 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20221027-1/</guid>
       <description>こんにちは！NUTMEGの藤崎です！ 今回は先日行われたJPHACKSを振り返ろうかと思います。</description>
     </item>
+    
   </channel>
 </rss>
