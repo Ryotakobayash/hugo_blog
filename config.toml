@@ -109,9 +109,6 @@ googleAnalitycsID = "Your ID"
 copyright = "&copy; NUTMEG 2022"
 images = ["images/OGP.png"]
 
-
-
-
 # レイアウト変更用css
 customCSS = ["css/custom_post.css"]
 
@@ -151,11 +148,15 @@ icon = "ti-github" # themify icon : https://themify.me/themify-icons
 link = "https://github.com/orgs/NUTFes"
 
 
-###
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+  [markup.tableOfContents]
+  	endLevel = 5       # どのレベルまで目次に表示するか。現在h5
+  	startLevel = 2     # どのレベルから目次に表示するか。現在h2
+
 
 [taxonomies]
 tag = "tags"
