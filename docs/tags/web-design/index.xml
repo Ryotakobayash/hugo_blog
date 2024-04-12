@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Web-design on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+    <title>Web-Design on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/tags/web-design/</link>
-    <description>Recent content in Web-design on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
+    <description>Recent content in Web-Design on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 22 Mar 2024 20:14:13 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/web-design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Mar 2024 20:14:13 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/tags/web-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>新しいページでSeedsを使いやすく</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240322/</link>
       <pubDate>Fri, 22 Mar 2024 20:14:13 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240322/</guid>
       <description>はじめに こんにちわ。今頃、スイカゲームにはまったNUTMEGのななです。スイカ2コ作るのがこれからの目標です。ちなみに、私はスイカがあまり好きではありません🍉</description>
     </item>
-    
   </channel>
 </rss>

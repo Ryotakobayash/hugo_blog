@@ -6,15 +6,14 @@
     <description>Recent content in API関係 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 15 Mar 2024 20:20:27 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/api%E9%96%A2%E4%BF%82/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Mar 2024 20:20:27 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/tags/api%E9%96%A2%E4%BF%82/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
       <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
-    
   </channel>
 </rss>
