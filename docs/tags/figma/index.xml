@@ -6,28 +6,34 @@
     <description>Recent content in Figma on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 22 Mar 2024 20:14:13 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/figma/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Mar 2024 20:14:13 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/figma/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>新しいページでSeedsを使いやすく</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240322/</link>
       <pubDate>Fri, 22 Mar 2024 20:14:13 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20240322/</guid>
       <description>はじめに こんにちわ。今頃、スイカゲームにはまったNUTMEGのななです。スイカ2コ作るのがこれからの目標です。ちなみに、私はスイカがあまり好きではありません🍉</description>
     </item>
+    
     <item>
       <title>ロゴコンペに参加してみて</title>
       <link>https://blog.nutmeg.cloud/blog/post-20231201/</link>
       <pubDate>Fri, 01 Dec 2023 20:03:14 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20231201/</guid>
       <description>はじめに こんにちは。今年NUTMEGに入った長谷川虹です。デザインをデザイナーとして活動しています。今回、今年9月に行われた「ロゴコンペ」についてお話ししたいと思います。このロゴコンペは私にとって初めての大きな仕事でした。ロゴコンペを通じて思ったことをだーっと書いていきます。ちなみに人生初ブログなので温かい目で見てください。</description>
     </item>
+    
     <item>
       <title>Figmaの学生プラン・FigJamを導入します</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221026/</link>
       <pubDate>Wed, 26 Oct 2022 00:36:50 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20221026/</guid>
-      <description>こんにちは！NUTMEGデザインチーム、小林です！&#xA;この度、NUTMEGでは一部のメンバーのみしか利用していなかったFigma・Figjamをメンバー全員に導入することにしました。</description>
+      <description>こんにちは！NUTMEGデザインチーム、小林です！
+この度、NUTMEGでは一部のメンバーのみしか利用していなかったFigma・Figjamをメンバー全員に導入することにしました。</description>
     </item>
+    
   </channel>
 </rss>
