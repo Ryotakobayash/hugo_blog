@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="MinIOというストレージサーバーを新しくNUTMEGに導入しました。このMinIOがNUTMEGと技大祭においてどのように活用できるかをブログにしました。">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.115.3">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:title" content="第一次MinIO革命" />
+<meta property="og:description" content="MinIOというストレージサーバーを新しくNUTMEGに導入しました。このMinIOがNUTMEGと技大祭においてどのように活用できるかをブログにしました。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-20240419/" /><meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png"/><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-04-19T18:33:34+09:00" />
+<meta property="article:modified_time" content="2024-04-19T18:33:34+09:00" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png"/>
+
+<meta name="twitter:title" content="第一次MinIO革命"/>
+<meta name="twitter:description" content="MinIOというストレージサーバーを新しくNUTMEGに導入しました。このMinIOがNUTMEGと技大祭においてどのように活用できるかをブログにしました。"/>
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90"
+          class="text-primary">活動の様子</a>
+        
+        <h2>第一次MinIO革命</h2>
+        <div class="mb-3 post-meta">
+          <span>By NUTMEG</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>19 April 2024</span>
+          
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/SJ8jK7Ul0.png" class="img-fluid w-100 mb-4" alt="第一次MinIO革命">
+        
+        <div class="content mb-5">
+          <p>こんにちは、NUTMEG(技大祭実行委員会 情報局)のkubosakaです。</p>
+<p>今回自分がPMを務めるプロダクト「FinanSu」で広告データ等のアップロード・ダウンロード機能が新しく追加されました。この機能を実装するためにMinIOというストレージサーバーを新しくNUTMEGに導入しました。このMinIOというものNUTMEGと技大祭にとってすごく便利なものであると個人的に考えています。今回のブログでは、MinIOの何が便利でどうすごいのか自分の感想を踏まえて書かせていただきます。また、今回のブログは新入生も見ることを想定していますので、補足なども適宜入れていきます。</p>
+<p><img src="https://hackmd.io/_uploads/HyuCY7UgC.png" alt="image"></p>
+<h2 id="finansuとは">FinanSuとは？</h2>
+<p>NUTMEG(情報局)が作っているプロダクトの1つで技大祭でかかるお金に関する業務の一括管理を目的とするプロダクトです。
+学園祭の運営には多くのお金が動きます。物品の購入、学内募金、企業協賛活動など様々であり、複雑です。そうした業務の円滑化を図るために「FinanSu」を開発をしております。</p>
+<ul>
+<li>主なユーザー：財務局、渉外局、全学園祭実行員(学内募金時)</li>
+<li>使用言語・フレームワーク・ツール等：Next.js, TypeScript, Go, MySQL, Docker, GitHub, Figma</li>
+<li>現在メンバー：6名(5名エンジニア+1名デザイナー)で活動中です。メンバー募集中!</li>
+<li>毎週火曜日18:00~ FinanSu MT</li>
+</ul>
+<p>興味があれば、kubosakaもしくはメンバーまでご連絡ください!</p>
+<p><img src="https://hackmd.io/_uploads/S1kC8zUlR.png" alt="FinanSu"></p>
+<h3 id="minioとは">MinIOとは？</h3>
+<ul>
+<li>MinIOは、高性能のAWS S3互換オブジェクト ストア</li>
+<li>大規模なAI/ML、データ レイク、データベース ワークロード向けに構築されている。</li>
+<li>あらゆるクラウドまたはオンプレミスのインフラストラクチャ上で実行される。</li>
+<li><strong>OSSのため、無料で使うことができる</strong></li>
+<li><a href="https://min.io/">公式サイト</a></li>
+<li>ブラウザ上でバケットの作成、ファイルのアップロード・ダウンロード・プレビューといったこともできる</li>
+</ul>
+<h3 id="awsとは">AWSとは？</h3>
+<p>今回のブログ発表が新入生の体験会ということで軽く補足しておきます。</p>
+<ul>
+<li>Amazonが提供するクラウドサービスの総称  AWS(Amazon Web services)</li>
+<li>仮想サーバー「EC2」、ストレージ「S3」、DB「Aurora」など150を超えるサービス</li>
+<li>2024年2月段階では世界で最も多く利用されているクラウドサービス</li>
+<li>多くのサービスを使うためにはお金が必要</li>
+</ul>
+<p>すごく便利なサービスではあるが、学園祭の実行委員会であるNUTMEGはできるだけお金をかけずにサービスを提供したいため現在導入はしていません。</p>
+<h2 id="finansuの新機能のためminioの導入">FinanSuの新機能のためMinIOの導入</h2>
+<p>今回顧客である渉外局 企業協賛部門から「FinanSuを使って企業協賛で使う広告データを管理したい」という要望をもらった
+今年度版のリリースに合わせて、MinIOを使いファイルのアップロード、ダウンロード機能を実装しました！</p>
+<p><img src="https://hackmd.io/_uploads/BkNMRMIl0.png" alt="スクリーンショット 2024-04-12 11.35.21"></p>
+<h3 id="minioを選んだ理由">MinIOを選んだ理由</h3>
+<ul>
+<li>自分達のサーバーで管理することができるため</li>
+<li>OSSであり、無料で使うことができるため</li>
+<li>開発環境(ローカル)でMinIOコンテナを起動することができるため</li>
+<li>卒業生(いまいまい)がMinIOを実装したリポジトリがあり参考にできたため</li>
+</ul>
+<h2 id="minioの何がすごいの何ができるの">MinIOの何がすごいの？何ができるの?</h2>
+<p>ここまでお聞きした多くの人が、「ファイルのアップロード・ダウンロードができることはわかったけど、革命って大袈裟すぎん？　他に何ができるん？」と思っていることと思います。正直タイトル負けしているブログと感じていますが、AWS S3の互換サービスということで他にも活用ができそうです。</p>
+<h3 id="amazon-s3のユースケース">Amazon S3のユースケース</h3>
+<p>Amazon S3には以下のユースケースがあります。MinIOはS3互換サービスであるため、これらと同様のことが実現できそうです。</p>
+<ul>
+<li>オブジェクトストレージ</li>
+<li>バックアップと復元
+<ul>
+<li>S3とEFS・EBSとバックアップ</li>
+</ul>
+</li>
+<li>データレイクとビッグデータの分析
+<ul>
+<li>多数のソースからのビッグデータを元のままの多様な形式で保持するストレージリポジトリ</li>
+</ul>
+</li>
+<li>静的ファイルの配信など</li>
+</ul>
+<p>次に具体的に技大祭での活用案を提案します。</p>
+<h2 id="技大祭での活用案">技大祭での活用案</h2>
+<h3 id="他プロダクトでのファイル管理機能">他プロダクトでのファイル管理機能</h3>
+<p>形式は問わないので、どのようなデータ形式でもアップロード、ダウンロード機能の実装が可能です。</p>
+<ul>
+<li>動画データでYouTubeみたいな動画投稿プラットフォームの作成</li>
+<li>csv、docs、txt、png..などなんでも、とりあえずファイルをアップロード・ダウンロードしたい</li>
+<li>BINGOの景品データの保存先など</li>
+</ul>
+<h3 id="パンフレットの公開方法">パンフレットの公開方法</h3>
+<p>昨年までは、Turn.jsなどを使い、サーバー上にデプロイをして電子パンフレットを公開していました。</p>
+<ul>
+<li><a href="https://pamphlet.nutfes.net/">昨年度の電子パンフレット</a></li>
+</ul>
+<p>MinIOでもpdfdファイルとして公開できます。その際のメリットが以下の通りです。</p>
+<ul>
+<li>デプロイが格段に楽になる
+<ul>
+<li>MinIOサーバーにアップロードするだけのため、これまでのデプロイ作業が不要</li>
+<li>間違いなどがあった場合、修正→即公開ができる</li>
+</ul>
+</li>
+<li>pdfとして公開するため、ブラウザの拡張機能で閲覧できる
+<ul>
+<li>見たいページへの移動が容易</li>
+<li>ダウンロードできる</li>
+</ul>
+</li>
+</ul>
+<h3 id="静的サイトの公開">静的サイトの公開</h3>
+<p><strong>静的サイト</strong>とは</p>
+<ul>
+<li><strong>「誰が」「いつ」「どこで」見ても同じ情報が表示されるホームページ</strong></li>
+<li>対義語：動的サイト</li>
+</ul>
+<p>html、css、JavaScriptなどで作られたシンプルなサイトはMinIOにアップロードするだけで公開できます。
+パンフレットの事例と同様、デプロイが素早く楽です。</p>
+<h3 id="機械学習などに使うデータレイクとして活用">機械学習などに使うデータレイクとして活用</h3>
+<p>現在NUTMEGのプロダクトとして、機械学習を活用した事例は多くないが、これから使う際に、データの保存先として使うことができる。</p>
+<h3 id="ログ保存データバックアップ">ログ保存、データバックアップ</h3>
+<p>サーバーのログの保存先として、DBなどのバックアップ先としても活用ができます。</p>
+<h2 id="最後に">最後に</h2>
+<p>このようにNUTMEGにMinIOというオブジェクトストレージが実装されたことで、できることの選択肢が増えました。自分達の活動目的は技大祭運営業務の円滑化であるため、NUTMEGに新しい技術を導入することは課題解決の選択肢を増やすことにつながるため、非常に良いことだと思います。引き続き、顧客(ユーザー)のニーズを満たすプロダクト開発を意識して、頑張りましょう。</p>
+<p>Next.jsとMinIOによるファイルのアップロード機能に関してはまた別のブログで書こうかと思います。お楽しみに!</p>
+<h2 id="参考記事サイト">参考記事・サイト</h2>
+<ul>
+<li><a href="https://www.ntt.com/bizon/glossary/e-a/aws.html">AWSとは？意味・定義</a></li>
+<li><a href="https://min.io/">MinIO</a></li>
+<li><a href="https://business.ntt-east.co.jp/content/cloudsolution/column-try-43.html">【AWS初心者向け】ストレージサービス「Amazon S3」とは？実際に使用してみた</a></li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%99%ae%e6%ae%b5%e3%81%ae%e6%b4%bb%e5%8b%95">普段の活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2022
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
