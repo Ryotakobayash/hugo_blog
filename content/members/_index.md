@@ -21,42 +21,28 @@ type: "about"
     <input id="14" class="acd-check" type="checkbox">
     <label class="acd-label" for="14">about</label>
     <div class="acd-content">
-      <p>NUTMEG デザイナー部門所属,41st技大祭実行委員会副委員長.FigmaでのUI/UXデザインをやったり,イラレやAffinity Designerというソフトでロゴを作ったりしています.好きな映画は風立ちぬ.好きなテレビ番組は大改造ビフォーアフターと地球ドラマチックと美の壺とがっちりマンデー.</p>
+      <p>NUTMEG デザイナー部門所属。41st技大祭実行委員会副委員長。デザイナーとして内定もらいましたー</p>
     </div>
   </div>
   <div class="members-flex-box__card__link">
     <a href="https://pin.it/3xYYEw9">pinterest</a><br>
-    <a href="https://ryotakobayash.github.io/blog/">portfolio</a>
+    <a href="https://student.redesigner.jp/students/5e2c3b73ba0a846b7166acc2e59eaba5">portfolio</a>
   </div>
 </div>
 
 <div class="members-flex-box__card">
-  <image class="members-flex-box__card__img" src="../images/members/uzawa.png">
-  <p class="members-flex-box__card__name">t.uzawa</p>
-  <div class="members-flex-box__card__body">
-    <input id="23" class="acd-check" type="checkbox">
-    <label class="acd-label" for="23">about</label>
-    <div class="acd-content">
-      <p>NUTMEG バックエンド部門所属 場所ごとの混雑状況を可視化するアプリ「tracking_support(トラサポ)」の開発をメインに活動しています Rails，Elasticsearch，Pythonを少しずつ勉強しています 趣味はロードバイクに乗ること，ピアノを弾くこと，音楽を聞くこと，開発をすることです</p>
-    </div>
-  </div>
-  <div class="members-flex-box__card__link">
-    <a href="https://twitter.com/@takuhiro_U_914">Twitter</a>
-  </div>
-</div>
-
-<div class="members-flex-box__card">
-  <image class="members-flex-box__card__img" src="../images/members/tsukasa.png">
-  <p class="members-flex-box__card__name">つかさ</p>
+  <image class="members-flex-box__card__img" src="../images/members/harata.png">
+  <p class="members-flex-box__card__name">パラディン</p>
   <div class="members-flex-box__card__body">
     <input id="13" class="acd-check" type="checkbox">
     <label class="acd-label" for="13">about</label>
     <div class="acd-content">
-      <p>趣味はスノボ、サイクリング、ゲーム等でポジティブと効率をモットーに生きてます。 プログラミング初心者なので、これからたくさん学んでいきます。</p>
+      <p>42nd技大祭実行委員会情報局長 兼 第3代NUTMEG代表。現在はGroup-Manager-2のPMとしてマネジメントと開発してます。趣味は飲み会、野球、スノボ、竿燈（秋田の祭り）です。「圧倒的ポジティブ思考」と「繋がりを大事に」をモットーに生きてます。</p>
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://twitter.com/akanam521T">Twitter</a>
+    <a href="https://twitter.com/akanam521T">Twitter</a><br>
+    <a href="https://github.com/harata-t">GitHub</a>
   </div>
 </div>
 
@@ -73,7 +59,7 @@ type: "about"
 </div>
 
 <div class="members-flex-box__card">
-  <image class="members-flex-box__card__img" src="../images/members/sato.png">
+  <image class="members-flex-box__card__img" src="../images/members/nobu.png">
   <p class="members-flex-box__card__name">のぶ</p>
   <div class="members-flex-box__card__body">
     <input id="18" class="acd-check" type="checkbox">
@@ -88,17 +74,89 @@ type: "about"
 </div>
 
 <div class="members-flex-box__card">
+  <image class="members-flex-box__card__img" src="../images/members/kubosaka.png">
+  <p class="members-flex-box__card__name">くぼ</p>
+  <div class="members-flex-box__card__body">
+    <input id="20" class="acd-check" type="checkbox">
+    <label class="acd-label" for="20">about</label>
+    <div class="acd-content">
+      <p>FinanSuのPMしてます。フロントエンド・バックエンド・インフラをふらふらやってます。</p>
+    </div>
+  </div>
+</div>
+
+<div class="members-flex-box__card">
   <image class="members-flex-box__card__img" src="../images/members/ichinose.png">
   <p class="members-flex-box__card__name">ichinose</p>
   <div class="members-flex-box__card__body">
     <input id="21" class="acd-check" type="checkbox">
     <label class="acd-label" for="21">about</label>
     <div class="acd-content">
-      <p>プログラミング初心者です。色々勉強して自分のやりたいことを固めていきたいです。現在は画像解析に興味があります。趣味はキャンプ、スノボ、麻雀です。</p>
+      <p>インフラとDSしてます。ラーメン食べに行きましょう。</p>
     </div>
   </div>
   <div class="members-flex-box__card__link">
     <a href="https://twitter.com/nose_nagaoka">Twitter</a>
+  </div>
+</div>
+
+<div class="members-flex-box__card">
+  <image class="members-flex-box__card__img" src="../images/members/takasuka.png">
+  <p class="members-flex-box__card__name">たかちゃん</p>
+  <div class="members-flex-box__card__body">
+    <input id="36" class="acd-check" type="checkbox">
+    <label class="acd-label" for="36">about</label>
+    <div class="acd-content">
+      <p>NUTMEG_SeedsのPMを担当しています。好きな食べ物はカルボナーラです。詳しくはポートフォリオ見てみてね！</p>
+    </div>
+  </div>
+  <div class="members-flex-box__card__link">
+    <a href="https://takumi-portfolio.vercel.app/">Portfolio</a>
+  </div>
+</div>
+
+<div class="members-flex-box__card">
+  <image class="members-flex-box__card__img" src="../images/members/iida.png">
+  <p class="members-flex-box__card__name">よーーちゃん</p>
+  <div class="members-flex-box__card__body">
+    <input id="35" class="acd-check" type="checkbox">
+    <label class="acd-label" for="35">about</label>
+    <div class="acd-content">
+      <p>インフラチームリーダー．新しいもの好き．外食は行ったことないところに行ってみたい派．趣味はNUTMEG．研究分野は機械学習，マルチタスク学習．</p>
+    </div>
+  </div>
+  <div class="members-flex-box__card__link">
+    <a href="https://twitter.com/iodine2_">Twitter</a><br>
+    <a href="https://www.instagram.com/___yosuke.i/">Instagram</a><br>
+    <a href="https://github.com/YosukeIida">GitHub</a>
+  </div>
+</div>
+
+<div class="members-flex-box__card">
+  <image class="members-flex-box__card__img" src="../images/members/hasegawa.png">
+  <p class="members-flex-box__card__name">なな</p>
+  <div class="members-flex-box__card__body">
+    <input id="34" class="acd-check" type="checkbox">
+    <label class="acd-label" for="34">about</label>
+    <div class="acd-content">
+      <p>NUTMEGデザイナー部門所属、HomePageとSeedsに関わっています。ロゴデザインつくるの好きです。かっこいいポートフォリオをつくるのが今年の目標。</p>
+    </div>
+  </div>
+</div>
+
+<div class="members-flex-box__card">
+  <image class="members-flex-box__card__img" src="../images/members/wakatsuki.png">
+  <p class="members-flex-box__card__name">つっきー</p>
+  <div class="members-flex-box__card__body">
+    <input id="33" class="acd-check" type="checkbox">
+    <label class="acd-label" for="33">about</label>
+    <div class="acd-content">
+      <p>43rd技大祭実行委員会情報局長兼NUTMEG代表。普段はフロントエンド・バックエンド・インフラ・デザインをやっています。機械学習理論研究室に所属し、組織マネジメントに関する研究をしています。趣味は飲み会・Youtube・アニメです。</p>
+    </div>
+  </div>
+  <div class="members-flex-box__card__link">
+    <a href="https://twitter.com/koki_wakatsuki">Twitter</a><br>
+    <a href="https://github.com/KokiWakatsuki">GitHub</a>
   </div>
 </div>
 
@@ -109,7 +167,7 @@ type: "about"
     <input id="25" class="acd-check" type="checkbox">
     <label class="acd-label" for="25">about</label>
     <div class="acd-content">
-      <p>NUTMEGデザイナー部門、Seeds所属、NUTMEGのプロダクトのデザインやロゴ、技大祭のポスターなどをFigma、Affinty Designerなどのデザインツールで作ったりしています。 好きなドラマはリーガルハイで、好きな食べ物はオムライスです。</p>
+      <p>NUTMEGデザイナー部門、Seeds所属、NUTMEGのプロダクトのデザインやロゴ、技大祭のポスターなどをFigma、Affinty Designerというデザインツールで作ったりしています。 好きなドラマはリーガルハイで、好きな食べ物はオムライスです。</p>
     </div>
   </div>
   <div class="members-flex-box__card__link">
@@ -129,6 +187,51 @@ type: "about"
   </div>
   <div class="members-flex-box__card__link">
     <a href="https://www.instagram.com/kotume.1024/">Instagram</a>
+  </div>
+</div>
+
+<div class="members-flex-box__card">
+  <image class="members-flex-box__card__img" src="../images/members/akiyama.png">
+  <p class="members-flex-box__card__name">はやて</p>
+  <div class="members-flex-box__card__body">
+    <input id="44" class="acd-check" type="checkbox">
+    <label class="acd-label" for="44">about</label>
+    <div class="acd-content">
+      <p>未経験で知識0だけど頑張ります！</p>
+    </div>
+  </div>
+</div>
+
+<div class="members-flex-box__card">
+  <image class="members-flex-box__card__img" src="../images/members/hikahana.png">
+  <p class="members-flex-box__card__name">比嘉華</p>
+  <div class="members-flex-box__card__body">
+    <input id="27" class="acd-check" type="checkbox">
+    <label class="acd-label" for="27">about</label>
+    <div class="acd-content">
+      <p>バックエンド中心に活動してます。SnowmanとFruits Zipper推してます。用がなければ家から出ない系です。</p>
+    </div>
+  </div>
+  <div class="members-flex-box__card__link">
+    <a href="https://x.com/mikan_hrn">Twitter</a><br>
+    <a href="https://www.instagram.com/hnd.hkr_?igsh=Ync3aDhmczJnaTBn&utm_source=qr">Instagram</a>
+  </div>
+</div>
+
+<div class="members-flex-box__card">
+  <image class="members-flex-box__card__img" src="../images/members/takayama.png">
+  <p class="members-flex-box__card__name">やま</p>
+  <div class="members-flex-box__card__body">
+    <input id="56" class="acd-check" type="checkbox">
+    <label class="acd-label" for="56">about</label>
+    <div class="acd-content">
+      <p>フロントエンド・インフラをしています。新しい技術やトレンド探索が好きです！趣味はアニメとネットサーフィン</p>
+    </div>
+  </div>
+  <div class="members-flex-box__card__link">
+    <a href="https://www.instagram.com/mikan_taka.h/">Instagram</a><br>
+    <a href="https://github.com/TkymHrt">GitHub</a><br>
+    <a href="https://tkymhrt-portfolio.pages.dev/">Portfolio</a>
   </div>
 </div>
 
