@@ -6,14 +6,15 @@
     <description>Recent content in MinIO on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 19 Apr 2024 18:33:34 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/minio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Apr 2024 18:33:34 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/minio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第一次MinIO革命</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240419/</link>
       <pubDate>Fri, 19 Apr 2024 18:33:34 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20240419/</guid>
       <description>こんにちは、NUTMEG(技大祭実行委員会 情報局)のkubosakaです。</description>
     </item>
+    
   </channel>
 </rss>

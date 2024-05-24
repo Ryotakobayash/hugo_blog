@@ -1,65 +1,129 @@
 @charset "utf-8";
 
-/* 全体 ------------------------- */
-.content h1, .content h2, .content h3, .content h4, .content h5 {
-  display: block;
-  width: max-content;
-  border-top: 0.5px solid #00aaa1;
-  border-bottom: 0.5px solid #00aaa1;
-  padding:  10px 10px 5px;
-  margin: 20px 0px;
+/* Variables */
+:root {
+  --main-color: #00aaa1;
+  --heading-padding-TB: 12px;
+  --heading-padding-LR: 8px;
+  --line-height: 1.9;
+  --iframe-width: 90%;
+  --aspect-ratio: 16/9;
+  --card-width: 25%;
+  --card-min-width: 200px;
+  --text-color: #333;
+  --font-base: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji";
 }
-.content h6 {
-  display: block;
-  font-size: 14px;
-  color:#00aaa1;
-  text-align: center;
-  padding: 10px 0 0;
-  margin: 30px auto 5px;
+
+body,p {
+  color: var(--text-color);
+  font-family: var(--font-base) !important;
 }
-/* font-size */
+
+/* Headings */
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+  display: block;
+  word-break: break-word;
+  word-wrap: break-word;
+  line-break: strict;
+  font-family: var(--font-base) !important;
+  color: var(--text-color);
+  padding: var(--heading-padding-TB) var(--heading-padding-LR);
+  margin: 10px 0px;
+}
+
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.content h3,
+.content h4,
+.content h5 {
+  max-width: max-content;
+  font-weight: 600;
+  border-bottom: 1px solid var(--main-color);
+}
+
 .content h1 {
   font-size: min(6vw, 35px);
-  margin: 80px 0px 0px 0px;
+  margin-top: 80px;
 }
+
 .content h2 {
-  padding: 10px 10px 5px;
   margin: 50px 0px 20px 0px;
-  font-size: min(6vw, 30px);
+  font-size: min(5vw, 24px);
 }
+
 .content h3 {
-  font-size: min(5vw, 25px);
+  font-size: min(4vw, 20px);
   margin: 30px 0px 20px;
 }
+
 .content h4 {
   font-size: 20px;
 }
+
 .content h5 {
-  font-size: 15px;
-}
-p {
-  line-height: 28px;
+  font-size: 16px;
 }
 
-/* productページ ------------------------- */
-.product-flex-box__card > h2 {
-  padding: 10px 10px 5px;
+.content h6 {
+  display: block;
+  font-size: 14px;
+  color: var(--main-color);
+  text-align: center;
+  padding-top: 10px;
+  margin: 16px auto 5px;
+}
+
+p {
+  line-height: var(--line-height);
+  word-break: break-word;
+  word-wrap: break-word;
+  color: var(--text-color);
+}
+
+li::before {
+  display: none;
+}
+
+.content * {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.content ul li {
+  list-style: disc;
+  padding: 0;
+  margin-left: 32px;
+}
+
+/* Product Page */
+.product-flex-box__card>h2 {
   margin: 60px auto 30px;
   font-size: min(6vw, 30px);
+  padding: var(--heading-padding-TB) var(--heading-padding-LR) 5px;
 }
 
-/* google slides 埋め込み ------------------------- */
+/* Google Slides Embed */
 iframe {
   display: block;
-  width: 90%;
+  width: var(--iframe-width);
   margin: 0 auto;
-  aspect-ratio: 16/9;
+  aspect-ratio: var(--aspect-ratio);
 }
+
 .Gallery-container {
   margin-bottom: 50px;
 }
 
-/* membersページ ------------------------- */
+/* Members Page */
 .members-flex-box {
   display: flex;
   flex-direction: row;
@@ -67,36 +131,41 @@ iframe {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
 .members-flex-box__card {
-  width: 25%;
-  min-width: 200px;
+  width: var(--card-width);
+  min-width: var(--card-min-width);
   margin: 20px;
 }
+
 .members-flex-box__card__img {
   border-radius: 50%;
 }
 
-/* 以下コピペ -------------------------*/
-.acd-check{
+/* Accordion */
+.acd-check {
   display: none;
 }
-.acd-label{
+
+.acd-label {
   background: #333;
   color: #fff;
   display: block;
   margin-bottom: 1px;
   padding: 10px;
 }
-.acd-content{
+
+.acd-content {
   border: 1px solid #333;
   height: 0;
   opacity: 0;
   padding: 0 10px;
-  transition: .5s;
+  transition: 0.5s;
   visibility: hidden;
-  word-wrap: break-word
+  word-wrap: break-word;
 }
-.acd-check:checked + .acd-label + .acd-content{
+
+.acd-check:checked+.acd-label+.acd-content {
   height: max-content;
   opacity: 1;
   padding: 10px;

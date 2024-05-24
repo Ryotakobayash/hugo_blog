@@ -6,28 +6,33 @@
     <description>Recent content in Authors on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 18 Mar 2022 19:14:21 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Mar 2022 19:14:21 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ふじっぴ</title>
       <link>https://blog.nutmeg.cloud/authors/%E3%81%B5%E3%81%98%E3%81%A3%E3%81%B4/</link>
       <pubDate>Fri, 18 Mar 2022 19:14:21 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/authors/%E3%81%B5%E3%81%98%E3%81%A3%E3%81%B4/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>Mashita0123</title>
+      <title>mashita0123</title>
       <link>https://blog.nutmeg.cloud/authors/mashita0123/</link>
       <pubDate>Fri, 11 Feb 2022 10:32:54 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/authors/mashita0123/</guid>
       <description></description>
     </item>
+    
     <item>
-      <title>R.kobayashi</title>
+      <title>r.kobayashi</title>
       <link>https://blog.nutmeg.cloud/authors/r.kobayashi/</link>
       <pubDate>Wed, 01 Sep 2021 00:49:11 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/authors/r.kobayashi/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>
