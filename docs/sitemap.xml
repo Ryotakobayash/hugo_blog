@@ -2,17 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.nutmeg.cloud/authors/</loc>
-    <lastmod>2024-05-19T17:12:32+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/authors/hugahuga/</loc>
-    <lastmod>2024-05-19T17:12:32+09:00</lastmod>
+    <loc>https://blog.nutmeg.cloud/members/</loc>
+    <lastmod>2024-05-24T18:15:55+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/</loc>
-    <lastmod>2024-05-19T17:12:32+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/blog/post-yyyymmdd-stock2/</loc>
-    <lastmod>2024-05-19T17:12:32+09:00</lastmod>
+    <lastmod>2024-05-24T18:15:55+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/tags/</loc>
     <lastmod>2024-05-10T19:07:50+09:00</lastmod>
@@ -23,8 +17,8 @@
     <loc>https://blog.nutmeg.cloud/blog/post-20240426/</loc>
     <lastmod>2024-05-10T19:07:50+09:00</lastmod>
   </url><url>
-    <loc>https://blog.nutmeg.cloud/authors/%E6%AF%94%E5%98%89%E8%8F%AF/</loc>
-    <lastmod>2024-05-10T19:07:50+09:00</lastmod>
+    <loc>https://blog.nutmeg.cloud/authors/</loc>
+    <lastmod>2024-04-19T18:33:34+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/categories/</loc>
     <lastmod>2024-04-19T18:33:34+09:00</lastmod>
@@ -478,9 +472,6 @@
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-20220318/</loc>
     <lastmod>2022-03-18T19:14:21+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/members/</loc>
-    <lastmod>2022-02-26T18:15:55+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-20220218/</loc>
     <lastmod>2022-02-18T23:37:39+09:00</lastmod>

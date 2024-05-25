@@ -1,0 +1,44 @@
+<div class="col-md-6 mb-4">
+    <article class="card">
+        {{ if .Params.Image }}
+        <img src="{{ .Params.Image | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}">
+        {{ end }}
+        <div class="card-body px-0">
+        {{ range .Params.Categories }}
+        <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}"
+            class="text-primary">{{ . | title | humanize }}</a>
+        {{ end }}
+        <a href="{{ .Permalink }}" class="h5 d-block my-3">{{ .Title | markdownify }}</a>
+        <div class="mb-3 post-meta">
+            <span class="author">
+                {{ if isset .Params "authors" }} <!-- .Params.authors が存在するかチェック -->
+                    {{ $authorKey := index .Params.authors 0 }} <!-- .Params.authors の最初の要素を取得 -->
+                    {{ $author := index .Site.Params.Authors $authorKey }} <!-- .Site.Params.Authors から著者情報を取得 -->
+                    <p>
+                    {{ if $author }}
+                        <!-- Front Matterのauthorがauthors中にあるとき -->
+                        By {{ $author.name }}
+                    {{ else }}
+                        <!-- Front Matterのauthorがauthorsに無かったとき -->
+                        By {{ .Site.Params.defaultAuthor }}
+                    {{ end }}
+                {{ else }}
+                    <!-- .Params.authors が存在しないとき -->
+                    最終更新日:{{ .Date.Format "02 January 2006" }}
+                {{ end }}
+                {{ if not .Params.HideDate }}
+                    <span class="border-bottom border-primary px-2 mx-1"></span>
+                    {{ .PublishDate.Format "02 January 2006" }}
+                {{ end }}
+                </p>
+            </span>
+
+            
+
+
+        </div>
+        <p class="card-text">{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="btn btn-outline-primary">read more</a>
+        </div>
+    </article>
+</div>

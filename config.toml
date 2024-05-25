@@ -11,7 +11,7 @@ languageCode = "ja"
 title = "NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"
 theme = "liva-hugo"
 summaryLength = "2"
-paginate = 6
+paginate = 8
 disqusShortname = ""
 publishDir = "docs"
 [outputs]
@@ -108,6 +108,8 @@ googleAnalitycsID = "Your ID"
 # copyright
 copyright = "&copy; NUTMEG 2024"
 images = ["images/OGP.png"]
+defaultAuthor = "NUTMEG"
+
 
 # レイアウト変更用css
 customCSS = ["css/custom_post.css"]
@@ -121,10 +123,78 @@ customCSS = ["css/custom_post.css"]
   [params.search]
   enable = true
 
-defaultAuthor = "デフォルトユーザー"
+
 [params.authors]
-  [params.authors.kobayashi]
-    name      = "ryota5884"
+  [params.authors.ryota5884]
+    name = "ryota5884"
+    bio = "sub-manager"
+
+  [params.authors.rin]
+    name = "りん"
+    bio = ""
+
+  [params.authors.paladin]
+    name = "パラディン"
+    bio = ""
+
+  [params.authors.ichinose]
+    name = "ichinose"
+    bio = ""
+
+  [params.authors.nobu]
+    name = "のぶ"
+    bio = ""
+
+  [params.authors.kubo]
+    name = "くぼ"
+    bio = ""
+
+  [params.authors.souta]
+    name = "ソウタ"
+    bio = ""
+
+  [params.authors.JOJO]
+    name = "JOJO"
+    bio = ""
+
+  [params.authors.tsukki]
+    name = "つっきー"
+    bio = ""
+
+  [params.authors.nana]
+    name = "なな"
+    bio = ""
+
+  [params.authors.yoochan]
+    name = "よーーちゃん"
+    bio = ""
+
+  [params.authors.i2]
+    name = "i2"
+    bio = ""
+
+  [params.authors.takachan]
+    name = "たかちゃん"
+    bio = ""
+
+  [params.authors.hikahana]
+    name = "比嘉華"
+    bio = ""
+
+  [params.authors.hayate]
+    name = "はやて"
+    bio = ""
+
+  [params.authors.izumi]
+    name = "いずみ"
+    bio = ""
+
+  [params.authors.yama]
+    name = "やま"
+    bio = ""
+
+
+
 
 ############################ news letter ########################
 [params.newsletter]

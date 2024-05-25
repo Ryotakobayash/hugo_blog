@@ -1,7 +1,7 @@
 ---
 title: "Post_Yyyymmdd"
 date: 2024-05-19T17:12:32+09:00
-draft: false
+draft: true
 
 # メイン画像画像
 image: "images/"
