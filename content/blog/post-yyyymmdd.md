@@ -26,7 +26,7 @@ tags:
   - ""
 
 # 著者名
-autors:
+authors:
   - ""
 
 

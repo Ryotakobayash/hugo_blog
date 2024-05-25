@@ -1,6 +1,6 @@
 ---
 title: "Members"
-date: 2022-02-26T18:15:55+09:00
+date: 2024-05-24T18:15:55+09:00
 draft: farse
 
 # meta description
@@ -16,7 +16,7 @@ type: "about"
 <div class="members-flex-box">
   <div class="members-flex-box__card">
   <image class="members-flex-box__card__img" src="../images/members/kobayashi.png">
-  <p class="members-flex-box__card__name">r.kobayashi</p>
+  <p class="members-flex-box__card__name">ryota5884</p>
   <div class="members-flex-box__card__body">
     <input id="14" class="acd-check" type="checkbox">
     <label class="acd-label" for="14">about</label>

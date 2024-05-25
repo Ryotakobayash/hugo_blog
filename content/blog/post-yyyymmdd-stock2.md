@@ -1,7 +1,7 @@
 ---
 title: "Post_Yyyymmdd"
 date: 2024-05-19T17:12:32+09:00
-draft: true
+draft: false
 
 # メイン画像画像
 image: "images/"
@@ -26,8 +26,8 @@ tags:
   - ""
 
 # 著者名
-autors:
-  - ""
+authors:
+  - "kobayashi"
 
 
 type: "featured"

@@ -29,8 +29,6 @@
   <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
 
   
-  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
-  
 
   <meta property="og:title" content="slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する" />
 <meta property="og:description" content="slackの無料プランだと3ヶ月間でチャンネルのメッセージは表示されなくなります。学祭やチーム開発では3ヶ月より前のことを振り返りたいことも多々あります。そのため、今回は無料プランでも3ヶ月間以前のメッセージも遡れるような開発をしてみました。" />
@@ -252,47 +250,47 @@ DBには以下のようなデータが入っています。<a href="https://api.
 原因はmongoDB内で保存されているデータが<a href="https://bsonspec.org/">bson形式</a>だからです。そのため取り出して新しい変数に入れたり、連想配列に格納する際にはキャストする必要がありました。</p>
 <p>実際に連想配列に格納するメソッドです。</p>
 <pre tabindex="0"><code>func (u *mongoDBUsecase) FetchData() []map[string]string {
-	docs, err := u.repository.AllCollection()
-	usersInfoMap, err := u.repository.GetUserInfo()
-	channelsInfoMap, err := u.repository.GetChannelInfo()
+ docs, err := u.repository.AllCollection()
+ usersInfoMap, err := u.repository.GetUserInfo()
+ channelsInfoMap, err := u.repository.GetChannelInfo()
 
-	usersInfo := usersInfoMap[0]
-	channelsInfo := channelsInfoMap[0]
-	var data []map[string]string
+ usersInfo := usersInfoMap[0]
+ channelsInfo := channelsInfoMap[0]
+ var data []map[string]string
 
-	for _, v := range docs {
-		var m = make(map[string]string)
-		eventTs := v[&#34;event&#34;].(bson.M)[&#34;event_ts&#34;].(string)
-		channel := v[&#34;event&#34;].(bson.M)[&#34;channel&#34;].(string)
-		text := v[&#34;event&#34;].(bson.M)[&#34;text&#34;]
-		threadTs := v[&#34;event&#34;].(bson.M)[&#34;thread_ts&#34;]
-		user := v[&#34;event&#34;].(bson.M)[&#34;user&#34;]
+ for _, v := range docs {
+  var m = make(map[string]string)
+  eventTs := v[&#34;event&#34;].(bson.M)[&#34;event_ts&#34;].(string)
+  channel := v[&#34;event&#34;].(bson.M)[&#34;channel&#34;].(string)
+  text := v[&#34;event&#34;].(bson.M)[&#34;text&#34;]
+  threadTs := v[&#34;event&#34;].(bson.M)[&#34;thread_ts&#34;]
+  user := v[&#34;event&#34;].(bson.M)[&#34;user&#34;]
 
-		m[&#34;eventTs&#34;] = eventTs
+  m[&#34;eventTs&#34;] = eventTs
 
-		channelName := channelsInfo[channel]
-		m[&#34;channelName&#34;] = channelName.(string)
-		m[&#34;channelId&#34;] = channel
+  channelName := channelsInfo[channel]
+  m[&#34;channelName&#34;] = channelName.(string)
+  m[&#34;channelId&#34;] = channel
 
-		if threadTs != nil {
-			m[&#34;threadTs&#34;] = threadTs.(string)
-		}
+  if threadTs != nil {
+   m[&#34;threadTs&#34;] = threadTs.(string)
+  }
 
-		if text != nil {
-			m[&#34;text&#34;] = text.(string)
-		}
+  if text != nil {
+   m[&#34;text&#34;] = text.(string)
+  }
 
-		if user != nil {
-			userName := usersInfo[user.(string)]
-			m[&#34;user&#34;] = userName.(string)
-		}
+  if user != nil {
+   userName := usersInfo[user.(string)]
+   m[&#34;user&#34;] = userName.(string)
+  }
 
-		data = append(data, m)
-	}
-	if err != nil {
-		panic(err)
-	}
-	return data
+  data = append(data, m)
+ }
+ if err != nil {
+  panic(err)
+ }
+ return data
 }
 </code></pre><p>もしかしたらもう少し上手にする方法があるかもしれません。本プロダクトではここが一番困難だと感じましたが、改めてgolangの型定義などを学び直すことになりとても勉強になりました。</p>
 <h2 id="実際のプロダクト">実際のプロダクト</h2>
@@ -324,6 +322,7 @@ LT会で利用した資料とgithubのリンクも添付するので、宜しけ
 <h3 id="nutmeg-slackhttpsgithubcomnutfesnutmeg-slackimg-srchttpsiimgurcomalsfkyppng-width50"><a href="https://github.com/NUTFes/nutmeg-slack">nutmeg-slack</a><img src="https://i.imgur.com/aLSFkyP.png" width="50"></h3>
 <h3 id="lt会で使用した資料">LT会で使用した資料</h3>
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSZEz_HEp1XTRjDEfxIGOPuRlfiI5-LutnmP05-K8CaXUToat7-VCSCEhjaJg9Jv-LIv-cMc3yZIri2/embed?start=false&loop=false&delayms=3000" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
         </div>
 
         

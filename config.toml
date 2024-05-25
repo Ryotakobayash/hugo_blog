@@ -106,7 +106,7 @@ googleAnalitycsID = "Your ID"
 # email = "仮demo@email.com"
 # location = "仮Dhaka, Bangladedsh"
 # copyright
-copyright = "&copy; NUTMEG 2022"
+copyright = "&copy; NUTMEG 2024"
 images = ["images/OGP.png"]
 
 # レイアウト変更用css
@@ -120,6 +120,11 @@ customCSS = ["css/custom_post.css"]
   # search
   [params.search]
   enable = true
+
+defaultAuthor = "デフォルトユーザー"
+[params.authors]
+  [params.authors.kobayashi]
+    name      = "ryota5884"
 
 ############################ news letter ########################
 [params.newsletter]

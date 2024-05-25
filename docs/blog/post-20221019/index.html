@@ -29,8 +29,6 @@
   <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
 
   
-  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
-  
 
   <meta property="og:title" content="configファイルを使ってサーバーにsshする方法" />
 <meta property="og:description" content="初めまして、NUTMEG所属の廣池です。 今回はLinuxサーバーにsshする時、configファイルを使ってsshする方法を紹介したいと思います。" />
@@ -187,7 +185,7 @@
 <p>サーバーにログインする上で、悪意を持った人が勝手に操作できないようにするため、安全にログインするためにsshを使用します。</p>
 <h2 id="sshの方法">sshの方法</h2>
 <p>sshをする時にはshellに以下のように入力すると実行できます。</p>
-<pre tabindex="0"><code>$ ssh -i ~/.ssh/id_rsa -l nutmeg 192.168.20.1
+<pre tabindex="0"><code>ssh -i ~/.ssh/id_rsa -l nutmeg 192.168.20.1
 </code></pre><p>今回のケースでは-iで秘密鍵の場所の指定をして、-lでユーザー名とアドレスを指定しています。もっと短くsshをする書き方もありますが、いちいち一定の情報を覚えておかないといけないというデメリットがあります。</p>
 <p>この問題を解決するためにconfigを使い予め設定を記憶させておく方法があります。</p>
 <p>以下の項にやり方を書いていきます。</p>
@@ -196,8 +194,8 @@
 <p><strong>githubなどを使用している人で、鍵を既に作成した人が新しく鍵を作ってしまうと、公開鍵を登録し直す手間が発生してしまいます。
 必ずチェックしてから作成してください。</strong></p>
 <p>以下のコマンドを実行していきます。</p>
-<pre tabindex="0"><code>$ cd ~/.ssh
-$ ssh-keygen
+<pre tabindex="0"><code>cd ~/.ssh
+ssh-keygen
 </code></pre><p>ssh-keygenを実行すると以下のようなのが表示され、ファイルの場所とパスワードを聞かれますが、全てエンターを押して実行してもらって大丈夫です。</p>
 <pre tabindex="0"><code>Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/ユーザー名/.ssh/id_rsa): 
@@ -217,8 +215,8 @@ id_rsaが秘密鍵でid_rsa.pubが公開鍵です。vscodeで開きたい時に�
 <p>ようやくconfigファイルの作成です。
 cinfigファイルは自分のPCの.sshファイルに作成します。</p>
 <p>今回はvscodeを使って書いていきます。エディタごとに作成のコマンドは違いますが、configの書き方は同じです。</p>
-<pre tabindex="0"><code>$ cd ~/.ssh    *ホームディレクトリから.sshまで移動
-$ code config  *configの作成  
+<pre tabindex="0"><code>cd ~/.ssh    *ホームディレクトリから.sshまで移動
+code config  *configの作成  
 </code></pre><p>ここで作成したconfigに以下の文法に従い入力していきます。</p>
 <pre tabindex="0"><code>Host 任意の接続名
     HostName ホスト名
@@ -241,7 +239,7 @@ Host gidai
     IdentityFile 鍵へのPATH
 </code></pre><p>configの設定が終了したらあとは任意の接続名を使うだけで簡単にsshができます。</p>
 <p>接続名をnutmegに設定した場合だと</p>
-<pre tabindex="0"><code>$ ssh nutmeg
+<pre tabindex="0"><code>ssh nutmeg
 </code></pre><p>これでアクセスできれば設定は無事に終了です。
 今度からはストレスなくサーバーにログインできるようになります！</p>
 <h2 id="終わりに">終わりに</h2>
