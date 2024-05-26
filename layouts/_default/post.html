@@ -18,24 +18,24 @@
                     {{ if $author }}
                         <!-- Front Matterのauthorがauthors中にあるとき -->
                         By {{ $author.name }}
+                        {{ if not .Params.HideDate }}
+                            <span class="border-bottom border-primary px-2 mx-1"></span>
+                            {{ .PublishDate.Format "02 January 2006" }}
+                        {{ end }}
                     {{ else }}
                         <!-- Front Matterのauthorがauthorsに無かったとき -->
                         By {{ .Site.Params.defaultAuthor }}
+                        {{ if not .Params.HideDate }}
+                            <span class="border-bottom border-primary px-2 mx-1"></span>
+                            {{ .PublishDate.Format "02 January 2006" }}
+                        {{ end }}
                     {{ end }}
                 {{ else }}
                     <!-- .Params.authors が存在しないとき -->
                     最終更新日:{{ .Date.Format "02 January 2006" }}
                 {{ end }}
-                {{ if not .Params.HideDate }}
-                    <span class="border-bottom border-primary px-2 mx-1"></span>
-                    {{ .PublishDate.Format "02 January 2006" }}
-                {{ end }}
                 </p>
             </span>
-
-            
-
-
         </div>
         <p class="card-text">{{ .Summary }}</p>
         <a href="{{ .Permalink }}" class="btn btn-outline-primary">read more</a>

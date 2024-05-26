@@ -25,8 +25,9 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://pin.it/3xYYEw9">pinterest</a><br>
-    <a href="https://student.redesigner.jp/students/5e2c3b73ba0a846b7166acc2e59eaba5">portfolio</a>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/ryota5884/">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://pin.it/3xYYEw9">pinterest</a>
+    <a class="members-flex-box__card__post-list" href="https://student.redesigner.jp/students/5e2c3b73ba0a846b7166acc2e59eaba5">portfolio</a>
   </div>
 </div>
 
@@ -41,8 +42,9 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://twitter.com/akanam521T">Twitter</a><br>
-    <a href="https://github.com/harata-t">GitHub</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://twitter.com/akanam521T">Twitter</a>
+    <a class="members-flex-box__card__post-list" href="https://github.com/harata-t">GitHub</a>
   </div>
 </div>
 
@@ -55,6 +57,9 @@ type: "about"
     <div class="acd-content">
       <p>デザインを勉強中です。最終的にwebページ作れるようになりたいです。学科は生物系です。NUTMEG楽しいです。</p>
     </div>
+  </div>
+  <div class="members-flex-box__card__link">
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
   </div>
 </div>
 
@@ -69,7 +74,8 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://twitter.com/@Kazuma_NUT">Twitter</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://twitter.com/@Kazuma_NUT">Twitter</a>
   </div>
 </div>
 
@@ -82,6 +88,9 @@ type: "about"
     <div class="acd-content">
       <p>FinanSuのPMしてます。フロントエンド・バックエンド・インフラをふらふらやってます。</p>
     </div>
+  </div>
+  <div class="members-flex-box__card__link">
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
   </div>
 </div>
 
@@ -96,7 +105,8 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://twitter.com/nose_nagaoka">Twitter</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://twitter.com/nose_nagaoka">Twitter</a>
   </div>
 </div>
 
@@ -111,13 +121,14 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://takumi-portfolio.vercel.app/">Portfolio</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://takumi-portfolio.vercel.app/">Portfolio</a>
   </div>
 </div>
 
 <div class="members-flex-box__card">
   <image class="members-flex-box__card__img" src="../images/members/iida.png">
-  <p class="members-flex-box__card__name">よーーちゃん</p>
+  <p class="members-flex-box__card__name">よーちゃん</p>
   <div class="members-flex-box__card__body">
     <input id="35" class="acd-check" type="checkbox">
     <label class="acd-label" for="35">about</label>
@@ -126,9 +137,10 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://twitter.com/iodine2_">Twitter</a><br>
-    <a href="https://www.instagram.com/___yosuke.i/">Instagram</a><br>
-    <a href="https://github.com/YosukeIida">GitHub</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://twitter.com/iodine2_">Twitter</a>
+    <a class="members-flex-box__card__post-list" href="https://www.instagram.com/___yosuke.i/">Instagram</a><br>
+    <a class="members-flex-box__card__post-list" href="https://github.com/YosukeIida">GitHub</a>
   </div>
 </div>
 
@@ -141,6 +153,9 @@ type: "about"
     <div class="acd-content">
       <p>NUTMEGデザイナー部門所属、HomePageとSeedsに関わっています。ロゴデザインつくるの好きです。かっこいいポートフォリオをつくるのが今年の目標。</p>
     </div>
+  </div>
+  <div class="members-flex-box__card__link">
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a>
   </div>
 </div>
 
@@ -155,8 +170,9 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://twitter.com/koki_wakatsuki">Twitter</a><br>
-    <a href="https://github.com/KokiWakatsuki">GitHub</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://twitter.com/koki_wakatsuki">Twitter</a>
+    <a class="members-flex-box__card__post-list" href="https://github.com/KokiWakatsuki">GitHub</a>
   </div>
 </div>
 
@@ -171,7 +187,8 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://instagram.com/jeu_norappe?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://instagram.com/jeu_norappe?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
   </div>
 </div>
 
@@ -186,7 +203,8 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://www.instagram.com/kotume.1024/">Instagram</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://www.instagram.com/kotume.1024/">Instagram</a>
   </div>
 </div>
 
@@ -199,6 +217,9 @@ type: "about"
     <div class="acd-content">
       <p>未経験で知識0だけど頑張ります！</p>
     </div>
+  </div>
+  <div class="members-flex-box__card__link">
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
   </div>
 </div>
 
@@ -213,8 +234,9 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://x.com/mikan_hrn">Twitter</a><br>
-    <a href="https://www.instagram.com/hnd.hkr_?igsh=Ync3aDhmczJnaTBn&utm_source=qr">Instagram</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://x.com/mikan_hrn">Twitter</a>
+    <a class="members-flex-box__card__post-list" href="https://www.instagram.com/hnd.hkr_?igsh=Ync3aDhmczJnaTBn&utm_source=qr">Instagram</a>
   </div>
 </div>
 
@@ -229,9 +251,10 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a href="https://www.instagram.com/mikan_taka.h/">Instagram</a><br>
-    <a href="https://github.com/TkymHrt">GitHub</a><br>
-    <a href="https://tkymhrt-portfolio.pages.dev/">Portfolio</a>
+    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://www.instagram.com/mikan_taka.h/">Instagram</a>
+    <a class="members-flex-box__card__post-list" href="https://github.com/TkymHrt">GitHub</a><br>
+    <a class="members-flex-box__card__post-list" href="https://tkymhrt-portfolio.pages.dev/">Portfolio</a>
   </div>
 </div>
 

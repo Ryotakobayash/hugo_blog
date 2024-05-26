@@ -132,6 +132,10 @@ customCSS = ["css/custom_post.css"]
   [params.authors.rin]
     name = "りん"
     bio = ""
+  
+  [params.authors.fukumitsu]
+    name = "ふくみつ"
+    bio = ""
 
   [params.authors.paladin]
     name = "パラディン"
@@ -149,7 +153,7 @@ customCSS = ["css/custom_post.css"]
     name = "くぼ"
     bio = ""
 
-  [params.authors.souta]
+  [params.authors.sota]
     name = "ソウタ"
     bio = ""
 
@@ -165,15 +169,23 @@ customCSS = ["css/custom_post.css"]
     name = "なな"
     bio = ""
 
-  [params.authors.yoochan]
-    name = "よーーちゃん"
+  [params.authors.goku]
+  name = "悟空"
+  bio = ""
+
+  [params.authors.onoD]
+    name = "オノディー"
+    bio = ""
+
+  [params.authors.demachi]
+    name = "まっちー"
     bio = ""
 
   [params.authors.i2]
     name = "i2"
     bio = ""
 
-  [params.authors.takachan]
+  [params.authors.taka-chan]
     name = "たかちゃん"
     bio = ""
 

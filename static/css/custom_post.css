@@ -94,8 +94,7 @@ li::before {
 }
 
 .content * {
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin: 0px;
 }
 
 .content ul li {
@@ -133,10 +132,18 @@ iframe {
 }
 
 .members-flex-box__card {
+  display: grid;
+  gap: 8px;
   width: var(--card-width);
   min-width: var(--card-min-width);
   margin: 20px;
 }
+
+a.members-flex-box__card__post-list {
+  margin: 2px 8px;
+  display: inline-block;
+}
+
 
 .members-flex-box__card__img {
   border-radius: 50%;
@@ -171,4 +178,13 @@ iframe {
   padding: 10px;
   visibility: visible;
   margin-top: 5px;
+}
+
+.members-flex-box__card__link > a {
+  line-height: 1.5;
+}
+
+.members-flex-box__card__post-list > a {
+  font: 700;
+  text-decoration: underline;
 }

@@ -27,7 +27,7 @@ tags:
 
 # 著者名
 authors:
-  - "kobayashi"
+  - ""
 
 
 type: "featured"

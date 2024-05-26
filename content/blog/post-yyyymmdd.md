@@ -29,6 +29,5 @@ tags:
 authors:
   - ""
 
-
 type: "featured"
 ---

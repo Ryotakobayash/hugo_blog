@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>yamada-keisuke on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+    <link>https://blog.nutmeg.cloud/authors/yamada-keisuke/</link>
+    <description>Recent content in yamada-keisuke on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 10 Dec 2023 16:56:09 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/authors/yamada-keisuke/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>コロナ明けでいろいろあった編入体験記</title>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20231210/</link>
+      <pubDate>Sun, 10 Dec 2023 16:56:09 +0900</pubDate>
+      
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231210/</guid>
+      <description>はじめに お疲れ様です。NUTMEGのB3の山田と申します。NUTMEGの活動の1つでアドベントカレンダー方式のブログを公開していくみたいなので頑張ります。</description>
+    </item>
+    
+    <item>
+      <title>技大祭の協賛団体をlooker studioで可視化してみた</title>
+      <link>https://blog.nutmeg.cloud/blog/post-20230727/</link>
+      <pubDate>Fri, 28 Jul 2023 21:12:45 +0900</pubDate>
+      
+      <guid>https://blog.nutmeg.cloud/blog/post-20230727/</guid>
+      <description>はじめに はじめまして、今年からNUTMEGに加入した山田 圭祐です。 私は今までプログラミングから逃げてきましたがプログラミングを味方にできるチャンスが訪れたので加入しました！</description>
+    </item>
+    
+  </channel>
+</rss>
