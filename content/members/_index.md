@@ -13,6 +13,8 @@ type: "about"
 ---
 構成メンバー
 
+<a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/">著者一覧ページはこちら</a>
+
 <div class="members-flex-box">
   <div class="members-flex-box__card">
   <image class="members-flex-box__card__img" src="../images/members/kobayashi.png">
@@ -137,7 +139,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/i2/">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/yo-chan/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://twitter.com/iodine2_">Twitter</a>
     <a class="members-flex-box__card__post-list" href="https://www.instagram.com/___yosuke.i/">Instagram</a><br>
     <a class="members-flex-box__card__post-list" href="https://github.com/YosukeIida">GitHub</a>
@@ -187,7 +189,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/JOJO/">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/jojo/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://instagram.com/jeu_norappe?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
   </div>
 </div>
@@ -259,3 +261,4 @@ type: "about"
 </div>
 
 </div>
+b
