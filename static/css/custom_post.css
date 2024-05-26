@@ -101,10 +101,15 @@ li::before {
   margin: 0px;
 }
 
+.content pre {
+  margin: 16px 0px;
+}
+
 .content ul li {
   list-style: disc;
   padding: 0;
   margin-left: 32px;
+  margin-top: 16px;
 }
 
 /* Product Page */
