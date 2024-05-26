@@ -82,6 +82,10 @@ body,p {
   margin: 16px auto 5px;
 }
 
+.content code {
+  color: #808080;
+}
+
 p {
   line-height: var(--line-height);
   word-break: break-word;
@@ -187,4 +191,12 @@ a.members-flex-box__card__post-list {
 .members-flex-box__card__post-list > a {
   font: 700;
   text-decoration: underline;
+}
+
+.product-flex-box__card__links > a {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 24px;
+  text-decoration: underline;
+  
 }

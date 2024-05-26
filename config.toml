@@ -127,7 +127,7 @@ customCSS = ["css/custom_post.css"]
 [params.authors]
   [params.authors.ryota5884]
     name = "ryota5884"
-    bio = "sub-manager"
+    bio = "Designer"
 
   [params.authors.rin]
     name = "りん"
@@ -205,6 +205,9 @@ customCSS = ["css/custom_post.css"]
     name = "やま"
     bio = ""
 
+    [params.authors.NUTMEG]
+    name = "NUTMEG"
+    bio = "複数人で作成"
 
 
 
