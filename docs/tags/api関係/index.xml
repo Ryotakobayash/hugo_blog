@@ -16,5 +16,15 @@
       <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
     
+    <item>
+      <title>TwitterAPIのすゝめ</title>
+      <link>https://blog.nutmeg.cloud/blog/post-20230306/</link>
+      <pubDate>Fri, 10 Mar 2023 10:40:40 +0900</pubDate>
+      
+      <guid>https://blog.nutmeg.cloud/blog/post-20230306/</guid>
+      <description>初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。
+有料化問題について 有料化はされたのか？ TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。</description>
+    </item>
+    
   </channel>
 </rss>
