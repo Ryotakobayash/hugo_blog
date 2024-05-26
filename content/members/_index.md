@@ -42,7 +42,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/paladin/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://twitter.com/akanam521T">Twitter</a>
     <a class="members-flex-box__card__post-list" href="https://github.com/harata-t">GitHub</a>
   </div>
@@ -59,7 +59,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/rin/">投稿記事</a><br>
   </div>
 </div>
 
@@ -74,7 +74,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/nobu/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://twitter.com/@Kazuma_NUT">Twitter</a>
   </div>
 </div>
@@ -90,7 +90,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/kubo/">投稿記事</a><br>
   </div>
 </div>
 
@@ -105,7 +105,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/ichinose/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://twitter.com/nose_nagaoka">Twitter</a>
   </div>
 </div>
@@ -121,7 +121,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/taka-chan/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://takumi-portfolio.vercel.app/">Portfolio</a>
   </div>
 </div>
@@ -137,7 +137,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/i2/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://twitter.com/iodine2_">Twitter</a>
     <a class="members-flex-box__card__post-list" href="https://www.instagram.com/___yosuke.i/">Instagram</a><br>
     <a class="members-flex-box__card__post-list" href="https://github.com/YosukeIida">GitHub</a>
@@ -155,7 +155,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/nana/">投稿記事</a>
   </div>
 </div>
 
@@ -170,7 +170,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/tsukki/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://twitter.com/koki_wakatsuki">Twitter</a>
     <a class="members-flex-box__card__post-list" href="https://github.com/KokiWakatsuki">GitHub</a>
   </div>
@@ -187,7 +187,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/JOJO/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://instagram.com/jeu_norappe?igshid=OGQ5ZDc2ODk2ZA==">Instagram</a>
   </div>
 </div>
@@ -203,7 +203,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/sota/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://www.instagram.com/kotume.1024/">Instagram</a>
   </div>
 </div>
@@ -219,7 +219,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/hayate/">投稿記事</a><br>
   </div>
 </div>
 
@@ -234,7 +234,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/hikahana/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://x.com/mikan_hrn">Twitter</a>
     <a class="members-flex-box__card__post-list" href="https://www.instagram.com/hnd.hkr_?igsh=Ync3aDhmczJnaTBn&utm_source=qr">Instagram</a>
   </div>
@@ -251,7 +251,7 @@ type: "about"
     </div>
   </div>
   <div class="members-flex-box__card__link">
-    <a class="members-flex-box__card__post-list" href="">投稿記事</a><br>
+    <a class="members-flex-box__card__post-list" href="https://blog.nutmeg.cloud/authors/yama/">投稿記事</a><br>
     <a class="members-flex-box__card__post-list" href="https://www.instagram.com/mikan_taka.h/">Instagram</a>
     <a class="members-flex-box__card__post-list" href="https://github.com/TkymHrt">GitHub</a><br>
     <a class="members-flex-box__card__post-list" href="https://tkymhrt-portfolio.pages.dev/">Portfolio</a>
