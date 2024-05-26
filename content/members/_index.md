@@ -261,4 +261,3 @@ type: "about"
 </div>
 
 </div>
-b
