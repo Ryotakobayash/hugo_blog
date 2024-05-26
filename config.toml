@@ -182,7 +182,7 @@ customCSS = ["css/custom_post.css"]
     bio = ""
 
   [params.authors.yo-chan]
-    name = "よーちゃん"
+    name = "よーーーちゃん"
     bio = ""
 
   [params.authors.taka-chan]
