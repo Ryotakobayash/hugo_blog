@@ -97,9 +97,9 @@ li::before {
   display: none;
 }
 
-.content * {
+/* .content * {
   margin: 0px;
-}
+} */
 
 .content pre {
   margin: 16px 0px;

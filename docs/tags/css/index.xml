@@ -4,37 +4,44 @@
     <title>CSS on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/tags/css/</link>
     <description>Recent content in CSS on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 26 May 2024 20:12:57 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 May 2024 20:12:57 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NUTMEGブログ大改造ビフォーアフター</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240526/</link>
       <pubDate>Sun, 26 May 2024 20:12:57 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20240526/</guid>
       <description>NUTMEGデザイナーチーム 修士2年のryota5884です。この度ふと思い立って後回しにしていたブログの改修をしてみました。多少苦戦したのでその解決方法を後輩への引き継ぎも兼ねてまとめようと思います。</description>
     </item>
+    
     <item>
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
       <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
+    
     <item>
       <title>フロントエンド未経験者が仕事をするためにやった1ヶ月の勉強</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231221/</link>
       <pubDate>Thu, 21 Dec 2023 20:39:42 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231221/</guid>
       <description>はじめに はじめまして。NUTMEGで普段インフラ・バックエンドをしている市之瀬と申します。</description>
     </item>
+    
     <item>
       <title>NUTMEG-Seedsリリースしました！！！</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220319/</link>
       <pubDate>Sun, 20 Mar 2022 03:33:04 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20220319/</guid>
       <description>NUTMEGで主にフロントエンドを担当している99Aです． 2022.3.18にNUTMEG-Seedsという学習管理もとい人材管理のアプリケーションをリリースしました！ このアプリはメンバーの学習記録，技術スタック，プロジェクトの参加状況を参照し，チームの管理に特化したアプリです．以下に主な機能を紹介します．</description>
     </item>
+    
   </channel>
 </rss>

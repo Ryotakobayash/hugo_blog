@@ -1,47 +1,57 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hikahana on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+    <title>hikahana on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/authors/hikahana/</link>
-    <description>Recent content in Hikahana on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo</generator>
+    <description>Recent content in hikahana on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 10 May 2024 19:07:50 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/hikahana/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 May 2024 19:07:50 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/authors/hikahana/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>よもやまのすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240426/</link>
       <pubDate>Fri, 10 May 2024 19:07:50 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20240426/</guid>
       <description>はじめに NUTMEGに所属し、3年目になりました比嘉華です。 VCT Pacific,EMEA,Americasすべて面白いのでアーカイブ視聴や見どころをまとめてある切り抜きチャンネルなどから見てみてください！ vct_emea,vct_pacific,vct_americas見ましょう。 さて、今回はよもやま制度の紹介と導入してどうなったかを軽くまとめていきます。</description>
     </item>
+    
     <item>
       <title>最近周りから生意気って言われる件について</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231207/</link>
       <pubDate>Thu, 07 Dec 2023 22:24:07 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231207/</guid>
       <description>はじめに 先日、友人とvalorantでコンペティティブをプレイしたら7連敗して気分lowなNUTMEG2年の花田光です。NUTMEGアドベントカレンダー2日目を担当します。これはきっと2年生と2日目を掛けてくれたのだと思ってます。今回は、最近周りから生意気になったといわれることが増えたのでいつから生意気になったのかを俯瞰して考察していくブログになります。</description>
     </item>
+    
     <item>
       <title>一人旅話</title>
       <link>https://blog.nutmeg.cloud/blog/post-20231110/</link>
       <pubDate>Fri, 10 Nov 2023 10:59:17 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20231110/</guid>
       <description>はじめに 最近ジェルネイルをし始めたNUTMEG2年の花田です。ネイルのすすめはまた別の機会に書こうと思います。 先にお知らせです。今年はアドカレ開催します！</description>
     </item>
+    
     <item>
       <title>技育博に参加してきました！</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230529/</link>
       <pubDate>Mon, 29 May 2023 11:22:36 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20230529/</guid>
       <description>はじめに 5/27から地元である青森にSuicaが導入され、紙切符で帰る必要がなくなって嬉しさ満点のNUTMEG２年目花田光です！今回は少し遅くなってしまいましたが、５月14日に開催された技育博に参加した感想をつらつら述べていきたいと思います。</description>
     </item>
+    
     <item>
       <title>TwitterAPIのすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230306/</link>
       <pubDate>Fri, 10 Mar 2023 10:40:40 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20230306/</guid>
-      <description>初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。&#xA;有料化問題について 有料化はされたのか？ TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。</description>
+      <description>初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。
+有料化問題について 有料化はされたのか？ TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。</description>
     </item>
+    
   </channel>
 </rss>
