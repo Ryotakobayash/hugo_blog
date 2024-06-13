@@ -4,384 +4,296 @@
     <title>活動の様子 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</link>
     <description>Recent content in 活動の様子 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 26 May 2024 20:12:57 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 May 2024 20:12:57 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NUTMEGブログ大改造ビフォーアフター</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240526/</link>
       <pubDate>Sun, 26 May 2024 20:12:57 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240526/</guid>
       <description>NUTMEGデザイナーチーム 修士2年のryota5884です。この度ふと思い立って後回しにしていたブログの改修をしてみました。多少苦戦したのでその解決方法を後輩への引き継ぎも兼ねてまとめようと思います。</description>
     </item>
-    
     <item>
       <title>よもやまのすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240426/</link>
       <pubDate>Fri, 10 May 2024 19:07:50 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240426/</guid>
       <description>はじめに NUTMEGに所属し、3年目になりました比嘉華です。 VCT Pacific,EMEA,Americasすべて面白いのでアーカイブ視聴や見どころをまとめてある切り抜きチャンネルなどから見てみてください！ vct_emea,vct_pacific,vct_americas見ましょう。 さて、今回はよもやま制度の紹介と導入してどうなったかを軽くまとめていきます。</description>
     </item>
-    
     <item>
       <title>第一次MinIO革命</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240419/</link>
       <pubDate>Fri, 19 Apr 2024 18:33:34 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240419/</guid>
       <description>こんにちは、NUTMEG(技大祭実行委員会 情報局)のkubosakaです。</description>
     </item>
-    
     <item>
       <title>NUTMEG新入生のための必読ガイド</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240410/</link>
       <pubDate>Wed, 10 Apr 2024 16:48:57 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240410/</guid>
       <description>はじめに 新入生の皆さん、ご入学おめでとうございます！ この春から長岡技術科学大学という新しい世界に降り立ったと思います。 これからの皆さんの活躍を期待しています。</description>
     </item>
-    
     <item>
       <title>先輩NUTMEGメンバーが新入生の時に知りたかったTips</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240406/</link>
       <pubDate>Sat, 06 Apr 2024 17:59:24 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240406/</guid>
-      <description>こんにちは！NUTMEGでデザイナーとして活動しているryota5884です！
-新入生向けブログ記事第2弾「先輩NUTMEGメンバーが新入生の時に知りたかったTips」です！今回は学業、研究室、アルバイト、生活の4つのジャンルについて、先輩から集めた新入生に教えたいTipsを紹介します。正直、技大祭実行委員会にもNUTMEGにも入らなかったとしても無駄にはならない知識ばかり！</description>
+      <description>こんにちは！NUTMEGでデザイナーとして活動しているryota5884です！&#xA;新入生向けブログ記事第2弾「先輩NUTMEGメンバーが新入生の時に知りたかったTips」です！今回は学業、研究室、アルバイト、生活の4つのジャンルについて、先輩から集めた新入生に教えたいTipsを紹介します。正直、技大祭実行委員会にもNUTMEGにも入らなかったとしても無駄にはならない知識ばかり！</description>
     </item>
-    
     <item>
       <title>NUTMEGメンバーのPC環境調査2024</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240405/</link>
       <pubDate>Fri, 05 Apr 2024 20:52:13 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240405/</guid>
-      <description>こんにちは！NUTMEGでデザイナーとして活動しているryota5884です！
-ついこの間まで雪が降っていたように思うのですが、いつの間にかもう4月に入り1週間近く経とうとしています。NUTMEGの活動拠点である長岡技術科学大学でも入学式がもう明日（4/5）に迫っており、NUTMEGもこれから新入生の勧誘や体験会で忙しくなる予定です。</description>
+      <description>こんにちは！NUTMEGでデザイナーとして活動しているryota5884です！&#xA;ついこの間まで雪が降っていたように思うのですが、いつの間にかもう4月に入り1週間近く経とうとしています。NUTMEGの活動拠点である長岡技術科学大学でも入学式がもう明日（4/5）に迫っており、NUTMEGもこれから新入生の勧誘や体験会で忙しくなる予定です。</description>
     </item>
-    
     <item>
       <title>NUTMEGブログのこれまでとこれから</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240216/</link>
       <pubDate>Sat, 02 Mar 2024 03:32:31 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240216/</guid>
-      <description>こんにちは。就活がひと段落しそうな修士1年ryota5884です。
-今回は後輩への引き継ぎも兼ねて、このNUTMEGブログが生まれた背景や歴史、運営方法についてまとめてみようと思います。</description>
+      <description>こんにちは。就活がひと段落しそうな修士1年ryota5884です。&#xA;今回は後輩への引き継ぎも兼ねて、このNUTMEGブログが生まれた背景や歴史、運営方法についてまとめてみようと思います。</description>
     </item>
-    
     <item>
       <title>12月だからNUTMEG加入からこれまでを振り返る！！</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231211/</link>
       <pubDate>Mon, 11 Dec 2023 16:02:11 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231211/</guid>
       <description>はじめに お久しぶりです。10月から技大祭実行委員会情報局長兼NUTMEG代表に就任した若月です。</description>
     </item>
-    
     <item>
       <title>最近周りから生意気って言われる件について</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231207/</link>
       <pubDate>Thu, 07 Dec 2023 22:24:07 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231207/</guid>
       <description>はじめに 先日、友人とvalorantでコンペティティブをプレイしたら7連敗して気分lowなNUTMEG2年の花田光です。NUTMEGアドベントカレンダー2日目を担当します。これはきっと2年生と2日目を掛けてくれたのだと思ってます。今回は、最近周りから生意気になったといわれることが増えたのでいつから生意気になったのかを俯瞰して考察していくブログになります。</description>
     </item>
-    
     <item>
       <title>ロゴコンペに参加してみて</title>
       <link>https://blog.nutmeg.cloud/blog/post-20231201/</link>
       <pubDate>Fri, 01 Dec 2023 20:03:14 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20231201/</guid>
       <description>はじめに こんにちは。今年NUTMEGに入った長谷川虹です。デザインをデザイナーとして活動しています。今回、今年9月に行われた「ロゴコンペ」についてお話ししたいと思います。このロゴコンペは私にとって初めての大きな仕事でした。ロゴコンペを通じて思ったことをだーっと書いていきます。ちなみに人生初ブログなので温かい目で見てください。</description>
     </item>
-    
     <item>
       <title>技大祭を終えて</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230928/</link>
       <pubDate>Wed, 01 Nov 2023 15:13:03 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230928/</guid>
       <description>はじめに NUTMEGの佐藤昌信です。 今回は、弊学の学園祭「技大祭」を終えたため、この1年間について振り返りを行いました。</description>
     </item>
-    
     <item>
       <title>技大祭の協賛団体をlooker studioで可視化してみた</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230727/</link>
       <pubDate>Fri, 28 Jul 2023 21:12:45 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230727/</guid>
       <description>はじめに はじめまして、今年からNUTMEGに加入した山田 圭祐です。 私は今までプログラミングから逃げてきましたがプログラミングを味方にできるチャンスが訪れたので加入しました！</description>
     </item>
-    
     <item>
       <title>Seeds投稿について</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230720/</link>
       <pubDate>Thu, 20 Jul 2023 12:36:47 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230720/</guid>
       <description>はじめに この春NUTMEGに加入した髙須賀です。私はこの春からプログラミングを始めたばかりで、専門的な技術等は何もわからないので、今NUTMEGで自分が頑張っている試みなどを考えました。</description>
     </item>
-    
     <item>
       <title>NUTMEG-SlackBot開発やってみた</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230713/</link>
       <pubDate>Thu, 13 Jul 2023 21:44:19 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230713/</guid>
       <description>はじめに はじめまして,この春NUTMEGに加入した飯田です. チャットツールとして使用しているSlackを便利にしよう！！ということで,SlackBotの開発をM2の後方腕組大臣から受け継ぎました！！ 今回は,SlackBotで送信したメッセージをスプレッドシートに記録する機能を作りました.</description>
     </item>
-    
     <item>
       <title>初めて限界開発に参加しました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230609/</link>
       <pubDate>Sun, 09 Jul 2023 18:57:12 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230609/</guid>
       <description>はじめに 初めまして。NUTMEG新入生B3の若月耕紀です。 今回は初めてNUTMEGの限界開発に参加した感想と、私の同期にあたる新入生へ向けて、ちょっとしたメッセージを書いていきます。</description>
     </item>
-    
     <item>
       <title>技大祭情報局(NUTMEG)に入ってみた感想</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230629/</link>
       <pubDate>Thu, 29 Jun 2023 18:37:29 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230629/</guid>
       <description>はじめに はじめまして。新入生B3の秋山です。4月から技大での生活が始まり、いつの間にか7月に入ろうとしています(早い！)。今回は初心を忘れないようにするためにも、技大祭情報局(NUTMEG)に入ってからの約3か月を振り返り、記録に残してみようと思います。</description>
     </item>
-    
     <item>
       <title>FinanSuのPMをやってみて</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230624/</link>
       <pubDate>Sat, 24 Jun 2023 11:46:47 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230624/</guid>
       <description>いまいまいです。 FinanSuのPMをddさんから受け継いで、リリースまで結びつけることができたので、それに際して、やって良かったことや、もっと改善できることをまとめました。</description>
     </item>
-    
     <item>
       <title>NUTMEGによもやま制度を導入しました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230601/</link>
       <pubDate>Sat, 03 Jun 2023 14:58:21 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230601/</guid>
       <description>久しぶりの投稿になります。NUTMEGのM2の藤崎 竜成です。 今回はNUTMEGに新たに導入した「よもやま制度」について書いていきます。</description>
     </item>
-    
     <item>
       <title>【失敗談】NUTMEGのtimes文化を制作局に持ち込んでみたら上手くいかなかった話</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230518/</link>
       <pubDate>Sun, 21 May 2023 16:37:49 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230518/</guid>
       <description>はじめに こんにちは。技大祭実行委員のうち、制作局と情報局NUTMEGを兼局しているB3の榑林丈です。 制作局所属ですが情報局にも参加しており、かれこれ3年目の浮気者となってしました。</description>
     </item>
-    
     <item>
       <title>NUTMEGにデザインシステムを導入したい話</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230420/</link>
       <pubDate>Thu, 20 Apr 2023 13:56:57 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230420/</guid>
       <description>こんにちは。NUTMEGデザインチームの小林諒大です。 この春から大学院に進み、修士1年となりました。</description>
     </item>
-    
     <item>
       <title>NUTMEG最強のチームを目指して</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230413/</link>
       <pubDate>Thu, 13 Apr 2023 19:50:33 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230413/</guid>
       <description>NUTMEGでフロントエンドを中心にPMや開発に携わっている修士2年の百々です。 今回は、NUTMEGで開発しているプロダクトのチームの中で「最強のチーム」を目指して取り組んでいることや考えていることをまとめました。 チームやマネジメントに興味のある方にはぜひお読みいただきたいです。</description>
     </item>
-    
     <item>
       <title>フロントエンドってどうやって強くなるの？教えていまいまい！</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230330/</link>
       <pubDate>Thu, 30 Mar 2023 17:55:52 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230330/</guid>
       <description>なんだかんだNUTMEGはフロント人材が少し不足しつつあります。 フロントエンドをこれから勉強する後輩に向けて書きました。</description>
     </item>
-    
     <item>
       <title>NUTMEGにステージング環境を導入する</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230320/</link>
       <pubDate>Mon, 20 Mar 2023 18:11:48 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230320/</guid>
-      <description>こんにちは。NUTMEGでNUTMEGクラウドの開発・運用を行っているM1大浦です。
-これまでNUTMEGでの開発を円滑に進めるために様々なインフラ開発を行ってきました。その中でも，最近行った「簡易的なステージング環境を構築した話」について紹介させていただきます。</description>
+      <description>こんにちは。NUTMEGでNUTMEGクラウドの開発・運用を行っているM1大浦です。&#xA;これまでNUTMEGでの開発を円滑に進めるために様々なインフラ開発を行ってきました。その中でも，最近行った「簡易的なステージング環境を構築した話」について紹介させていただきます。</description>
     </item>
-    
     <item>
       <title>型を意識する</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230216/</link>
       <pubDate>Fri, 17 Feb 2023 19:37:22 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230216/</guid>
       <description>初めまして、NUTMEGの五十嵐です。 プログラミング2年目にして、はじめて触った静的型付けについてお話しします。</description>
     </item>
-    
     <item>
       <title>slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230125/</link>
       <pubDate>Wed, 25 Jan 2023 17:02:09 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230125/</guid>
       <description>はじめに こんにちは。NUTMEGの藤崎です。先日NUTMEG内でLT会が行われ、slack無料プランのメッセージが3ヶ月間で表示されなくなるのをweb+slackAPIを利用してwebアプリを作成し解決した話をしました。今回はその話をもう少し具体的に話していきます。</description>
     </item>
-    
     <item>
       <title>2022年の振り返りと今年の目標</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230104/</link>
       <pubDate>Mon, 09 Jan 2023 16:25:21 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230104/</guid>
       <description>あけましておめでとうございます！NUTMEGの藤崎です！今年もよろしくお願いします！ 本日は、多くのことを経験した2022年の振り返りと2023年の目標について書こうと思います！(NUTMEG外の経験もあり)</description>
     </item>
-    
     <item>
       <title>デザイン勉強会に入って</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221110/</link>
       <pubDate>Thu, 10 Nov 2022 20:08:11 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20221110/</guid>
       <description>入ったきっかけ 私がデザインチームに入ったきっかけは今年の6月に行った技育キャンプです。</description>
     </item>
-    
     <item>
       <title>プログラミング未経験者がNUTMEGに入ってみた感想</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221101/</link>
       <pubDate>Tue, 01 Nov 2022 19:23:24 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20221101/</guid>
       <description>NUTMEGに入った経緯 技大祭実行委員会に入る際、特にやりたいこともなく、絵を描くのが好きという理由で制作局を第一志望にしました。ですが制作局は募集人数が少なったので総務局に入ることになりました。入学当時はまだ1年生の1学期のため配属される課程が決まっておらず、普通科高校卒だったこともあり、情報系に関しては全くの無縁でした。なので情報局のことは全く考えていませんでした。</description>
     </item>
-    
     <item>
       <title>NUTMEGに参加して</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221027-2/</link>
       <pubDate>Thu, 27 Oct 2022 17:20:53 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20221027-2/</guid>
       <description>初めまして。NUTMEGに10月から参加した窪坂です。 今回ブログ担当に任命されましたので、参加した理由やNUTMEGについてなどを長々と書いていきます。</description>
     </item>
-    
     <item>
       <title>Figmaの学生プラン・FigJamを導入します</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221026/</link>
       <pubDate>Wed, 26 Oct 2022 00:36:50 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20221026/</guid>
-      <description>こんにちは！NUTMEGデザインチーム、小林です！
-この度、NUTMEGでは一部のメンバーのみしか利用していなかったFigma・Figjamをメンバー全員に導入することにしました。</description>
+      <description>こんにちは！NUTMEGデザインチーム、小林です！&#xA;この度、NUTMEGでは一部のメンバーのみしか利用していなかったFigma・Figjamをメンバー全員に導入することにしました。</description>
     </item>
-    
     <item>
       <title>configファイルを使ってサーバーにsshする方法</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221019/</link>
       <pubDate>Wed, 19 Oct 2022 02:02:04 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20221019/</guid>
       <description>初めまして、NUTMEG所属の廣池です。 今回はLinuxサーバーにsshする時、configファイルを使ってsshする方法を紹介したいと思います。</description>
     </item>
-    
     <item>
       <title>新局長（NUTMEG新代表）になるにあたり</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221013/</link>
       <pubDate>Thu, 13 Oct 2022 21:52:34 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20221013/</guid>
       <description>新しく技大祭実行委員会 情報局長（NUTMEG代表）に就きました こんにちは。9月に新しく技大祭実行委員会 情報局長（NUTMEG代表）に就いた原田です。今回は、新しく代表になった今の心境や思いを書いていきます。</description>
     </item>
-    
     <item>
       <title>CA主催の学生団体紹介LTに参加しました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221004/</link>
       <pubDate>Tue, 04 Oct 2022 18:43:31 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20221004/</guid>
-      <description>CA×学生団体というSlackのサーバーがあるのですが、今回はそこに参加している学生団体の方々との交流を兼ねて、各団体の紹介LTが行われました！
-今回交流させていただいた外部団体様一覧 情報LT研究会／KFIE 様（主催） 名城大学 Idea×Tech 様 金沢工業大学 Tourism Project 様 NKC-UG 様 CDLE youth 様 STECH 様 発表を聞いて 今回は学生団体の紹介LTということで、各団体の活動内容や環境、それぞれの特徴について知ることができました。特にCDLE youth様とSTECH様は、コミュニティの母体が大学ではなく企業や一般の団体ということもあり、規模の大きさやレベルの高さに驚かされました。 NUTMEGの発表では、プロジェクト数の多さや、1on1のメンター制度については特に関心が寄せられ、その人数でどうやってプロジェクトを回しているのか、1on1をする先輩がなぜ足りているのかなど、様々な質問がされました。 発表自体は1時間もかからず終わりましたが、それ以上の知識と満足感が得られて非常に参加してよかったと思います。</description>
+      <description>CA×学生団体というSlackのサーバーがあるのですが、今回はそこに参加している学生団体の方々との交流を兼ねて、各団体の紹介LTが行われました！&#xA;今回交流させていただいた外部団体様一覧 情報LT研究会／KFIE 様（主催） 名城大学 Idea×Tech 様 金沢工業大学 Tourism Project 様 NKC-UG 様 CDLE youth 様 STECH 様 発表を聞いて 今回は学生団体の紹介LTということで、各団体の活動内容や環境、それぞれの特徴について知ることができました。特にCDLE youth様とSTECH様は、コミュニティの母体が大学ではなく企業や一般の団体ということもあり、規模の大きさやレベルの高さに驚かされました。 NUTMEGの発表では、プロジェクト数の多さや、1on1のメンター制度については特に関心が寄せられ、その人数でどうやってプロジェクトを回しているのか、1on1をする先輩がなぜ足りているのかなど、様々な質問がされました。 発表自体は1時間もかからず終わりましたが、それ以上の知識と満足感が得られて非常に参加してよかったと思います。</description>
     </item>
-    
     <item>
       <title>技育展の感想</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221001/</link>
       <pubDate>Sat, 01 Oct 2022 18:42:43 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20221001/</guid>
-      <description>みなさんこんにちは！NUTMEG藤崎です。先日の技育展お疲れ様でした！技育展の結果や感想について書いていきます。
-今回登壇した作品について 今回NUTMEGは4つのプロダクトを発表しました。それぞれの概要について以下に書いていきます。</description>
+      <description>みなさんこんにちは！NUTMEG藤崎です。先日の技育展お疲れ様でした！技育展の結果や感想について書いていきます。&#xA;今回登壇した作品について 今回NUTMEGは4つのプロダクトを発表しました。それぞれの概要について以下に書いていきます。</description>
     </item>
-    
     <item>
       <title>NUTMEG代表を終えて</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220916/</link>
       <pubDate>Fri, 23 Sep 2022 21:39:44 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20220916/</guid>
       <description>1年間のNUTMEG代表の任期を終えました こんにちは。先日NUTMEGの代表の任期を終えた藤崎です。今日は一年間どうだったのか。心境の変化や学んだことを書いていきます。</description>
     </item>
-    
     <item>
       <title>tracking-sapportに携わってみて</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220731/</link>
       <pubDate>Sun, 31 Jul 2022 21:57:18 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20220731/</guid>
       <description>新入生の市之瀬拓実です。藤崎さんと大浦さんと一緒に、tracking-support(以降トラサポ)の開発に携わりました。 今回は、トラサポの背景、構成、携わった感想を綴っていきたいと思います。</description>
     </item>
-    
     <item>
       <title>NUTMEGでよく使われているOSは？デバイスは？調べてみました！</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220414/</link>
       <pubDate>Fri, 15 Apr 2022 04:30:10 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20220414/</guid>
       <description>Surfaceを使っていたけど内定バイトでMacに乗り換えてしまった真下です。 NUTMEG内でどんなPCが使われているかわかると敷居も低くないことが伝わっていいのかなと思い立ったので調査しました！</description>
     </item>
-    
     <item>
       <title>NUTMEGを発足して2年が経ったので振り返る</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220402/</link>
       <pubDate>Sat, 02 Apr 2022 15:30:15 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20220402/</guid>
       <description>NUTMEGの創始者 大場です。 約2年前に技大祭実行委員会を効率化するためにNUTMEGという組織を立ち上げました。 もちろん組織運営は一筋縄ではいかないため、いろいろな試行錯誤を繰り返した2年間でした。 現在は後輩にも恵まれ、学生にしてはかなりいい組織を作ったのではないかと思っているので、このタイミングで2年間を振り返りたいと思っています。</description>
     </item>
-    
     <item>
       <title>NUTMEG-Seedsリリースしました！！！</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220319/</link>
       <pubDate>Sun, 20 Mar 2022 03:33:04 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20220319/</guid>
       <description>NUTMEGで主にフロントエンドを担当している99Aです． 2022.3.18にNUTMEG-Seedsという学習管理もとい人材管理のアプリケーションをリリースしました！ このアプリはメンバーの学習記録，技術スタック，プロジェクトの参加状況を参照し，チームの管理に特化したアプリです．以下に主な機能を紹介します．</description>
     </item>
-    
     <item>
       <title>最近のMT方法について</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220218/</link>
       <pubDate>Fri, 18 Feb 2022 23:37:39 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20220218/</guid>
       <description>みなさんこんにちは。NUTMEG局長の藤崎です!最近またコロナウイルスが猛威を振るっており、対面でのMTなどできませんよね。また、ZoomやDiscordなどは少し、味気なくないですか？　そんな中、私たち、NUTMEGはGatherを使ったMTを採用しています！今日はそんなGatherのいいところなどお伝え出来たらいいなと思ってます！！</description>
     </item>
-    
     <item>
       <title>バックエンドにDartを採用しました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220210/</link>
       <pubDate>Fri, 11 Feb 2022 10:32:54 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20220210/</guid>
       <description>NUTMEGでDartを広めようとしている真下です。 前々から計画していたのですが技大祭当日などに実行委員が使用するシフト確認アプリのSeeFTのバックエンドをGoからDartに変更しました。 まだまだ完成しているわけではないですが，これを機にNUTMEG内でもDartが浸透できるように頑張りたいです。</description>
     </item>
-    
   </channel>
 </rss>

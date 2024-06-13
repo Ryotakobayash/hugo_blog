@@ -4,27 +4,23 @@
     <title>API関係 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/tags/api%E9%96%A2%E4%BF%82/</link>
     <description>Recent content in API関係 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 15 Mar 2024 20:20:27 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/api%E9%96%A2%E4%BF%82/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Mar 2024 20:20:27 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/tags/api%E9%96%A2%E4%BF%82/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
       <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
-    
     <item>
       <title>TwitterAPIのすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230306/</link>
       <pubDate>Fri, 10 Mar 2023 10:40:40 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230306/</guid>
-      <description>初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。
-有料化問題について 有料化はされたのか？ TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。</description>
+      <description>初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。&#xA;有料化問題について 有料化はされたのか？ TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。</description>
     </item>
-    
   </channel>
 </rss>

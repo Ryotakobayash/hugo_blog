@@ -4,17 +4,16 @@
     <title>SBC on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/tags/sbc/</link>
     <description>Recent content in SBC on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 09 Dec 2023 17:32:08 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/sbc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Dec 2023 17:32:08 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/tags/sbc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ROCK PI 4B &#43; DietPi &#43; NextCloud &#43; Onion Service で作るファイルサーバー構築</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231209/</link>
       <pubDate>Sat, 09 Dec 2023 17:32:08 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231209/</guid>
       <description>はじめに NUTMEG アドベントカレンダー 12月09日 を担当します。B1の「やま」です！</description>
     </item>
-    
   </channel>
 </rss>

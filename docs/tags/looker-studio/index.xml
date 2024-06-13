@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>looker studio on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+    <title>Looker Studio on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/tags/looker-studio/</link>
-    <description>Recent content in looker studio on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Looker Studio on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 28 Jul 2023 21:12:45 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/looker-studio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Jul 2023 21:12:45 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/tags/looker-studio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>技大祭の協賛団体をlooker studioで可視化してみた</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230727/</link>
       <pubDate>Fri, 28 Jul 2023 21:12:45 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20230727/</guid>
       <description>はじめに はじめまして、今年からNUTMEGに加入した山田 圭祐です。 私は今までプログラミングから逃げてきましたがプログラミングを味方にできるチャンスが訪れたので加入しました！</description>
     </item>
-    
   </channel>
 </rss>
