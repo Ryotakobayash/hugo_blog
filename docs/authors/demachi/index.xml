@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>demachi on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+    <title>Demachi on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/authors/demachi/</link>
-    <description>Recent content in demachi on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Demachi on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 16 Dec 2023 19:46:13 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/authors/demachi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Dec 2023 19:46:13 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/authors/demachi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>今年一年を振り返って</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231216/</link>
       <pubDate>Sat, 16 Dec 2023 19:46:13 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231216/</guid>
       <description>あいさつ どうも。環境社会基盤工学課程3年の出町悠資(ゆうすけ)です。 今年から、NUTMEGに加入、そろそろ8か月が経過するので、今回のブログを通してNUTMEGに入ってからをまとめてみたいと思います。</description>
     </item>
-    
   </channel>
 </rss>

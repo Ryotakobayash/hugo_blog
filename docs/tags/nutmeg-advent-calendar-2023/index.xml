@@ -4,17 +4,16 @@
     <title>NUTMEG Advent Calendar 2023 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/tags/nutmeg-advent-calendar-2023/</link>
     <description>Recent content in NUTMEG Advent Calendar 2023 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 24 Dec 2023 21:00:37 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/nutmeg-advent-calendar-2023/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Dec 2023 21:00:37 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/tags/nutmeg-advent-calendar-2023/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ILIASに自動でログインしたい *日常生活を便利に*</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231224/</link>
       <pubDate>Sun, 24 Dec 2023 21:00:37 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231224/</guid>
       <description>日常生活を便利に NUTMEGに加入して活動を初めて，8ヶ月ほど経とうとしている． クリスマスが近づく中，レポートに追われる日々．</description>
     </item>
-    
   </channel>
 </rss>
