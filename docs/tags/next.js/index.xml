@@ -4,23 +4,26 @@
     <title>Next.js on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/tags/next.js/</link>
     <description>Recent content in Next.js on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 15 Mar 2024 20:20:27 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/next.js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Mar 2024 20:20:27 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/tags/next.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
       <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
+    
     <item>
       <title>フロントエンド未経験者が仕事をするためにやった1ヶ月の勉強</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231221/</link>
       <pubDate>Thu, 21 Dec 2023 20:39:42 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231221/</guid>
       <description>はじめに はじめまして。NUTMEGで普段インフラ・バックエンドをしている市之瀬と申します。</description>
     </item>
+    
   </channel>
 </rss>

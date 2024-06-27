@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Paladin on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+    <title>paladin on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/authors/paladin/</link>
-    <description>Recent content in Paladin on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo</generator>
+    <description>Recent content in paladin on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 12 Jun 2024 19:45:55 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/paladin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jun 2024 19:45:55 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/authors/paladin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>初めてのPM〜迫る締切、焦るPM、笑うメンバー〜</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240612/</link>
       <pubDate>Wed, 12 Jun 2024 19:45:55 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20240612/</guid>
       <description>初めに みなさんおはこんばんにちは。パラディンこと原田典です。</description>
     </item>
+    
     <item>
       <title>22年間治らない癖を治したい！</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231225/</link>
       <pubDate>Mon, 25 Dec 2023 19:45:55 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231225/</guid>
       <description>初めに おはこんばんにちは。前NUTMEG代表のパラディンこと原田典です。</description>
     </item>
+    
     <item>
       <title>新局長（NUTMEG新代表）になるにあたり</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221013/</link>
       <pubDate>Thu, 13 Oct 2022 21:52:34 +0900</pubDate>
+      
       <guid>https://blog.nutmeg.cloud/blog/post-20221013/</guid>
       <description>新しく技大祭実行委員会 情報局長（NUTMEG代表）に就きました こんにちは。9月に新しく技大祭実行委員会 情報局長（NUTMEG代表）に就いた原田です。今回は、新しく代表になった今の心境や思いを書いていきます。</description>
     </item>
+    
   </channel>
 </rss>
