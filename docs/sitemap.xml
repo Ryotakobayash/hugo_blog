@@ -14,7 +14,7 @@
     <loc>https://blog.nutmeg.cloud/tags/</loc>
     <lastmod>2024-06-27T22:33:39+09:00</lastmod>
   </url><url>
-    <loc>https://blog.nutmeg.cloud/authors/%E3%81%86%E3%81%A3%E3%81%A1%E3%83%BC/</loc>
+    <loc>https://blog.nutmeg.cloud/authors/uccti/</loc>
     <lastmod>2024-06-27T22:33:39+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/tags/%E3%83%81%E3%83%BC%E3%83%A0%E3%81%A5%E3%81%8F%E3%82%8A/</loc>
@@ -431,6 +431,9 @@
     <loc>https://blog.nutmeg.cloud/blog/post-20220325/</loc>
     <lastmod>2022-03-25T00:06:33+09:00</lastmod>
   </url><url>
+    <loc>https://blog.nutmeg.cloud/tags/qemu/kvm/</loc>
+    <lastmod>2022-03-25T00:06:33+09:00</lastmod>
+  </url><url>
     <loc>https://blog.nutmeg.cloud/tags/web%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</loc>
     <lastmod>2022-03-25T00:06:33+09:00</lastmod>
   </url><url>
@@ -478,7 +481,5 @@
   </url><url>
     <loc>https://blog.nutmeg.cloud/search/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/tags/qemu/kvm/</loc>
   </url>
 </urlset>

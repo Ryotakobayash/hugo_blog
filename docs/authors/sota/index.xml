@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sota on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+    <title>Sota on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
     <link>https://blog.nutmeg.cloud/authors/sota/</link>
-    <description>Recent content in sota on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Sota on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 15 Dec 2023 16:37:48 +0900</lastBuildDate><atom:link href="https://blog.nutmeg.cloud/authors/sota/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Dec 2023 16:37:48 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/authors/sota/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>幹事について知っておいたほうがいいことを教えます。</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231215/</link>
       <pubDate>Fri, 15 Dec 2023 16:37:48 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231215/</guid>
       <description>はじめに お久しぶりです。太りすぎて７０kgの大台に乗りそうなNUTMEG３年のソウタです。 NUTMEGアドベントカレンダー１２/１５日分書いていきます！</description>
     </item>
-    
     <item>
       <title>デザイン勉強会に入って</title>
       <link>https://blog.nutmeg.cloud/blog/post-20221110/</link>
       <pubDate>Thu, 10 Nov 2022 20:08:11 +0900</pubDate>
-      
       <guid>https://blog.nutmeg.cloud/blog/post-20221110/</guid>
       <description>入ったきっかけ 私がデザインチームに入ったきっかけは今年の6月に行った技育キャンプです。</description>
     </item>
-    
   </channel>
 </rss>
