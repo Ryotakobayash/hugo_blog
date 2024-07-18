@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="本記事では、自分がフロントエンド技術をこれまで学んできて、これ便利だな〜って思った技術をtipsとしてまとめたものになります。">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-20240716/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="Webアプリ（フロントエンド）開発のtips">
+  <meta property="og:description" content="本記事では、自分がフロントエンド技術をこれまで学んできて、これ便利だな〜って思った技術をtipsとしてまとめたものになります。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-07-18T18:34:04+09:00">
+    <meta property="article:modified_time" content="2024-07-18T18:34:04+09:00">
+    <meta property="article:tag" content="HTML">
+    <meta property="article:tag" content="CSS">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="TypeScript">
+    <meta property="article:tag" content="React.js">
+    <meta property="article:tag" content="Next.js">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="Webアプリ（フロントエンド）開発のtips">
+  <meta name="twitter:description" content="本記事では、自分がフロントエンド技術をこれまで学んできて、これ便利だな〜って思った技術をtipsとしてまとめたものになります。">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3"
+          class="text-primary">メンバーの趣味</a>
+        
+        <h2>Webアプリ（フロントエンド）開発のtips</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By たかちゃん
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              18 July 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/SyM8pEB_C.jpg" class="img-fluid w-100 mb-4" alt="Webアプリ（フロントエンド）開発のtips">
+        
+        <div class="content mb-5">
+          <h2 id="はじめに">はじめに</h2>
+<p>テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。</p>
+<p>最初に聞きたいことがあります。この中でフロントエンド勉強中って方は手を挙げてください！</p>
+<p>みなさん、これまでさまざまな技術を学んできたと思います。しかし、技術を深く学んでいると今までのやり方って効率悪かったんだな、もっと簡単にする方法あったんだ！と思うことも多々あると思います。生成AIなんかはみなさんも良く使っていると思います。</p>
+<p>この記事では、主にフロントエンド関連のいくつかの<strong>時短テクニック</strong>を簡単に実践できるものから順に、概要だけですが紹介していきます。皆さんがNUTMEGで開発する際や、ハッカソン、コンペに参加する際に役に立つと思います。</p>
+<h2 id="簡単テクニック">簡単テクニック</h2>
+<p>フロントエンドカリキュラムの卒業課題をクリアに必要な簡単なものが以下の3つです。</p>
+<h3 id="1-統一されたアイコンが欲しい">1. 統一されたアイコンが欲しい</h3>
+<p><img src="https://hackmd.io/_uploads/HJ7lhIU_C.png" alt="image"></p>
+<p>ポートフォリオやWebアプリなど、見た目に力の入ったWebページを作る際、アイコンを使うことが多々あります。ボタンの横に添えたり、文字の代わりにアイコンを配置したりなど、見た目にいろんな影響を与えます。素人がアイコンを複数使うときは、大きさや雰囲気を合わせたアイコンにすることで統一感を出すことが大事です。</p>
+<ul>
+<li>Boxicons</li>
+<li>Font Awesome</li>
+<li>React Icons</li>
+<li>SVG Loaders</li>
+<li>Bootstrap Icons</li>
+</ul>
+<p>参考URL：https://qiita.com/TakahiroEq/items/07f2aaf593d971ab9a9c</p>
+<h3 id="2-ダミー画像の利用">2. ダミー画像の利用</h3>
+<p>ページ内に画像を表示する予定の場合、どんな大きさがページに画像を表示する上で綺麗に見えるのかを考える際に、ダミー画像を使うと良いです。実際の画像は色や背景色によって多少のバイアスがかかることがあり、特定の画像では綺麗に見えても、他の画像だと違和感を感じる場合があります。
+<img src="https://hackmd.io/_uploads/Hk2Gh8Iu0.png" alt="image"></p>
+<p>参考サイトから提供されているダミー画像は、</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://placehold.jp/150x150.png&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Placeholder Image&#34;</span>&gt;
+</span></span></code></pre></div><p>簡単に表示することができ、使い勝手が良いです。</p>
+<p>参考URL：https://placehold.jp/</p>
+<h3 id="3-ブラウザの開発者モード">3. ブラウザの開発者モード</h3>
+<p>主にレスポンシブに対応したページを作成する際に、画面の縦横の大きさを変えて、ページの変化を見るときに使います。パソコンで見る場合、タブレットで見る場合、スマホで見る場合では、レイアウトは大きく異なり、それらに対応したページ作りをする際に重要なテクニックです。</p>
+<h2 id="中級テクニック">中級テクニック</h2>
+<p>メンター勉強会もぼちぼち終了したペアなどもあると思います。
+そろそろ自分で何か作りたいなって思い始めると思います。そんな新入生も増えてきたのではないでしょうか？</p>
+<p>そんな方は以下のテクニックがおすすめです。</p>
+<h3 id="1-consolelogconsoletraceによるエラー発見">1. console.log/console.traceによるエラー発見</h3>
+<p>この2つは適切にコード内にちらばめておくと、エラーが起きている場所が確実にわかります。もちろん、わざわざ書くコストを考えると微妙ではありますが、時間が足りないハッカソン中などは、エラーが起きたときにエラー箇所の特定に時間をかけるのは致命的です。エラー箇所がどうしてもわからない場合は書いてみると何かわかるかもしれません。</p>
+<h3 id="2-環境構築早期デプロイgithub-actionsの導入">2. 環境構築「早期デプロイ・Github Actionsの導入」</h3>
+<p>Webアプリを作成した場合、最終的にはデプロイをしてみんなが見れるようにします。最初の環境構築時点で行うことにより、最後にデプロイがうまくいかない問題を解決できます。ローカル環境ではうまく動くのに、デプロイ環境でエラーが起きるのはあるあるです。</p>
+<p>以下は無料で使えるデプロイサービスです。</p>
+<ul>
+<li>vercel（簡単、prisma使うとバックとDBも使えるので無料でフルスタックWebアプリ作れる貴重なサービス、最近見たけどGoも書けるらしい）</li>
+<li>netrify(おすすめ、ブランチごとのプレビューが見れるのでレビューしやすい)</li>
+</ul>
+<p>また、多人数による別々の環境が入り混じった開発を行う場合はGithub Actionsも導入しましょう。eslintやprettierを使うと、PRを出した時点で自動でフォーマットエラーや文法ミスを改善してくれます。</p>
+<h3 id="3-starter-templateなどのテンプレートプログラムを活用する">3. starter templateなどのテンプレートプログラムを活用する</h3>
+<p>みなさんは、以下のコマンドを見たことありますか？</p>
+<ul>
+<li>npx create-next-app@latest(ちなvercelが提供しています、感謝してコマンド打ちましょう)</li>
+<li>npx create-react-app my-app(ちなmetaが提供しています、感謝してコマンド打ちましょう)</li>
+</ul>
+<p>最低限のフロントの環境構築を行うコマンドです。</p>
+<p>正直、上記コマンドの最低限のテンプレでは、1から作りすぎて短い開発期間では時間が足りなくなります。もう少し初期機能のあるテンプレ欲しいですよね。</p>
+<p><img src="https://hackmd.io/_uploads/rktN_HHOA.png" alt="image"></p>
+<p>そこで便利なのがvercelが提供してくれているstarter templatesです。最低限の環境だけでなく、プラスの機能もついてきながらvercelのデプロイされた環境まで一気にスキップできます。</p>
+<p>ちなみにこれ使うと30分（実測）で自分のポートフォリオ公開までいけます。</p>
+<p><strong>フロントエンド技術に自信がある場合</strong>、このテンプレートでスキップし、CSSを全部書き換えて自分好みにしていくのも時短テクニックです。</p>
+<p>参考URL：https://vercel.com/templates</p>
+<h2 id="注意">注意</h2>
+<ul>
+<li>
+<p>生成AIやテンプレートプログラムは、最低限（フロントエンドカリキュラム修了）の知識をつけてからの使用をおすすめします。最初から多用していると歪みます。</p>
+</li>
+<li>
+<p>ハッカソンやLT会に出る前に<strong>1つで良いので1から作った</strong>個人制作物を作るのがおすすめです。</p>
+</li>
+<li>
+<p>またテンプレートを使用する際は、最適化されたプログラムを見て混乱したり、変なコードを書き足すことで動かなくなったり、パフォーマンスが落ちる可能性があるので、普段からフロントエンド技術を趣味レベルで触ってないと厳しいかもしれません。</p>
+</li>
+</ul>
+<h2 id="さいごに">さいごに</h2>
+<p>本日は6つのテクニックを紹介させていただきました。ぜひ活用しながらメンターとの勉強を頑張ったり、開発してみてください。実はこの次には上級、超級まであります。機会があればまたお話ししたいです。</p>
+<p>個人的に<strong>奥が深く汎用性の高い</strong>フロントエンド技術はすごい好きです。また、フロントエンドの技術を体系的に学んでくると、実はフロントエンドって生成AIに取って代わられにくく、エンジニアの作業が必要な技術だとわかります。</p>
+<p>フロントエンド技術は移り変わりが激しい上に情報が多いので、普段からアンテナを張っていないと、ただ時間をかけてページが作れるだけの人になってしまいます。今、NUTMEGでフロントエンドを学んでいるみなさんは、ぜひ今後も勉強に励んでいきましょう。</p>
+<p>テスト、課題もある中、忙しいのに聴きにきてくれてありがとう！</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>

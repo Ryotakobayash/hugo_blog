@@ -6,8 +6,15 @@
     <description>Recent content in Authors on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 18 Jul 2024 13:53:41 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jul 2024 18:34:04 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Taka-Chan</title>
+      <link>https://blog.nutmeg.cloud/authors/taka-chan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.nutmeg.cloud/authors/taka-chan/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Akari</title>
       <link>https://blog.nutmeg.cloud/authors/akari/</link>
@@ -90,13 +97,6 @@
       <link>https://blog.nutmeg.cloud/authors/yo-chan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.nutmeg.cloud/authors/yo-chan/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Taka-Chan</title>
-      <link>https://blog.nutmeg.cloud/authors/taka-chan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blog.nutmeg.cloud/authors/taka-chan/</guid>
       <description></description>
     </item>
     <item>
