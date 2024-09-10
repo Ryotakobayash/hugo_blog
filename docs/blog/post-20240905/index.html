@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="TeXの導入方法から快適にレポートを書くための知識の紹介">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-20240905/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="LaTeX初心者に送るLaTeXのすゝめ">
+  <meta property="og:description" content="TeXの導入方法から快適にレポートを書くための知識の紹介">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-09-08T22:05:02+09:00">
+    <meta property="article:modified_time" content="2024-09-08T22:05:02+09:00">
+    <meta property="article:tag" content="メンバーの趣味">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="LaTeX初心者に送るLaTeXのすゝめ">
+  <meta name="twitter:description" content="TeXの導入方法から快適にレポートを書くための知識の紹介">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/"
+          class="text-primary"></a>
+        
+        <h2>LaTeX初心者に送るLaTeXのすゝめ</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By ぷりん
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              08 September 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/r1J8sEa2C.png" class="img-fluid w-100 mb-4" alt="LaTeX初心者に送るLaTeXのすゝめ">
+        
+        <div class="content mb-5">
+          <h1 id="はじめに">はじめに</h1>
+<p>この春からNUTMEGに所属することになりました．新入生のぷりんです．
+スマブラでプリンをめっちゃ使ってたところから来てます．</p>
+<p>大学生になってから5ヶ月ほど立ちましたが，本当にレポートが多いです．大学生の大部分は手書きかWordでレポートを書くと思いますが，せっかく大学生になったならきれいで見やすいレポートを書くたいと思いませんか？
+それを解決できるのがLaTeX(ラテフ)です．単にTeX(テフ)とも呼ばれます．<del>断じてテックスなどと読んではいけません．過激派に襲われます．</del>
+この記事ではTeXについてのいろはを紹介していきたいと思います．</p>
+<h1 id="texとは">TeXとは</h1>
+<h4 id="texは理系の大学生にとって必須と言っても差し支えないレベルで有用なものです">Texは理系の大学生にとって必須と言っても差し支えないレベルで有用なものです．</h4>
+<p>とはいえ，コードを書かなくちゃいけない？レポートならWordでいいじゃん？
+など，導入時や使用する際にハードルが高いなどの理由でやるのを遠ざけている人も多いと思います．</p>
+<p>なので，TeXを使う理由，導入方法から書き方，楽にしたり可読性を上げる方法などを紹介していきたいと思います．</p>
+<h1 id="texを使う利点">TeXを使う利点</h1>
+<h3 id="数式がきれいに書ける">数式がきれいに書ける</h3>
+<p>数式がきれいに書けます．括弧の大きさを数式の大きさに揃えてくれたり，αやβなどの特殊な記号やベンゼン環とかもかけます．ベンゼン環が書けるのは正直びっくりしました．</p>
+<h3 id="参考文献や図表セクションの参照番号の一括変更が可能">参考文献や図表，セクションの参照番号の一括変更が可能</h3>
+<p>世の中には，セクションの位置を間違えてしまうことや表の順番を変えたいことがありますよね？
+もしかすると同じ参照番号があったり，順番が逆転したままレポートを出してしまうこともあるかもしれません．
+しかし，TeXならそんな事はありません．順番を変えてもよしなに参照番号を変えてくれます．</p>
+<h3 id="形式の一括変更が可能">形式の一括変更が可能</h3>
+<p>スタイルファイルを変えることで，文字の大きさからn段組みへの変更まで比較的手軽に変えることが可能です．</p>
+<h3 id="texを知らない人から見るとかっこよく見える">TeXを知らない人から見るとかっこよく見える</h3>
+<p><del>筆者が大学に入ってからレポートをTeXで書いてるというとほとんどの人がすごいと言ってくれます．</del></p>
+<h4 id="他にもtexを使っていく中でいろいろなことができるのでぜひ使ってみてください">他にもTeXを使っていく中でいろいろなことができるのでぜひ使ってみてください．</h4>
+<h1 id="導入方法">導入方法</h1>
+<p>TeXを用いてレポートを書く際，大きく分けて3つのやり方に分けることができます．</p>
+<ul>
+<li>Windows版</li>
+<li>Mac版</li>
+<li>Cloud LaTeX</li>
+</ul>
+<p>Cloud LaTeXは，アカリクという企業が運営しているLaTeXのオンラインコンパイルサービスである．
+後述するWindows版やMac版とは違い，ローカルに環境構築をしなくともLaTeXの環境が使える．<del>らしい．</del>
+<del>筆者はCloud LaTeXを使用したことがないので適当に調べてください．</del>
+あと学校などの出先でもできるって点だとUSBメモリに環境を建てることもできます(<a href="https://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/">参考</a>)．</p>
+<p>とはいっても，多くの人はWindowsやMacでローカルにTeXの環境を建てると思います．
+TeXはWindowsとMacによって導入方法が異なります．
+筆者は両方で環境構築をしたことがあるので両方解説をします．</p>
+<h2 id="windows版の導入方法">Windows版の導入方法</h2>
+<p>筆者が参考にしたのは<a href="https://qiita.com/passive-radio/items/623c9a35e86b6666b89e">この記事</a>です．</p>
+<p>TeXを使いたい際は<a href="https://www.tug.org/texlive/acquire-netinstall.html">公式サイト</a>の<code>install-tl-windows.exe</code>からインストーラーをダウンロードします．
+ダウンロードが終わったら実行してインストーラーを動かします．</p>
+<p>基本的には誘導に従うか前述の記事を見ればできるようになっていると思いますが，このTeX Liveをインストールするのに鬼のように時間がかかります．筆者が初めてTeXの環境を作ろうとした時，<del>ソフトバンクエアーなどという</del>実家の遅い回線だったので約1日かかりました．どうあがいてもアホですアホ．
+これだけならいいんですけど，なんとたまに失敗することもあり，その場合せっかく時間をかけて入れたデータをすべて消して最初からやり直しになります．</p>
+<p>本当に回線のいいところなら1~2時間程度で終わった記憶があるのでがんばりましょうという他ありません．</p>
+<h2 id="mac版の導入方法">Mac版の導入方法</h2>
+<p>Windowsはインストーラーを使わざるをえませんでしたが，MacOSではhomebrewを使ってmacTeXをインストールする方法が推奨されています．
+筆者が参考にしたのは確か<a href="https://qiita.com/DaikiSuyama/items/d463c5b7afdabc5fcde5#vscode%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB">この記事</a>だったと思います．</p>
+<p><del>色々エラー吐いたりしてグダっていっぱい調べた気もしますが，その辺はエラー文を読むかそういうのが得意そうな人に助けてもらいましょう．</del></p>
+<h1 id="よく使う関数">よく使う関数</h1>
+<p>ここから先はVScodeでTeXのコンパイルができた前提で話を進めます．
+ここでは筆者がレポートを書く際によく使う関数とその使い方を紹介していきます．
+ここにないものでもTeXでは大体対応が可能なので，やりたいなと思ったことはググったりするとだいたい出てきます．直近だと量子回路図が書けるらしいと言うのを見つけました．</p>
+<h2 id="節小節">節，小節</h2>
+<p>1 背景・目的 とか，6.2 考察 とかのことです．
+セクションは深さ別に三段階あり，基本的にはサブセクションまでしか使いません．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\section</span>{セクションタイトル}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\subsection</span>{サブセクションタイトル}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\subsubsection</span>{サブサブセクションタイトル}
+</span></span></code></pre></div><p>また，参照番号をつけないこともでき，その場合は参照番号の数字は進みません．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\section*</span>{セクションタイトル}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\subsection*</span>{サブセクションタイトル}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\subsubsection*</span>{サブサブセクションタイトル}
+</span></span></code></pre></div><h2 id="数式モード">数式モード</h2>
+<p>基本的にはamsmath.styを読み込んだ上で環境を立てることで使うことができます．
+いろいろな数式の環境がありますが，筆者は文中に数式を埋め込む場合(インライン数式)は$マーク1つで数式を囲み，独立した式として表示させ引用させるとき(別行立て数式)はalign環境を使っています．他にもいろいろな数式環境があるので，少し古いですが<a href="https://qiita.com/t_kemmochi/items/a4c390b4967b13f3afb7">このサイト</a>を見てその時必要だと思う数式環境を選んで使ってみてください．
+基本的には筆者が使っているものと同じものでいいと思います．</p>
+<h2 id="表">表</h2>
+<p>表は以下の様に記述することで4×4の表を書くことができます．
+<code>&amp;</code>で区切り文字を，<code>\hline</code>で横線を追加することができます．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{table}[htbp]
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\centering</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\caption</span>{キャプション}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\label</span>{ラベル}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\begin</span>{tabular}{c|rrr}
+</span></span><span style="display:flex;"><span>        &amp; 列1 &amp; 列2 &amp; 列3 <span style="color:#66d9ef">\\\hline\hline</span>
+</span></span><span style="display:flex;"><span>    行1 &amp;    &amp;    &amp;    <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>    行2 &amp;    &amp;    &amp;    <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>    行3 &amp;    &amp;    &amp;    <span style="color:#66d9ef">\\\hline</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\end</span>{tabular}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{table}
+</span></span></code></pre></div><p>表は<a href="https://www.tablesgenerator.com/latex_tables">このサイト</a>を使うとExcelやGoogleスプレッドシートのような表計算アプリなどからコピペでtabular環境内を作成できます．
+ラベルについては後述します．</p>
+<h2 id="図">図</h2>
+<p>図はdivpdfmxを読み込んだうえで，figure環境で記述すると表示できます．
+具体的には，document環境内で以下のように記述すると表示できます．
+<del>graphicxだけで動くかもしれないが，その辺の違いが気になる人は<a href="https://qiita.com/zr_tex8r/items/442b75b452b11bee8049">この記事</a>を見てほしい．</del></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\documentclass</span><span style="color:#a6e22e">[titlepage,a4paper]</span>{jsarticle}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 表に関するもの
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[dvipdfmx]</span>{graphicx}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[dvipdfmx]</span>{color}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{figure}[htbp]
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\centering</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\includegraphics</span><span style="color:#a6e22e">[横幅や縦幅の指定]</span>{図や写真へのパス}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\caption</span>{キャプション}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\label</span>{ラベル}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{figre}
+</span></span></code></pre></div><p>ラベルについては後述します．</p>
+<h2 id="ソースコード">ソースコード</h2>
+<p>ソースコードはlistingsを読み込んだうえで，lstlistings環境で記述すると表示できます．
+具体的には，document環境内で以下のように記述すると表示できます．
+設定等も共有します．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\documentclass</span><span style="color:#a6e22e">[titlepage,a4paper]</span>{jsarticle}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% lstlistingを使えるようにする．
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span>{listings}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% lstlistingの描画設定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\lstset</span>{
+</span></span><span style="display:flex;"><span>  basicstyle={<span style="color:#66d9ef">\ttfamily</span>},
+</span></span><span style="display:flex;"><span>  identifierstyle={<span style="color:#66d9ef">\small</span>},
+</span></span><span style="display:flex;"><span>  commentstyle={<span style="color:#66d9ef">\smallitshape</span>},
+</span></span><span style="display:flex;"><span>  keywordstyle={<span style="color:#66d9ef">\small\bfseries</span>},
+</span></span><span style="display:flex;"><span>  ndkeywordstyle={<span style="color:#66d9ef">\small</span>},
+</span></span><span style="display:flex;"><span>  stringstyle={<span style="color:#66d9ef">\small\ttfamily</span>},
+</span></span><span style="display:flex;"><span>  frame={tb},
+</span></span><span style="display:flex;"><span>  breaklines=true,
+</span></span><span style="display:flex;"><span>  columns=[l]{fullflexible},
+</span></span><span style="display:flex;"><span>  numbers=left,
+</span></span><span style="display:flex;"><span>  xrightmargin=0zw,
+</span></span><span style="display:flex;"><span>  xleftmargin=3zw,
+</span></span><span style="display:flex;"><span>  numberstyle={<span style="color:#66d9ef">\scriptsize</span>},
+</span></span><span style="display:flex;"><span>  stepnumber=1,
+</span></span><span style="display:flex;"><span>  numbersep=1zw,
+</span></span><span style="display:flex;"><span>  lineskip=-0.5ex
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% キャプションの&#34;Listing 1:~&#34;みたいに描画されるところを&#34;ソースコード 1:~&#34;に変更
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\renewcommand</span>{<span style="color:#66d9ef">\lstlistingname</span>}{ソースコード}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{lstlisting}[caption=キャプション名,label=ラベル]
+</span></span><span style="display:flex;"><span>// ソースコード
+</span></span><span style="display:flex;"><span>a = a += 1;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{lstlisting}
+</span></span></code></pre></div><p>基本的にはこれでいいと思いますが，気に入らない所があれば自分で調べてみてください．
+また，ラベルについては後述します．</p>
+<h2 id="参照">参照</h2>
+<p>図や表，ソースコードなどを本文中で引用するときに使います．
+<code>\label{キー}</code>と<code>\ref{キー}</code>がペアになっていて，<code>\label{キー}</code>は直前の<code>\caption{キャプション}</code>などに紐付いています．
+以下にTeXのソースコードと出力結果を示します．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>表<span style="color:#66d9ef">\ref</span>{tab:key}にラベルを含めて4行4列の表を示す．
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{table}[htbp]
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\centering</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\caption</span>{キャプション}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\label</span>{tab:key}
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\begin</span>{tabular}{c|rrr}
+</span></span><span style="display:flex;"><span>       &amp; 列1 &amp; 列2 &amp; 列3 <span style="color:#66d9ef">\\\hline\hline</span>
+</span></span><span style="display:flex;"><span>    行1 &amp;    &amp;    &amp;    <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>    行2 &amp;    &amp;    &amp;    <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>    行3 &amp;    &amp;    &amp;    <span style="color:#66d9ef">\\\hline</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\end</span>{tabular}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{table}
+</span></span></code></pre></div><p><img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3125214/22de058e-a6b2-7776-e4a7-85b3d5cde53e.png" alt="image.png"></p>
+<p>キーには何を入れてもいいですが，後から見返しても分かるようにある程度関係のある単語を入れましょう．例えばaとかbとかはやめましょう．</p>
+<h2 id="箇条書き">箇条書き</h2>
+<p>箇条書きは記号付き箇条書きを使えるitemize環境や番号付き箇条書きのenumerate環境の2つを覚えておけば充分だと思います．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{itemize}
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">\item</span> 1つ目
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">\item</span> 2つ目
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">\item</span> 3つ目
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{itemize}
+</span></span></code></pre></div><p><img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3125214/e6b0220e-a403-f59b-8b0d-ddac26852acf.png" alt="image.png"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#66d9ef">\begin</span>{enumerate}
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">\item</span> 1つ目
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">\item</span> 2つ目
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">\item</span> 3つ目
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\end</span>{enumerate}
+</span></span></code></pre></div><p><img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3125214/9b09b5d3-0426-c558-04fa-888aea747605.png" alt="image.png"></p>
+<p>一応入れ子にすることもできますが，レポートの可読性が悪くなるので多用するのはおすすめしないので存在だけ紹介します．</p>
+<h2 id="minipage">minipage</h2>
+<p>画像や表をひとまとめにしたり横に並べたりするものです．
+必ずしも必要ではないですが，レポートの可読性を高めるためには必須なので存在だけ紹介しておきます．
+TeXに慣れてきたら使うとまた1つ快適な環境に近づきますが，TeX自体を始めたばかりで使うと扱いきれないと思います．</p>
+<h2 id="その他">その他</h2>
+<p>文字の大きさや太さを変えたり，様々なことができるので調べてみてください．
+やりたいなと思ったことは基本できると思います．</p>
+<h1 id="ユーザスペニット">ユーザスペニット</h1>
+<p>VSCode内の左下の歯車マークからユーザースニペットを選択し，latexを選択するとlatex.jsonが生成されます．
+<img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3125214/d8ea2b33-1f13-2109-77e3-d9a708234946.png" alt="image.png"></p>
+<p>latex.jsonに書くことで，短い文字列を入力するだけであらかじめ決めておいたテンプレートを呼び出すことができます．
+例えば<code>figure</code>か<code>fig</code>と入力したときにfigure環境の中身をテンプレートを作りたいときは以下のように記述します．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;figure&#34;</span>: {
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;prefix&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;figure&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;fig&#34;</span>
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;body&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\begin{figure}[]&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\centering&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\includegraphics[width=0.8\\textwidth]{}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\caption{}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\label{}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\end{figure}&#34;</span>,
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;画像表示用テンプレート&#34;</span>,
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>参考に筆者が使っているlatex.jsonを共有します．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;report&#34;</span>: {
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;prefix&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;rep&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;repo&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;report&#34;</span>
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;body&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\documentclass[titlepage,a4paper]{jsarticle}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\usepackage{import}% 各種パッケージインポート&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;%% タイトルページの変数&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% レポートタイトル&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\title{レポートタイトル}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% 提出日&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\expdate{\\today}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% 科目名&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\subject{科目名}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% 分野&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\class{学部}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% 学年&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\grade{学年}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% 学籍番号&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\mynumber{学籍番号}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% 記述者&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\author{名前}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% グループ名 % もし班があるやつならtitle_team.styを入れる&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% \\team{10}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% 共同実験者 % もし共同実験者が必要なやつならtitle_kyoudou.styを入れる&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\coauthor{%&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\textbf{学籍番号:} &amp; \\textbf{氏名:} \\ \\&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\textbf{学籍番号:} &amp; \\textbf{氏名:}\\ \\&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\textbf{学籍番号:} &amp; \\textbf{氏名:}\\ \\&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\textbf{学籍番号:} &amp; \\textbf{氏名:}\\ \\&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;%&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\begin{document}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% titleページ作成&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\maketitle&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% 参考文献&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\begin{thebibliography}{99}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\bibitem{}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\end{thebibliography}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\end{document}&#34;</span>,
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;授業レポート用テンプレート&#34;</span>
+</span></span><span style="display:flex;"><span>	},
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;figure&#34;</span>: { <span style="color:#75715e">// 画像表示，中央揃え，キャプション参照あり
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#f92672">&#34;prefix&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;figure&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;fig&#34;</span>
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;body&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\begin{figure}[]&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\centering&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\includegraphics[width=0.8\\textwidth]{}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\caption{}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\label{}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\end{figure}&#34;</span>,
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;画像表示用テンプレート&#34;</span>,
+</span></span><span style="display:flex;"><span>	},
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;table&#34;</span>: {
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;prefix&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;table&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;tab&#34;</span>
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;body&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\begin{table}[H]&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\centering&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\caption{}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\label{}&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;% tabler環境の挿入&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\end{table}&#34;</span>,
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;テーブル表示用テンプレート&#34;</span>
+</span></span><span style="display:flex;"><span>	},
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&#34;list&#34;</span>: {
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;prefix&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;lst&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;list&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;code&#34;</span>
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;body&#34;</span>: [
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\begin{lstlisting}[caption=,label=]&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;\\end{lstlisting}&#34;</span>
+</span></span><span style="display:flex;"><span>		],
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;ソースコード表示用テンプレート&#34;</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h1 id="styleファイルについて">Styleファイルについて</h1>
+<p>基本的には使う必要のないものですが，自作のスタイルファイルを作成するとファイル内がスッキリします．
+また，特殊なタイトルページや関数の変更などを他人に共有することもできます．これは基本的には筆者が使っているものを共有します．
+また，Styleファイルが手元にある場合は，<code>\usepackage{}</code>で適用させることができます．
+texファイルと同じフォルダ内にある<code>template.sty</code>を適用したいときは以下のように記述します．</p>
+<pre tabindex="0"><code class="language-tex:上部" data-lang="tex:上部">\documentclass[titlepage,a4paper]{jsarticle}
+\usepackage{template}
+</code></pre><h2 id="タイトルページ">タイトルページ</h2>
+<p>タイトルページは公式でタイトル，日付，著者名を書く事ができるようにしてありますが，我々の目的はレポート用なので学年や学籍番号，教科名や共同実験者なども入力できるようにした筆者のものを共有します．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#75715e">%% title.sty
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% &lt;2024-06-26&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% タイトルページ作成
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% maketitle 用の要素の定義
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\subject</span>}[1]{<span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\@</span>subject}{#1}}  <span style="color:#75715e">% 教科
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\class</span>}[1]{<span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\@</span>class}{#1}}      <span style="color:#75715e">% 学部
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\grade</span>}[1]{<span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\@</span>grade}{#1}}      <span style="color:#75715e">% 学年 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\mynumber</span>}[1]{<span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\@</span>mynumber}{#1}}  <span style="color:#75715e">% 教科
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\expdate</span>}[1]{<span style="color:#66d9ef">\newcommand*</span>{<span style="color:#66d9ef">\@</span>expdate}{#1}}  <span style="color:#75715e">% 提出日
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\newcommand</span>{<span style="color:#66d9ef">\coauthor</span>}[1]{<span style="color:#66d9ef">\newcommand</span>{<span style="color:#66d9ef">\@</span>coauthor}{#1}}  <span style="color:#75715e">% 共同実験者
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% \titlepageコマンドの書き換え
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\if</span>@titlepage
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\renewcommand</span>{<span style="color:#66d9ef">\maketitle</span>}{<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">\begin</span>{titlepage}<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">\let\footnotesize\small</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\let\footnoterule\relax</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\let\footnote\thanks</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\null\vfil</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">% \vskip em % ここで調整
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">\begin</span>{flushright}
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">\large\@</span>expdate<span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">\large\@</span>subject レポート
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\end</span>{flushright}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\vskip</span> 120<span style="color:#66d9ef">\jsc</span>@mpt <span style="color:#75715e">%60\jsc@mpt % 開け幅を規定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">\begin</span>{center}<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      {<span style="color:#66d9ef">\Huge</span> <span style="color:#66d9ef">\@</span>title <span style="color:#66d9ef">\par</span>} <span style="color:#75715e">% title の大きさを規定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">\vskip</span> 6em<span style="color:#75715e">%3em % 開け幅を規定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        {<span style="color:#66d9ef">\Large</span> <span style="color:#75715e">% author の大きさを規定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#75715e">% \lineskip .75em
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#66d9ef">\@</span>class<span style="color:#66d9ef">\hspace</span>{0.5<span style="color:#66d9ef">\zw</span>}<span style="color:#66d9ef">\@</span>grade<span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#75715e">% \vspace{0.5rem}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#66d9ef">\begin</span>{tabular}[t]{&gt;{<span style="color:#66d9ef">\bfseries</span>}l@{<span style="color:#66d9ef">\hspace</span>{0.5<span style="color:#66d9ef">\zw</span>}：<span style="color:#66d9ef">\hspace</span>{0.5<span style="color:#66d9ef">\zw</span>}}l}<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            学籍番号 &amp; <span style="color:#66d9ef">\@</span>mynumber <span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>            氏名   &amp; <span style="color:#66d9ef">\@</span>author   <span style="color:#75715e">% author を挿入
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#66d9ef">\end</span>{tabular}<span style="color:#66d9ef">\par</span>}<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">\vskip</span> 3em
+</span></span><span style="display:flex;"><span>        {<span style="color:#66d9ef">\Large</span>
+</span></span><span style="display:flex;"><span>          {<span style="color:#66d9ef">\bfseries</span> 共同実験者}<span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">\vskip</span> 1.5em
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">\begingroup</span><span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#66d9ef">\renewcommand</span>{<span style="color:#66d9ef">\arraystretch</span>}{0.6}<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#66d9ef">\begin</span>{tabular}[t]{rl}<span style="color:#66d9ef">\@</span>coauthor<span style="color:#66d9ef">\end</span>{tabular}<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#66d9ef">\endgroup</span><span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">\vskip</span> 1.5em <span style="color:#75715e">% 開け幅を規定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#75715e">% {\large \@date \par} % date の大きさ規定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">\end</span>{center}<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">% \vspace{9cm}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">\par</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">\@</span>thanks<span style="color:#66d9ef">\vfil\null</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\end</span>{titlepage}<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">\setcounter</span>{footnote}{0}<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">\global\let\thanks\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\maketitle\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>thanks<span style="color:#66d9ef">\@</span>empty
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>author<span style="color:#66d9ef">\@</span>empty
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>date<span style="color:#66d9ef">\@</span>empty
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>title<span style="color:#66d9ef">\@</span>empty
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\title\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\author\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\date\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\and\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">\global\let\@</span>subject<span style="color:#66d9ef">\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>mynumber<span style="color:#66d9ef">\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>class<span style="color:#66d9ef">\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>grade<span style="color:#66d9ef">\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>team<span style="color:#66d9ef">\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>expdate<span style="color:#66d9ef">\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\@</span>coauthor<span style="color:#66d9ef">\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\grade\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\team\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\expdate\relax</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">\global\let\coauthor\relax</span>
+</span></span><span style="display:flex;"><span>}<span style="color:#75715e">%
+</span></span></span></code></pre></div><p>また，texファイルのほうで<code>\maketitle</code>の前に次の記述をすることでタイトルページを作ることができます．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#75715e">%% タイトルページの変数
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% レポートタイトル
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\title</span>{レポートタイトル}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 提出日
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\expdate</span>{<span style="color:#66d9ef">\today</span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 科目名
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\subject</span>{科目名}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 分野
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\class</span>{情報経営システム工学分野}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 学年
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\grade</span>{B3}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 学籍番号
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\mynumber</span>{学籍番号}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 記述者
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\author</span>{名前}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 共同実験者 % もし共同実験者が必要なやつならを入れる
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\coauthor</span>{<span style="color:#75715e">%
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\textbf</span>{学籍番号:}111111 &amp; <span style="color:#66d9ef">\textbf</span>{氏名:TeX太郎}<span style="color:#66d9ef">\\</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>この記述で以下の画像のようなタイトルを作成することができます．
+<img src="https://hackmd.io/_uploads/r1etuCI2C.png" alt="image"></p>
+<p>もし自分で変えたい時は以下の3つの記事を見ればできると思います．
+<a href="http://aquarius10.cse.kyutech.ac.jp/~otabe/koho/node11.html#SECTION00034000000000000000">参考記事1</a>
+<a href="https://qiita.com/zr_tex8r/items/5067307890d36c0e4882">参考記事2</a>
+<a href="https://qiita.com/ZoneTsuyoshi/items/c87e9ea2a76b552773d2">参考記事3</a></p>
+<h2 id="パッケージ">パッケージ</h2>
+<p>いつも<code>\usepackage</code>しているものやマクロ定義しているものはStyleファイルにするとファイルがスッキリします．
+これも筆者のものを共有します．これはいろいろなところから持ってきているキメラになっているので，必要ない事が書いてあったりするかも知れません．</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span><span style="color:#75715e">%% import.sty
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% &lt;2024-07-04&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% 外枠削減 %%% jarticleじゃなくて，jsarticle使うといい感じの幅になる
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\RequirePackage</span>{geometry}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% \zw と \zh の定義
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\providecommand</span>{<span style="color:#66d9ef">\zw</span>}{zw}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\providecommand</span>{<span style="color:#66d9ef">\zh</span>}{zh}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\geometry</span>{left=30mm,right=30mm,top=30mm,bottom=30mm}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% 画像関連
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% 画像読み込みを可能にする
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[dvipdfmx]</span>{graphicx}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% これないと画像が表示されない
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[dvipdfmx]</span>{color}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% TeX文書中に描画コマンドで色々書く感じのやつ．多分ベクター画像っぽい個としてる.graphicsと喧嘩してしまったので消す
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% \usepackage{tikz}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% サブキャプション使うためのやつ
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[hang,small,bf]</span>{caption}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[subrefformat=parens]</span>{subcaption}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\captionsetup</span>{compatibility=false}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\captionsetup</span><span style="color:#a6e22e">[subfigure]</span>{labelformat=simple}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 頭をいれるときのフォーマットをいじる
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\renewcommand</span>{<span style="color:#66d9ef">\thesubfigure</span>}{(<span style="color:#66d9ef">\alph</span>{subfigure})} <span style="color:#75715e">% 図のサブキャプション引用時に括弧
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% 表
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% セル結合
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span>{multirow}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 横罫線をかくやつ
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span>{booktabs}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% サブキャプション使うためのやつ
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\captionsetup</span><span style="color:#a6e22e">[subtable]</span>{labelformat=simple}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 表をいれるときのフォーマットをいじる
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\renewcommand</span>{<span style="color:#66d9ef">\thesubtable</span>}{(<span style="color:#66d9ef">\alph</span>{subtable})} <span style="color:#75715e">% 表のサブキャプション引用時に括弧
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% url関連
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[hyphens]</span>{url} <span style="color:#75715e">% 先にurlパッケージ読込
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% ハイパーリンク化
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span><span style="color:#a6e22e">[hidelinks,dvipdfmx]</span>{hyperref}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% 数式  %%%後で精査
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span>{amsmath}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{mathtools}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{amssymb}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{bm}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{siunitx}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\usepackage</span>{array}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">\DeclareSIUnit</span><span style="color:#a6e22e">[number-unit-product=]</span><span style="color:#66d9ef">\percent</span>{<span style="color:#66d9ef">\char</span>`<span style="color:#66d9ef">\%</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% 挿入ソースコードの設定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% lstlistingを使えるようにする．
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span>{listings}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% lstlistingの描画設定
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\lstset</span>{
+</span></span><span style="display:flex;"><span>  basicstyle={<span style="color:#66d9ef">\ttfamily</span>},
+</span></span><span style="display:flex;"><span>  identifierstyle={<span style="color:#66d9ef">\small</span>},
+</span></span><span style="display:flex;"><span>  commentstyle={<span style="color:#66d9ef">\smallitshape</span>},
+</span></span><span style="display:flex;"><span>  keywordstyle={<span style="color:#66d9ef">\small\bfseries</span>},
+</span></span><span style="display:flex;"><span>  ndkeywordstyle={<span style="color:#66d9ef">\small</span>},
+</span></span><span style="display:flex;"><span>  stringstyle={<span style="color:#66d9ef">\small\ttfamily</span>},
+</span></span><span style="display:flex;"><span>  frame={tb},
+</span></span><span style="display:flex;"><span>  breaklines=true,
+</span></span><span style="display:flex;"><span>  columns=[l]{fullflexible},
+</span></span><span style="display:flex;"><span>  numbers=left,
+</span></span><span style="display:flex;"><span>  xrightmargin=0zw,
+</span></span><span style="display:flex;"><span>  xleftmargin=3zw,
+</span></span><span style="display:flex;"><span>  numberstyle={<span style="color:#66d9ef">\scriptsize</span>},
+</span></span><span style="display:flex;"><span>  stepnumber=1,
+</span></span><span style="display:flex;"><span>  numbersep=1zw,
+</span></span><span style="display:flex;"><span>  lineskip=-0.5ex
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% キャプションの&#34;Listing 1:~&#34;みたいに描画されるところを&#34;ソースコード 1:~&#34;に変更
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\renewcommand</span>{<span style="color:#66d9ef">\lstlistingname</span>}{ソースコード}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% 便利系
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">% 位置決定コマンド&#34;H&#34;を使えるようにする
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span>{here}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% PDFを読み込めるようにする %%maketitleせずにこれで表紙読み込めば良き
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">\usepackage</span>{pdfpages}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">%% 参考ページ %%%後から見返してわかるようにこれも精査しておきたい
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% https://qiita.com/ZoneTsuyoshi/items/c87e9ea2a76b552773d2    %% 良さげな事が書いてあるやつ
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% https://texwiki.texjp.org/TikZ                               %% tikzについて
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% https://konoyonohana.blog.fc2.com/blog-entry-339.html        %% booktabsについて
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% https://mathlandscape.com/latex-hyperref/                    %% hyperrefについて
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% https://abenori.blogspot.com/2015/07/pdfpages.html           %% pdfpagesについて
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">%% https://atatat.hatenablog.com/entry/cloud_latex18_subcaption %% subcaptionについて
+</span></span></span></code></pre></div><h1 id="まとめ">まとめ</h1>
+<p>できる限りこのページを見るだけでTeXで簡単なレポートを書けるようにしましたが，説明の足りないところが多々あると思います．
+もし物足りないなぁと思ったら最新の情報を調べてみてください．</p>
+<p>それでは，良きTeXライフを！</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
