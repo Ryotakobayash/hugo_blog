@@ -222,7 +222,7 @@ customCSS = ["css/custom_post.css"]
     bio = ""
   
   [params.authors.NUTMEG]
-  　name = "NUTMEG"
+    name = "NUTMEG"
     bio = "複数人で作成"
 
 
