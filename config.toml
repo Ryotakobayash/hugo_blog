@@ -221,6 +221,14 @@ customCSS = ["css/custom_post.css"]
     name = "准教授"
     bio = ""
   
+  [params.authors.nakataku]
+    name = "なかたく"
+    bio = "複数人で作成"
+
+  [params.authors.syochan]
+    name = "しょうちゃん"
+    bio = "複数人で作成"
+  
   [params.authors.NUTMEG]
     name = "NUTMEG"
     bio = "複数人で作成"
