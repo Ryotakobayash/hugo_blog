@@ -6,8 +6,15 @@
     <description>Recent content in Next.js on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 18 Jul 2024 18:34:04 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2024 15:02:20 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/tags/next.js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Next.jsでWebアプリを作ろう！！</title>
+      <link>https://blog.nutmeg.cloud/blog/post-20241123-1/</link>
+      <pubDate>Thu, 28 Nov 2024 15:02:20 +0900</pubDate>
+      <guid>https://blog.nutmeg.cloud/blog/post-20241123-1/</guid>
+      <description>そうだ！Webアプリ作ろう！ お疲れ様です！うっちーです！</description>
+    </item>
     <item>
       <title>Webアプリ（フロントエンド）開発のtips</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240716/</link>

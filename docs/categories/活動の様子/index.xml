@@ -6,13 +6,20 @@
     <description>Recent content in 活動の様子 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 09 Nov 2024 23:11:52 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2024 15:02:20 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Next.jsでWebアプリを作ろう！！</title>
+      <link>https://blog.nutmeg.cloud/blog/post-20241123-1/</link>
+      <pubDate>Thu, 28 Nov 2024 15:02:20 +0900</pubDate>
+      <guid>https://blog.nutmeg.cloud/blog/post-20241123-1/</guid>
+      <description>そうだ！Webアプリ作ろう！ お疲れ様です！うっちーです！</description>
+    </item>
+    <item>
       <title>コンポーネントをいい感じに整理しよう（Atomic Design）</title>
-      <link>https://blog.nutmeg.cloud/blog/post-yyyymmmm/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20241107/</link>
       <pubDate>Sat, 09 Nov 2024 23:11:52 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-yyyymmmm/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20241107/</guid>
       <description>概要 先日、作成中のBINGOアプリのミーティングで「コンポーネントをいい感じに整理しよう」となり、コンポーネント整理についていろいろ調べました。その時に、Atomic Designを調べたので自分なりにまとめてみました。 なお、本記事はアプリ開発初心者が書いているため、一部事実と異なる場合があるかもしれません。本記事を参考にする際は、気を付けてください。</description>
     </item>
     <item>

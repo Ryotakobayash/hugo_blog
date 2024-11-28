@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Next.jsを触り始めて1~2カ月くらいの素人がNext.jsでWebアプリを作る際の流れをまとめてみました！ 誰でも簡単にWebアプリをデプロイできるんやでっていうことを伝えたい。">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-20241123-1/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="Next.jsでWebアプリを作ろう！！">
+  <meta property="og:description" content="Next.jsを触り始めて1~2カ月くらいの素人がNext.jsでWebアプリを作る際の流れをまとめてみました！ 誰でも簡単にWebアプリをデプロイできるんやでっていうことを伝えたい。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-11-28T15:02:20+09:00">
+    <meta property="article:modified_time" content="2024-11-28T15:02:20+09:00">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="TypeScript">
+    <meta property="article:tag" content="Next.js">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="ターミナル">
+    <meta property="article:tag" content="フロントエンド">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="Next.jsでWebアプリを作ろう！！">
+  <meta name="twitter:description" content="Next.jsを触り始めて1~2カ月くらいの素人がNext.jsでWebアプリを作る際の流れをまとめてみました！ 誰でも簡単にWebアプリをデプロイできるんやでっていうことを伝えたい。">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90"
+          class="text-primary">活動の様子</a>
+        
+        <h2>Next.jsでWebアプリを作ろう！！</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By うっちー
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              28 November 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/HyVkPykmkl.png" class="img-fluid w-100 mb-4" alt="Next.jsでWebアプリを作ろう！！">
+        
+        <div class="content mb-5">
+          <h2 id="そうだwebアプリ作ろう">そうだ！Webアプリ作ろう！</h2>
+<p>お疲れ様です！うっちーです！</p>
+<p>夕飯を食べているとふとこんなことを思うことがあると思います！
+「あ～&hellip;
+　なんかWEBアプリ作りてぇなぁ～」
+しかし！まだプログラミングを勉強して間もない人にはWEBアプリってどうやって作れば良いのか分からないと思います！</p>
+<h3 id="僕もわかりません">僕もわかりません！！</h3>
+<p>ということで今回は、そんな素人が最近覚えたNext.jsでWEBアプリを作る方法を書き殴っていこうと思います！</p>
+<p>なお、本記事の目的は「最低限WEbアプリを公開できること」としたいと思います！
+そのため、使用技術に関しても詳しい解説などはしません！</p>
+<p>「よく分かんないけど、こうすれば良いのか～」って感じで受け取ってもらえると幸いです！
+個人的に、小難しいことは後にしてまずはゴリゴリプログラムを書いていく方が楽しいと思ってます！
+「は？ちゃんと解説しろや」とか「いやこれ絶対もっと上手くやれるやろ」とか思ったら、技術や知識は自然とググると思います。
+(最近のマイトレンドはchat GPTにぶん投げること)</p>
+<p>その他、ズブの素人が書いているため所々終わっている記述があるかと思われます。ご了承ください。</p>
+<h2 id="今日のお品書き">～今日のお品書き～</h2>
+<ol>
+<li>Next.jsプロジェクトを作成しよう！</li>
+<li>GitHubにリポジトリを作ろう！</li>
+<li>Vercelで公開しよう！</li>
+</ol>
+<h2 id="1-nextjsプロジェクトを作成しよう">1. Next.jsプロジェクトを作成しよう！</h2>
+<p>まずは<a href="https://nextjs.org/">Next.js</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>プロジェクトを作成しましょう！
+(このプロジェクトがWEBアプリになるイメージ)</p>
+<p>Next.jsというのはJavaScript<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>のフレームワーク<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>です！
+「なんか良い感じにWEBアプリの骨組みになってくれるやつなんだなぁ」と思っておいてください！</p>
+<h3 id="1-ターミナルを開く">(1) ターミナルを開く</h3>
+<p>まずはターミナルを開きましょう！
+(ターミナルだかコマンドラインだかコマンドプロンプトだか言われるてるやつ)</p>
+<p>↓こんなやつ
+<img src="https://hackmd.io/_uploads/HkIJHl1m1g.png" alt="image"></p>
+<h3 id="2-nodejsとnpmとnpxをインストールする">(2) Node.jsとnpmとnpxをインストールする</h3>
+<p>次はNext.jsプロジェクトを作るのに必要となる「Node.js」<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>と「npm」<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>と「npx」<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>というものをインストールします！
+(既にインストールされている人はスキップしてください)</p>
+<ol>
+<li>Node.jsのサイトにアクセスする
+リンク: <a href="https://nodejs.org/en">https://nodejs.org/en</a>
+<img src="https://hackmd.io/_uploads/SyoZy-1mJg.png" alt="image"></li>
+<li>最新バージョンをダウンロードする
+「Download Node.js(LTS)」というボタンをクリック</li>
+<li>ダウンロードしたファイルを開いてインストールする
+インストール時のオプションは全部デフォルトでOK</li>
+</ol>
+<p>Node.jsをインストールするとnpmとnpxも一緒にインストールされます！</p>
+<h3 id="3-nodejsとnpxとnpmがインストールされているか確認する">(3) Node.jsとnpxとnpmがインストールされているか確認する</h3>
+<p>「Node.js」と「npm」と「npx」が自分のパソコンにインストールされているか確認しましょう！
+(既にインストールされている人はスキップしてください)</p>
+<p>インストールされているか確認するには、ターミナルで次のコマンドを実行してください！</p>
+<ol>
+<li>Node.jsがインストールされているか確認するコマンド
+<pre tabindex="0"><code>node -v
+</code></pre>&ndash;&gt;「v20.16.0」などの表示が出たらインストール済み！</li>
+<li>npmがインストールされているか確認するコマンド
+<pre tabindex="0"><code>npm -v
+</code></pre>&ndash;&gt;「10.8.2」などの表示が出たらインストール済み！</li>
+<li>npxがインストールされているか確認するコマンド
+<pre tabindex="0"><code>npx -v
+</code></pre>&ndash;&gt;「10.8.2」などの表示が出たらインストール済み！</li>
+</ol>
+<h3 id="4-nextjsプロジェクトを作る">(4) Next.jsプロジェクトを作る</h3>
+<p>「Node.js」と「npm」と「npx」がインストールできたらNext.jsのプロジェクトを作りましょう！</p>
+<h1 id="コマンド1個で作れます">コマンド1個で作れます！</h1>
+<ol>
+<li>Next.jsプロジェクトを作成したいフォルダに移動する</li>
+<li>次のコマンドを実行してNext.jsプロジェクトを作成する
+<pre tabindex="0"><code>npx create-next-app myApp
+</code></pre>これだけでNext.jsのプロジェクトが作成できます！
+「myApp」の部分がプロジェクトの名前になります。好きな名前を付けましょう！
+(半角文字じゃないとエラー出るかも)</li>
+<li>色々聞かれるので対応する
+先程のコマンドを実行するとこんな質問が来ると思います。
+基本的に<strong>最初だけ「y」と入力したら後は全部エンター</strong>で良きです！
+<img src="https://hackmd.io/_uploads/H1-XGb1X1x.png" alt="image">
+<ul>
+<li>Ok to proceed? (y) : 「次に進んで大丈夫？」
+&ndash;&gt; 「y」と入力してエンター</li>
+<li>Would you like to use TypeScript?: 「TypeScript使う？」
+&ndash;&gt;YesでOK</li>
+<li>Would you like to use ESLint?: 「ESLint使う？」
+&ndash;&gt;YesでOK</li>
+<li>Would you like to use TailWind CSS?: 「TailWindCSS使う？」
+&ndash;&gt;YesでOK</li>
+<li>Would you like to use <code>src/</code> directory?: 「srcディレクトリ作る？」
+&ndash;&gt;YesでOK</li>
+<li>Would you like to use App Router?: 「AppRouter使う？」
+&ndash;&gt;最初はNoがオススメ！</li>
+<li>Would you like to customize the default import alias(@/*)?: 「エイリアスをカスタマイズする？」
+&ndash;&gt;NoでOK
+参考: <a href="https://zenn.dev/ikkik/articles/51d97ff70bd0da">create-next-appで訊かれていること</a></li>
+</ul>
+</li>
+</ol>
+<h3 id="しばらく待つとnextjsのプロジェクトが作成されます">しばらく待つとNext.jsのプロジェクトが作成されます！</h3>
+<p>おめでとう！
+これで君はこれからはコマンド1つでNext.jsのプロジェクトが作れるぞ！</p>
+<h2 id="2-githubにリポジトリを作ろう">2. GitHubにリポジトリを作ろう！</h2>
+<p>次は先ほど作成したNext.jsプロジェクトをGitHub<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>のリポジトリにプッシュしましょう！</p>
+<p>GitHubというのはアプリの共同開発などで絶対と言って良いくらい使われている開発プラットフォームです！
+色々と便利な機能はありますが、ここでは「Next.jsのプロジェクトをVercelってやつでWEBで一般公開するために必要なやつ」と思っておいてください！</p>
+<h3 id="1-githubアカウントを作ろう">(1) GitHubアカウントを作ろう！</h3>
+<p><a href="https://github.co.jp/">https://github.co.jp/</a></p>
+<h3 id="2-githubにリポジトリを作ろう-1">(2) GitHubにリポジトリを作ろう！</h3>
+<h3 id="3-リポジトリにnextjsプロジェクトをpushしよう">(3) リポジトリにNext.jsプロジェクトをpushしよう！</h3>
+<p>notion: <a href="https://www.notion.so/nutfes-nutmeg/github-10adb129560c40adb0b45f24f8fc2fa5?pvs=4">https://www.notion.so/nutfes-nutmeg/github-10adb129560c40adb0b45f24f8fc2fa5?pvs=4</a></p>
+<h2 id="3-vercelで公開しよう">3. Vercelで公開しよう！</h2>
+<p><a href="https://www.notion.so/nutfes-nutmeg/vercel-54e647a3be7246e39e858ac8eca8af99?pvs=4">Vercelにデプロイしよう</a></p>
+<h3 id="1-vercelにgithubアカウントでログイン">(1) VercelにGitHubアカウントでログイン</h3>
+<h3 id="解説">解説</h3>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Next.jsというのはJavaScriptのフレームワークのことです！
+WEBアプリやWEBサイトの開発で最近人気らしい。&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>WEBアプリの基本的なプログラム言語として、「HTML」 「CSS」 「JavaScript」の3つがあります！
+【HTML】
+アプリ内の各要素の&quot;構造&quot;を定義する(ボタンの中に文字を入れる等)
+【CSS】
+アプリ内の各要素の&quot;見た目&quot;を定義する(文字の大きさや色など)
+【JavaScript】
+アプリ内の各要素の&quot;処理&quot;を定義する(ボタンを押したらリンクを開くなど)
+↓
+もっと詳しく知りたい方はMDNの解説がおススメです！
+HTML: <a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/HTML_basics">HTMLの基本</a>
+CSS: <a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/CSS_basics">CSSの基本</a>
+JavaScript: <a href="https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JavaScriptの基本</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>フレームワークとは文字通り「枠組み」です。プログラムを作る際に、1から全部作るのは大変です。その辺の面倒を予めよしなにしてまとめてあるがフレームワークです。
+例：車を作る際に、1から車を作るのではなく、骨組み(=フレームワーク)から作る感じ&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Node.jsというのは、JavaScriptの便利な拡張機能がいっぱい使えるようになるやつです！
+実態は「JavaScriptの実行環境」らしいです。
+JavaScriptは元はGoogleChromeなどのブラウザ上でしか実行できなかったのですが、Node.jsはそれを自分のPCでも動かせるようにしてくれた(らしい)！その結果、技術力を持て余した変態エンジニア達に魔改造され、最初はサーバーの方の処理を作るために作られたのに、それ以外の方でも大量に追加機能が開発されたらしい
+参考: <a href="https://qiita.com/non_cal/items/a8fee0b7ad96e67713eb">Node.jsとはなにか？なぜみんな使っているのか？</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>npmというのはNode.jsの便利な拡張機能の「バージョンを管理する」やつらしいです！&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6">
+<p>npxというのはNode.jsの便利な拡張機能を「実行」するために必要なやつらしいです！
+参考: <a href="https://qiita.com/kohta9521/items/ee3ed4a2360add80ad79">npmとnpxの違い説明できますか？</a>&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7">
+<p>GitHubは「開発プラットフォーム」です。GitHubで出来ることは多岐に渡りますが、主な用途としては以下の通り
+【無料でファイルをアップロード】
+GitHubには「リポジトリ」と呼ばれるものを作ることで、自分のPC内のファイルをアップロード(push)することができます。そのファイルを世界中に公開することも可能です。
+【バージョン管理】
+GitHubにファイルをアップロードするたびに、ファイルの変更点を履歴に保存してくれます。そのため、「やべ～これバグあるじゃん」となった際に、ちゃんと動くバージョンにすぐに戻すことが出来たりします。
+【複数人での開発】
+GitHubにアップロードしたファイルを公開すれば、他の人もそのファイルを閲覧したり、自分のPCにダウンロードして編集することが可能になります。これを用いて複数人で開発を行うことができるのです。
+↓
+もっと詳しく知りたい人には以下のサイトがおすすめです
+<a href="https://www.sejuku.net/blog/7901">GitHub(ギットハブ)とは？特徴や使い方を初心者向けにわかりやすく紹介</a>
+<a href="https://backlog.com/ja/git-tutorial/">サル先生のGit入門</a>
+<a href="https://qiita.com/True-one/items/d698ebc2346ad184fd3f">【Git】と【github】の違いとは？</a>&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%81%e3%83%bc%e3%83%a0%e3%81%a5%e3%81%8f%e3%82%8a">チームづくり</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
