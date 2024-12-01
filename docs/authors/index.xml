@@ -6,13 +6,20 @@
     <description>Recent content in Authors on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 28 Nov 2024 15:02:20 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 Dec 2024 15:02:24 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Uccti</title>
-      <link>https://blog.nutmeg.cloud/authors/uccti/</link>
+      <title>Nakataku</title>
+      <link>https://blog.nutmeg.cloud/authors/nakataku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blog.nutmeg.cloud/authors/uccti/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/nakataku/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Izumi</title>
+      <link>https://blog.nutmeg.cloud/authors/izumi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.nutmeg.cloud/authors/izumi/</guid>
       <description></description>
     </item>
     <item>
@@ -27,13 +34,6 @@
       <link>https://blog.nutmeg.cloud/authors/syochan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.nutmeg.cloud/authors/syochan/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nakataku</title>
-      <link>https://blog.nutmeg.cloud/authors/nakataku/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blog.nutmeg.cloud/authors/nakataku/</guid>
       <description></description>
     </item>
     <item>
@@ -69,6 +69,13 @@
       <link>https://blog.nutmeg.cloud/authors/akari/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.nutmeg.cloud/authors/akari/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uccti</title>
+      <link>https://blog.nutmeg.cloud/authors/uccti/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.nutmeg.cloud/authors/uccti/</guid>
       <description></description>
     </item>
     <item>

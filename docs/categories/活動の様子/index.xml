@@ -6,14 +6,14 @@
     <description>Recent content in 活動の様子 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 28 Nov 2024 15:02:20 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 28 Nov 2024 15:01:40 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Next.jsでWebアプリを作ろう！！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20241123-1/</link>
-      <pubDate>Thu, 28 Nov 2024 15:02:20 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20241123-1/</guid>
-      <description>そうだ！Webアプリ作ろう！ お疲れ様です！うっちーです！</description>
+      <title>そうだコンペやろう</title>
+      <link>https://blog.nutmeg.cloud/blog/post-20241114/</link>
+      <pubDate>Thu, 28 Nov 2024 15:01:40 +0900</pubDate>
+      <guid>https://blog.nutmeg.cloud/blog/post-20241114/</guid>
+      <description>はじめに みなさんこんにちは，この春からNUTMEG所属のB3のいずみんです． 実は機械工学分野所属でプログラミングが得意なわけでもないです(というか苦手)．弱点克服のために情報局に入りましたが何とかデザインチームとGM2チームで楽しく活動しています．</description>
     </item>
     <item>
       <title>コンポーネントをいい感じに整理しよう（Atomic Design）</title>
