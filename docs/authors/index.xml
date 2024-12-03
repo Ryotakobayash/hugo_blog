@@ -6,8 +6,15 @@
     <description>Recent content in Authors on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Dec 2024 20:46:03 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 03 Dec 2024 11:01:12 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hikahana</title>
+      <link>https://blog.nutmeg.cloud/authors/hikahana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.nutmeg.cloud/authors/hikahana/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Uccti</title>
       <link>https://blog.nutmeg.cloud/authors/uccti/</link>
@@ -83,13 +90,6 @@
       <link>https://blog.nutmeg.cloud/authors/paladin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://blog.nutmeg.cloud/authors/paladin/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hikahana</title>
-      <link>https://blog.nutmeg.cloud/authors/hikahana/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blog.nutmeg.cloud/authors/hikahana/</guid>
       <description></description>
     </item>
     <item>

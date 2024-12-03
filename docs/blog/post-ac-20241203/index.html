@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="皆様こんにちは。NUTMEG三年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。 私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。Hasura自体の日本語記事が少ない &#43; 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-ac-20241203/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="hasura v2のすゝめ">
+  <meta property="og:description" content="皆様こんにちは。NUTMEG三年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。 私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。Hasura自体の日本語記事が少ない &#43; 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-12-03T11:01:12+09:00">
+    <meta property="article:modified_time" content="2024-12-03T11:01:12+09:00">
+    <meta property="article:tag" content="TypeScript">
+    <meta property="article:tag" content="Next.js">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="Hasura">
+    <meta property="article:tag" content="バックエンド">
+    <meta property="article:tag" content="API関係">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="hasura v2のすゝめ">
+  <meta name="twitter:description" content="皆様こんにちは。NUTMEG三年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。 私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。Hasura自体の日本語記事が少ない &#43; 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024"
+          class="text-primary">Nutmeg advent calendar 2024</a>
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3"
+          class="text-primary">メンバーの趣味</a>
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90"
+          class="text-primary">活動の様子</a>
+        
+        <h2>hasura v2のすゝめ</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By 比嘉華
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              03 December 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/B1A1QhFXyx.png" class="img-fluid w-100 mb-4" alt="hasura v2のすゝめ">
+        
+        <div class="content mb-5">
+          <h2 id="はじめに">はじめに</h2>
+<p>皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。
+私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。<strong>Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。</strong></p>
+<h2 id="hasura-graphql-engineとは">Hasura GraphQL Engineとは</h2>
+<p>以下は<a href="https://hasura.io/docs/2.0/index/">公式ドキュメント</a>の翻訳です。
+Hasura GraphQL Engineは、データを即座にGraphQL APIとして利用可能にし、モダンで高性能なアプリケーションやAPIを従来の10倍の速さで構築・提供できるオープンソースのエンジンです。Hasuraはデータベース、RESTおよびGraphQLエンドポイント、サードパーティAPIに接続し、すべてのデータに対して統合されたリアルタイムでセキュアなGraphQL APIを提供します。Hasuraのコア機能はオープンソースで開発されており、誰でも無料で使用できます。</p>
+<p>要するに、Hasura Engine（以下、Hasura）は、PostgreSQLサーバーから自動的にGraphQLサーバーを構築できるツールです。Hasuraを使用する際は、HasuraとPostgreSQLを組み合わせて利用するようにしましょう。なお、<em><strong>「Hasura」は「阿修羅（Ashura）」とHaskellを組み合わせた造語です。</strong></em></p>
+<p>Hasuraが自動でGraphQLサーバーとして動作するため、GraphQLサーバーを実装する手間が省けます。Hasuraで設定すれば、すぐにQuery、Mutation、Subscriptionを使えるため、高い開発効率で開発を進めることができます。Hasuraのコンソールでテーブルを作成し、クエリに沿ったコードをGraphQL Code Generatorで自動生成できるので、バックエンドの実装を簡単に行うことができます。</p>
+<p>また、HasuraではAuth0などの認証プロバイダと通信し、JWTを利用して、各テーブルやカラムに対して、ユーザーのロールやIDに基づく詳細なアクセス権限を設定できます。JWTに含まれる <code>X-Hasura-User-Id</code> を使用して、特定のユーザーが自身のデータのみを取得・操作できるように制限することが可能です。</p>
+<h2 id="hasuraの環境構築">Hasuraの環境構築</h2>
+<p>Docker環境でのHasuraの環境構築を紹介します。この手順を踏むことで、バックエンドをすべてHasuraに一任できるでしょう。</p>
+<p>Bingoプロダクトから必要なものだけを抽出して簡素化しているため、フロントエンドはあまり参考にしないでください。本来は、App Routerの使用やpnpmでの管理などを行った方が良いと思います！</p>
+<p>本構成の特徴は、<code>docker compose build</code>が不要になることです。ただし、使い勝手は正直あまり良くありません。起動のたびに<code>npm ci、npm run</code>が実行されるため、コンテナ起動から実際のアプリケーション起動まで約1分かかります。</p>
+<h3 id="最終的なディレクトリ構成-appは触った部分のみを掲載">最終的なディレクトリ構成 ※appは触った部分のみを掲載</h3>
+<pre tabindex="0"><code>📁api
+    📁metadata
+    📁migrations/default/hoge_auto
+        📄up.sql
+    📁seed
+    📄config.yaml
+📁app
+    📁src
+        📁gql
+            📄users.gql
+        📁pages
+            📄_app.tsx
+            📄index.tsx
+        📁type
+            📄graphql.ts
+    📄.eslintrc.json
+    📄next.config.ts
+    📄codegen.ts
+📁settings
+    📄.env
+📄compose.yaml
+📄.gitignore
+📄Makefile
+</code></pre><p><a href="https://github.com/hikahana/hasura_v3">Githubに挙げたものはこちらです。</a></p>
+<p>GitHub上のリポジトリ作成とfirst commitは完了している前提で進めます。リポジトリの作成について不明な方は、<a href="https://docs.github.com/ja/repositories/creating-and-managing-repositories/creating-a-new-repository">公式ドキュメント</a>を参照してください。</p>
+<h3 id="1-compose-upするための準備">1. compose upするための準備</h3>
+<p>1.1
+まず、compose.yamlを作成し、使用するコンテナの情報を定義します。フロントエンドはNextjs、バックエンドはHasura、データベースはPostgreSQLを使用するため、これらを定義します。</p>
+<p>(以下、compose.yamlの内容)</p>
+<pre tabindex="0"><code>services:
+  db:
+    image: postgres:12
+    container_name: &#34;db&#34;
+    ports:
+      - &#34;5432:5432&#34;
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_HOST_AUTH_METHOD: trust
+    healthcheck:
+      test:
+        - &#34;CMD-SHELL&#34;
+        - &#34;pg_isready&#34;
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api: # hasura
+    image: hasura/graphql-engine:v2.36.6@sha256:3fc234510962e66d5ca7db16734b8796a16fb729953915861953e974f976f30f
+    container_name: &#34;api&#34;
+    ports:
+      - &#34;8080:8080&#34;
+    volumes:
+      - ./api:/hasura/api
+    working_dir: /hasura/api
+    env_file:
+      - ./settings/.env
+    entrypoint: &gt;
+      sh -c &#34;
+      curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash &amp;&amp;
+      graphql-engine serve
+      &#34;
+
+  app:
+    image: node:20-alpine@sha256:b5b9467fe7b33aad47f1ec3f6e0646a658f85f05c18d4243024212a91f3b7554
+    container_name: &#34;app&#34;
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    command: sh -c &#34;npm ci &amp;&amp; npm run dev&#34;
+    ports:
+      - &#34;3000:3000&#34;
+    env_file:
+      - ./settings/.env
+    stdin_open: true
+    tty: true
+
+volumes:
+  db-data:
+</code></pre><hr>
+<p>1.2
+環境変数を配置するため、設定を行います。compose.yamlを確認すると、apiとappの環境変数は<code>settings/.env</code>を参照していることがわかります。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># ルートディレクトリ直下で</span>
+</span></span><span style="display:flex;"><span>mkdir settings
+</span></span><span style="display:flex;"><span>cd settings
+</span></span><span style="display:flex;"><span>touch .env
+</span></span></code></pre></div><p>.envファイルの内容は以下の通りです。
+(以下、.envの内容)</p>
+<pre tabindex="0"><code>NEXT_PUBLIC_CSR_API_URL=&#34;http://localhost:8080&#34;
+NEXT_PUBLIC_SSR_API_URL=&#34;http://api:8080&#34;
+NEXT_PUBLIC_BASE_URL=&#34;http://localhost:8080&#34;
+API_URI=&#34;http://localhost:8080&#34;
+WATCHPACK_POLLING=&#34;true&#34;
+WS_API_URL=&#34;ws://localhost:8080&#34;
+
+HASURA_GRAPHQL_ENABLE_CONSOLE=&#34;true&#34;
+# &#34;postgres://{db_user_name}:{db_user_password}@{seivice_name}:{db_port}/{db_name}&#34;
+HASURA_GRAPHQL_DATABASE_URL=&#34;postgres://user:password@db:5432/db&#34;
+HASURA_GRAPHQL_DEV_MODE=&#34;true&#34;
+HASURA_GRAPHQL_ENABLED_LOG_TYPES=&#34;startup, http-log, webhook-log, websocket-log, query-log&#34;
+HASURA_GRAPHQL_EXPERIMENTAL_FEATURES=&#34;naming_convention&#34;
+HASURA_GRAPHQL_CLI_ENVIRONMENT=&#34;default&#34;
+HASURA_GRAPHQL_ADMIN_SECRET=&#34;hogehoge&#34;
+</code></pre><p>※注意点
+<strong>HASURA_GRAPHQL_DATABASE_URL</strong>はcompose.yamlのdbのenviromentで定義したものと同一にしてください。そうでないとdbへのアクセスができません。
+<strong>HASURA_GRAPHQL_ADMIN_SECRET</strong>は適宜修正してください。</p>
+<hr>
+<p>1.3
+gitに環境変数ファイルをアップロードしないよう、.gitignoreファイルを作成します。</p>
+<p>(以下、.gitignoreの内容)</p>
+<pre tabindex="0"><code>settings/
+</code></pre><hr>
+<p>1.4
+Nextjsの環境構築を行います。以下の手順に従ってください。</p>
+<p>(以下、Next.jsセットアップの対話型インストール手順)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npx create-next-app@latest app
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Need to install the following packages:
+</span></span><span style="display:flex;"><span>  create-next-app@15.0.3
+</span></span><span style="display:flex;"><span>Ok to proceed? <span style="color:#f92672">(</span>y<span style="color:#f92672">)</span> y
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>✔ Would you like to use TypeScript? … No / Yes
+</span></span><span style="display:flex;"><span>✔ Would you like to use ESLint? … No / Yes
+</span></span><span style="display:flex;"><span>✔ Would you like to use Tailwind CSS? … No / Yes
+</span></span><span style="display:flex;"><span>✔ Would you like your code inside a <span style="color:#e6db74">`</span>src/<span style="color:#e6db74">`</span> directory? … No / Yes
+</span></span><span style="display:flex;"><span>✔ Would you like to use App Router? <span style="color:#f92672">(</span>recommended<span style="color:#f92672">)</span> … No / Yes
+</span></span><span style="display:flex;"><span>✔ Would you like to use Turbopack <span style="color:#66d9ef">for</span> next dev? … No / Yes
+</span></span><span style="display:flex;"><span>✔ Would you like to customize the import alias <span style="color:#f92672">(</span>@/* by default<span style="color:#f92672">)</span>? … No / Yes
+</span></span><span style="display:flex;"><span>✔ What import alias would you like configured? … @/*
+</span></span></code></pre></div><hr>
+<p>1.5
+最後に、Makefileを作成します。これは後のHasura操作で使用します。</p>
+<p>(以下、Makefileの内容)</p>
+<pre tabindex="0"><code>run:
+	docker compose up -d
+	sleep 10
+	make db-apply
+
+down:
+	docker compose down
+
+db/apply:
+	docker compose exec api hasura metadata apply
+	docker compose exec api hasura migrate apply --database-name default
+	docker compose exec api hasura metadata reload
+
+db/export:
+	docker compose exec api hasura metadata export
+	docker compose exec api hasura migrate create &#34;auto&#34; --from-server --database-name default
+
+db/seed:
+	docker compose exec api hasura seed apply
+
+codegen:
+	docker compose run --rm app npm run codegen
+</code></pre><h3 id="2-hasuraの起動">2. Hasuraの起動</h3>
+<p>2.1
+compose up前に必要な準備が整ったので、実際にコンテナを立ち上げ、Hasuraの初期起動を行います。</p>
+<p>Hasura CLIを使用してHasuraの環境を作成します。今回はコンテナ内でインストールするため、<code>docker compose run --rm</code>ではうまく動作しません。</p>
+<p><code>hasura init --directory .</code>で初期化の場所を指定できます。今回はcompose upの際にapiフォルダが作成されているため、そこに初期化させます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose up -d
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker compose exec api hasura init --directory .
+</span></span></code></pre></div><hr>
+<p>2.2
+初期化が成功したら、<code>localhost:8080/console</code>にアクセスしてusersスキーマを作成します。アクセスする際は、.envファイルで設定したADMIN_SECRETが適用されます。</p>
+<p>画面上部のヘッダーから<strong>DATA</strong>をクリックし、その後「Create table」をクリックします。以下の画像を参考に、usersスキーマを作成してください。created_atとupdated_atは、「Frequently used columns」から選択できます。
+<img src="https://hackmd.io/_uploads/HyzL_ntXJg.png" alt="image (2)">
+<img src="https://hackmd.io/_uploads/BkO8d2KX1g.jpg" alt="Add Table - Data _ Hasura_page-0001">
+<img src="https://hackmd.io/_uploads/SJ0LOnYXJe.png" alt="image (3)"></p>
+<hr>
+<p>2.3
+スキーマの作成が完了したら、データベースの移行と現在のスキーマのエクスポートを行います。先ほど作成したMakeコマンドを実行します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make db/export
+</span></span><span style="display:flex;"><span>make db/apply
+</span></span></code></pre></div><h3 id="3-graphql-code-generatorの導入">3. GraphQL Code Generatorの導入</h3>
+<p>3.1
+Hasuraと Next.js の環境が整ったので、最後にCode Generatorで自動生成できるように設定します。</p>
+<p>必要なプラグインをインストールします。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose run --rm app npm install --save-dev <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  @graphql-codegen/cli <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  graphql <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  @graphql-codegen/client-preset <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  @graphql-codegen/typescript <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  @graphql-codegen/typescript-graphql-request <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  @graphql-codegen/typescript-operations <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  @graphql-codegen/typescript-react-apollo <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  prettier
+</span></span></code></pre></div><hr>
+<p>3.2
+次に、Code Generatorの設定ファイルを作成します。対話型のセットアップ手順に従い、以下のように設定ファイルを修正します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose run app npx graphql-codegen init
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    Welcome to GraphQL Code Generator!
+</span></span><span style="display:flex;"><span>    Answer few questions and we will setup everything <span style="color:#66d9ef">for</span> you.
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>? What type of application are you building? Application built with React
+</span></span><span style="display:flex;"><span>? Where is your schema?: <span style="color:#f92672">(</span>path or url<span style="color:#f92672">)</span> http:localhost:8080
+</span></span><span style="display:flex;"><span>? Where are your operations and fragments?: src/gql/*.gql
+</span></span><span style="display:flex;"><span>? Where to write the output: type/
+</span></span><span style="display:flex;"><span>? Do you want to generate an introspection file? Yes
+</span></span><span style="display:flex;"><span>? How to name the config file? codegen.ts
+</span></span><span style="display:flex;"><span>? What script in package.json should run the codegen? codegen
+</span></span><span style="display:flex;"><span>Fetching latest versions of selected plugins...
+</span></span></code></pre></div><p>init後、以下のように修正してください。
+(以下、codegen.tsの内容)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-typescript" data-lang="typescript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">config</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">dotenvConfig</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#34;dotenv&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">CodegenConfig</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#34;@graphql-codegen/cli&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">dotenvConfig</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">config</span>: <span style="color:#66d9ef">CodegenConfig</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">overwrite</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">schema</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;http://api:8080/v1/graphql&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;x-hasura-admin-secret&#34;</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">HASURA_GRAPHQL_ADMIN_SECRET</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#34;&#34;</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">documents</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;src/gql/*.gql&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">hooks</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">afterAllFileWrite</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;prettier --write&#34;</span>],
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">generates</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;./src/type/graphql.ts&#34;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">plugins</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;typescript&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;typescript-operations&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;typescript-react-apollo&#34;</span>,
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">config</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">namingConvention</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">typeNames</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;change-case-all#pascalCase&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">enumValues</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;change-case-all#camelCase&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">fieldNames</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;change-case-all#camelCase&#34;</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">transformUnderscore</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;true&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">gqlImport</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;@apollo/client#gql&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">withHooks</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">withHOC</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">withComponent</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">config</span>;
+</span></span></code></pre></div><hr>
+<p>3.3
+GraphQLクエリファイルを作成します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir gql
+</span></span><span style="display:flex;"><span>cd gql
+</span></span><span style="display:flex;"><span>touch users.gql
+</span></span></code></pre></div><p>(以下、users.gqlの内容)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-graphql" data-lang="graphql"><span style="display:flex;"><span><span style="color:#66d9ef">query</span> <span style="color:#a6e22e">GetUsers</span> {
+</span></span><span style="display:flex;"><span>  users {
+</span></span><span style="display:flex;"><span>    id
+</span></span><span style="display:flex;"><span>    name
+</span></span><span style="display:flex;"><span>    created_at
+</span></span><span style="display:flex;"><span>    updated_at
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">mutation</span> <span style="color:#a6e22e">CreateUser</span>($name: <span style="color:#a6e22e">String</span>!) {
+</span></span><span style="display:flex;"><span>  insert_users_one(object: {<span style="color:#a6e22e">name</span>: $name}) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id</span>
+</span></span><span style="display:flex;"><span>    name
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">mutation</span> <span style="color:#a6e22e">UpdateUser</span>($id: <span style="color:#a6e22e">Int</span>!, $name: <span style="color:#a6e22e">String</span>!) {
+</span></span><span style="display:flex;"><span>  update_users_by_pk(pk_columns: {<span style="color:#a6e22e">id</span>: $id}, <span style="color:#a6e22e">_set</span>: {<span style="color:#a6e22e">name</span>: $name}) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id</span>
+</span></span><span style="display:flex;"><span>    name
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">mutation</span> <span style="color:#a6e22e">DeleteUser</span>($id: <span style="color:#a6e22e">Int</span>!) {
+</span></span><span style="display:flex;"><span>  delete_users_by_pk(id: $id) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id</span>
+</span></span><span style="display:flex;"><span>    name
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<p>3.4
+ESLintの設定を修正します。</p>
+<p>(以下、.eslintrc.jsonの内容)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;extends&#34;</span>: [<span style="color:#e6db74">&#34;next/core-web-vitals&#34;</span>, <span style="color:#e6db74">&#34;next/typescript&#34;</span>],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;overrides&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;files&#34;</span>: [<span style="color:#e6db74">&#34;app/src/type/*&#34;</span>],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;rules&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;no-unused-vars&#34;</span>: <span style="color:#e6db74">&#34;off&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;other-rule&#34;</span>: <span style="color:#e6db74">&#34;off&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<p>3.5
+最後に、型定義とカスタムフックを自動生成します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>make codegen
+</span></span></code></pre></div><h3 id="4-動作確認">4. 動作確認</h3>
+<p>4.1
+src/pagesにある_app.tsxとindex.tsxを修正します。app.tsxでApolloProviderで囲まないとエラーが返ってきてしまうので忘れずに行いましょう。</p>
+<p>(以下、_app.tsxの内容)</p>
+<pre tabindex="0"><code>import &#34;@/styles/globals.css&#34;;
+import type { AppProps } from &#34;next/app&#34;;
+import { ApolloProvider, ApolloClient, InMemoryCache } from &#34;@apollo/client&#34;;
+import { GraphQLWsLink } from &#34;@apollo/client/link/subscriptions&#34;;
+import { createClient } from &#34;graphql-ws&#34;;
+
+const wsClient = createClient({
+  url: process.env.WS_API_URL + &#34;/v1/graphql&#34;,
+  connectionParams: {
+    headers: {
+      &#34;x-hasura-admin-secret&#34;: process.env.HASURA_GRAPHQL_ADMIN_SECRET,
+    },
+  },
+});
+// ヘッダーを含んだ websocket リンクを作成
+const wsLink = new GraphQLWsLink(wsClient);
+
+// Apollo client を作成
+const client = new ApolloClient({
+  link: wsLink,
+  cache: new InMemoryCache(),
+});
+
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    &lt;ApolloProvider client={client}&gt;
+      &lt;Component {...pageProps} /&gt;
+    &lt;/ApolloProvider&gt;
+  );
+}
+</code></pre><p>(以下、index.tsxの内容)</p>
+<pre tabindex="0"><code>import { useSubscription, useMutation } from &#34;@apollo/client&#34;;
+import {
+  SubscriptionUsersSubscription,
+  CreateUserMutation,
+  UpdateUserMutation,
+  DeleteUserMutation,
+  SubscriptionUsersDocument,
+  CreateUserDocument,
+  UpdateUserDocument,
+  DeleteUserDocument,
+} from &#34;@/type/graphql&#34;;
+import { useState } from &#34;react&#34;;
+
+const Page = () =&gt; {
+  const { data, loading, error } =
+    useSubscription&lt;SubscriptionUsersSubscription&gt;(SubscriptionUsersDocument);
+  const [createUser] = useMutation&lt;CreateUserMutation&gt;(CreateUserDocument);
+  const [updateUser] = useMutation&lt;UpdateUserMutation&gt;(UpdateUserDocument);
+  const [deleteUser] = useMutation&lt;DeleteUserMutation&gt;(DeleteUserDocument);
+
+  const [newName, setNewName] = useState&lt;string&gt;(&#34;&#34;);
+  const [editId, setEditId] = useState&lt;number | null&gt;(null);
+  const [editName, setEditName] = useState&lt;string&gt;(&#34;&#34;);
+
+  const handleCreateUser = async () =&gt; {
+    if (!newName) return;
+    try {
+      await createUser({ variables: { name: newName } });
+      setNewName(&#34;&#34;);
+    } catch (err) {
+      console.error(&#34;Error creating user:&#34;, err);
+    }
+  };
+
+  const handleEdit = (id: number, name: string) =&gt; {
+    setEditId(id);
+    setEditName(name);
+  };
+
+  const handleUpdateUser = async () =&gt; {
+    if (editId === null || !editName) return;
+    try {
+      await updateUser({ variables: { id: editId, name: editName } });
+      setEditId(null);
+      setEditName(&#34;&#34;);
+    } catch (err) {
+      console.error(&#34;Error updating user:&#34;, err);
+    }
+  };
+
+  const handleDeleteUser = async (id: number) =&gt; {
+    try {
+      await deleteUser({ variables: { id } });
+    } catch (err) {
+      console.error(&#34;Error deleting user:&#34;, err);
+    }
+  };
+
+  if (loading) return &lt;&gt;loading...&lt;/&gt;;
+  if (error) return &lt;p&gt;Error: {error.message}&lt;/p&gt;;
+
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Users&lt;/h1&gt;
+
+      &lt;div&gt;
+        &lt;input
+          type=&#34;text&#34;
+          value={newName}
+          onChange={(e) =&gt; setNewName(e.target.value)}
+          placeholder=&#34;Enter name&#34;
+        /&gt;
+        &lt;button onClick={handleCreateUser}&gt;Create User&lt;/button&gt;
+      &lt;/div&gt;
+
+      &lt;ul&gt;
+        {data?.users.map((user) =&gt; (
+          &lt;li key={user.id}&gt;
+            {editId === user.id ? (
+              &lt;div&gt;
+                &lt;input
+                  type=&#34;text&#34;
+                  value={editName}
+                  onChange={(e) =&gt; setEditName(e.target.value)}
+                  placeholder=&#34;Edit name&#34;
+                /&gt;
+                &lt;button onClick={handleUpdateUser}&gt;Save&lt;/button&gt;
+                &lt;button onClick={() =&gt; setEditId(null)}&gt;Cancel&lt;/button&gt;
+              &lt;/div&gt;
+            ) : (
+              &lt;div&gt;
+                &lt;span&gt;{user.name}&lt;/span&gt;
+                &lt;button onClick={() =&gt; handleEdit(user.id, user.name)}&gt;
+                  Edit
+                &lt;/button&gt;
+                &lt;button onClick={() =&gt; handleDeleteUser(user.id)}&gt;
+                  Delete
+                &lt;/button&gt;
+              &lt;/div&gt;
+            )}
+          &lt;/li&gt;
+        ))}
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  );
+};
+
+export default Page;
+</code></pre><hr>
+<p>4.2
+上記のように修正したら<code>localhost:3000</code> にアクセスして動作確認していきます。</p>
+<p>cssを書いていないのでとても簡素なものになっていますがユーザの作成、編集、削除を行うとそれが即座に反映されていたらwebsocketが動いているので成功になります。
+<img src="https://hackmd.io/_uploads/Hy7-52Ym1e.png" alt="image (4)"></p>
+<hr>
+<h3 id="環境構築中に発生したエラーについて">環境構築中に発生したエラーについて</h3>
+<p>自動生成したファイルの権限がrootになっていました。
+その場合は以下のように権限を変更してあげてください。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown -R <span style="color:#f92672">{</span>name<span style="color:#f92672">}</span>:<span style="color:#f92672">{</span>name<span style="color:#f92672">}</span> <span style="color:#f92672">{</span>folder_name<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>sudo chmod <span style="color:#ae81ff">755</span> <span style="color:#f92672">{</span>file_name<span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="余談">余談</h2>
+<p>BINGOプロダクトを初めて2年が経ちますがcode geneaterを導入したのは今年からでした。せっかくなので導入前と後の比較を行い、自動生成は使うべきという教訓を皆様に共有します。</p>
+<p>正直今もGraphql APIとREST APIの違いは分からずに使っていますが初期の頃はapi_methodsを作成していました。pageでは関数だけ呼び出して使いたいためここでPromiseの処理を書いたり、型定義をしたりと書いていました。</p>
+<p>しかし、generaterを導入してからはクエリを定義するだけTSに必要な型定義やapollo clientによるカスタムフックが生成されるためせっかくAPIをhasuraが簡単に実装してくれるのにフロントエンドへの繋ぎ込みで時間がかかる問題を解決するに至りました。</p>
+<p><strong>導入前のAPI</strong>
+/src/utils/api_methods.ts</p>
+<pre tabindex="0"><code>import { ApolloClient, InMemoryCache, gql} from &#34;@apollo/client&#34;;
+import next from &#34;next/types&#34;;
+import { GraphQLWsLink } from &#39;@apollo/client/link/subscriptions&#39;;
+import { createClient } from &#34;graphql-ws&#34;;
+import { userAgent } from &#34;next/server&#34;;
+
+const wsLink = new GraphQLWsLink(createClient({
+  url: process.env.WS_API_URL + &#34;/v1/graphql&#34;,
+    // 認証関連はここに書く
+}));
+
+const client = new ApolloClient({
+  link: wsLink,
+  cache: new InMemoryCache(),
+});
+
+export interface BingoNumber {
+  id: number;
+  data: number;
+}
+
+// GraphQLクエリを実行
+export async function getBingoNumber(): Promise&lt;BingoNumber[]&gt; {
+  try {
+    const response = await client.query({
+      query: gql`
+        query MyQuery {
+          bingo_number {
+            data
+            id
+          }
+        }
+      `,
+    });
+    return response.data.bingo_number;
+  } catch (error) {
+    console.error(&#34;Error fetching data:&#34;, error);
+    return []
+  }
+}
+
+// websocket通信でBingoNumberを取得
+export async function subscriptionBingoNumber(): Promise&lt;BingoNumber[]&gt; {
+  try {
+    const response = await client.subscribe({
+      query: gql`
+        subscription MySubscription {
+          bingo_number {
+            data
+            id
+          }
+        }
+      `,
+    });
+    return new Promise&lt;BingoNumber[]&gt;((resolve, reject) =&gt; {
+      response.subscribe({
+        next: data =&gt; resolve(data.data.bingo_number),
+        error: error =&gt; {
+          console.error(&#39;Subscription error:&#39;, error);
+          reject(error);
+        },
+      });
+    });
+  } catch (error) {
+    console.error(&#39;Error fetching data:&#39;, error);
+    return [];
+  }
+}
+
+export async function createBingoNumber(
+  data: number
+): Promise&lt;BingoNumber[]&gt; {
+  try {
+    const response = await client.mutate({
+      mutation: gql`
+        mutation MyMutation($data: Int!) {
+          insert_bingo_number_one(object: { data: $data }) {
+            id
+          }
+        }
+      `,
+      variables: { data },
+    });
+
+    return response.data.insert_bingo_number_one;
+  } catch (error) {
+    console.error(&#34;Error creating bingo number:&#34;, error);
+    return []
+  }
+}
+
+export async function deleteBingoNumber(
+  data: number
+): Promise&lt;BingoNumber[]&gt; {
+  try {
+    const response = await client.mutate({
+      mutation: gql`
+        mutation MyMutation($data: Int!) {
+          delete_bingo_number(where: { data: { _eq: $data } }) {
+            affected_rows
+          }
+        }
+      `,
+      variables: { data },
+    });
+
+    return response.data.delete_bingo_number;
+  } catch (error) {
+    console.error(&#34;Error deleteing bingo number:&#34;, error);
+    return []
+  }
+}
+</code></pre><p>導入後のAPI
+src/gql/numbers.gql</p>
+<pre tabindex="0"><code># 番号の取得(Get)
+query GetListNumbers {
+  numbers {
+    id
+    number
+    createdAt
+    updatedAt
+  }
+}
+
+# 番号の追加(Create)
+mutation CreateOneNumber($number: Int!) {
+  insertNumbersOne(object: { number: $number }) {
+    id
+  }
+}
+
+# 番号の削除(Delete)
+mutation DeleteOneNumber($number: Int!) {
+  deleteNumbers(where: { number: { _eq: $number } }) {
+    affectedRows
+  }
+}
+
+# 番号の継続取得(Subscription)
+subscription SubscribeListNumbers {
+  numbers {
+    id
+    number
+    createdAt
+    updatedAt
+  }
+}
+</code></pre><h2 id="おわりに">おわりに</h2>
+<p>ここまでご一読いただきありがとうございました。誰かの開発のヒントになっていれば幸いです。</p>
+<p>私事になりますが、NUTMEGは今年も多くの新入生に恵まれ活気のある団体になりました。他局との信頼関係も一層強まりヒアリングに対して真摯に対応してくださるおかげで沢山の修正事項や改善事項を頂きました。今の新入生の勢いに負けないように寄りよりプロダクトを実現・提供できるように活動していきたいと思います。</p>
+<p>最後に言いたかったこととして、皆さん是非Generaterによる自動生成をうまく活用して良い開発ライフをお送りください。今の時代、活用したもの勝ちです。</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024">Nutmeg advent calendar 2024</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%81%e3%83%bc%e3%83%a0%e3%81%a5%e3%81%8f%e3%82%8a">チームづくり</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
