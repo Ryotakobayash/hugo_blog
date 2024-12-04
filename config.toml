@@ -228,12 +228,11 @@ customCSS = ["css/custom_post.css"]
   [params.authors.syochan]
     name = "しょうちゃん"
     bio = "複数人で作成"
-  
-  [params.authors.yamaha]
-    name = "yamaha"
+
+  [params.authors.etyu]
+    name = "松浦瑛太"
     bio = "複数人で作成"
     
-
   [params.authors.NUTMEG]
     name = "NUTMEG"
     bio = "複数人で作成"
