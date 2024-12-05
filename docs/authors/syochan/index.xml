@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Syochan on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/authors/syochan/</link>
+    <link>http://localhost:1313/authors/syochan/</link>
     <description>Recent content in Syochan on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 07 Nov 2024 17:07:24 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/syochan/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/syochan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NUTMEGがあったかい話</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20241031/</link>
+      <link>http://localhost:1313/blog/post-20241031/</link>
       <pubDate>Thu, 07 Nov 2024 17:07:24 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20241031/</guid>
+      <guid>http://localhost:1313/blog/post-20241031/</guid>
       <description>はじめに はじめまして NUTMEG所属　電気電子情報工学分野　B3のしょうちゃんです。</description>
     </item>
   </channel>
