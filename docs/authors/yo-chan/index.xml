@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yo-Chan on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/yo-chan/</link>
+    <link>https://blog.nutmeg.cloud/authors/yo-chan/</link>
     <description>Recent content in Yo-Chan on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 24 Dec 2023 21:00:37 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/yo-chan/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/yo-chan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ILIASに自動でログインしたい *日常生活を便利に*</title>
-      <link>http://localhost:1313/blog/post-ac-20231224/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20231224/</link>
       <pubDate>Sun, 24 Dec 2023 21:00:37 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20231224/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231224/</guid>
       <description>日常生活を便利に NUTMEGに加入して活動を初めて，8ヶ月ほど経とうとしている． クリスマスが近づく中，レポートに追われる日々．</description>
     </item>
     <item>
       <title>NUTMEG-SlackBot開発やってみた</title>
-      <link>http://localhost:1313/blog/post-20230713/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20230713/</link>
       <pubDate>Thu, 13 Jul 2023 21:44:19 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20230713/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20230713/</guid>
       <description>はじめに はじめまして,この春NUTMEGに加入した飯田です. チャットツールとして使用しているSlackを便利にしよう！！ということで,SlackBotの開発をM2の後方腕組大臣から受け継ぎました！！ 今回は,SlackBotで送信したメッセージをスプレッドシートに記録する機能を作りました.</description>
     </item>
   </channel>

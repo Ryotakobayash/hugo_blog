@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/tags/docker/</link>
+    <link>https://blog.nutmeg.cloud/tags/docker/</link>
     <description>Recent content in Docker on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 03 Dec 2024 11:01:12 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hasura v2のすゝめ</title>
-      <link>http://localhost:1313/blog/post-ac-20241203/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20241203/</link>
       <pubDate>Tue, 03 Dec 2024 11:01:12 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20241203/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241203/</guid>
       <description>はじめに 皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。 私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。</description>
     </item>
     <item>
       <title>ハッカソンに出てきました</title>
-      <link>http://localhost:1313/blog/post-20240315/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20240315/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
       <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
     <item>
       <title>NUTMEGにステージング環境を導入する</title>
-      <link>http://localhost:1313/blog/post-20230320/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20230320/</link>
       <pubDate>Mon, 20 Mar 2023 18:11:48 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20230320/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20230320/</guid>
       <description>こんにちは。NUTMEGでNUTMEGクラウドの開発・運用を行っているM1大浦です。&#xA;これまでNUTMEGでの開発を円滑に進めるために様々なインフラ開発を行ってきました。その中でも，最近行った「簡易的なステージング環境を構築した話」について紹介させていただきます。</description>
     </item>
     <item>
       <title>slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する</title>
-      <link>http://localhost:1313/blog/post-20230125/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20230125/</link>
       <pubDate>Wed, 25 Jan 2023 17:02:09 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20230125/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20230125/</guid>
       <description>はじめに こんにちは。NUTMEGの藤崎です。先日NUTMEG内でLT会が行われ、slack無料プランのメッセージが3ヶ月間で表示されなくなるのをweb+slackAPIを利用してwebアプリを作成し解決した話をしました。今回はその話をもう少し具体的に話していきます。</description>
     </item>
     <item>
       <title>tracking-sapportに携わってみて</title>
-      <link>http://localhost:1313/blog/post-20220731/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20220731/</link>
       <pubDate>Sun, 31 Jul 2022 21:57:18 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20220731/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20220731/</guid>
       <description>新入生の市之瀬拓実です。藤崎さんと大浦さんと一緒に、tracking-support(以降トラサポ)の開発に携わりました。 今回は、トラサポの背景、構成、携わった感想を綴っていきたいと思います。</description>
     </item>
     <item>
       <title>LT会を開催しました</title>
-      <link>http://localhost:1313/blog/post-20210901/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20210901/</link>
       <pubDate>Wed, 01 Sep 2021 00:49:11 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20210901/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20210901/</guid>
       <description>NUTMEGのデザイン担当 小林です。 夏季休業前から企画していたLT(ライトニングトーク)会を開催しました。 テーマは自由、各々が興味を持ったことを発表する事にし、一人につき3~5分、質疑応答の時間も制限なしと自由な形で行いました。 全員の発表終了後、面白かった発表に投票を行い後日何か景品があるかもしれないそうです。 LT会としては初めての開催でしたがオフライン、オンライン合わせて9名もの参加者が集まりました！</description>
     </item>
   </channel>

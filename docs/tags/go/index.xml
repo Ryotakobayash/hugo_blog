@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/tags/go/</link>
+    <link>https://blog.nutmeg.cloud/tags/go/</link>
     <description>Recent content in Go on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 25 Jan 2023 17:02:09 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する</title>
-      <link>http://localhost:1313/blog/post-20230125/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20230125/</link>
       <pubDate>Wed, 25 Jan 2023 17:02:09 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20230125/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20230125/</guid>
       <description>はじめに こんにちは。NUTMEGの藤崎です。先日NUTMEG内でLT会が行われ、slack無料プランのメッセージが3ヶ月間で表示されなくなるのをweb+slackAPIを利用してwebアプリを作成し解決した話をしました。今回はその話をもう少し具体的に話していきます。</description>
     </item>
     <item>
       <title>JPHACKを振り返る</title>
-      <link>http://localhost:1313/blog/post-20221027-1/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20221027-1/</link>
       <pubDate>Wed, 26 Oct 2022 17:20:46 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20221027-1/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20221027-1/</guid>
       <description>こんにちは！NUTMEGの藤崎です！ 今回は先日行われたJPHACKSを振り返ろうかと思います。</description>
     </item>
   </channel>
