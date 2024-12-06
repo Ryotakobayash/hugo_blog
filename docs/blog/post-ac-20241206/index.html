@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Goで実DBを用いたAPIテストを導入する方法を紹介します。実際の現場では、自動テストは多くが行われていると思いますが、NUTMEGでは導入されていないので、概要やメリット・デメリットなどもさらっと書きます！">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-ac-20241206/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="Goの実DBを用いたAPIテストの導入">
+  <meta property="og:description" content="Goで実DBを用いたAPIテストを導入する方法を紹介します。実際の現場では、自動テストは多くが行われていると思いますが、NUTMEGでは導入されていないので、概要やメリット・デメリットなどもさらっと書きます！">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-12-06T16:07:11+09:00">
+    <meta property="article:modified_time" content="2024-12-06T16:07:11+09:00">
+    <meta property="article:tag" content="Go">
+    <meta property="article:tag" content="Docker">
+    <meta property="article:tag" content="API関係">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="Goの実DBを用いたAPIテストの導入">
+  <meta name="twitter:description" content="Goで実DBを用いたAPIテストを導入する方法を紹介します。実際の現場では、自動テストは多くが行われていると思いますが、NUTMEGでは導入されていないので、概要やメリット・デメリットなどもさらっと書きます！">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023"
+          class="text-primary">Nutmeg advent calendar 2023</a>
+        
+        <h2>Goの実DBを用いたAPIテストの導入</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By くぼ
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              06 December 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/H1Hg1WeNke.png" class="img-fluid w-100 mb-4" alt="Goの実DBを用いたAPIテストの導入">
+        
+        <div class="content mb-5">
+          <p>こんにちは！</p>
+<p>NUTMEGのくぼ（kubosaka）です！</p>
+<p>NUTMEGのアドカレ企画の6日を担当します</p>
+<p>NUTMEGのプロダクトでは、おそらく導入されていない自動テスト導入しているとこはなかったと思います。
+そこで、今回は自動テストについての紹介と運用しているプロダクト（FinanSu）でGoの実DBを用いたAPIテストを導入したので、ブログにします。</p>
+<p>まず、自動テストについて簡単に紹介します</p>
+<h1 id="テストで自動化について">テストで自動化について</h1>
+<h3 id="テスト自動化の概要">テスト自動化の概要</h3>
+<p>テスト自動化ツールやテストスクリプトを活用し、ソフトウェア評価におけるテストの実行や結果の確認といった、一連の工程を自動化することです。</p>
+<p>以下のようなメリットとデメリットがあります！</p>
+<h3 id="メリット">メリット</h3>
+<ul>
+<li>品質の向上
+<ul>
+<li>バグを早い段階で発見でき、リリース前に修正が可能です</li>
+<li>過去に修正したバグが再発していないかを容易に確認できます</li>
+</ul>
+</li>
+<li>開発速度の向上
+<ul>
+<li>手動で動作確認を繰り返す必要がなくなります</li>
+<li>継続的インテグレーションとデプロイを支援し、リリースサイクルを短縮できます</li>
+</ul>
+</li>
+<li>長期的なコスト削減
+<ul>
+<li>テストスイートが信頼できるドキュメントの役割を果たし、新しい開発者がプロジェクトに参加しやすくなる。</li>
+<li>リリース後の重大な不具合を防ぐことで、修正にかかるコストを抑えられます。</li>
+</ul>
+</li>
+</ul>
+<h3 id="デメリット">デメリット</h3>
+<ul>
+<li>初期コスト
+<ul>
+<li>機能実装のたびにテストコードも作成しなければならず、コストがかかります</li>
+<li>テストツールやフレームワークの学習が必要になります</li>
+</ul>
+</li>
+<li>メンテナンス
+<ul>
+<li>プロダクトの仕様変更によりテストコードの更新も必要になります。</li>
+<li>テストを実行するライブラリなどのバージョン管理などもに必要になります。</li>
+</ul>
+</li>
+</ul>
+<p>運用しているプロダクトであれば、品質を高めるためにもテストの自動化は導入しましょう！</p>
+<p>では本題です。</p>
+<h1 id="goの実dbを用いたapiテスト導入">Goの実DBを用いたAPIテスト導入</h1>
+<p>FinanSuにAPIテストの自動化を導入します。</p>
+<p>使用している技術・フレームワークなどはこちら</p>
+<ul>
+<li>Next.js</li>
+<li>TypeScript</li>
+<li>Go</li>
+<li>MySQL</li>
+<li>Docker</li>
+<li>MIniO</li>
+</ul>
+<p>今回は実DBを用いたAPIのテストを自動化を導入します。
+DB側にモックを使うことも考えたのですが、サーバーとDB間の接続も確認したいと思いました。
+RailsのRspecのcontorollerテストのようなものを想定して作成しました。</p>
+<p>goのテストの際には、以下のパッケージを使いました。</p>
+<ul>
+<li>testfixtures</li>
+<li>testify</li>
+</ul>
+<h2 id="導入の手順">導入の手順</h2>
+<ol>
+<li>テスト用DB作成</li>
+<li>GoのAPIテスト環境作成</li>
+<li>テストコード作成</li>
+</ol>
+<h2 id="1-テスト用dbの作成">1. テスト用DBの作成</h2>
+<p>開発環境のDBは、Dockerコンテナ上でMySQLを起動しています。
+APIのテストを行う際DBが必要になりますが、テストで使うDBは開発環境で使うDBとは分けたいので、テストDBを作成します。</p>
+<p>dokcerの起動には、docker composeを使用しています。
+dockerのMySQL image では <code>/docker-entrypoint-initdb.d/</code> というディレクトリ内に初期化用のSQLやスクリプトを置くことで、最初にコンテナを起動したときにDBの初期化を自動的に行うことができます。
+この機能を使いテストDBの作成とテスト用テーブルの作成を行います。</p>
+<p>開発環境のDBは以下のdbディレクトリのvolumeをdocker-entrypoint-initdb.dにマウントしています。</p>
+<p>docker-compose.yml</p>
+<pre tabindex="0"><code>services:
+  db:
+    image: mysql:8.0
+    container_name: &#34;nutfes-finansu-db&#34;
+    volumes:
+      - ./mysql/db:/docker-entrypoint-initdb.d # 初期データディレクトリ
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+    environment:
+      MYSQL_DATABASE: ***
+      MYSQL_USER: ***
+      MYSQL_PASSWORD: ***
+      MYSQL_ROOT_PASSWORD: ***
+      TZ: &#34;Asia/Tokyo&#34;
+    ports:
+      - &#34;3306:3306&#34;
+</code></pre><p>dbディレクトリ配下のsqlがコンテナ起動時に実行されます。</p>
+<pre tabindex="0"><code>mysql ── db
+│        ├── activities.sql
+│        .
+│        └── users.sql
+│
+└─────── docker-compose.yml
+</code></pre><p>dbディレクトリ配下にテスト用DB作成に関するsqlファイルを追加すれば解決しそうですが、テスト用と開発用のディレクトリは明示的に分けたいと思い以下のようにしました。</p>
+<pre tabindex="0"><code>mysql ── db
+│        ├── activities.sql
+│        .
+│        ├── users.sql
+│        └── init_create_db.sh
+│
+├────── testdb
+│        ├── 01_create_testdb.sql
+│        └── 02_test_users.sql
+│
+└─────── docker-compose.yml
+</code></pre><br>
+<p>docker-compose.ymlにテストdb用のディレクトリを新しく作成しvolumesでコンテナにマウントします。</p>
+<p>docker-compose.yml</p>
+<pre tabindex="0"><code>services:
+  db:
+    image: mysql:8.0
+    container_name: &#34;nutfes-finansu-db&#34;
+    volumes:
+      - ./mysql/db:/docker-entrypoint-initdb.d # 初期データディレクトリ
+      - ./mysql/testdb:/docker-entrypoint-testdb.d # テスト用初期データ ←追加
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf
+    environment:
+      MYSQL_DATABASE: ***
+      MYSQL_USER: ***
+      MYSQL_PASSWORD: ***
+      MYSQL_ROOT_PASSWORD: ***
+      TZ: &#34;Asia/Tokyo&#34;
+    ports:
+      - &#34;3306:3306&#34;
+</code></pre><p>init_create_db.shはdocker-entrypoint-testdb.d内のsqlファイルを実行するスクリプトです。</p>
+<p>init_create_db.sh</p>
+<pre tabindex="0"><code>#!/bin/bash
+
+set -e
+
+# docker-entrypoint-testdb.d内のSQLファイルを順番に実行
+for sql_file in docker-entrypoint-testdb.d/*.sql; do
+  if [ -f &#34;$sql_file&#34; ]; then
+    mysql -u root -p$MYSQL_ROOT_PASSWORD  &lt; &#34;$sql_file&#34;
+  else
+    echo &#34;SQLファイルが見つかりません: docker-entrypoint-testdb.d&#34;
+  fi
+done
+
+echo &#34;すべてのSQLファイルを実行&#34;
+</code></pre><br>
+<p>DBを作成し、ユーザーに権限を与えます。（サーバーから接続する際のユーザーを使っています。また、テーブルも作成します。</p>
+<p>01_create_testdb.sql</p>
+<pre tabindex="0"><code>CREATE DATABASE finansu_test_db;
+GRANT ALL PRIVILEGES ON `finansu_test_db`.* TO `{MYSQL_USER名}`@`%`
+</code></pre><p>02_test_users.sql</p>
+<pre tabindex="0"><code>use finansu_test_db;
+
+CREATE TABLE users (
+  id int(10) unsigned not null auto_increment,
+  name varchar(255) not null,
+  bureau_id int(10) not null,
+  role_id int(10) not null,
+  is_deleted boolean DEFAULT false,
+  created_at datetime not null default current_timestamp,
+  updated_at datetime not null default current_timestamp on update current_timestamp,
+  PRIMARY KEY (id)
+);
+</code></pre><p>ここまででdbを起動すると、テストのdbが作られると思います。</p>
+<pre tabindex="0"><code>mysql&gt; show databases;
++--------------------+
+| Database           |
++--------------------+
+| finansu_db         |
+| finansu_test_db    |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+</code></pre><pre tabindex="0"><code>mysql&gt; show tables;
++---------------------------+
+| Tables_in_finansu_test_db |
++---------------------------+
+| users                     |
++---------------------------+
+</code></pre><br>
+<h2 id="2-goのapiテスト環境作成">2. GoのAPIテスト環境作成</h2>
+<p>次のgoのテスト環境を作成します。</p>
+<p>テストでは、テスト用のHTTPサーバーをコード内でたてて、そのサーバーに対して、リクエストを行いテストを行います。</p>
+<p>goは自動テストの仕組みが備わっており、<code>go test ~</code>で実行できます。</p>
+<p>テストファイルを作成する際の注意点</p>
+<ul>
+<li>ファイルの末尾は<code>_test.go</code>にする</li>
+<li>テスト関数のシグネチャはfunc TestXxx(t *testing.T)とする</li>
+<li>TestMain()は、テストの前後の処理を記述できます。</li>
+</ul>
+<p>今回は、テストするインスタンスがDBと接続できないとエラーになるため、TestMainにDBの環境変数を定義しました。ここでは、テストDBの環境変数を定義してください。</p>
+<p>sample_test.go</p>
+<pre tabindex="0"><code>package test
+
+import (
+	&#34;io&#34;
+	&#34;net/http&#34;
+	&#34;net/http/httptest&#34;
+	&#34;os&#34;
+	&#34;testing&#34;
+
+	&#34;github.com/NUTFes/FinanSu/api/internals/di&#34;
+	&#34;github.com/stretchr/testify/assert&#34;
+)
+
+func TestMain(m *testing.M) {
+        // テスト前処理
+    
+	os.Setenv(&#34;NUTMEG_DB_USER&#34;, &#34;***&#34;)
+	os.Setenv(&#34;NUTMEG_DB_PASSWORD&#34;, &#34;***&#34;)
+	os.Setenv(&#34;NUTMEG_DB_HOST&#34;, &#34;***&#34;)
+	os.Setenv(&#34;NUTMEG_DB_PORT&#34;, &#34;3306&#34;)
+	os.Setenv(&#34;NUTMEG_DB_NAME&#34;, &#34;finansu_test_db&#34;)
+
+
+	// テスト実行
+	code := m.Run()
+
+	// テスト後処理
+
+	os.Exit(code)
+}
+
+const helloTestMessage = &#34;healthcheck: ok&#34;
+
+func TestSampleHelloHandler(t *testing.T) {
+	// インスタンスの生成（DB接続、ルーティング）
+	_, router := di.InitializeServer()
+
+        // サーバを立てる
+	testServer := httptest.NewServer(router)
+	t.Cleanup(func() {
+		testServer.Close()
+	})
+
+	r, err := http.Get(testServer.URL + &#34;/&#34;)
+	if err != nil {
+		t.Errorf(&#34;Error making request: %s&#34;, err)
+		return
+	}
+
+	defer r.Body.Close()
+
+	body, err := io.ReadAll(r.Body)
+	if err != nil {
+		t.Errorf(&#34;Error reading response body: %s&#34;, err)
+		return
+	}
+    
+        //　テスト
+	assert.Equal(t, http.StatusOK, r.StatusCode)
+	assert.Equal(t, helloTestMessage, string(body))
+}
+</code></pre><p>sample_test.goでは、APIのルートへのGETリクエストをテストしました。</p>
+<p><code>go test {ディレクトリのパス}</code>で実行します</p>
+<p>レスポンスが、200で、&ldquo;healthcheck: ok&quot;と返ってきたので、サーバーが起動しテストをパスすることができました。</p>
+<pre tabindex="0"><code># go test ./test
+ok      github.com/NUTFes/FinanSu/api/test      0.018s
+</code></pre><br>
+<p>DBの接続はdi.InitializeServer()内で行ってます。
+Testでは、godotenv.Load(&ldquo;env/dev.env&rdquo;)でロードに失敗するので、（パスがカレントディレクトリになる）別ディレクトリに分けるか、今回のように直接指定してあげるのがいいかと思いました。</p>
+<pre tabindex="0"><code>    
+	err := godotenv.Load(&#34;env/dev.env&#34;)
+	if err != nil {
+		fmt.Println(err)
+	}
+	dbUser := os.Getenv(&#34;NUTMEG_DB_USER&#34;)
+	dbPassword := os.Getenv(&#34;NUTMEG_DB_PASSWORD&#34;)
+	dbHost := os.Getenv(&#34;NUTMEG_DB_HOST&#34;)
+	dbPort := os.Getenv(&#34;NUTMEG_DB_PORT&#34;)
+	dbName := os.Getenv(&#34;NUTMEG_DB_NAME&#34;)
+	// MySQLに接続する
+	// dbconf := &#34;finansu:password@tcp(nutfes-finansu-db:3306)/finansu_db?charset=utf8mb4&amp;parseTime=true&#34;
+	dbconf := dbUser + &#34;:&#34; + dbPassword + &#34;@tcp(&#34; + dbHost + &#34;:&#34; + dbPort + &#34;)/&#34; + dbName + &#34;?charset=utf8mb4&amp;parseTime=true&#34;
+	db, err := sql.Open(&#34;mysql&#34;, dbconf)
+</code></pre><h2 id="3-テストコード作成">3. テストコード作成</h2>
+<p>テスト環境が完了したので、テストコードを作成しましょう。</p>
+<p>その前に、DBにテストデータを入れたいので、testfixturesを使いましょう。testfixturesはテストデータを作成するだけでなくテーブルのclean upもしてくれます。RspecのコントローラーテストのActiveRecord fixturesを参考に作られているみたいです。</p>
+<p><a href="https://github.com/go-testfixtures/testfixtures">https://github.com/go-testfixtures/testfixtures</a></p>
+<p>使い方は<code>&lt;table_name&gt;.yml</code>ファイルを作るだけで、テストデータを作ってくれます。</p>
+<pre tabindex="0"><code># users.yml
+- id: 1
+  name: テスト太郎
+  bureau_id: 1
+  role_id: 1
+  created_at: 2020-12-31 23:59:59
+  updated_at: 2020-12-31 23:59:59
+
+- id: 2
+  name: テスト花子
+  bureau_id: 2
+  role_id: 2
+  created_at: 2020-12-31 23:59:59
+  updated_at: 2020-12-31 23:59:59
+</code></pre><p>以下テストコード
+sample_test.go</p>
+<pre tabindex="0"><code>package test
+
+import (
+	&#34;database/sql&#34;
+	&#34;fmt&#34;
+	&#34;io&#34;
+	&#34;net/http&#34;
+	&#34;net/http/httptest&#34;
+	&#34;net/url&#34;
+	&#34;os&#34;
+	&#34;testing&#34;
+
+	&#34;github.com/NUTFes/FinanSu/api/internals/di&#34;
+	&#34;github.com/go-testfixtures/testfixtures/v3&#34;
+	&#34;github.com/stretchr/testify/assert&#34;
+)
+
+var (
+	db       *sql.DB
+	fixtures *testfixtures.Loader
+)
+
+func TestMain(m *testing.M) {
+	var err error
+	os.Setenv(&#34;NUTMEG_DB_USER&#34;, &#34;finansu&#34;)
+	os.Setenv(&#34;NUTMEG_DB_PASSWORD&#34;, &#34;password&#34;)
+	os.Setenv(&#34;NUTMEG_DB_HOST&#34;, &#34;nutfes-finansu-db&#34;)
+	os.Setenv(&#34;NUTMEG_DB_PORT&#34;, &#34;3306&#34;)
+	os.Setenv(&#34;NUTMEG_DB_NAME&#34;, &#34;finansu_test_db&#34;)
+
+	db, err = sql.Open(&#34;mysql&#34;, &#34;{ユーザー名}:{パスワード}@tcp({ipアドレス}:{ポート番号})/{データベース名}&#34;)
+	if err != nil {
+		fmt.Println(err)
+	}
+	defer db.Close()
+
+	fixtures, err = testfixtures.New(
+		testfixtures.Database(db),
+		testfixtures.Dialect(&#34;mysql&#34;),
+		testfixtures.Directory(&#34;fixtures&#34;), // ここでymlファイルのディレクトリを指定する
+	)
+	if err != nil {
+		fmt.Printf(&#34;Error creating fixtures: %v\n&#34;, err)
+		return
+	}
+
+	// テスト実行
+	code := m.Run()
+
+	// テスト後処理
+	// db.Exec(&#34;DELETE FROM users&#34;)
+
+	if err != nil {
+		fmt.Print(err.Error())
+	}
+
+	os.Exit(code)
+}
+
+func prepareTestDatabase(t *testing.T) {
+	if err := fixtures.Load(); err != nil {
+		fmt.Println(err)
+	}
+}
+
+func TestGetUserHandler(t *testing.T) {
+	prepareTestDatabase(t)
+
+	_, router := di.InitializeServer()
+
+	testServer := httptest.NewServer(router)る
+	t.Cleanup(func() {
+		testServer.Close()
+	})
+
+	r, err := http.Get(testServer.URL + &#34;/users&#34;)
+	if err != nil {
+		t.Errorf(&#34;Error making request: %s&#34;, err)
+		return
+	}
+
+	defer r.Body.Close()
+
+	body, err := io.ReadAll(r.Body)
+	if err != nil {
+		t.Errorf(&#34;Error reading response body: %s&#34;, err)
+		return
+	}
+
+	assert.Equal(t, http.StatusOK, r.StatusCode)
+	assert.Contains(t, string(body), &#34;テスト太郎&#34;)
+}
+</code></pre><p><code>/users</code>はユーザー一覧を取得するAPIです。テーブルにユーザーのテストデータを用意し、レスポンスにテスト太郎が返ってくるテストです。</p>
+<p>最後にPOSTのテストも作成します。</p>
+<pre tabindex="0"><code>func TestAddUserHandler(t *testing.T) {
+	prepareTestDatabase(t)
+	_, router := di.InitializeServer()
+
+	testServer := httptest.NewServer(router)
+	t.Cleanup(func() {
+		testServer.Close()
+	})
+
+	u, err := url.Parse(testServer.URL + &#34;/users&#34;)
+	if err != nil {
+		return
+	}
+
+	// クエリパラメータ追加
+	q := u.Query()
+	q.Set(&#34;name&#34;, &#34;技大太郎&#34;)
+	q.Set(&#34;bureau_id&#34;, &#34;1&#34;)
+	q.Set(&#34;role_id&#34;, &#34;1&#34;)
+	u.RawQuery = q.Encode()
+
+	fmt.Println(u.String())
+
+	r, err := http.Post(u.String(), &#34;application/json&#34;, nil)
+	if err != nil {
+		t.Errorf(&#34;Error making request: %s&#34;, err)
+		return
+	}
+
+	defer r.Body.Close()
+
+	body, err := io.ReadAll(r.Body)
+	if err != nil {
+		t.Errorf(&#34;Error reading response body: %s&#34;, err)
+		return
+	}
+
+	assert.Equal(t, http.StatusCreated, r.StatusCode)
+	assert.Contains(t, string(body), &#34;技大太郎&#34;)
+}
+</code></pre><p>テスト実行後もテストDBのテーブルは空なので、clean upもしてくれてますね。</p>
+<pre tabindex="0"><code>mysql&gt; select * from users;
+Empty set (0.00 sec)
+</code></pre><p>長くなりましたが、Goの実DBを使ったAPIテストの導入について紹介させていただきました！
+フロントのテストも導入したいですね。導入した際には、ブログを書くかもです。
+まだまだNUTMEGのアドカレは毎日更新です。色々な内容があって面白いと思うのでぜひご覧ください！</p>
+<h1 id="参考">参考</h1>
+<p><a href="https://www.skygroup.jp/software/quality/article/02/">テスト自動化とは？ ツール導入のメリットや流れを徹底解説</a>
+<a href="https://note.com/rescuenow_hr/n/n9ed7caf4646d">Go言語でテストコードを書いてみよう</a>
+<a href="https://zenn.dev/media_engine/articles/testing-go-applications">GoのWebアプリをテストするノウハウ</a>
+<a href="https://qiita.com/theoden9014/items/ac8763381758148e8ce5">Go言語のHTTPサーバのテスト事始め</a>
+<a href="https://pkg.go.dev/github.com/go-testfixtures/testfixtures#section-readme">Go Test Fixtures</a>
+<a href="https://www.twihike.dev/docs/golang-primer/testing">テスト（go test/testing）</a></p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024">Nutmeg advent calendar 2024</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%81%e3%83%bc%e3%83%a0%e3%81%a5%e3%81%8f%e3%82%8a">チームづくり</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>

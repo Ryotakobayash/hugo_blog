@@ -2,11 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.nutmeg.cloud/tags/api%E9%96%A2%E4%BF%82/</loc>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
+  </url><url>
     <loc>https://blog.nutmeg.cloud/authors/</loc>
-    <lastmod>2024-12-05T17:04:18+09:00</lastmod>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/categories/</loc>
-    <lastmod>2024-12-05T17:04:18+09:00</lastmod>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.nutmeg.cloud/tags/docker/</loc>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.nutmeg.cloud/tags/go/</loc>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.nutmeg.cloud/blog/post-ac-20241206/</loc>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.nutmeg.cloud/authors/kubo/</loc>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.nutmeg.cloud/</loc>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023/</loc>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.nutmeg.cloud/tags/</loc>
+    <lastmod>2024-12-06T16:07:11+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/tags/figma/</loc>
     <lastmod>2024-12-05T17:04:18+09:00</lastmod>
@@ -14,13 +38,7 @@
     <loc>https://blog.nutmeg.cloud/tags/next.js/</loc>
     <lastmod>2024-12-05T17:04:18+09:00</lastmod>
   </url><url>
-    <loc>https://blog.nutmeg.cloud/</loc>
-    <lastmod>2024-12-05T17:04:18+09:00</lastmod>
-  </url><url>
     <loc>https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024/</loc>
-    <lastmod>2024-12-05T17:04:18+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/tags/</loc>
     <lastmod>2024-12-05T17:04:18+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/authors/wako/</loc>
@@ -46,12 +64,6 @@
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-ac-20241204/</loc>
     <lastmod>2024-12-04T12:19:41+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/tags/api%E9%96%A2%E4%BF%82/</loc>
-    <lastmod>2024-12-03T11:01:12+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/tags/docker/</loc>
-    <lastmod>2024-12-03T11:01:12+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/tags/hasura/</loc>
     <lastmod>2024-12-03T11:01:12+09:00</lastmod>
@@ -182,9 +194,6 @@
     <loc>https://blog.nutmeg.cloud/blog/post-20240426/</loc>
     <lastmod>2024-05-10T19:07:50+09:00</lastmod>
   </url><url>
-    <loc>https://blog.nutmeg.cloud/authors/kubo/</loc>
-    <lastmod>2024-04-19T18:33:34+09:00</lastmod>
-  </url><url>
     <loc>https://blog.nutmeg.cloud/tags/minio/</loc>
     <lastmod>2024-04-19T18:33:34+09:00</lastmod>
   </url><url>
@@ -246,9 +255,6 @@
     <lastmod>2024-01-19T19:47:15+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-ac-20231225/</loc>
-    <lastmod>2023-12-25T19:45:55+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023/</loc>
     <lastmod>2023-12-25T19:45:55+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-ac-20231224/</loc>
@@ -436,9 +442,6 @@
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-20230216/</loc>
     <lastmod>2023-02-17T19:37:22+09:00</lastmod>
-  </url><url>
-    <loc>https://blog.nutmeg.cloud/tags/go/</loc>
-    <lastmod>2023-01-25T17:02:09+09:00</lastmod>
   </url><url>
     <loc>https://blog.nutmeg.cloud/blog/post-20230125/</loc>
     <lastmod>2023-01-25T17:02:09+09:00</lastmod>

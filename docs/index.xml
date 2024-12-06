@@ -6,8 +6,15 @@
     <description>Recent content on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Dec 2024 17:04:18 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 06 Dec 2024 16:07:11 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Goの実DBを用いたAPIテストの導入</title>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20241206/</link>
+      <pubDate>Fri, 06 Dec 2024 16:07:11 +0900</pubDate>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241206/</guid>
+      <description>こんにちは！&#xA;NUTMEGのくぼ（kubosaka）です！</description>
+    </item>
     <item>
       <title>わくわくすることを沢山したよ！</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241205/</link>
