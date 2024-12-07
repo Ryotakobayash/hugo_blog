@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Goku on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/authors/goku/</link>
+    <link>http://localhost:1313/authors/goku/</link>
     <description>Recent content in Goku on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 19 Jan 2024 19:47:15 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/goku/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/goku/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>一夜漬けは色々と良くないです</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20240119/</link>
+      <link>http://localhost:1313/blog/post-20240119/</link>
       <pubDate>Fri, 19 Jan 2024 19:47:15 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20240119/</guid>
+      <guid>http://localhost:1313/blog/post-20240119/</guid>
       <description>はじめに あけましておめでとうございます！初詣で大吉を引いて、気分がよくなったNUTMEG3年の悟空です。その後、調子に乗って課金してモンストのガチャで爆死したということは置いておきましょう・・・。 というわけで、今年もよろしくお願いします！！！</description>
     </item>
     <item>
       <title>PMとデザイナー、2つの立場でヒアリングをしてみて</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20231219/</link>
+      <link>http://localhost:1313/blog/post-ac-20231219/</link>
       <pubDate>Tue, 19 Dec 2023 15:46:25 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231219/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20231219/</guid>
       <description>はじめに こんにちは！この文章を書いている裏で、レポートが8つ溜まっているNUTMEG3年の悟空です。期末テストもあるというのに、一体、先生方は何を考えているのでしょうか？いいえ、何も考えていない私が悪いのです。正直、間に合うか不安ですが、気合で終わらせます！結局、大事なのは気合と根性なのです！</description>
     </item>
   </channel>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="this is meta description">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="http://localhost:1313/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="http://localhost:1313/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="http://localhost:1313/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="http://localhost:1313/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="http://localhost:1313/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="http://localhost:1313/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/custom_post.css">
+  
+
+  <meta property="og:url" content="http://localhost:1313/blog/post-ac-20241207/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="自作サーバーのすゝめ">
+  <meta property="og:description" content="this is meta description">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-12-07T23:14:02+09:00">
+    <meta property="article:modified_time" content="2024-12-07T23:14:02+09:00">
+    <meta property="article:tag" content="ターミナル">
+    <meta property="article:tag" content="Ubuntu">
+    <meta property="article:tag" content="インフラ">
+    <meta property="og:image" content="http://localhost:1313/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/OGP.png">
+  <meta name="twitter:title" content="自作サーバーのすゝめ">
+  <meta name="twitter:description" content="this is meta description">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="http://localhost:1313/"><img class="img-fluid"
+          src="http://localhost:1313/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="http://localhost:1313/"><img class="img-fluid"
+            src="http://localhost:1313/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:1313/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="http://localhost:1313//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="http://localhost:1313/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90"
+          class="text-primary">活動の様子</a>
+        
+        <a href="http://localhost:1313/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3"
+          class="text-primary">メンバーの趣味</a>
+        
+        <h2>自作サーバーのすゝめ</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By ぷりん
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              07 December 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/SJZrXGWVJl.png%29" class="img-fluid w-100 mb-4" alt="自作サーバーのすゝめ">
+        
+        <div class="content mb-5">
+          <h2 id="はじめに">はじめに</h2>
+<p>皆さんはじめまして！前回の<a href="https://blog.nutmeg.cloud/blog/post-20240905/">TeXのブログ</a>を見てくれた方はお久しぶりです．ぷりんです．
+課題に苦しんでいたらいつの間にかインフラチームの長になっていました．今のところは偉大なる先輩方におんぶにだっこですが頑張りたいと思います．</p>
+<p>せっかくインフラチームに入ったので，使わなくなったWindowsPCでサーバーを建てたというそれっぽいことを今回ブログにしようと思います．
+<del>本当は自分でアプリを作ってデプロイしようとしてたけど時間がなくて諦めたのは内緒．いつかリベンジします．</del></p>
+<h2 id="windowspcでproxmoxのインストーラーを起動する">WindowsPCでProxmoxのインストーラーを起動する</h2>
+<p>まず，バイトジャンキーではない大学生はお金を持っていません．
+もちろん筆者も例外ではありません．</p>
+<p>ですが今回やろうとしているのはなにかしらPCがないとできません．
+そこで筆者は実家からバッテリーが死んで文鎮と化したWindowsPCを持ってきました．
+今回はこのPCをサーバーにしていこうと思います．</p>
+<p>このPCは高専の時に使っていたものなのでデータが入っています．もちろん，レポートなどの大事なデータなどはお引越ししたうえで今回入れるサーバーに特化したOS，Proxmoxを入れなければいけません．</p>
+<p><a href="https://www.mouse-jp.co.jp/mouselabo/entry/2023/12/01/100015">参考にしたサイト</a></p>
+<p>いれる方法は，まず<a href="https://www.proxmox.com/en/downloads">proxmoxの公式</a>からインストーラー持ってきてをUSBメモリのような外部記憶装置に入れます．
+次にそれをPCに挿したままPCのBIOS画面を開き，起動順を変更してWindowsより先にProxmoxインストーラーの入った外部記憶装置が開くようにします．</p>
+<p>すると，Proxmoxと書いてある白い画面が開くので，ガイドの通りに進んでいくとインストールすることができます．
+<a href="https://dareblo.com/proxmoxve-install/">参考にしたサイト</a>で，大体全部最新のやつを選びました．</p>
+<p>また，実際に色々値を入力しなければなりませんが，入力するための情報を手に入れるコマンドと，筆者が実際に入力したざっくりとした値はこんな感じになります．Adressは果たしてネットの海に公開していいのか怖くなったのである程度ぼかします．</p>
+<hr>
+<p>Management Interface：一個しかない</p>
+<p>Hostname：自由</p>
+<p>IP Adress：ipconfig getifaddr en0 使ってないAdressを使うこと</p>
+<p>Gateway：netstat -nr | grep default いれて一番上のdefaultの値を持ってくる</p>
+<p>DNS Server：cat /etc/resolv.conf | grep nameserver</p>
+<hr>
+<hr>
+<p>Management Interface：</p>
+<p>Hostname：purin.local</p>
+<p>IP Adress：192.168.xxx.xxx</p>
+<p>Gateway：192.168.xxx.1</p>
+<p>DNS Server：193.168.xxx.1</p>
+<hr>
+<p>ダウンロードはめっちゃ長いのでお昼ごはんとか食べに行きましょう．おすすめは麺屋松というお店です．</p>
+<h2 id="サーバーを建てるまで">サーバーを建てるまで</h2>
+<p>ここまではまだOSを入れただけです．なのでProxmoxの設定を行っていきます．サーバー用のPCと同じネットワークにつなげたPCを用意し，サーバー用PCの画面にある，connect to:https://192.168.xxx.xxx:8006 というurlをchoromなどのブラウザで検索します．すると以下のような画面が出てくるのでユーザー名をroot，パスワードをさっき入力したものを使用してログインします．
+<img src="https://hackmd.io/_uploads/SkMbBeWE1g.png" alt="image"></p>
+<p>ログインできたら，tailscaleという別のネットワークにPCを繋いでいても，認めたPCだけからはアクセスできるようにするものを入れます．
+というかいれるためにこの<a href="https://blog.nishi.network/2023/02/12/proxmox7-3-repository/">サイト</a>に書いてあることをしないといけません．<del>めんどくさい．</del></p>
+<p>ここに書いてあることをなんとかしたら，やっとtailscaleを入れることができます．
+いれるためのコマンドは以下のものになります．</p>
+<hr>
+<p>curl -fsSL <a href="https://tailscale.com/install.sh">https://tailscale.com/install.sh</a> | sh</p>
+<hr>
+<p>これを打って，tailscale upとでたら成功です．</p>
+<p>tailscaleに関しては<a href="https://zenn.dev/0_0/articles/16975274aa3ba7">このサイト</a>を見るとわかりやすいかもしれません．</p>
+<p>ついにサーバー(というかコンテナ)を建てるときが来ました．
+CTを立ち上げます．
+データセンター&gt;&ldquo;ホスト名&rdquo;&gt;local(&ldquo;ホスト名&rdquo;)&gt;CTテンプレート&gt;テンプレートから，使いたいパッケージを選択します．
+筆者はubuntu入れました．</p>
+<p>CTを作成から必要な項目を埋めていきます．ゲートウェイとかはDHCPで行うことをおすすめします．楽なので．</p>
+<h2 id="コンテナを充実させる">コンテナを充実させる</h2>
+<p>建ったコンテナの中で，色々アップデートしていきます．</p>
+<hr>
+<p>sudo apt-get update
+sudo apt install curl
+sudo apt-get dist-upgrade</p>
+<hr>
+<p>これらがうまく行けば，もう終わりは目前です．</p>
+<h2 id="ドメインの取得">ドメインの取得</h2>
+<p>サーバーだけがあっても，Webアプリを公開することはできず，公開するにはドメインが必要です．
+ドメインとは，google.comなどのよくあるURLのhttps:// の直後の部分です．
+ムームードメインやお名前.comなどで買うことができます．</p>
+<p>次にWebサイトを運営するためにcloudflareとドメインを連携させる必要があります．
+詳しいやり方は<a href="https://www.value-domain.com/media/cloudflare/">これ</a>を見てください．</p>
+<p>筆者はお名前.comでドメインを買ったので，
+お名前.comにて，契約管理画面＞ネームサーバー設定＞ネームサーバーの設定＞他のネームサーバーを利用</p>
+<p>で割り当てられたクラウドフレアのネームサーバー2つを書き，しばらくするとアクティブになっていました．</p>
+<p>外界とサーバーとをつなげるにはトンネルを通す必要があります．詳しくは以下のページを見ればわかりやすいと思います．
+<a href="https://qiita.com/harutiro/items/885c0df9662a0c6e6355">クラウドフレアトンネルの話1</a></p>
+<p><a href="https://qiita.com/Ekawa_Chan/items/8d96603ddd70d2e2a1dd">クラウドフレアトンネルの話2</a></p>
+<h2 id="まとめ">まとめ</h2>
+<p>ここまで終わればほとんど終わりです．gitを落としてきて，githubに上げたWebアプリをpullしてdockerなどで動かせば無事デプロイまで行けます．</p>
+<p>この記事はサーバーを建てながら書いたメモを元につくられているのでもしかするといくつか必要な項目が抜けていたり，わかりにくい部分があるかもしれませんが，もしこの記事がサーバーをはじめて触るみたいな人のお力になれれば幸いです．</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="http://localhost:1313/"><img src="http://localhost:1313/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="http://localhost:1313/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="http://localhost:1313/categories/nutmeg-advent-calendar-2024">Nutmeg advent calendar 2024</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="http://localhost:1313/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="http://localhost:1313/categories/%e3%83%81%e3%83%bc%e3%83%a0%e3%81%a5%e3%81%8f%e3%82%8a">チームづくり</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="http://localhost:1313/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="http://localhost:1313/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="http://localhost:1313/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="http://localhost:1313/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="http://localhost:1313/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="http://localhost:1313/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="http://localhost:1313/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "http://localhost:1313/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="http://localhost:1313/plugins/jQuery/jquery.min.js"></script>
+
+<script src="http://localhost:1313/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="http://localhost:1313/plugins/slick/slick.min.js"></script>
+
+<script src="http://localhost:1313/plugins/venobox/venobox.min.js"></script>
+
+<script src="http://localhost:1313/plugins/search/fuse.min.js"></script>
+
+<script src="http://localhost:1313/plugins/search/mark.js"></script>
+
+<script src="http://localhost:1313/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="http://localhost:1313/js/script.min.js"></script>
+
+
+
+</body>
+</html>
