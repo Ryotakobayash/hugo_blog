@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hiroike on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/hiroike/</link>
+    <link>https://blog.nutmeg.cloud/authors/hiroike/</link>
     <description>Recent content in Hiroike on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 19 Oct 2022 02:02:04 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/hiroike/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/hiroike/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>configファイルを使ってサーバーにsshする方法</title>
-      <link>http://localhost:1313/blog/post-20221019/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20221019/</link>
       <pubDate>Wed, 19 Oct 2022 02:02:04 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20221019/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20221019/</guid>
       <description>初めまして、NUTMEG所属の廣池です。 今回はLinuxサーバーにsshする時、configファイルを使ってsshする方法を紹介したいと思います。</description>
     </item>
   </channel>

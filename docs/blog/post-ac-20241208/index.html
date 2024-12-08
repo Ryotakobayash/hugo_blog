@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Next.js初心者が勢いだけで人狼ゲームを作ろうとした話">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-ac-20241208/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="衝動的にWEBゲーム作り始めた男の末路">
+  <meta property="og:description" content="Next.js初心者が勢いだけで人狼ゲームを作ろうとした話">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-12-08T18:57:16+09:00">
+    <meta property="article:modified_time" content="2024-12-08T18:57:16+09:00">
+    <meta property="article:tag" content="CSS">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="TypeScript">
+    <meta property="article:tag" content="Next.js">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="Figma">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="衝動的にWEBゲーム作り始めた男の末路">
+  <meta name="twitter:description" content="Next.js初心者が勢いだけで人狼ゲームを作ろうとした話">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90"
+          class="text-primary">活動の様子</a>
+        
+        <a href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024"
+          class="text-primary">Nutmeg advent calendar 2024</a>
+        
+        <h2>衝動的にWEBゲーム作り始めた男の末路</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By うっちー
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              08 December 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/SyoxcgQEye.png" class="img-fluid w-100 mb-4" alt="衝動的にWEBゲーム作り始めた男の末路">
+        
+        <div class="content mb-5">
+          <p>このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。
+時系列的にはアドカレ以前の内容となっています。
+ご注意ください。</p>
+<h2 id="副局長になりました">副局長になりました！</h2>
+<p>お疲れ様です！うっちーです！
+ラーメンフェスの企画をやろうと奔走していた時期から早5カ月が過ぎ、現在ありがたいことに</p>
+<h3 id="nutmegの副局長兼seeftのpmをさせて頂いています">NUTMEGの副局長兼SeeFTのPMをさせて頂いています！</h3>
+<p>(前回のブログ：<a href="https://blog.nutmeg.cloud/blog/post-20240627/">新入生が新企画を作ろうとしてみた！</a>)</p>
+<p>NUTMEGには今まで局長しかいなかったのですが、人数が増えてきたこともあり局長だけでは手が回らない箇所が増えてきたということで今年度から副局長を置くことに決まりました！</p>
+<p><img src="https://hackmd.io/_uploads/S1vQ454mkl.png" alt="image"></p>
+<p>↑断られる可能性を全く考慮していない前局長と、断る選択肢など頭にない現副局長</p>
+<p>初代副局長ということで色々手探り状態ですが、他局の副局長とよもやまもしたりしながら活動しております！
+とりあえず外部イベントなどは局長、内部イベントは副局長という形で役割を分担しています。
+ドンドン局内イベントを開催して技術力の向上や局内の交流の活性化を目指していきたいと思っています！</p>
+<h2 id="デザインコンペ開かれる">デザインコンペ開かれる！</h2>
+<p>技大祭が終わり、局長・副局長以外だけではなくPM・TMも総入れ替えが行われました！
+前局長のつっきーさんの意向で、今年度のPM・TMは<strong>全員3年生から選ばれることになりました！</strong>
+理由としては、局長や執行部と学年が同じ方がコミュニケーションを取りやすいこと、4年生がPM・TMになると実務訓練があって2学期ほぼ活動ができなくなってしまうことなどが挙げられました。</p>
+<p>個人的にも今のところは非常に良いなと思っています！
+全員が同学年なので、互いに変な気遣いなどをせずに接することができているように感じます！</p>
+<p>さて、そんな折に開催されたのが以前のブログでも紹介されていた</p>
+<h3 id="デザインコンペです">デザインコンペです！</h3>
+<p><img src="https://hackmd.io/_uploads/BJ-SeZ57ye.png" alt="upload_c4683496601e4740019eeed5399021c4">
+これは新体制になったデザインチームにて、
+<strong>「あ～デザインしてぇ&hellip;」</strong> という欲求が高まってきた時に突発的に開催されている企画です！
+(デザインコンペのブログ：<a href="https://blog.nutmeg.cloud/blog/post-20241114/">そうだコンペやろう</a>)</p>
+<p>なぜか参加賞としてステッカーが貰えるというのがお決まりになっており、光り物を好むNUTMEGメンバーは狂気乱舞して参加しています！
+(全ての始まり：<a href="https://blog.nutmeg.cloud/blog/post-20241005/">Hackathonステッカー作成記</a>)</p>
+<h2 id="デザインコンペ参加する">デザインコンペ参加する！</h2>
+<p>SeeFTのPMになったことと、元々フロントエンドに興味があったので「デザインもぼちぼち勉強しないとなぁ&hellip;」と考えていた折のデザインコンペだったので、自分も動機付けに参加することにしました！</p>
+<p><img src="https://hackmd.io/_uploads/rymnsSrXkx.png" alt="image">
+なお、この辺りの時期は企画局に凸ったり引き継ぎ直後のPMに苦戦したり課題大量にあったりで余裕がなく、一度参加を取り消したものの主催者に見逃してもらえなかった模様(今となっては感謝しかない)</p>
+<h2 id="ハイレベル過ぎる戦いに巻き込まれた雑魚の末路">ハイレベル過ぎる戦いに巻き込まれた雑魚の末路</h2>
+<p>時間がなかったこともあり、<strong>「ゆる募」</strong> と書いてあったものだから、最悪「間に合いませんでした〜」でも許されるやろと舐め腐った根性で参加した僕はコンペ当日に絶望を味わうことになりました。</p>
+<h1 id="なんか皆様-異様に気合い入ってらっしゃる">なんか皆様 異様に気合い入ってらっしゃる</h1>
+<p>僕は忘れていたのです。NUTMEGは頭のネジが外れたイカれた人間の集まりであるということを&hellip;
+特に今年のデザインチームの面々は平気で徹夜をするようなデザインジャンキーしかおらず、そんな奴らが</p>
+<h3 id="デザインコンペやります">『デザインコンペやります！！』</h3>
+<p>と言ってゆる募で済むはずがなかったのです。</p>
+<ol>
+<li>新HomePagePM作: やけに旨そうな寿司のゲーム
+<img src="https://hackmd.io/_uploads/B1h60BSQ1e.png" alt="image"></li>
+<li>前DesignTM作: 意味わからんくらいカッコいいスライドデザイン
+<img src="https://hackmd.io/_uploads/SyfgkISQke.png" alt="image"></li>
+<li>新DesignTM作: 「使いたかったからアイソメトリック使ってみたよ〜」
+<img src="https://hackmd.io/_uploads/rJ2fyIHXke.png" alt="image"></li>
+<li>なかたく作: プログラマー感の香り立つ名刺デザイン
+<img src="https://hackmd.io/_uploads/SkKVJLrQyx.png" alt="image"></li>
+<li>主催者作: しれっとお出しされたクソかっこいいステッカー
+<img src="https://hackmd.io/_uploads/HJg2QIrXke.png" alt="image"></li>
+<li>わい作: やっつけ感漂うポスターデザイン
+<img src="https://hackmd.io/_uploads/r10e-IrQ1e.png" alt="image"></li>
+</ol>
+<h3 id="あまりにも場違い">あまりにも場違い</h3>
+<p>皆様大変優れたデザイン案をお出しになられておられまして、対照的に私めにおきましては発表用のスライドすらコンペ中に作成していた有様でございました。</p>
+<p>ゆる募とはなんだったのか・・・
+副局長として・SeeFTPMとしての矜持を木っ端微塵にされてしまいました。
+ただただ自分が情けなくて仕方がなかった次第です。</p>
+<p>というのも、コンペの期間中みんな<strong>命を燃やして</strong> デザインをしていたからです。</p>
+<ul>
+<li>午前5時に更新されるslack
+<img src="https://hackmd.io/_uploads/HkvrE8S7ke.png" alt="image"></li>
+<li>人語を逸脱した投稿
+<img src="https://hackmd.io/_uploads/BkV_48r7yg.png" alt="image"></li>
+</ul>
+<p>極め付けは仕事量も課題の量も自分より多いのにちゃんとデザイン作ってきたなかたく</p>
+<p>タイムマシンが発明されたら「最悪できなくても良いや」とか舐めた気持ちで参加した自分をぶん殴りにいくことを心に誓ったのでした。</p>
+<h2 id="衝動を得る">『衝動』を得る</h2>
+<p>さて、恥もプライドも地の底に沈んだデザインコンペでしたが、僕は</p>
+<h3 id="参加したこと自体は全く後悔することはありませんでした">参加したこと自体は全く後悔することはありませんでした！</h3>
+<p>それはなぜかというと、強烈な『衝動』を得ることができたからです！</p>
+<h3 id="あかりさん作のnutmegの部屋に出会えたからです">あかりさん作の「NUTMEGの部屋」に出会えたからです！</h3>
+<p>(あかりさんのブログ: <a href="https://blog.nutmeg.cloud/blog/post-20240711/">情報局に入って</a>)
+<img src="https://hackmd.io/_uploads/BJaV0BSmJg.png" alt="image">
+こちらのデザイン、どこに衝動を掻き立てられたかというとズバリ『<strong>素材</strong>』です！</p>
+<h3 id="なんとpmの顔面が全部素材になったのです">なんとPMの顔面が全部素材になったのです！</h3>
+<p><img src="https://hackmd.io/_uploads/HJkcLIHQkx.png" alt="局長＋各PMラフ (1)">
+こんなのおもろいやないかと！
+使うしかないやないかと！
+そう思ったわけです。</p>
+<h2 id="ネタが降ってくる">ネタが降ってくる</h2>
+<p>「あの素材を使ってなんか作りてぇなぁ&hellip;」と思っていた時、ちょうど大型チームビルディングの時期がやってきました。
+大型チームビルディングというのは、MTの時間を使ってみんなでワイワイ遊んで楽しいンゴするやつです。</p>
+<p>何をやりたいかみんなで意見を出し合いました！
+その結果、次のようなアイデアが好評でした</p>
+<ul>
+<li>人狼ゲーム</li>
+<li>雪遊び</li>
+<li>石を探しに散歩</li>
+<li>闇鍋</li>
+</ul>
+<p>全体的にまともではなかったです。</p>
+<p>最初に述べたように、今年度から内部イベントは副局長が担当することになっていたので、大型チームビルディングの運営も僕が担当することに。</p>
+<p>イカれたアイデアの中で唯一まともなだったのが「人狼ゲーム」でした！
+『よし！人狼ゲームをやろう！』僕はそう決めました。
+その時です！</p>
+<h1 id="アッ">アッ！！</h1>
+<h1 id="これ自分で作ったらクッソおもろいやん">これ自分で作ったらクッソおもろいやん！</h1>
+<p>まさに天啓！
+まるで運命のように素材の使い所とお披露目の場が同時に転がり込んできたのです！
+<strong>これはやるしかねぇなと思いました</strong>
+大型チームビルディングの開催は1週間後&hellip;
+ハッカソンの期間としても実にちょうど良い！
+今週は土日も課題ないしやってみよう！と僕は決意したのでした。</p>
+<h2 id="デザインコンペよりデザインコンペしてる">デザインコンペよりデザインコンペしてる</h2>
+<p>金曜日の授業後、速攻で帰宅した僕はニタニタしながらNUTMEGの部屋のFigmaを眺めていました。
+<img src="https://hackmd.io/_uploads/r1JF5UrXJx.png" alt="image">
+こちらのFigma、コンポーネントのデザインなんかも決めてあって「もう作れるのでは？」というレベルになっていました。
+そんなものを眺めていたら自分でも作りたくてしょうがなくなって来るのが人間という生き物です！</p>
+<p>というわけでFigmaを触り始めました。
+Figmaはデザインチームの作業会で何度か教わったのですが、普段趣味などでも全く使っていなかったので、デザインチームの先輩や他のデザインチームの人が教わっているのを横で聞いていた内容を思い出しながら手探りでデザインを作っていきました！</p>
+<h3 id="これが実に楽しかった">これが実に楽しかった！</h3>
+<p>今まではプログラミングは楽しい楽しいと感じていましたがFigmaではそのような体験はなかったので、特にFigamやデザインが好きという感情は持っていなかったのですが、</p>
+<ul>
+<li>コンポーネントとかまんまコンポーネント指向やん！</li>
+<li>コンポーネントとインスタンスはオブジェクト指向ですか！？</li>
+<li>長方形ってdivやん！</li>
+<li>ファイルの構造もコーディングする時のことを意識して整理して〜</li>
+<li>セクションでディレクトリ構造みたいに分けれないか？</li>
+</ul>
+<p>など次々とFigmaとプログラミングの共通点が見つかっていくと楽しくて仕方なくなっていきました！
+コンポーネントを作りながら頭の中で「これはこんな感じのコードで書けそうだなぁ」とか考えながらやるともうダメでした。Figmaでコンポーネント作りながら脳内でプログラミングもやっているような感覚で楽しさが倍々になるのです！</p>
+<p>さらに都合の良いことに、ちょうどやまはがAtomicDesignのブログを書いてくれていたのでそちらも大いに参考に！
+(<a href="https://blog.nutmeg.cloud/blog/post-20241107/">コンポーネントをいい感じに整理しよう（Atomic Design)</a>)
+「あ〜まずは小さいコンポーネントから作って、それ組み立てておっきいコンポーネント作っていって最終的にページに辿り着けばええんかな〜」みたいな気持ちでコンポーネントを作っていきました。</p>
+<p>さらにさらに都合の良いことに、ちょうど1週間前くらいに授業の課題でこれまたやっつけでデザインをFigmaで作っていた時に、5884さんがFigmaのオートレイアウトについて教えてくれていたため、「使ってみるか〜」という気持ちでオートレイアウトにも挑戦。
+これがまたとても便利！
+位置を変えると自動でニュインッと配置が入れ替わるのがとても気持ち良い！
+配置の方向を縦向き・横向き・折り返しを設定できるなどはCSSのdisplay: flexやグリッドレイアウトで実装できそうだなぁとか考えるとたまらなくなります！</p>
+<p>他にもshift + Gでグリッドが見れるようになるよ〜とか、コメントでどんどんメモ書き残していけるやん！とかローカルカラー登録できるんか！？など使えば使うほど新しい機能が見つかりどんどんのめり込んでいきました！</p>
+<p>今から思えば、技大祭前日にHomePageのマップ作成のためにFigamのコンポーネントのファイル構造を修正するというタスクをやっていたことも、ファイルの構造を考える上で大きく役に立っていたと感じます！</p>
+<p>今までの記憶を辿りながらFigmaに没頭していき、気づいたら9時間くらいぶっ続けで作業していました！
+そこからさらに3時間ほど多少グダリながらも作業を続けたところ&hellip;</p>
+<h3 id="なんかそれっぽいデザインを完成させることができました">なんかそれっぽいデザインを完成させることができました！</h3>
+<ul>
+<li>ローカルカラーのカタログ
+<img src="https://hackmd.io/_uploads/BkZ7GPr7ye.png" alt="image"></li>
+<li>モーダルのコンポーネント
+<img src="https://hackmd.io/_uploads/rJerGPSmJg.png" alt="image"></li>
+<li>ボタンとタイポグラフィのコンポーネント
+<img src="https://hackmd.io/_uploads/HkpBzPBXkl.png" alt="image"></li>
+<li>画面遷移
+<img src="https://hackmd.io/_uploads/BJqTGwB7kg.png" alt="image">
+<img src="https://hackmd.io/_uploads/Sk5_GwS71l.png" alt="image"></li>
+</ul>
+<p>何が良いって、思い出したことや学んだこと、こうやってコーディングしようって思いついたことをコメントで残しておけること。
+また、「ここはこういう意図でこうしたんやで〜」というのもコメントで残せるため非常に気持ちが良い！
+自分はかなりのメモ魔なので、手軽にメモが残せるというのは非常にありがたかったです！</p>
+<p>ほぼ手探りなので最適化できる部分はたくさんあると思われますが、めっちゃ楽しかった上に「自分でもこんなデザインが作れた！」という感動がめちゃくちゃ大きかったです！
+（5884さん曰く、開発者モードを始めStoryBookやFigmaからのReactコードの生成などまだまだ奥が深そうで楽しみは尽きません）</p>
+<p>こうして僕はリンボに沈んだ自信を一部取り戻したのでした</p>
+<h2 id="もう作るしかない">もう作るしかない</h2>
+<p>さぁ、デザインが出来てしまったのです！
+しかも作りながら「こうやって書けそう」だとか「ここのセクション分けはそのまんまディレクトリ構成に使えて〜」だとかを脳内やコメントで妄想しまくっていたものがです！
+しかもまだ日曜日！
+まだ１日しか経ってません！あと6日も開発期間がある！
+ニタニタしながらFigmaを眺めるほどに『これもう作れるんだよなぁ』という衝動が心身を覆っていくのです！</p>
+<p>しかもしかも最近触り始めたNext.js
+こいつ、なんかGitHubのリポジトリ立てるだけでなんかVercelとかいうのでデプロイできちゃうんです！
+あ〜もうやるしかねぇわと思いました。
+しかもしかもしかも、なかたくからおすすめされていた<strong>Material UI</strong>というコンポーネントライブラリ
+こいつも非常に使いたいなぁ&hellip;と日頃考えていたのです！
+Material UI(以降MUI)はGoogleが提唱しているMaterialDesignというデザインシステムに基づいて作成されたReactのコンポーネントのライブラリです！
+(Material UI components: <a href="https://mui.com/material-ui/all-components/">https://mui.com/material-ui/all-components/</a>)
+要するにGoogleさんがデザインした良い感じのコンポーネントをもうそのまま使えちゃうっていう夢みたいなライブラリです！
+一からモーダルとかボタンのコンポーネントをdivとかをコネコネして作らなくて良いのです！
+(なおいまいまいさんからの評価は低い模様。次は違うコンポーネントライブラリ使ってみたくなった！)
+スタイルを当て直すことになったら面倒かもだけど、きったねぇデザインでも良いならMUI使えばすぐ作れるんちゃう？みたいに調子こきながらコーディングに入っていきました。</p>
+<h2 id="バックエンドｺﾝﾆﾁﾜ">バックエンド「ｺﾝﾆﾁﾜ」</h2>
+<p>作り始めてから気づきました</p>
+<h1 id="これバックエンドどうすんの">これバックエンドどうすんの？</h1>
+<p>僕は今までフロントしか触ったことがなく、バックエンドに関しては「API？そんなのもあるんや」くらいの知識量でした。
+とはいえここまで来たからには引き下がれません！
+GPTに「Next.jsでapi作るにはどうしたら良いですか？」と聞きながらバックエンド制作に着手！</p>
+<h3 id="この時役に立ったのがnutmegハッカソンの経験と成果物でした">この時役に立ったのがNUTMEGハッカソンの経験と成果物でした！</h3>
+<p>NUTMEGハッカソンにてFESNSというアプリケーションを作成したのですが、この時にデータベース構築からコメントのPOSTとGETまで、一通りのバックエンドの処理を行っていたのです！
+(こちらで紹介されています: <a href="https://blog.nutmeg.cloud/blog/post-20241003/">NUTMEGに入って５ヶ月経ったのでどれくらい成長できているのか振り返ってみた</a>)
+とはいえバックエンドを担当していたのは僕ではなく、准教授だったので、僕はくぼにいの残していたサンプルコードをパクる所から始めました。それでも同じNext.jsのプロジェクトであり、当時のslackでのやりとりなども残っていたため非常に参考になりました！</p>
+<p>とくに行き詰まった時に『確実に動く手本』があるのとないのとでは大きく違うと個人的に思っています。
+最悪コピペすれば動かせるものが手元にあるというのは非常に心強いのです！</p>
+<p>本当ならSeeFTに合わせてデータベースにはPostgreSQLを使い、APIにはGOを使いたかったのですが、1週間では流石に無理だと判断してフロントの言語でデータベースの操作ができると聞いたPrismaなるものを採用することに</p>
+<p>そしてめんどくさいなぁと思いながら、ハッカソン後に自力でVercelデプロイまで漕ぎ着けた時のNotionと睨めっこしながら制作を開始！
+プロジェクトフォルダの中にnext-projectを作って、dbのフォルダを作って、docker-compose.yamlを作って&hellip;と頑張って作りました。
+docker-compose.yamlの中身も数時間かけて書きました。
+そして書いてから分かったのです。</p>
+<h3 id="prismaとvercel-postgres使うならnext-projectだけでええんや">Prismaとvercel-postgres使うならnext-projectだけでええんや</h3>
+<p>結論から言うと、数時間かけてただただディレクトリ構成をややこしくしただけだったという&hellip;
+dbも要らなければdocker-dompose.yamlも不要でした・・・
+開発時間の限られている中で貴重な時間を粉砕される中々に厳しい成長痛でございました。
+数時間かけて作り上げたdocker-compose.yamlを削除したcommitをpushした時は胸が張り裂けそうでした。</p>
+<p>まぁややこしいSQLだかなんだかを書かなくて良くなったんやとポジティブに考えることにしました。
+そしてさらにchatGPT大先生とGitHubMainpilotに導かれて作業すること数時間。
+ぼんやりと「こうすれば通信できるんじゃね？」みたいなのがつかめてきました。</p>
+<p>next-projectのappディレクトリの中にapiというディレクトリを作り、その中にまたよしなにディレクトリを作成。(初心者のくせにappRouterを使っていました)そしてディレクトリの中にroute.tsを作る。
+なんかこれだけでNext.jsってAPIエンドポイントになるみたいだぞと。
+まだ知識ガバガバですが、一度POSTとGETができてしまうととても簡単にAPIは作れると分かりました！</p>
+<p>Vercelなどでデプロイしていれば、
+<a href="https://nutmeg-wolf.vercel.app/api/rooms/players/alives?roomId=2884">https://nutmeg-wolf.vercel.app/api/rooms/players/alives?roomId=2884</a> のような&quot;URL&quot;にアクセスすると、↓の画像のようにレスポンスが返ってくるのです！
+<img src="https://hackmd.io/_uploads/B1RmN_H7yg.png" alt="image">
+これが分かれば、あとはフロントの方からこのURLにアクセスし、レスポンスを格納すればええんやなと。</p>
+<p>エンドポイントに関してはディレクトリ構造がそのままURLになるみたいな感じで慣れれば非常に分かりやすいと感じました。
+APIのコード自体はtypescriptで書くことができたので技術的な負担はほとんどありませんでした！あとcopilotが優秀</p>
+<!-- POSTの時とかはbodyに色々情報を詰めれるから良いけど、GETの時ってどうやって指定するんや？とか -->
+<p>また、データベースに関しても、vercel-postgresというものでVercelの方でPostgreSQLのデータベースを使えるようで、なんとかできました！
+(こちらの記事を参考にさせていただいていました！https://qiita.com/KokiSakano/items/21d72a4ca244ef4704f2)</p>
+<p>schema.prismaもGPTに聞きながらそれなりに書けるようになりました！
+ORMというズルを使うことでなんとかバックエンドの課題を解決することに成功したのです！</p>
+<p>ちなみに、本アプリではポーリングを使用しています。
+コメントの取得などを毎秒GETリクエストを飛ばして行っているという極めて頭の悪い実装になっているのですが、どうやらvercelがwebsocketに対応していないこと、SSEを試そうとしたら改修時間とエラーが爆増しそうなことなどからポーリングのままとなっております。悔しい。
+なお、ポーリングを使えば良いというのもハッカソンで使った手法だったために採用した面もあり、あらゆる点でNUTMEGハッカソンで1回フルスタックのWEBアプリを作れたという経験が大きかったなと感じています。</p>
+<h2 id="そして爆散">そして爆散</h2>
+<p>さて、そんなこんなで、デザインに対する自信が地に落ちた段階からFigmaでデザイン案を構築し、全くの無知の状態からバックエンドの構築に成功した僕は、なんとか大型チームビルディングまでに最低限アプリとしての体裁を作り上げることに成功しました！
+<img src="https://hackmd.io/_uploads/SJSwJ5VQyg.png" alt="TitlePage">
+(完成したのは大型チームビルディング10分前でした&hellip;)</p>
+<p>そして満を持して大型チームビルディングに臨んだのです！</p>
+<p>また、この1週間僕は誰にも人狼ゲームを作っていることを教えていませんでした。
+理由はとくにないですが、単純にサプライズにした方が盛り上がりそうだなと思ったのと、「櫻井政博のゲーム作るには」という神動画の『内圧をカンカンに高める』というのを1回やってみたかったからです。
+(<a href="https://youtu.be/X6FcraeKrSM?si=linqTl5AsQE_zzny">内圧をカンカンに高める 【仕事の姿勢】</a>)</p>
+<p>実際誰にも言わずに作業するというのは、何か聞きたいことがあっても周りくどい聞き方になって気味の悪い生物になってしまうものの、謎のドキドキとワクワクに包まれてとても楽しかったです！
+(授業中にPCで作業しようとすると後にいる友達にバレないかなとかいうスリルが味わえました)
+何より、完成させないと『あ&hellip;そっすか&hellip;』というリアクション以外期待できないためなんとしてでも完成させなくては！という感じで勝手に自分自身を追い込むようになるのかなと感じました！</p>
+<p>そうして当日にはじめてお披露目した人狼ゲーム！
+どよめく302に優越感を感じながらリンクを共有していざゲームスタート！</p>
+<p>はい</p>
+<h1 id="およそまともにプレイできる完成度ではありませんでした">およそまともにプレイできる完成度ではありませんでした</h1>
+<p>実際の所、一番最後に問題となったのはロジックの部分でした。
+主にゲームの進行度の同期に関してです。今のところ、phaseという変数を使って管理しているのですが、調べたらちゃんとした手法みたいなものがあると思うので時間ができたり、次アプリを作る際はもっと設計段階に気合いを入れたいと思っています。
+(イベント駆動とかなんとかもあるらしいし、そもそもweb-socketやSSEにするべきだろうし)</p>
+<p>高専の友達でゲーム開発の経験がある人が言っていたのは、『ゲーム開発はプログラミングの総合格闘技』というものでした。つまり、一番難易度が高いのです。
+それをずぶの素人が、はじめてづくしの技術で、しかも人狼ゲームとかいうそこそこややこしいゲームを1週間で作ろうとしたらどうなるか&hellip;</p>
+<h3 id="こうなるのです">こうなるのです！</h3>
+<p>結局この日は予備で調べておいたまともなWEBの人狼ゲームで遊びました。</p>
+<h2 id="最後に">最後に</h2>
+<h1 id="楽しかったからokです">楽しかったからOKです！</h1>
+<p>ひたすらに楽しい1週間を過ごせました！
+土日があればいつだってハッカソンできるじゃん！という気付きも得ることができました！
+成長にしかならなかったですし、できなかった部分もむしろ次のモチベーションとなって僕の中に渦巻いています！授業課題が手につかなくてまずい！
+あとNUTMEGという色々な技術と自然に触れ合うことができ、強烈な衝動とも出会える『環境』も非常に大きかったんだなとこうして振り返ってみると感じます！</p>
+<p>次こそは自作のゲームで大型チームビルディングをやりたいなぁと考えている副局長でした！</p>
+<h2 id="作ったやつ">作ったやつ</h2>
+<p>NUTMEG WOLF
+<a href="https://nutmeg-wolf.vercel.app/">https://nutmeg-wolf.vercel.app/</a>
+先生にバレたら単位落とされそうで怖い&hellip;</p>
+<h2 id="使用技術">使用技術</h2>
+<ul>
+<li>Next.js(ver14, appRouter)</li>
+<li>React</li>
+<li>TypeScript</li>
+<li>Material UI</li>
+<li>Prisma</li>
+<li>GitHub</li>
+<li>Vercel</li>
+<li>Vercel-Postgres</li>
+</ul>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024">Nutmeg advent calendar 2024</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%81%e3%83%bc%e3%83%a0%e3%81%a5%e3%81%8f%e3%82%8a">チームづくり</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>

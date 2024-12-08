@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>イベント on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</link>
+    <link>https://blog.nutmeg.cloud/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/</link>
     <description>Recent content in イベント on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 01 Sep 2021 00:49:11 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/categories/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LT会を開催しました</title>
-      <link>http://localhost:1313/blog/post-20210901/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20210901/</link>
       <pubDate>Wed, 01 Sep 2021 00:49:11 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20210901/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20210901/</guid>
       <description>NUTMEGのデザイン担当 小林です。 夏季休業前から企画していたLT(ライトニングトーク)会を開催しました。 テーマは自由、各々が興味を持ったことを発表する事にし、一人につき3~5分、質疑応答の時間も制限なしと自由な形で行いました。 全員の発表終了後、面白かった発表に投票を行い後日何か景品があるかもしれないそうです。 LT会としては初めての開催でしたがオフライン、オンライン合わせて9名もの参加者が集まりました！</description>
     </item>
   </channel>
