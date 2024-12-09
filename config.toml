@@ -236,6 +236,10 @@ customCSS = ["css/custom_post.css"]
   [params.authors.wako]
     name = "酒井和子"
     bio = ""
+  
+  [params.authors.harujo]
+    name = "はるじょー"
+    bio = ""
     
   [params.authors.NUTMEG]
     name = "NUTMEG"

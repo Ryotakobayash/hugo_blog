@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Replit Agentという、AIを搭載した開発プラットフォームを使用して、アイデアソンで出たアプリケーションの機能を5時間で開発した話を記事として書き起こしました">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-ac-20241209/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="AIと一緒に5時間でアプリ開発した話">
+  <meta property="og:description" content="Replit Agentという、AIを搭載した開発プラットフォームを使用して、アイデアソンで出たアプリケーションの機能を5時間で開発した話を記事として書き起こしました">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-12-09T13:10:23+09:00">
+    <meta property="article:modified_time" content="2024-12-09T13:10:23+09:00">
+    <meta property="article:tag" content="TypeScript">
+    <meta property="article:tag" content="Next.js">
+    <meta property="article:tag" content="フロントエンド">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="AIと一緒に5時間でアプリ開発した話">
+  <meta name="twitter:description" content="Replit Agentという、AIを搭載した開発プラットフォームを使用して、アイデアソンで出たアプリケーションの機能を5時間で開発した話を記事として書き起こしました">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3"
+          class="text-primary">メンバーの趣味</a>
+        
+        <a href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024"
+          class="text-primary">Nutmeg advent calendar 2024</a>
+        
+        <h2>AIと一緒に5時間でアプリ開発した話</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By はるじょー
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              09 December 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/Sy-25Ik4yg.png" class="img-fluid w-100 mb-4" alt="AIと一緒に5時間でアプリ開発した話">
+        
+        <div class="content mb-5">
+          <h1 id="自己紹介">自己紹介</h1>
+<p>初めまして、上條遥都(はるじょー)と申します
+長岡技術科学大学工学部情報経営システム工学分野の3年生です
+趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！
+先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！
+宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑</p>
+<h1 id="あらまし">あらまし</h1>
+<p>開発がしたかったので、NUTMEGのデザインコンペで発表されていたサービスをアプリとして開発しました
+ついでに試してみたいAIサービスがあったので、使ってみたら作業効率爆上がりで、4時間で9つほど機能開発が完了し、開発の裏で作業ができたので、マルチタスクをしながら体感4倍ほどの効率で作業ができるという夢のような体験をしたという話です
+AIサービスを使うために月額:boom:$25:boom:を契約したので、サブスク地獄に両足を突っ込むこととなりましたが、非常に楽しい体験でした！！</p>
+<h1 id="背景">背景</h1>
+<p>開発したい！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！
+ので、NUTMEGのデザインコンペで発表されていたものをアプリとして形に起こすことにしました:fire::fire::fire:</p>
+<p>まず、長岡技術科学大学の新入生にNUTMEGの説明をする&quot;NUTMEG ROOM&quot;というサービスを開発することに決め、発表者の許可を取りました。
+なぜ、このサービスを作ろうと思ったのかというと、同じ機能で恋愛シミュレーションゲームが作れそうだったからです笑
+近いうちに&quot;NUTMEG ROOM~LOVE EDITION~&ldquo;リリースしてブログ書きます:smirk:</p>
+<p>次に、NUTMEG内で技術に触れる機会を増やすため発表者を勧誘し、機能とフロントのデザインで役割を分けて開発を行う計画を立てました:sunglasses:
+実は、1月から開発スタートの予定だったのですが、12/4に企業様主催のNIFPというLT会へ登壇する運びとなったので、予定を繰り上げて機能開発だけ行ったという流れになります</p>
+<h1 id="やったこと">やったこと</h1>
+<p>ここからは、実際にリリースするまでにやったことを書き連ねていきたいと思います
+主に</p>
+<ol>
+<li>仕様書を作る</li>
+<li>Replit Agentに登録して、開発環境を整える</li>
+<li>AIに仕様書を読んでもらい、コードのたたき台を作ってもらう</li>
+<li>コードを入力後、たたき台のコードを読んで、間違いがないか確認する</li>
+<li>初期動作のテスト</li>
+<li>仕様書にある機能のうち、実装されていないものを個別にAIに実装してもらう</li>
+<li>実装された機能のコードを読んで間違いがないか確認する</li>
+<li>バグの修正</li>
+<li>個別機能のテスト</li>
+<li>6~9を繰り返す</li>
+<li>プロトタイプを<a href="https://nutmeg-room-harujo.replit.app">Web上で公開</a></li>
+</ol>
+<p>という流れで開発を進めました
+以下ではそれぞれの項目について具体的にお話していきたいと思います</p>
+<h2 id="1仕様書を作る">1.仕様書を作る</h2>
+<p>デザインコンペで使用されたスライドから、要素のまとまりと、ボタンやまとまりごとの機能を抽出して、仕様書の形式に沿って書き出しました</p>
+<p>以下実際に書いた仕様書です</p>
+<h3 id="目的">目的</h3>
+<ul>
+<li>長岡技術科学大学に入学してきた新入生に、技大祭実行委員会情報局を宣伝するWebアプリケーション</li>
+</ul>
+<h3 id="目標">目標</h3>
+<ul>
+<li>新入生の不安を取り除く</li>
+</ul>
+<h3 id="使用技術">使用技術</h3>
+<ul>
+<li>Next.js(フロントエンド)</li>
+<li>Go(バックエンド)</li>
+<li>PostgreSQL(データベース)</li>
+<li>OpenAI API(チャットボット)</li>
+</ul>
+<h3 id="要件定義">要件定義</h3>
+<ul>
+<li>スタート画面
+<ul>
+<li>「はじめる」から誰でも簡単に利用できる</li>
+<li>「使い方」を確認できる</li>
+<li>「設定」を変更できる</li>
+</ul>
+</li>
+<li>ホーム画面
+<ul>
+<li>右上にカラフルなタブがあり、タイトル以外の画面へシームレスに移動できる</li>
+<li>知りたい項目を選ぶとそれぞれの部屋に移動できる</li>
+</ul>
+</li>
+<li>部屋画面(共通)
+<ul>
+<li>部屋に移動するとキャラクターが語り掛けてくる</li>
+<li>部屋の中では、項目についてキャラクターが説明してくれる</li>
+<li>テキストボックスの下側にある項目から速さの調整などが可能</li>
+<li>説明はメイン画面内の図とテキストボックス内の説明テキストを用いて行われる</li>
+<li>ボタン1つでいつでも質問モードに切り替えられ、質問ができる</li>
+<li>キャラクターの中身はNUTMEGの情報を学習させたLLM</li>
+<li>ボタン1つでいつでもキャラクター変更モードに切り替えられ、キャラクターを変更できる</li>
+</ul>
+</li>
+</ul>
+<h3 id="機能設計">機能設計</h3>
+<ul>
+<li>スタート画面
+<ul>
+<li>ホーム画面に遷移する「はじめる」ボタン</li>
+<li>使い方画面に遷移する「使い方」ボタン</li>
+<li>設定画面に遷移する「設定」ボタン</li>
+<li>タイトル「NUTMEGの部屋」</li>
+<li>キャラクターの立ち絵</li>
+</ul>
+</li>
+<li>ホーム画面
+<ul>
+<li>画面遷移のためのタブ群
+<ul>
+<li>スタート画面に遷移する「タイトル」ボタン</li>
+<li>ホーム画面に遷移する「ホーム」ボタン</li>
+<li>設定画面に遷移する「設定」ボタン</li>
+<li>使い方画面に遷移する「使い方」ボタン</li>
+</ul>
+</li>
+<li>部屋移動のための項目群
+<ul>
+<li>NUTMEGの部屋に移動する「NUTMEG」ボタン</li>
+<li>チームの部屋に移動する「チーム構成」ボタン</li>
+<li>教育の部屋に移動する「教育制度」ボタン</li>
+<li>メンバー紹介の部屋に移動する「メンバー」ボタン</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>部屋画面(共通)
+<ul>
+<li>会話
+<ul>
+<li>初めに部屋移動したタイミングで挨拶文をテキストボックスに表示</li>
+<li>会話システムにはLLMにNUTMEGの情報を学習させたもの(NUTMEGの辞書を与えたもの)を利用する</li>
+</ul>
+</li>
+<li>説明
+<ul>
+<li>メイン画面に図を表示</li>
+<li>テキストボックスに説明テキストを表示</li>
+<li>クリックでテキストが流れる</li>
+</ul>
+</li>
+<li>テキストボックスの項目
+<ul>
+<li>キャラクターの名前を表示する名前ボックス</li>
+<li>会話履歴モードに切り替える「ログ」ボタン</li>
+<li>現在の説明を終了し、次の説明に移行する「スキップ」ボタン</li>
+<li>テキストの表示速度を倍にする「早送り」ボタン</li>
+<li>次のテキストに移行する方法をクリックから時間経過に切り替える「オート」ボタン</li>
+<li>遷移可能であることを表示するための「▶」ボタン</li>
+</ul>
+</li>
+<li>質問モード
+<ul>
+<li>質問モード移行のための「質問」ボタン</li>
+<li>説明モード移行のための「戻る」ボタン</li>
+<li>メイン画面に質問モードの使い方説明を表示</li>
+<li>テキストボックスの上に入力可能なInputフォームを表示</li>
+<li>質問が行われると、メイン画面に質問内容と返答が表示される</li>
+</ul>
+</li>
+<li>キャラクター変更モード
+<ul>
+<li>キャラクター変更モード移行のための「キャラ変更」ボタン</li>
+<li>説明モード移行のための「戻る」ボタン</li>
+<li>キャラクター確定のための「決定」ボタン</li>
+<li>キャラクターのアイコン表示
+<ul>
+<li>現在選択中のキャラクターであればそれを示す「選択中」の吹き出し</li>
+<li>キャラクターのイラスト</li>
+</ul>
+</li>
+<li>選択キャラクターを移動するための「◀」「▶」ボタン</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>こんな感じで、ある程度大雑把に仕様をまとめ、仕様書として書き出しました</p>
+<h2 id="2replit-agentに登録して開発環境を整える">2.Replit Agentに登録して、開発環境を整える</h2>
+<p><a href="https://docs.replit.com/category/getting-started">https://docs.replit.com/category/getting-started</a>
+まず、Replit Agentに登録し$25払いました
+Replit Agentは「コーディングの民主化」をミッションに掲げており、誰でも簡単にアプリケーションを作れる環境を提供してくれるらしいです
+1か月$25のサブスクは高いですが、試してみたかったので必要経費です…でも高い…</p>
+<p>お金を払い終わったら、プロジェクトの作成に入ります
+<img src="https://hackmd.io/_uploads/SybqP6k4ke.png" alt="image">
+Titleを&quot;NUTMEG ROOM&quot;に変更し、&ldquo;Create Repl&quot;を選択
+すると…
+<img src="https://hackmd.io/_uploads/HyA6tT141g.png" alt="image (2)">
+こんな感じで、Next.jsの開発環境が構築できました:clap::clap:
+さほど手間をかけることなく、開発環境が構築できるのはありがたい限りです
+仕様書作成は事前にやっていたので、ここまでの所要時間は15分ほどです</p>
+<h2 id="3-aiに仕様書を読んでもらいコードのたたき台を作ってもらう">3. AIに仕様書を読んでもらい、コードのたたき台を作ってもらう</h2>
+<p>ついに来ました、本題の&quot;AIによる効率化&quot;のお時間です:muscle:
+こんな感じで、AIに仕様書を食べさせます
+後から思ったんですけど、&ldquo;以下の仕様書にしたがって、Webアプリを開発してください&quot;とかの方がより意図に沿う出力をしてくれた気がします:sob:
+<img src="https://hackmd.io/_uploads/BJuSnakN1g.png" alt="image (3)">
+まあ、なんにせよ出力が帰ってきました
+<img src="https://hackmd.io/_uploads/H16y6TJ4kg.png" alt="image (4)">
+まず、ディレクトリ構造(ファイルの配置図みたいな感じ)から出力してくれます
+ちょっと専門用語が多いので、慣れてないと:question::question:って感じになるので、導入ハードルを下げるためにこの辺のフォローが欲しいところではあります</p>
+<pre tabindex="0"><code>/pages
+    /api
+        hello.ts         // APIのエンドポイント
+    index.tsx            // スタート画面
+    home.tsx             // ホーム画面
+    room.tsx             // 部屋画面
+/components
+    Tab.tsx              // タブコンポーネント
+    Character.tsx        // キャラクターコンポーネント
+    ChatBox.tsx          // チャットボックスコンポーネント
+/public
+    /images              // キャラクターの立ち絵などの画像
+/styles
+    globals.css          // グローバルスタイル
+</code></pre><p>次に基本的な画面とコンポーネント(要素のまとまり)のコードを出力してくれます
+仕様書を食べてもらっただけで、次の6つのコードを出力してくれました</p>
+<p>基本画面：</p>
+<ol>
+<li>index.tsx (スタート画面)</li>
+<li>home.tsx (ホーム画面)</li>
+<li>room.tsx (部屋画面)</li>
+</ol>
+<p>コンポーネント：</p>
+<ol>
+<li>Tab.tsx (タブコンポーネント)</li>
+<li>Character.tsx (キャラクターコンポーネント)</li>
+<li>ChatBox.tsx (チャットボックスコンポーネント)</li>
+</ol>
+<p>また、実装できていない機能について以下のように注意事項として教えてくれました</p>
+<p>注意事項：</p>
+<ol>
+<li>OpenAI API統合: バックエンドのGoでOpenAI APIにリクエストを送り、応答をフロントエンドに返す処理を実装する必要があります。</li>
+<li>PostgreSQLの接続: インターフェースにデータや設定を保持するために、PostgreSQLを使用します。APIのエンドポイントでは、データベースとやりとりするコードを実装する必要があります。</li>
+<li>スタイル: 必要に応じて、CSSやスタイリングを追加して、視覚的に魅力的なUIを構築します。</li>
+</ol>
+<p>ここまで、丁寧に教えてくれるのはありがたいですね
+次は、実際に教えてもらったコードを入力します</p>
+<h2 id="4-コードを入力後たたき台のコードを読んで間違いがないか確認する">4. コードを入力後、たたき台のコードを読んで、間違いがないか確認する</h2>
+<p>まず、コードを書き込むために、index.tsxなどのファイルを作成します。
+<img src="https://hackmd.io/_uploads/Bkz6sAk41e.png" alt="image">
+右上の＋ボタンからファイルを追加し、index.tsxという名前を付けます
+そして、上で教えてもらったディレクトリ構造に沿うように&quot;pages&quot;フォルダにindex.tsxを移動します
+そして、index.tsxを選択すると、こんな感じになります
+<img src="https://hackmd.io/_uploads/Hyv0a0yEyg.png" alt="image">
+この状態で、AI君が出してくれたコードを見てみると右上にInsertというボタンが出てきました
+<img src="https://hackmd.io/_uploads/BJNNiRJ4kg.png" alt="image">
+それを押すとあら不思議、コードが全部入力されました:congratulations:
+めっちゃ便利&hellip;
+便利すぎたので流石に全部これで入力しました笑
+そして、エラーが出ないことと、コードの動きを追いながらちゃんと動くかを確認しました</p>
+<p>始めてからここまでで、大体30分くらいです</p>
+<h2 id="5-初期動作のテスト">5. 初期動作のテスト</h2>
+<p>さて、いよいよAI君のお手並み拝見ですね
+教えてもらったコードそのままでバグなく動作するか確認してみましょう
+<img src="https://hackmd.io/_uploads/SkjPgJgEkg.png" alt="image (5)">
+<img src="https://hackmd.io/_uploads/S1iPxJeN1e.png" alt="image (6)">
+普通に動きました
+ページが存在するボタンを押せばページ遷移しますし、コンポーネントもちゃんと認識してます
+AI君、僕の10倍以上賢いんじゃないか</p>
+<p>AI君が優秀すぎて30分でたたき台が出来てしまったので、ここからは追加の機能を実装していきたいと思います</p>
+<h2 id="6-仕様書にある機能のうち実装されていないものを個別にaiに実装してもらう">6. 仕様書にある機能のうち、実装されていないものを個別にAIに実装してもらう</h2>
+<p>メイン機能がなぜか実装されていなかったので、AIへのチャット質問機能を実装します
+例のごとくAI君にお願いしていきましょう
+<img src="https://hackmd.io/_uploads/S1ObVkxVJe.png" alt="image">
+とりあえず、出されたコードをコピーして動かしてみましょう</p>
+<p>動きません、、、
+<img src="https://hackmd.io/_uploads/r1p9DZg4kg.png" alt="image">
+こんなエラーが出ました
+原因は&quot;openai api&quot;とやらをインポートしていなかったからのようです
+<img src="https://hackmd.io/_uploads/B1d_uWlV1e.png" alt="image">
+インポートしてみたら動きましたが、チャットボットから&quot;unidefined&quot;と返ってきます:cry:</p>
+<h2 id="7-実装された機能のコードを読んで間違いがないか確認する">7. 実装された機能のコードを読んで間違いがないか確認する</h2>
+<p>一旦、実装されたコードのチャットボットに関する部分を全部読んでみました
+その上で、AIに聞いてみても、Qiitaで調べたコードを見てみても明らかにおかしい部分はとくになかったです
+これは非常に由々しき事態です&hellip;.
+<img src="https://hackmd.io/_uploads/S16ec-e4ke.png" alt="image">
+どうしたものかと思っていたのですが、AI君がデバッグログを出したらいいんじゃない？と言ってくれました
+確かに&hellip;ログ見れば大体わかるじゃん&hellip;</p>
+<h2 id="8-バグの修正">8. バグの修正</h2>
+<p>ということで、デバッグログを確認し、バグを修正します
+<img src="https://hackmd.io/_uploads/B1RyjZgNJx.png" alt="image">
+エラーコードを見つけました
+これはライブラリを使ったときあるあるの&quot;公式リファレンスを参照しないとわからなそうなエラー&quot;です
+なので、公式リファレンスを見に行きます</p>
+<p>はい、何の成果も得られませんでした:sob:
+<img src="https://hackmd.io/_uploads/S1tS3beV1g.png" alt="image">
+AI君に聞いてみて、とりあえず使おうとしているモデルが対応している書き方と違うよってことなのかなというところまでは理解出来ました
+ちなみに、こう書いても動きませんでした笑</p>
+<p>こういうときは、stack overflowに訪問しましょう
+英語版知恵袋みたいな感じなので、日本語よりも技術系の情報があふれています
+<a href="https://stackoverflow.com/questions/76917525/openai-api-error-module-openai-has-no-exported-member-configuration">https://stackoverflow.com/questions/76917525/openai-api-error-module-openai-has-no-exported-member-configuration</a>
+<img src="https://hackmd.io/_uploads/HJbY6Wx41x.png" alt="image (7)">
+それっぽい情報が見つかりました
+AI君は&quot;V3&quot;という古いバージョンの書き方をしていたのですが、実はインストールしたのが&quot;V4&quot;で、新しいバージョンの書き方をしなければいけなかったようです
+ということで、これに倣って書き直しました</p>
+<p>その結果、別のエラーが帰ってくるようになりました:clap::clap:
+<img src="https://hackmd.io/_uploads/SkavAbeEkx.png" alt="image">
+データのタイプが違う的なことを言われています
+<img src="https://hackmd.io/_uploads/SyxHJflVJe.png" alt="image">
+なので、上記コードを
+<img src="https://hackmd.io/_uploads/S1e5yMx4yx.png" alt="image">
+こんな感じにしたら、無事別のエラーに変わりました
+一生解決してくれません:angry:
+今日は機嫌が悪い日なんでしょうか</p>
+<p><img src="https://hackmd.io/_uploads/HyIxgGeEke.png" alt="image">
+エラーによると&quot;ChatCompletion&quot;とやらがないと言っているので、該当してそうな部分を&quot;completion&quot;に変更します
+<img src="https://hackmd.io/_uploads/SkedbfxE1e.png" alt="image">
+これでようやく動きました:clap:</p>
+<h2 id="9-個別機能のテスト">9. 個別機能のテスト</h2>
+<p>エラーなく動くようになったので、バグがないかテストしてみます
+<img src="https://hackmd.io/_uploads/ByNibzeNJe.png" alt="image (8)">
+ちゃんと返答がかえってくる&hellip;！！
+ということで、何回かラリーをして挙動に変な部分がなかったので、チャットボットの機能完成です！！</p>
+<p>ここまでで、大体1時間半程度かかっています
+エラーの解決に30分以上かかっているので、エラーがなければ1時間ほどでチャットボットまでは完成したことになります
+爆速で嬉しい限りです:yum:</p>
+<h2 id="10-69を繰り返す">10. 6~9を繰り返す</h2>
+<p>あとはこれを好きなだけ繰り返します
+今回は時間が限られていたので、</p>
+<ol>
+<li>チャットボットへの質問機能</li>
+<li>画面の初期ボタン</li>
+<li>キャラクターの立ち絵変更機能</li>
+<li>スタート画面での立ち絵ランダム化</li>
+<li>タグコンポーネント</li>
+<li>テキストボックスの各項目</li>
+<li>質問モードへの切り替え、戻るのトグルボタン</li>
+<li>メッセージの自動表示</li>
+<li>メッセージの音声での再生</li>
+</ol>
+<p>の9つの機能だけ作ってプロトタイプ完成ということにしました</p>
+<p>2~9の機能全部で大体2時間半かかったので、チャットボットとあわせて4時間ほどで完成したことになります
+じゃあ、なぜタイトルが5時間なのかというと、お風呂の時間とご飯の時間にもAIに指示を出して結果を待っており、その時間も含めているからです
+裏で別のことをしながら、爆速開発ができるのは本当に革命的で、実質マルチタスクと言っても過言ではないかなと思います:sunglasses:</p>
+<h2 id="11-プロトタイプをweb上で公開httpsnutmeg-room-harujoreplitapp">11. プロトタイプを<a href="https://nutmeg-room-harujo.replit.app">Web上で公開</a></h2>
+<p>誰でも動かせるようにプロトタイプをWeb上に公開しようと思ったんですけど、まあ面倒な作業なんですよね
+と思っていたら、、、
+<img src="https://hackmd.io/_uploads/SJ5zwGlEkx.png" alt="image">
+開発画面の右上にDeployというボタンがあります
+気になるので、押してみます
+<img src="https://hackmd.io/_uploads/H1YpDzxNJe.png" alt="image">
+なんか、お金の話とワークスペースの話をされました
+とりあえず、おすすめされたWebアプリに最適的なことを言っているワークスペースを選びます
+<img src="https://hackmd.io/_uploads/BJBZ_MgNJx.png" alt="image">
+なんかワークスペースのパワーとお金の話をしていますがサブスク分は使えるみたいなので、サブスク分を超えない範囲の設定を行います</p>
+<p><img src="https://hackmd.io/_uploads/HJcmtMg4yl.png" alt="image">
+これでデプロイが完了しました
+爆速&hellip;！！革命的&hellip;！！</p>
+<p>ということで、以下のリンクからプロトタイプが使えるようになりました
+<a href="https://nutmeg-room-harujo.replit.app/">https://nutmeg-room-harujo.replit.app/</a>
+放置するだけでお金かかるみたいなので、サブスクの解約をしたらVercelにデプロイしなおそうと思います</p>
+<h1 id="感じたこと">感じたこと</h1>
+<p>ここからはAIと一緒に開発してみた感想です</p>
+<p>まず、学生的に、１か月＄25は高いです
+理系学生でバイトの時間があまりとれないので、あまりにも痛い出費です
+とりあえず、今月は使い倒して一旦解約したいと思います</p>
+<p>次に、AIを適切に使うと作業効率爆上がりするなと感じました
+脳みそが2つ3つあるようなものなので、当たり前といえばそうなんですけど、頭で理解するのと体感するのでは実感や感動が全然違います
+また、実際にやってみることで利点、欠点が見えてくるので、より適切に使えるようになると思います</p>
+<p>そして、プロトタイプを作るときに便利です
+簡単な機能なら5分くらいでプロトタイプとして見せられる状態までいくので、開発とテストのサイクルが今まで以上に高速化すると考えられます
+さらに、機能の実装までが早いのでアジャイル開発でも利点があるなと感じました
+Replit Agentを使ったアジャイル開発、すごくやってみたいです笑</p>
+<p>あと、一人開発でも仕様書は書き得なのかなと思いました
+開発指針となるので、そもそも書いた方が良いのはそうなんですけど、書いておくことで今回のようにAI君に指示を出して開発してもらう的なことも出来るので、選択肢を増やす意味でもメリットがあるなと思います</p>
+<h1 id="終わりに">終わりに</h1>
+<p>以上、AIと一緒に5時間でアプリ開発した話でした</p>
+<p>一人ハッカソン形式でやってみた感想としては、1日未満でハッカソンするのはやめたほうがいいと思いました笑
+せめて2日は欲しいし、クオリティを求めるなら1週間くらいないと困るかもという感じですね
+それでも、新しい技術に触れる機会としては非常に有用ですし、これを機にNUTMEGに一人ハッカソン文化を広めていけると嬉しい限りです</p>
+<p>また今後、AIを活用する力は社会的に重要なものとなってくるので、AIにアクセスしやすい環境を用意し、活用のハードルを下げていける役目を担えれば良いなと思っております</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024">Nutmeg advent calendar 2024</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%81%e3%83%bc%e3%83%a0%e3%81%a5%e3%81%8f%e3%82%8a">チームづくり</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
