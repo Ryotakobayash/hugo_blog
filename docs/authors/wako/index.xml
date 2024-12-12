@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wako on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/authors/wako/</link>
+    <link>http://localhost:1313/authors/wako/</link>
     <description>Recent content in Wako on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 05 Dec 2024 17:04:18 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/wako/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/wako/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>わくわくすることを沢山したよ！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241205/</link>
+      <link>http://localhost:1313/blog/post-ac-20241205/</link>
       <pubDate>Thu, 05 Dec 2024 17:04:18 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241205/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20241205/</guid>
       <description>初めまして！情経3年のわこです。 技大に編入してNUTMEGに入ったら、沢山楽しいことができて成長できたよ！これからも頑張りたい！という内容を書こうと思います。</description>
     </item>
   </channel>

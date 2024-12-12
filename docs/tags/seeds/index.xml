@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Seeds on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/tags/seeds/</link>
+    <link>http://localhost:1313/tags/seeds/</link>
     <description>Recent content in Seeds on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 20 Jul 2023 12:36:47 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/seeds/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/seeds/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Seeds投稿について</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20230720/</link>
+      <link>http://localhost:1313/blog/post-20230720/</link>
       <pubDate>Thu, 20 Jul 2023 12:36:47 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20230720/</guid>
+      <guid>http://localhost:1313/blog/post-20230720/</guid>
       <description>はじめに この春NUTMEGに加入した髙須賀です。私はこの春からプログラミングを始めたばかりで、専門的な技術等は何もわからないので、今NUTMEGで自分が頑張っている試みなどを考えました。</description>
     </item>
   </channel>

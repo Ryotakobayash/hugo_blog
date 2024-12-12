@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yumemi on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+    <link>http://localhost:1313/authors/yumemi/</link>
+    <description>Recent content in Yumemi on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 12 Dec 2024 11:44:51 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/yumemi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>アドカレのサムネを作りました！</title>
+      <link>http://localhost:1313/blog/post-ac-20241212/</link>
+      <pubDate>Thu, 12 Dec 2024 11:44:51 +0900</pubDate>
+      <guid>http://localhost:1313/blog/post-ac-20241212/</guid>
+      <description>自己紹介 はじめまして！皆がゆめみんと呼んでくれるのがうれしいので、ゆめみんという名前でブログを書かせていただきます！ NUTMEGには今年の春から参加しました。現在はデザインチームとHPチームに所属しています。</description>
+    </item>
+  </channel>
+</rss>
