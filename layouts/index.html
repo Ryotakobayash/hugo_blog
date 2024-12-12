@@ -43,7 +43,7 @@
                 </div>
                 <a href="{{ .Permalink }}"
                   class="h1 font-weight-bold d-block text-dark mb-4 card-title">{{ .Title | markdownify }}</a>
-                <p class="card-text">{{.Summary}}...</p>
+                <p class="card-text">{{ .Summary | plainify | truncate 100}}...</p>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@
                     {{ end }}
                   </p>
                 </span>
-                <p class="card-text">{{ .Summary }}</p>
+                <p class="card-text">{{ .Summary | plainify | truncate 100}}</p>
                 <a href="{{ .Permalink }}" class="btn btn-outline-primary">read more</a>
               </div>
             </article>
