@@ -6,8 +6,15 @@
     <description>Recent content in Tags on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Dec 2024 11:44:51 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2024 17:05:29 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>チームづくり</title>
+      <link>http://localhost:1313/tags/%E3%83%81%E3%83%BC%E3%83%A0%E3%81%A5%E3%81%8F%E3%82%8A/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/%E3%83%81%E3%83%BC%E3%83%A0%E3%81%A5%E3%81%8F%E3%82%8A/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Figma</title>
       <link>http://localhost:1313/tags/figma/</link>
@@ -20,13 +27,6 @@
       <link>http://localhost:1313/tags/web-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/web-design/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>チームづくり</title>
-      <link>http://localhost:1313/tags/%E3%83%81%E3%83%BC%E3%83%A0%E3%81%A5%E3%81%8F%E3%82%8A/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/%E3%83%81%E3%83%BC%E3%83%A0%E3%81%A5%E3%81%8F%E3%82%8A/</guid>
       <description></description>
     </item>
     <item>
