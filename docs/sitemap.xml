@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/post-ac-20241214/</loc>
+    <lastmod>2024-12-14T20:13:52+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/authors/</loc>
-    <lastmod>2024-12-13T17:05:29+09:00</lastmod>
+    <lastmod>2024-12-14T20:13:52+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-12-13T17:05:29+09:00</lastmod>
+    <lastmod>2024-12-14T20:13:52+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/kageya/</loc>
-    <lastmod>2024-12-13T17:05:29+09:00</lastmod>
+    <loc>http://localhost:1313/authors/mike/</loc>
+    <lastmod>2024-12-14T20:13:52+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-13T17:05:29+09:00</lastmod>
+    <lastmod>2024-12-14T20:13:52+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/nutmeg-advent-calendar-2024/</loc>
+    <lastmod>2024-12-14T20:13:52+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AE%E8%B6%A3%E5%91%B3/</loc>
+    <lastmod>2024-12-14T20:13:52+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</loc>
+    <lastmod>2024-12-14T20:13:52+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</loc>
+    <lastmod>2024-12-14T20:13:52+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/authors/kageya/</loc>
     <lastmod>2024-12-13T17:05:29+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -36,9 +51,6 @@
     <lastmod>2024-12-12T11:44:51+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/post-ac-20241212/</loc>
-    <lastmod>2024-12-12T11:44:51+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</loc>
     <lastmod>2024-12-12T11:44:51+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/authors/etyu/</loc>
@@ -66,9 +78,6 @@
     <lastmod>2024-12-09T13:10:23+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/</loc>
-    <lastmod>2024-12-09T13:10:23+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AE%E8%B6%A3%E5%91%B3/</loc>
     <lastmod>2024-12-09T13:10:23+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/api%E9%96%A2%E4%BF%82/</loc>
@@ -261,9 +270,6 @@
     <lastmod>2024-03-15T20:20:27+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/post-20240315/</loc>
-    <lastmod>2024-03-15T20:20:27+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</loc>
     <lastmod>2024-03-15T20:20:27+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/post-20240216/</loc>
