@@ -256,6 +256,10 @@ customCSS = ["css/custom_post.css"]
 [params.authors.mike]
     name = "みけ"
     bio = ""
+
+[params.authors.f]
+    name = "F"
+    bio = ""
   
   [params.authors.NUTMEG]
     name = "NUTMEG"

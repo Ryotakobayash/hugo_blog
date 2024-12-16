@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kuri on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/kuri/</link>
+    <link>https://blog.nutmeg.cloud/authors/kuri/</link>
     <description>Recent content in Kuri on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 13 Dec 2023 22:49:21 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/kuri/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/kuri/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>三大奇書「ドグラ・マグラ」を読んでみた！</title>
-      <link>http://localhost:1313/blog/post-ac-20231213/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20231213/</link>
       <pubDate>Wed, 13 Dec 2023 22:49:21 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20231213/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231213/</guid>
       <description>はじめに 初めまして！NUTMEGのB3のkuriです！今回は、NUTMEGの活動の1つであるブログで、アドベントカレンダー方式にブログ記事を公開していくみたいなので頑張ります。</description>
     </item>
   </channel>

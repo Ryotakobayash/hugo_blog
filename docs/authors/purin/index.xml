@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Purin on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/purin/</link>
+    <link>https://blog.nutmeg.cloud/authors/purin/</link>
     <description>Recent content in Purin on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 07 Dec 2024 23:14:02 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/purin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/purin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自作サーバーのすゝめ</title>
-      <link>http://localhost:1313/blog/post-ac-20241207/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20241207/</link>
       <pubDate>Sat, 07 Dec 2024 23:14:02 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20241207/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241207/</guid>
       <description>はじめに 皆さんはじめまして！前回のTeXのブログを見てくれた方はお久しぶりです．ぷりんです． 課題に苦しんでいたらいつの間にかインフラチームの長になっていました．今のところは偉大なる先輩方におんぶにだっこですが頑張りたいと思います．</description>
     </item>
     <item>
       <title>LaTeX初心者に送るLaTeXのすゝめ</title>
-      <link>http://localhost:1313/blog/post-20240905/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20240905/</link>
       <pubDate>Sun, 08 Sep 2024 22:05:02 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20240905/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20240905/</guid>
       <description>はじめに この春からNUTMEGに所属することになりました．新入生のぷりんです． スマブラでプリンをめっちゃ使ってたところから来てます．</description>
     </item>
   </channel>

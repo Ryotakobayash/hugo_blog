@@ -2,332 +2,339 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/</link>
+    <link>https://blog.nutmeg.cloud/authors/</link>
     <description>Recent content in Authors on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Dec 2024 19:54:20 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Dec 2024 00:18:04 +0900</lastBuildDate>
+    <atom:link href="https://blog.nutmeg.cloud/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>F</title>
+      <link>https://blog.nutmeg.cloud/authors/f/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blog.nutmeg.cloud/authors/f/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Junkyoju</title>
-      <link>http://localhost:1313/authors/junkyoju/</link>
+      <link>https://blog.nutmeg.cloud/authors/junkyoju/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/junkyoju/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/junkyoju/</guid>
       <description></description>
     </item>
     <item>
       <title>Mike</title>
-      <link>http://localhost:1313/authors/mike/</link>
+      <link>https://blog.nutmeg.cloud/authors/mike/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/mike/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/mike/</guid>
       <description></description>
     </item>
     <item>
       <title>Kageya</title>
-      <link>http://localhost:1313/authors/kageya/</link>
+      <link>https://blog.nutmeg.cloud/authors/kageya/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/kageya/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/kageya/</guid>
       <description></description>
     </item>
     <item>
       <title>Yumemi</title>
-      <link>http://localhost:1313/authors/yumemi/</link>
+      <link>https://blog.nutmeg.cloud/authors/yumemi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/yumemi/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/yumemi/</guid>
       <description></description>
     </item>
     <item>
       <title>Etyu</title>
-      <link>http://localhost:1313/authors/etyu/</link>
+      <link>https://blog.nutmeg.cloud/authors/etyu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/etyu/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/etyu/</guid>
       <description></description>
     </item>
     <item>
       <title>Chikuwa</title>
-      <link>http://localhost:1313/authors/chikuwa/</link>
+      <link>https://blog.nutmeg.cloud/authors/chikuwa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/chikuwa/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/chikuwa/</guid>
       <description></description>
     </item>
     <item>
       <title>Harujo</title>
-      <link>http://localhost:1313/authors/harujo/</link>
+      <link>https://blog.nutmeg.cloud/authors/harujo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/harujo/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/harujo/</guid>
       <description></description>
     </item>
     <item>
       <title>Uccti</title>
-      <link>http://localhost:1313/authors/uccti/</link>
+      <link>https://blog.nutmeg.cloud/authors/uccti/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/uccti/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/uccti/</guid>
       <description></description>
     </item>
     <item>
       <title>Purin</title>
-      <link>http://localhost:1313/authors/purin/</link>
+      <link>https://blog.nutmeg.cloud/authors/purin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/purin/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/purin/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubo</title>
-      <link>http://localhost:1313/authors/kubo/</link>
+      <link>https://blog.nutmeg.cloud/authors/kubo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/kubo/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/kubo/</guid>
       <description></description>
     </item>
     <item>
       <title>Wako</title>
-      <link>http://localhost:1313/authors/wako/</link>
+      <link>https://blog.nutmeg.cloud/authors/wako/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/wako/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/wako/</guid>
       <description></description>
     </item>
     <item>
       <title>Hikahana</title>
-      <link>http://localhost:1313/authors/hikahana/</link>
+      <link>https://blog.nutmeg.cloud/authors/hikahana/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/hikahana/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/hikahana/</guid>
       <description></description>
     </item>
     <item>
       <title>Nakataku</title>
-      <link>http://localhost:1313/authors/nakataku/</link>
+      <link>https://blog.nutmeg.cloud/authors/nakataku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/nakataku/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/nakataku/</guid>
       <description></description>
     </item>
     <item>
       <title>Izumi</title>
-      <link>http://localhost:1313/authors/izumi/</link>
+      <link>https://blog.nutmeg.cloud/authors/izumi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/izumi/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/izumi/</guid>
       <description></description>
     </item>
     <item>
       <title>Hayate</title>
-      <link>http://localhost:1313/authors/hayate/</link>
+      <link>https://blog.nutmeg.cloud/authors/hayate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/hayate/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/hayate/</guid>
       <description></description>
     </item>
     <item>
       <title>Syochan</title>
-      <link>http://localhost:1313/authors/syochan/</link>
+      <link>https://blog.nutmeg.cloud/authors/syochan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/syochan/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/syochan/</guid>
       <description></description>
     </item>
     <item>
       <title>Ryota5884</title>
-      <link>http://localhost:1313/authors/ryota5884/</link>
+      <link>https://blog.nutmeg.cloud/authors/ryota5884/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/ryota5884/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/ryota5884/</guid>
       <description></description>
     </item>
     <item>
       <title>Taka-Chan</title>
-      <link>http://localhost:1313/authors/taka-chan/</link>
+      <link>https://blog.nutmeg.cloud/authors/taka-chan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/taka-chan/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/taka-chan/</guid>
       <description></description>
     </item>
     <item>
       <title>Akari</title>
-      <link>http://localhost:1313/authors/akari/</link>
+      <link>https://blog.nutmeg.cloud/authors/akari/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/akari/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/akari/</guid>
       <description></description>
     </item>
     <item>
       <title>Paladin</title>
-      <link>http://localhost:1313/authors/paladin/</link>
+      <link>https://blog.nutmeg.cloud/authors/paladin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/paladin/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/paladin/</guid>
       <description></description>
     </item>
     <item>
       <title>NUTMEG</title>
-      <link>http://localhost:1313/authors/nutmeg/</link>
+      <link>https://blog.nutmeg.cloud/authors/nutmeg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/nutmeg/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/nutmeg/</guid>
       <description></description>
     </item>
     <item>
       <title>Ichinose</title>
-      <link>http://localhost:1313/authors/ichinose/</link>
+      <link>https://blog.nutmeg.cloud/authors/ichinose/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/ichinose/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/ichinose/</guid>
       <description></description>
     </item>
     <item>
       <title>Nobu</title>
-      <link>http://localhost:1313/authors/nobu/</link>
+      <link>https://blog.nutmeg.cloud/authors/nobu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/nobu/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/nobu/</guid>
       <description></description>
     </item>
     <item>
       <title>Yama</title>
-      <link>http://localhost:1313/authors/yama/</link>
+      <link>https://blog.nutmeg.cloud/authors/yama/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/yama/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/yama/</guid>
       <description></description>
     </item>
     <item>
       <title>Goku</title>
-      <link>http://localhost:1313/authors/goku/</link>
+      <link>https://blog.nutmeg.cloud/authors/goku/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/goku/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/goku/</guid>
       <description></description>
     </item>
     <item>
       <title>Yo-Chan</title>
-      <link>http://localhost:1313/authors/yo-chan/</link>
+      <link>https://blog.nutmeg.cloud/authors/yo-chan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/yo-chan/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/yo-chan/</guid>
       <description></description>
     </item>
     <item>
       <title>Fukumitsu</title>
-      <link>http://localhost:1313/authors/fukumitsu/</link>
+      <link>https://blog.nutmeg.cloud/authors/fukumitsu/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/fukumitsu/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/fukumitsu/</guid>
       <description></description>
     </item>
     <item>
       <title>JOJO</title>
-      <link>http://localhost:1313/authors/jojo/</link>
+      <link>https://blog.nutmeg.cloud/authors/jojo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/jojo/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/jojo/</guid>
       <description></description>
     </item>
     <item>
       <title>OnoD</title>
-      <link>http://localhost:1313/authors/onod/</link>
+      <link>https://blog.nutmeg.cloud/authors/onod/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/onod/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/onod/</guid>
       <description></description>
     </item>
     <item>
       <title>Demachi</title>
-      <link>http://localhost:1313/authors/demachi/</link>
+      <link>https://blog.nutmeg.cloud/authors/demachi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/demachi/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/demachi/</guid>
       <description></description>
     </item>
     <item>
       <title>Sota</title>
-      <link>http://localhost:1313/authors/sota/</link>
+      <link>https://blog.nutmeg.cloud/authors/sota/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/sota/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/sota/</guid>
       <description></description>
     </item>
     <item>
       <title>Nana</title>
-      <link>http://localhost:1313/authors/nana/</link>
+      <link>https://blog.nutmeg.cloud/authors/nana/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/nana/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/nana/</guid>
       <description></description>
     </item>
     <item>
       <title>Kuri</title>
-      <link>http://localhost:1313/authors/kuri/</link>
+      <link>https://blog.nutmeg.cloud/authors/kuri/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/kuri/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/kuri/</guid>
       <description></description>
     </item>
     <item>
       <title>Akiyama</title>
-      <link>http://localhost:1313/authors/akiyama/</link>
+      <link>https://blog.nutmeg.cloud/authors/akiyama/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/akiyama/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/akiyama/</guid>
       <description></description>
     </item>
     <item>
       <title>Tsukki</title>
-      <link>http://localhost:1313/authors/tsukki/</link>
+      <link>https://blog.nutmeg.cloud/authors/tsukki/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/tsukki/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/tsukki/</guid>
       <description></description>
     </item>
     <item>
       <title>Yamada-Keisuke</title>
-      <link>http://localhost:1313/authors/yamada-keisuke/</link>
+      <link>https://blog.nutmeg.cloud/authors/yamada-keisuke/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/yamada-keisuke/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/yamada-keisuke/</guid>
       <description></description>
     </item>
     <item>
       <title>Imaimai</title>
-      <link>http://localhost:1313/authors/imaimai/</link>
+      <link>https://blog.nutmeg.cloud/authors/imaimai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/imaimai/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/imaimai/</guid>
       <description></description>
     </item>
     <item>
       <title>Ryuusei</title>
-      <link>http://localhost:1313/authors/ryuusei/</link>
+      <link>https://blog.nutmeg.cloud/authors/ryuusei/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/ryuusei/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/ryuusei/</guid>
       <description></description>
     </item>
     <item>
       <title>Dodo</title>
-      <link>http://localhost:1313/authors/dodo/</link>
+      <link>https://blog.nutmeg.cloud/authors/dodo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/dodo/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/dodo/</guid>
       <description></description>
     </item>
     <item>
       <title>Tsusaba</title>
-      <link>http://localhost:1313/authors/tsusaba/</link>
+      <link>https://blog.nutmeg.cloud/authors/tsusaba/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/tsusaba/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/tsusaba/</guid>
       <description></description>
     </item>
     <item>
       <title>Noa</title>
-      <link>http://localhost:1313/authors/noa/</link>
+      <link>https://blog.nutmeg.cloud/authors/noa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/noa/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/noa/</guid>
       <description></description>
     </item>
     <item>
       <title>Aratayo</title>
-      <link>http://localhost:1313/authors/aratayo/</link>
+      <link>https://blog.nutmeg.cloud/authors/aratayo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/aratayo/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/aratayo/</guid>
       <description></description>
     </item>
     <item>
       <title>Hiroike</title>
-      <link>http://localhost:1313/authors/hiroike/</link>
+      <link>https://blog.nutmeg.cloud/authors/hiroike/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/hiroike/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/hiroike/</guid>
       <description></description>
     </item>
     <item>
       <title>Mashita0123</title>
-      <link>http://localhost:1313/authors/mashita0123/</link>
+      <link>https://blog.nutmeg.cloud/authors/mashita0123/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/mashita0123/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/mashita0123/</guid>
       <description></description>
     </item>
     <item>
       <title>M.oba</title>
-      <link>http://localhost:1313/authors/m.oba/</link>
+      <link>https://blog.nutmeg.cloud/authors/m.oba/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/m.oba/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/m.oba/</guid>
       <description></description>
     </item>
     <item>
       <title>99A</title>
-      <link>http://localhost:1313/authors/99a/</link>
+      <link>https://blog.nutmeg.cloud/authors/99a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/authors/99a/</guid>
+      <guid>https://blog.nutmeg.cloud/authors/99a/</guid>
       <description></description>
     </item>
   </channel>
