@@ -217,7 +217,7 @@ customCSS = ["css/custom_post.css"]
     name = "ぷりん"
     bio = ""
   
-  [params.authors.]
+  [params.authors.junkyoju]
     name = "准教授"
     bio = ""
   
