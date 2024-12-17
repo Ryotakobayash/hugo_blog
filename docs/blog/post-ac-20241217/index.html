@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="今回は既存のプロジェクトにNext.jsの環境を追加しました。はじめての環境構築で大変でしたが、終わってみると意外と単純な手順だと感じました。途中で何らかのエラーが出るとそこに時間がかかる印象です。">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-ac-20241217/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="はじめての環境構築">
+  <meta property="og:description" content="今回は既存のプロジェクトにNext.jsの環境を追加しました。はじめての環境構築で大変でしたが、終わってみると意外と単純な手順だと感じました。途中で何らかのエラーが出るとそこに時間がかかる印象です。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-12-17T12:22:08+09:00">
+    <meta property="article:modified_time" content="2024-12-17T12:22:08+09:00">
+    <meta property="article:tag" content="Nuxt.js">
+    <meta property="article:tag" content="Next.js">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="ターミナル">
+    <meta property="article:tag" content="Docker">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="はじめての環境構築">
+  <meta name="twitter:description" content="今回は既存のプロジェクトにNext.jsの環境を追加しました。はじめての環境構築で大変でしたが、終わってみると意外と単純な手順だと感じました。途中で何らかのエラーが出るとそこに時間がかかる印象です。">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90"
+          class="text-primary">活動の様子</a>
+        
+        <a href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024"
+          class="text-primary">Nutmeg advent calendar 2024</a>
+        
+        <h2>はじめての環境構築</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By しょうちゃん
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              17 December 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/ByAgdLCVJg.png" class="img-fluid w-100 mb-4" alt="はじめての環境構築">
+        
+        <div class="content mb-5">
+          <h2 id="はじめに">はじめに</h2>
+<p>こんにちは
+NUTMEG所属
+電気電子情報工学分野　B3のしょうちゃんです。</p>
+<p>12月に入ってすごく忙しくなりました。</p>
+<p>今回はNUTMEGのプロジェクトの1つであるGM2をアップデートするための環境構築を任されましたのでブログに残そうと思います。</p>
+<p>今回は先輩の助言も借りつつ最終的には一人で環境構築をしました！！</p>
+<h2 id="gm2とは">GM2とは</h2>
+<p>GM2はGroup Mnaneger 2の略で、文化祭の運営に使用するアプリのことです。屋台や室内企画を行う企画団体（一般学生）と運営（実行委員総務局）間の申請や書類提出を行うことができます。特に総務局の負担を軽減するために日々開発が進められています。←</p>
+<p>GM2は 昨年度の技大祭までに大枠の構造は完成していて実用段階にあるので、今年度からは機能充実とUI改善を目標に開発が進んでいます。特に今年度の目標として企画団体が使用するユーザー画面のUIの一新が計画され、完成すればGM2改めGM3になる予定です。</p>
+<h2 id="gm3について">GM3について</h2>
+<p>GM2はバックエンドがRuby　on rails でフロントエンドが Nuxt.js  によって作られたアプリなのですが、GM3にアップグレードするにあたりユーザー画面のみNuxt.jsを廃止してNext.jsに開発環境を変更する計画になっています。これはNUTMEG内の技術負債をなくすための言語統一に向けた取り組みの一つでもあります。今回はGM3を進めるための下地としてGM2のプロジェクト内に新たにNext.js環境を構築しました。</p>
+<h2 id="目的">目的</h2>
+<p>はじめはGitHubにGM3用の新しいリポジトリを作成してから、そこにGM2＋新userフォルダ（next.js）を入れて問題なく動作することを目標に進めました。
+しかし環境構築終了後に方針が変わりGM2のリポジトリ内に新たに新userフォルダ（next.js）を追加する形での環境構築を目指すように変更されました。</p>
+<p>本来なら決めてからタスク振ってほしいケドね&hellip;</p>
+<p>と思うところですが、個人的には練習と復習のような形になって2度挑戦できたので理解が深まりよかったとは思うので問題ナシ！！</p>
+<h2 id="環境構築手順">環境構築手順</h2>
+<p>NUTMEGではGitHubとdockerを用いてプロジェクトを管理しているので基本的にはターミナルとdocker-compose.ymlとmakefileをいじっていました。PCはWindowsなのでWSLとUbuntuを用いています。</p>
+<p>詳しい環境構築手順については誰かの今後の助けになればと思い、環境構築直後に作成したドキュメントから引用します。スクショ画像は諸事情で不記載です。（NUTMEG内で気になる人がいたらnotionにあるので是非見てください。）</p>
+<p>～以下引用～</p>
+<p>gm3の環境構築をしました。覚えてる限りの手順置いときます。不足してたらごめんなさい。メモだと思ってください。手間取って余計な操作を含んだ記憶がありますが、最終的に意味のあったと思う操作だけ書いときます。</p>
+<p>GitHubにgm2のコピーされたコードがある状態から始めた。</p>
+<p>　　「”user@MSI:~/workspace/Group-Manager-3$」</p>
+<p>で作業しました。</p>
+<p>①Group-Manager-3でgit clone &lt;GitHub からコピペしたSSHのアドレス&gt;</p>
+<p>②make build + docker compose up -d + docker ps でgm2状態のコンテナが正常に起動できるか確認</p>
+<p>→自分の場合はここでエラー発生し起動できなかった。</p>
+<p>①’make build内のコマンドを1行ずつ実行してみる（make buildが正常に動作していないっぽかった。）</p>
+<p>②’docker compose up -d + docker psでgm2状態のコンテナが起動できるかどうか試す。</p>
+<p>→できた。</p>
+<p>③docker-compose.ymlを編集して既存のコンテナ名の”gm2”を”gm3”に変更</p>
+<p>④gm3の内容を保存するフォルダとしてGroup-Manager-3直下に”user” を作成</p>
+<p>⑤docker-compose.ymlを編集して以下の内容を追加</p>
+<p>ポート番号は8001:3000に設定した。(分かりやすくて競合してなければなんでもいいらしい。)</p>
+<p>⑥ webhook.envをGroup-Manager-3直下に作成し、中身はgm2の.envからコピーしたものにした。</p>
+<p>⑦docker-compose run &ndash;rm user yarn create next-app .をターミナルで入力</p>
+<p>ここでuserの部分は内容を保存するフォルダ名を指定</p>
+<p>. はdocker-compose.ymlに対しての相対パス（らしい）</p>
+<p>→webhook.envはuser内ではなくGroup-Manager-3直下におく。</p>
+<p>⑧開発環境を設定。タスクの指示なしに従て決める。(yes or no)</p>
+<p>→要求されてる内容が違ってやり直しになった。(事前に指定されてなかったから既存のプロジェクトを真似して選んだらあかんかった。)事前に準備しとくべき。</p>
+<p>①”userフォルダを削除した</p>
+<p>②”新たにuserフォルダを作る。</p>
+<p>③”ここでmakefileのbuildとbuild macにgm3用の項目を追加</p>
+<p>内容は別のフロントコンテナのやつをコピペしてコンテナ名だけ変える。</p>
+<p>④”docker-compose run &ndash;rm user yarn create next-app .で適切に選択</p>
+<p>yes or no</p>
+<p>⑨docker compose up -d + docker psでコンテナが正常に起動しているか確認</p>
+<p>～終わり～</p>
+<p>memo:後輩に教えることも考えて覚えねば</p>
+<p>追記：既存のプロジェクトに追加する場合、nodeのバージョンが古いといわれることがある。</p>
+<p>①その場合はuser内にdockerfileを作成して（既存のプロジェクトからコピぺした。）</p>
+<p>dockerfileに書いてあるnodeのバージョンを変更する</p>
+<p>②docker compose build　をする。</p>
+<p>③作成したdockerfileを削除（そのままだと怒られる）</p>
+<p>④docker compose run —rm user yarn create next-app .</p>
+<p>これでnodeのバージョンをコンソールで全部更新する必要なく環境構築できた。</p>
+<p>～引用ここまで～</p>
+<h2 id="環境構築をしてみた感想">環境構築をしてみた感想</h2>
+<p>自分がNUTMEGで初めて環境構築したときは右も左もわからない状況でメンターに教わりながらやったので、「すごいなぁ～」というくらいしか思わなかったのですが、半年以上くらいのNUTMEG活動を通して自力で環境構築できるところまで成長出来たことが感慨深かったです。環境構築をするための流れという部分はもちろんですが、環境構築都を通してdocker-compose.ymlのコードの書き方やmakefileの動作や使い方など、普段の開発では意図して気にしなければ触れないような部分の理解が深まったので今回挑戦して良かったと思います。また、さまざまなトラブルを抱えながら結果的に3回環境構築を経験したことでスムーズな環境構築よりも勉強になったと思います。はじめての環境構築で大変でしたが、終わってみると意外と単純な手順だと感じました。途中で何らかのエラーが出るとそこに時間がかかる印象です。</p>
+<h2 id="最後に">最後に</h2>
+<p>はじめは助言をもらいながらでしたが、最終的には完全自力で環境構築できるようになりました。今までスルーしていた部分のコードをいじってみて意味が分かった時は楽しかったです。来年度になれば後輩ができることも念頭に置きつつ、来年の技大祭までにGM3が完成するようにこれからも頑張りたいと思います。</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024">Nutmeg advent calendar 2024</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%81%e3%83%bc%e3%83%a0%e3%81%a5%e3%81%8f%e3%82%8a">チームづくり</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
