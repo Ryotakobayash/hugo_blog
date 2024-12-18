@@ -210,7 +210,7 @@ customCSS = ["css/custom_post.css"]
     bio = ""
   
   [params.authors.akari]
-    name = "あかり"
+    name = "あかりん"
     bio = ""
   
   [params.authors.purin]
