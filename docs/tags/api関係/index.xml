@@ -13,35 +13,35 @@
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241208/</link>
       <pubDate>Sun, 08 Dec 2024 18:57:16 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241208/</guid>
-      <description>このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。 時系列的にはアドカレ以前の内容となっています。 ご注意ください。</description>
+      <description>&lt;p&gt;このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。&#xA;時系列的にはアドカレ以前の内容となっています。&#xA;ご注意ください。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goの実DBを用いたAPIテストの導入</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241206/</link>
       <pubDate>Fri, 06 Dec 2024 16:07:11 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241206/</guid>
-      <description>こんにちは！&#xA;NUTMEGのくぼ（kubosaka）です！</description>
+      <description>&lt;p&gt;こんにちは！&lt;/p&gt;&#xA;&lt;p&gt;NUTMEGのくぼ（kubosaka）です！&lt;/p&gt;</description>
     </item>
     <item>
       <title>hasura v2のすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241203/</link>
       <pubDate>Tue, 03 Dec 2024 11:01:12 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241203/</guid>
-      <description>はじめに 皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。 私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。</description>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。&#xA;私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。&lt;strong&gt;Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
-      <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
+      <description>&lt;p&gt;こんにちは。現在学部4年の市之瀬です。&#xA;今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。&lt;/p&gt;</description>
     </item>
     <item>
       <title>TwitterAPIのすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230306/</link>
       <pubDate>Fri, 10 Mar 2023 10:40:40 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20230306/</guid>
-      <description>初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。&#xA;有料化問題について 有料化はされたのか？ TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。</description>
+      <description>&lt;p&gt;初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。&lt;/p&gt;&#xA;&lt;h1 id=&#34;有料化問題について&#34;&gt;有料化問題について&lt;/h1&gt;&#xA;&lt;h2 id=&#34;有料化はされたのか&#34;&gt;有料化はされたのか？&lt;/h2&gt;&#xA;&lt;p&gt;TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
