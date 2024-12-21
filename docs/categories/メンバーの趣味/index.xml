@@ -13,119 +13,119 @@
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241216/</link>
       <pubDate>Mon, 16 Dec 2024 00:18:04 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241216/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;はじめまして。NUTMEG所属のFと申します。&#xA;普段は暖房の近くでネコと共にある生活を営んでいます。&lt;/p&gt;</description>
+      <description>はじめに はじめまして。NUTMEG所属のFと申します。 普段は暖房の近くでネコと共にある生活を営んでいます。</description>
     </item>
     <item>
       <title>2024振り返りとあると便利なデスク回りの小物</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241214/</link>
       <pubDate>Sat, 14 Dec 2024 20:13:52 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241214/</guid>
-      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;どうも，NUTMEG所属の浅見圭祐（みけ）です！&lt;/p&gt;</description>
+      <description>はじめに どうも，NUTMEG所属の浅見圭祐（みけ）です！</description>
     </item>
     <item>
       <title>AIと一緒に5時間でアプリ開発した話</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241209/</link>
       <pubDate>Mon, 09 Dec 2024 13:10:23 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241209/</guid>
-      <description>&lt;h1 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h1&gt;&#xA;&lt;p&gt;初めまして、上條遥都(はるじょー)と申します&#xA;長岡技術科学大学工学部情報経営システム工学分野の3年生です&#xA;趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！&#xA;先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！&#xA;宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑&lt;/p&gt;</description>
+      <description>自己紹介 初めまして、上條遥都(はるじょー)と申します 長岡技術科学大学工学部情報経営システム工学分野の3年生です 趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！ 先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！ 宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑</description>
     </item>
     <item>
       <title>自作サーバーのすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241207/</link>
       <pubDate>Sat, 07 Dec 2024 23:14:02 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241207/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆さんはじめまして！前回の&lt;a href=&#34;https://blog.nutmeg.cloud/blog/post-20240905/&#34;&gt;TeXのブログ&lt;/a&gt;を見てくれた方はお久しぶりです．ぷりんです．&#xA;課題に苦しんでいたらいつの間にかインフラチームの長になっていました．今のところは偉大なる先輩方におんぶにだっこですが頑張りたいと思います．&lt;/p&gt;</description>
+      <description>はじめに 皆さんはじめまして！前回のTeXのブログを見てくれた方はお久しぶりです．ぷりんです． 課題に苦しんでいたらいつの間にかインフラチームの長になっていました．今のところは偉大なる先輩方におんぶにだっこですが頑張りたいと思います．</description>
     </item>
     <item>
       <title>hasura v2のすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241203/</link>
       <pubDate>Tue, 03 Dec 2024 11:01:12 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241203/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。&#xA;私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。&lt;strong&gt;Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>はじめに 皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。 私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。</description>
     </item>
     <item>
       <title>Webアプリ（フロントエンド）開発のtips</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240716/</link>
       <pubDate>Thu, 18 Jul 2024 18:34:04 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240716/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。&lt;/p&gt;</description>
+      <description>はじめに テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。</description>
     </item>
     <item>
       <title>実務訓練の感想</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240301/</link>
       <pubDate>Fri, 01 Mar 2024 20:17:53 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240301/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;お久しぶりです。NUTMEGののぶです。今回は、大学での実務訓練を通じて学んだことについて記載します。&lt;/p&gt;</description>
+      <description>はじめに お久しぶりです。NUTMEGののぶです。今回は、大学での実務訓練を通じて学んだことについて記載します。</description>
     </item>
     <item>
       <title>Windowsソフトおすすめ８選</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240202/</link>
       <pubDate>Mon, 12 Feb 2024 20:33:44 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240202/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは！&lt;/p&gt;</description>
+      <description>はじめに こんにちは！</description>
     </item>
     <item>
       <title>一夜漬けは色々と良くないです</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240119/</link>
       <pubDate>Fri, 19 Jan 2024 19:47:15 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240119/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;あけましておめでとうございます！初詣で大吉を引いて、気分がよくなったNUTMEG3年の悟空です。その後、調子に乗って課金してモンストのガチャで爆死したということは置いておきましょう・・・。&#xA;というわけで、今年もよろしくお願いします！！！&lt;/p&gt;</description>
+      <description>はじめに あけましておめでとうございます！初詣で大吉を引いて、気分がよくなったNUTMEG3年の悟空です。その後、調子に乗って課金してモンストのガチャで爆死したということは置いておきましょう・・・。 というわけで、今年もよろしくお願いします！！！</description>
     </item>
     <item>
       <title>幹事について知っておいたほうがいいことを教えます。</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231215/</link>
       <pubDate>Fri, 15 Dec 2023 16:37:48 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231215/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;お久しぶりです。太りすぎて７０kgの大台に乗りそうなNUTMEG３年のソウタです。&#xA;NUTMEGアドベントカレンダー１２/１５日分書いていきます！&lt;/p&gt;</description>
+      <description>はじめに お久しぶりです。太りすぎて７０kgの大台に乗りそうなNUTMEG３年のソウタです。 NUTMEGアドベントカレンダー１２/１５日分書いていきます！</description>
     </item>
     <item>
       <title>三大奇書「ドグラ・マグラ」を読んでみた！</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231213/</link>
       <pubDate>Wed, 13 Dec 2023 22:49:21 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231213/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;初めまして！NUTMEGのB3のkuriです！今回は、NUTMEGの活動の1つであるブログで、アドベントカレンダー方式にブログ記事を公開していくみたいなので頑張ります。&lt;/p&gt;</description>
+      <description>はじめに 初めまして！NUTMEGのB3のkuriです！今回は、NUTMEGの活動の1つであるブログで、アドベントカレンダー方式にブログ記事を公開していくみたいなので頑張ります。</description>
     </item>
     <item>
       <title>最近周りから生意気って言われる件について</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231207/</link>
       <pubDate>Thu, 07 Dec 2023 22:24:07 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231207/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;先日、友人とvalorantでコンペティティブをプレイしたら7連敗して気分lowなNUTMEG2年の花田光です。NUTMEGアドベントカレンダー2日目を担当します。これはきっと2年生と2日目を掛けてくれたのだと思ってます。今回は、最近&lt;strong&gt;周りから生意気になった&lt;/strong&gt;といわれることが増えたのでいつから生意気になったのかを俯瞰して考察していくブログになります。&lt;/p&gt;</description>
+      <description>はじめに 先日、友人とvalorantでコンペティティブをプレイしたら7連敗して気分lowなNUTMEG2年の花田光です。NUTMEGアドベントカレンダー2日目を担当します。これはきっと2年生と2日目を掛けてくれたのだと思ってます。今回は、最近周りから生意気になったといわれることが増えたのでいつから生意気になったのかを俯瞰して考察していくブログになります。</description>
     </item>
     <item>
       <title>独学デザイナー、就活をする（第一部：インターン編）</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231206/</link>
       <pubDate>Wed, 06 Dec 2023 18:47:25 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231206/</guid>
-      <description>&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;&#xA;&lt;p&gt;お疲れ様です。NUTMEGデザインチーム　修士1年のkobayashiです。&#xA;今年からNUTMEGもアドベントカレンダー方式でブログを公開していくイベントを開く事になリました。そのトップバッターの栄誉を代表より賜りましたので、気合を入れて記事を書いてみようと思います！&lt;/p&gt;</description>
+      <description>概要 お疲れ様です。NUTMEGデザインチーム　修士1年のkobayashiです。 今年からNUTMEGもアドベントカレンダー方式でブログを公開していくイベントを開く事になリました。そのトップバッターの栄誉を代表より賜りましたので、気合を入れて記事を書いてみようと思います！</description>
     </item>
     <item>
       <title>ロゴコンペに参加してみて</title>
       <link>https://blog.nutmeg.cloud/blog/post-20231201/</link>
       <pubDate>Fri, 01 Dec 2023 20:03:14 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20231201/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは。今年NUTMEGに入った長谷川虹です。デザインをデザイナーとして活動しています。今回、今年9月に行われた「ロゴコンペ」についてお話ししたいと思います。このロゴコンペは私にとって初めての大きな仕事でした。ロゴコンペを通じて思ったことをだーっと書いていきます。ちなみに人生初ブログなので温かい目で見てください。&lt;/p&gt;</description>
+      <description>はじめに こんにちは。今年NUTMEGに入った長谷川虹です。デザインをデザイナーとして活動しています。今回、今年9月に行われた「ロゴコンペ」についてお話ししたいと思います。このロゴコンペは私にとって初めての大きな仕事でした。ロゴコンペを通じて思ったことをだーっと書いていきます。ちなみに人生初ブログなので温かい目で見てください。</description>
     </item>
     <item>
       <title>一人旅話</title>
       <link>https://blog.nutmeg.cloud/blog/post-20231110/</link>
       <pubDate>Fri, 10 Nov 2023 10:59:17 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20231110/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;最近ジェルネイルをし始めたNUTMEG2年の花田です。ネイルのすすめはまた別の機会に書こうと思います。&#xA;先にお知らせです。今年はアドカレ開催します！&lt;/p&gt;</description>
+      <description>はじめに 最近ジェルネイルをし始めたNUTMEG2年の花田です。ネイルのすすめはまた別の機会に書こうと思います。 先にお知らせです。今年はアドカレ開催します！</description>
     </item>
     <item>
       <title>TwitterAPIのすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230306/</link>
       <pubDate>Fri, 10 Mar 2023 10:40:40 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20230306/</guid>
-      <description>&lt;p&gt;初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。&lt;/p&gt;&#xA;&lt;h1 id=&#34;有料化問題について&#34;&gt;有料化問題について&lt;/h1&gt;&#xA;&lt;h2 id=&#34;有料化はされたのか&#34;&gt;有料化はされたのか？&lt;/h2&gt;&#xA;&lt;p&gt;TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。&lt;/p&gt;</description>
+      <description>初めまして！積みゲーが増えてきて焦ってるNUTMEG一年の花田です。今回は、TwitterAPIについて簡単な紹介をしていきます。&#xA;有料化問題について 有料化はされたのか？ TwitterDevのツイートでは無料で使える期間は2月13日まで発表していましたが、2023年3月8日時点ではまだ無料で使えます。TwitterAPIを使用してツイートを取得できることを確認しました。また、課金してくださいなどのお怒りメールも届いていないので利用できそうです。</description>
     </item>
     <item>
       <title>モチベーションの保ち方</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230302/</link>
       <pubDate>Thu, 02 Mar 2023 14:09:35 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20230302/</guid>
-      <description>&lt;h2 id=&#34;モチベーションが続く期間&#34;&gt;モチベーションが続く期間&lt;/h2&gt;&#xA;&lt;p&gt;そもそもモチベーションとは、「行動を起こすための原動力」です。そのため、モチベーションがあることで効率よく活動することができます。しかし、モチベーションは感情の一つであるため、モチベーションが続く期間は人によって様々です。そこで、モチベーションが長く保つためには、どのような考え方が必要か述べていきます。&lt;/p&gt;</description>
+      <description>モチベーションが続く期間 そもそもモチベーションとは、「行動を起こすための原動力」です。そのため、モチベーションがあることで効率よく活動することができます。しかし、モチベーションは感情の一つであるため、モチベーションが続く期間は人によって様々です。そこで、モチベーションが長く保つためには、どのような考え方が必要か述べていきます。</description>
     </item>
   </channel>
 </rss>

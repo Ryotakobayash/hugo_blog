@@ -13,28 +13,28 @@
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241208/</link>
       <pubDate>Sun, 08 Dec 2024 18:57:16 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241208/</guid>
-      <description>&lt;p&gt;このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。&#xA;時系列的にはアドカレ以前の内容となっています。&#xA;ご注意ください。&lt;/p&gt;</description>
+      <description>このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。 時系列的にはアドカレ以前の内容となっています。 ご注意ください。</description>
     </item>
     <item>
       <title>hasura v2のすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241203/</link>
       <pubDate>Tue, 03 Dec 2024 11:01:12 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241203/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。&#xA;私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。&lt;strong&gt;Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。&lt;/strong&gt;&lt;/p&gt;</description>
+      <description>はじめに 皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。 私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。</description>
     </item>
     <item>
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
-      <description>&lt;p&gt;こんにちは。現在学部4年の市之瀬です。&#xA;今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。&lt;/p&gt;</description>
+      <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
     <item>
       <title>バックエンドにDartを採用しました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220210/</link>
       <pubDate>Fri, 11 Feb 2022 10:32:54 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20220210/</guid>
-      <description>&lt;p&gt;NUTMEGでDartを広めようとしている真下です。&#xA;前々から計画していたのですが技大祭当日などに実行委員が使用するシフト確認アプリのSeeFTのバックエンドをGoからDartに変更しました。&#xA;まだまだ完成しているわけではないですが，これを機にNUTMEG内でもDartが浸透できるように頑張りたいです。&lt;/p&gt;</description>
+      <description>NUTMEGでDartを広めようとしている真下です。 前々から計画していたのですが技大祭当日などに実行委員が使用するシフト確認アプリのSeeFTのバックエンドをGoからDartに変更しました。 まだまだ完成しているわけではないですが，これを機にNUTMEG内でもDartが浸透できるように頑張りたいです。</description>
     </item>
   </channel>
 </rss>
