@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mike on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/mike/</link>
+    <link>https://blog.nutmeg.cloud/authors/mike/</link>
     <description>Recent content in Mike on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 14 Dec 2024 20:13:52 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/mike/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/mike/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024振り返りとあると便利なデスク回りの小物</title>
-      <link>http://localhost:1313/blog/post-ac-20241214/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20241214/</link>
       <pubDate>Sat, 14 Dec 2024 20:13:52 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20241214/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241214/</guid>
       <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;どうも，NUTMEG所属の浅見圭祐（みけ）です！&lt;/p&gt;</description>
     </item>
   </channel>

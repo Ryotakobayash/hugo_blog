@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ichinose on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/ichinose/</link>
+    <link>https://blog.nutmeg.cloud/authors/ichinose/</link>
     <description>Recent content in Ichinose on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 15 Mar 2024 20:20:27 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/ichinose/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/ichinose/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ハッカソンに出てきました</title>
-      <link>http://localhost:1313/blog/post-20240315/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20240315/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
       <description>&lt;p&gt;こんにちは。現在学部4年の市之瀬です。&#xA;今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。&lt;/p&gt;</description>
     </item>
     <item>
       <title>フロントエンド未経験者が仕事をするためにやった1ヶ月の勉強</title>
-      <link>http://localhost:1313/blog/post-ac-20231221/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20231221/</link>
       <pubDate>Thu, 21 Dec 2023 20:39:42 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20231221/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231221/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;はじめまして。NUTMEGで普段インフラ・バックエンドをしている市之瀬と申します。&lt;/p&gt;</description>
     </item>
     <item>
       <title>tracking-sapportに携わってみて</title>
-      <link>http://localhost:1313/blog/post-20220731/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20220731/</link>
       <pubDate>Sun, 31 Jul 2022 21:57:18 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20220731/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20220731/</guid>
       <description>&lt;p&gt;新入生の市之瀬拓実です。藤崎さんと大浦さんと一緒に、tracking-support(以降トラサポ)の開発に携わりました。&#xA;今回は、トラサポの背景、構成、携わった感想を綴っていきたいと思います。&lt;/p&gt;</description>
     </item>
   </channel>

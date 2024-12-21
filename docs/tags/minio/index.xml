@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MinIO on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/tags/minio/</link>
+    <link>https://blog.nutmeg.cloud/tags/minio/</link>
     <description>Recent content in MinIO on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 19 Apr 2024 18:33:34 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/minio/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/tags/minio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第一次MinIO革命</title>
-      <link>http://localhost:1313/blog/post-20240419/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20240419/</link>
       <pubDate>Fri, 19 Apr 2024 18:33:34 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20240419/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20240419/</guid>
       <description>&lt;p&gt;こんにちは、NUTMEG(技大祭実行委員会 情報局)のkubosakaです。&lt;/p&gt;</description>
     </item>
   </channel>

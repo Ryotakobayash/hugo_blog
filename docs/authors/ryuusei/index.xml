@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ryuusei on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/ryuusei/</link>
+    <link>https://blog.nutmeg.cloud/authors/ryuusei/</link>
     <description>Recent content in Ryuusei on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 03 Jun 2023 14:58:21 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/ryuusei/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/ryuusei/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NUTMEGによもやま制度を導入しました</title>
-      <link>http://localhost:1313/blog/post-20230601/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20230601/</link>
       <pubDate>Sat, 03 Jun 2023 14:58:21 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20230601/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20230601/</guid>
       <description>&lt;p&gt;久しぶりの投稿になります。NUTMEGのM2の藤崎 竜成です。&#xA;今回はNUTMEGに新たに導入した「よもやま制度」について書いていきます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>slackのメッセージが3ヶ月間で表示されなくなるのを技術で解決する</title>
-      <link>http://localhost:1313/blog/post-20230125/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20230125/</link>
       <pubDate>Wed, 25 Jan 2023 17:02:09 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20230125/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20230125/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは。NUTMEGの藤崎です。先日NUTMEG内でLT会が行われ、slack無料プランのメッセージが3ヶ月間で表示されなくなるのをweb+slackAPIを利用してwebアプリを作成し解決した話をしました。今回はその話をもう少し具体的に話していきます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>2022年の振り返りと今年の目標</title>
-      <link>http://localhost:1313/blog/post-20230104/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20230104/</link>
       <pubDate>Mon, 09 Jan 2023 16:25:21 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20230104/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20230104/</guid>
       <description>&lt;p&gt;あけましておめでとうございます！NUTMEGの藤崎です！今年もよろしくお願いします！&#xA;本日は、多くのことを経験した2022年の振り返りと2023年の目標について書こうと思います！(NUTMEG外の経験もあり)&lt;/p&gt;</description>
     </item>
     <item>
       <title>JPHACKを振り返る</title>
-      <link>http://localhost:1313/blog/post-20221027-1/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20221027-1/</link>
       <pubDate>Wed, 26 Oct 2022 17:20:46 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20221027-1/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20221027-1/</guid>
       <description>&lt;p&gt;こんにちは！NUTMEGの藤崎です！&#xA;今回は先日行われたJPHACKSを振り返ろうかと思います。&lt;/p&gt;</description>
     </item>
     <item>
       <title>技育展の感想</title>
-      <link>http://localhost:1313/blog/post-20221001/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20221001/</link>
       <pubDate>Sat, 01 Oct 2022 18:42:43 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20221001/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20221001/</guid>
       <description>&lt;p&gt;みなさんこんにちは！NUTMEG藤崎です。先日の技育展お疲れ様でした！技育展の結果や感想について書いていきます。&lt;/p&gt;&#xA;&lt;h2 id=&#34;今回登壇した作品について&#34;&gt;今回登壇した作品について&lt;/h2&gt;&#xA;&lt;p&gt;今回NUTMEGは4つのプロダクトを発表しました。それぞれの概要について以下に書いていきます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>NUTMEG代表を終えて</title>
-      <link>http://localhost:1313/blog/post-20220916/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20220916/</link>
       <pubDate>Fri, 23 Sep 2022 21:39:44 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20220916/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20220916/</guid>
       <description>&lt;h2 id=&#34;1年間のnutmeg代表の任期を終えました&#34;&gt;1年間のNUTMEG代表の任期を終えました&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは。先日NUTMEGの代表の任期を終えた藤崎です。今日は一年間どうだったのか。心境の変化や学んだことを書いていきます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>NUTMEG主催のLT会を行いました。</title>
-      <link>http://localhost:1313/blog/post-20220806/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20220806/</link>
       <pubDate>Thu, 11 Aug 2022 18:28:48 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20220806/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20220806/</guid>
       <description>&lt;p&gt;こんにちは！NUTMEG代表の藤崎です！今日は先日行った外部団体を招いたLT会についていろいろ書きたいなと思います。&lt;/p&gt;&#xA;&lt;h2 id=&#34;今回のlt会の目的について&#34;&gt;今回のLT会の目的について&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;今回外部を招いてLT会を開いた一番の目的は、外部との交流を深めるためのきっかけ作りにするためです！&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>技育祭学生LT参加しました</title>
-      <link>http://localhost:1313/blog/post-20220318/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20220318/</link>
       <pubDate>Fri, 18 Mar 2022 19:14:21 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20220318/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20220318/</guid>
       <description>&lt;p&gt;NUTMEG代表 藤崎です。3月17日の技育祭LT会に参加してきました。内容は3分間でNUTMEGの紹介をしました。当日は400人もの前で発表したので、少し緊張しました&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>最近のMT方法について</title>
-      <link>http://localhost:1313/blog/post-20220218/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20220218/</link>
       <pubDate>Fri, 18 Feb 2022 23:37:39 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20220218/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20220218/</guid>
       <description>&lt;p&gt;みなさんこんにちは。NUTMEG局長の藤崎です!最近またコロナウイルスが猛威を振るっており、対面でのMTなどできませんよね。また、ZoomやDiscordなどは少し、味気なくないですか？　そんな中、私たち、NUTMEGはGatherを使ったMTを採用しています！今日はそんなGatherのいいところなどお伝え出来たらいいなと思ってます！！&lt;/p&gt;</description>
     </item>
   </channel>

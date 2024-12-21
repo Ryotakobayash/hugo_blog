@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>F on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/f/</link>
+    <link>https://blog.nutmeg.cloud/authors/f/</link>
     <description>Recent content in F on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 16 Dec 2024 00:18:04 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/f/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/f/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>知らないことを知ろう！</title>
-      <link>http://localhost:1313/blog/post-ac-20241216/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20241216/</link>
       <pubDate>Mon, 16 Dec 2024 00:18:04 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20241216/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241216/</guid>
       <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;はじめまして。NUTMEG所属のFと申します。&#xA;普段は暖房の近くでネコと共にある生活を営んでいます。&lt;/p&gt;</description>
     </item>
   </channel>

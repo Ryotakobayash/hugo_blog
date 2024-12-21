@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aratayo on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/aratayo/</link>
+    <link>https://blog.nutmeg.cloud/authors/aratayo/</link>
     <description>Recent content in Aratayo on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 01 Nov 2022 19:23:24 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/aratayo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/aratayo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>プログラミング未経験者がNUTMEGに入ってみた感想</title>
-      <link>http://localhost:1313/blog/post-20221101/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20221101/</link>
       <pubDate>Tue, 01 Nov 2022 19:23:24 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20221101/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20221101/</guid>
       <description>&lt;h2 id=&#34;nutmegに入った経緯&#34;&gt;NUTMEGに入った経緯&lt;/h2&gt;&#xA;&lt;p&gt;技大祭実行委員会に入る際、特にやりたいこともなく、絵を描くのが好きという理由で制作局を第一志望にしました。ですが制作局は募集人数が少なったので総務局に入ることになりました。入学当時はまだ1年生の1学期のため配属される課程が決まっておらず、普通科高校卒だったこともあり、情報系に関しては全くの無縁でした。なので情報局のことは全く考えていませんでした。&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OnoD on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/onod/</link>
+    <link>https://blog.nutmeg.cloud/authors/onod/</link>
     <description>Recent content in OnoD on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 17 Dec 2023 17:50:52 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/onod/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/onod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>電気味覚とTGIの実験をやってみた</title>
-      <link>http://localhost:1313/blog/post-ac-20231217/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20231217/</link>
       <pubDate>Sun, 17 Dec 2023 17:50:52 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20231217/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231217/</guid>
       <description>&lt;h2 id=&#34;あいさつ&#34;&gt;あいさつ&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは！&#xA;NUTMEGのサーバ部門＆ハード部門を担当している学部3年のオノディーです。&#xA;NUTMEGアドカレもすでに12日目となりました！&lt;/p&gt;</description>
     </item>
   </channel>

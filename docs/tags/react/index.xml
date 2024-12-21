@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/tags/react/</link>
+    <link>https://blog.nutmeg.cloud/tags/react/</link>
     <description>Recent content in React on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 20 Mar 2022 03:33:04 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NUTMEG-Seedsリリースしました！！！</title>
-      <link>http://localhost:1313/blog/post-20220319/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20220319/</link>
       <pubDate>Sun, 20 Mar 2022 03:33:04 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20220319/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20220319/</guid>
       <description>&lt;p&gt;NUTMEGで主にフロントエンドを担当している99Aです．&#xA;2022.3.18にNUTMEG-Seedsという学習管理もとい人材管理のアプリケーションをリリースしました！&#xA;このアプリはメンバーの学習記録，技術スタック，プロジェクトの参加状況を参照し，チームの管理に特化したアプリです．以下に主な機能を紹介します．&lt;/p&gt;</description>
     </item>
   </channel>
