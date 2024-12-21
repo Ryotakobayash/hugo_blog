@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mashita0123 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/authors/mashita0123/</link>
+    <link>http://localhost:1313/authors/mashita0123/</link>
     <description>Recent content in Mashita0123 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 15 Apr 2022 04:30:10 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/mashita0123/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/mashita0123/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NUTMEGでよく使われているOSは？デバイスは？調べてみました！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20220414/</link>
+      <link>http://localhost:1313/blog/post-20220414/</link>
       <pubDate>Fri, 15 Apr 2022 04:30:10 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20220414/</guid>
-      <description>Surfaceを使っていたけど内定バイトでMacに乗り換えてしまった真下です。 NUTMEG内でどんなPCが使われているかわかると敷居も低くないことが伝わっていいのかなと思い立ったので調査しました！</description>
+      <guid>http://localhost:1313/blog/post-20220414/</guid>
+      <description>&lt;p&gt;Surfaceを使っていたけど内定バイトでMacに乗り換えてしまった真下です。&#xA;NUTMEG内でどんなPCが使われているかわかると敷居も低くないことが伝わっていいのかなと思い立ったので調査しました！&lt;/p&gt;</description>
     </item>
     <item>
       <title>バックエンドにDartを採用しました</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20220210/</link>
+      <link>http://localhost:1313/blog/post-20220210/</link>
       <pubDate>Fri, 11 Feb 2022 10:32:54 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20220210/</guid>
-      <description>NUTMEGでDartを広めようとしている真下です。 前々から計画していたのですが技大祭当日などに実行委員が使用するシフト確認アプリのSeeFTのバックエンドをGoからDartに変更しました。 まだまだ完成しているわけではないですが，これを機にNUTMEG内でもDartが浸透できるように頑張りたいです。</description>
+      <guid>http://localhost:1313/blog/post-20220210/</guid>
+      <description>&lt;p&gt;NUTMEGでDartを広めようとしている真下です。&#xA;前々から計画していたのですが技大祭当日などに実行委員が使用するシフト確認アプリのSeeFTのバックエンドをGoからDartに変更しました。&#xA;まだまだ完成しているわけではないですが，これを機にNUTMEG内でもDartが浸透できるように頑張りたいです。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

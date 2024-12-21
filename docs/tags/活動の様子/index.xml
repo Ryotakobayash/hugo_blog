@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>活動の様子 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/tags/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</link>
+    <link>http://localhost:1313/tags/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/</link>
     <description>Recent content in 活動の様子 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 04 Oct 2024 16:03:45 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%B4%BB%E5%8B%95%E3%81%AE%E6%A7%98%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NUTMEGに入って５ヶ月経ったのでどれくらい成長できているのか振り返ってみた</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20241003/</link>
+      <link>http://localhost:1313/blog/post-20241003/</link>
       <pubDate>Fri, 04 Oct 2024 16:03:45 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20241003/</guid>
-      <description>はじめに NUTMEG B3の准教授と呼ばれている者です。</description>
+      <guid>http://localhost:1313/blog/post-20241003/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;NUTMEG B3の准教授と呼ばれている者です。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

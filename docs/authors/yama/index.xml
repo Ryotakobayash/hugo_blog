@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yama on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/authors/yama/</link>
+    <link>http://localhost:1313/authors/yama/</link>
     <description>Recent content in Yama on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 12 Feb 2024 20:33:44 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/yama/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/yama/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windowsソフトおすすめ８選</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20240202/</link>
+      <link>http://localhost:1313/blog/post-20240202/</link>
       <pubDate>Mon, 12 Feb 2024 20:33:44 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20240202/</guid>
-      <description>はじめに こんにちは！</description>
+      <guid>http://localhost:1313/blog/post-20240202/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは！&lt;/p&gt;</description>
     </item>
     <item>
       <title>ROCK PI 4B &#43; DietPi &#43; NextCloud &#43; Onion Service で作るファイルサーバー構築</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20231209/</link>
+      <link>http://localhost:1313/blog/post-ac-20231209/</link>
       <pubDate>Sat, 09 Dec 2023 17:32:08 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231209/</guid>
-      <description>はじめに NUTMEG アドベントカレンダー 12月09日 を担当します。B1の「やま」です！</description>
+      <guid>http://localhost:1313/blog/post-ac-20231209/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;NUTMEG アドベントカレンダー 12月09日&lt;/strong&gt; を担当します。&lt;strong&gt;B1&lt;/strong&gt;の「&lt;strong&gt;やま&lt;/strong&gt;」です！&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

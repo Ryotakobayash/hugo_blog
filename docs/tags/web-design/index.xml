@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web-Design on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/tags/web-design/</link>
+    <link>http://localhost:1313/tags/web-design/</link>
     <description>Recent content in Web-Design on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 18 Dec 2024 17:21:19 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/web-design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/web-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>デザインコンペを経て</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241218/</link>
+      <link>http://localhost:1313/blog/post-ac-20241218/</link>
       <pubDate>Wed, 18 Dec 2024 17:21:19 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241218/</guid>
-      <description>はじめに 皆さんこんにちは、伊藤ことあかりんです。 ブログを書くのは大体6か月ぶりですね！</description>
+      <guid>http://localhost:1313/blog/post-ac-20241218/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆さんこんにちは、伊藤ことあかりんです。&#xA;ブログを書くのは大体6か月ぶりですね！&lt;/p&gt;</description>
     </item>
     <item>
       <title>アドカレのサムネを作りました！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241212/</link>
+      <link>http://localhost:1313/blog/post-ac-20241212/</link>
       <pubDate>Thu, 12 Dec 2024 11:44:51 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241212/</guid>
-      <description>自己紹介 はじめまして！皆がゆめみんと呼んでくれるのがうれしいので、ゆめみんという名前でブログを書かせていただきます！ NUTMEGには今年の春から参加しました。現在はデザインチームとHPチームに所属しています。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241212/</guid>
+      <description>&lt;h1 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h1&gt;&#xA;&lt;p&gt;はじめまして！皆がゆめみんと呼んでくれるのがうれしいので、ゆめみんという名前でブログを書かせていただきます！&#xA;NUTMEGには今年の春から参加しました。現在はデザインチームとHPチームに所属しています。&lt;/p&gt;</description>
     </item>
     <item>
       <title>わくわくすることを沢山したよ！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241205/</link>
+      <link>http://localhost:1313/blog/post-ac-20241205/</link>
       <pubDate>Thu, 05 Dec 2024 17:04:18 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241205/</guid>
-      <description>初めまして！情経3年のわこです。 技大に編入してNUTMEGに入ったら、沢山楽しいことができて成長できたよ！これからも頑張りたい！という内容を書こうと思います。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241205/</guid>
+      <description>&lt;p&gt;初めまして！情経3年のわこです。&#xA;技大に編入してNUTMEGに入ったら、沢山楽しいことができて成長できたよ！これからも頑張りたい！という内容を書こうと思います。&lt;/p&gt;</description>
     </item>
     <item>
       <title>配色を数字で評価しよう！〜美度とコントラスト比について〜</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241202/</link>
+      <link>http://localhost:1313/blog/post-ac-20241202/</link>
       <pubDate>Mon, 02 Dec 2024 20:46:03 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241202/</guid>
-      <description>はじめに お疲れ様です！うっちーです！</description>
+      <guid>http://localhost:1313/blog/post-ac-20241202/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;お疲れ様です！うっちーです！&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

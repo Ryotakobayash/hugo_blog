@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>M.oba on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/authors/m.oba/</link>
+    <link>http://localhost:1313/authors/m.oba/</link>
     <description>Recent content in M.oba on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 02 Apr 2022 15:30:15 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/m.oba/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/m.oba/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NUTMEGを発足して2年が経ったので振り返る</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20220402/</link>
+      <link>http://localhost:1313/blog/post-20220402/</link>
       <pubDate>Sat, 02 Apr 2022 15:30:15 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20220402/</guid>
-      <description>NUTMEGの創始者 大場です。 約2年前に技大祭実行委員会を効率化するためにNUTMEGという組織を立ち上げました。 もちろん組織運営は一筋縄ではいかないため、いろいろな試行錯誤を繰り返した2年間でした。 現在は後輩にも恵まれ、学生にしてはかなりいい組織を作ったのではないかと思っているので、このタイミングで2年間を振り返りたいと思っています。</description>
+      <guid>http://localhost:1313/blog/post-20220402/</guid>
+      <description>&lt;p&gt;NUTMEGの創始者 大場です。&#xA;約2年前に技大祭実行委員会を効率化するためにNUTMEGという組織を立ち上げました。&#xA;もちろん組織運営は一筋縄ではいかないため、いろいろな試行錯誤を繰り返した2年間でした。&#xA;現在は後輩にも恵まれ、学生にしてはかなりいい組織を作ったのではないかと思っているので、このタイミングで2年間を振り返りたいと思っています。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

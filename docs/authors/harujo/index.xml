@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Harujo on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/authors/harujo/</link>
+    <link>http://localhost:1313/authors/harujo/</link>
     <description>Recent content in Harujo on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 09 Dec 2024 13:10:23 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/harujo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/harujo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AIと一緒に5時間でアプリ開発した話</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241209/</link>
+      <link>http://localhost:1313/blog/post-ac-20241209/</link>
       <pubDate>Mon, 09 Dec 2024 13:10:23 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241209/</guid>
-      <description>自己紹介 初めまして、上條遥都(はるじょー)と申します 長岡技術科学大学工学部情報経営システム工学分野の3年生です 趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！ 先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！ 宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑</description>
+      <guid>http://localhost:1313/blog/post-ac-20241209/</guid>
+      <description>&lt;h1 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h1&gt;&#xA;&lt;p&gt;初めまして、上條遥都(はるじょー)と申します&#xA;長岡技術科学大学工学部情報経営システム工学分野の3年生です&#xA;趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！&#xA;先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！&#xA;宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

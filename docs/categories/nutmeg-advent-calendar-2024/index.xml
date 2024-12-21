@@ -2,151 +2,151 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>NUTMEG Advent Calendar 2024 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024/</link>
+    <link>http://localhost:1313/categories/nutmeg-advent-calendar-2024/</link>
     <description>Recent content in NUTMEG Advent Calendar 2024 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 20 Dec 2024 13:39:25 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/nutmeg-advent-calendar-2024/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>目標達成するための考え方</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241220/</link>
+      <link>http://localhost:1313/blog/post-ac-20241220/</link>
       <pubDate>Fri, 20 Dec 2024 13:39:25 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241220/</guid>
-      <description>はじめに こんにちは！ NUTMEGののぶです。 アドカレ2024の20日目を担当します。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241220/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;こんにちは！&#xA;NUTMEGののぶです。&#xA;アドカレ2024の20日目を担当します。&lt;/p&gt;</description>
     </item>
     <item>
       <title>勉強勉強会</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241219/</link>
+      <link>http://localhost:1313/blog/post-ac-20241219/</link>
       <pubDate>Thu, 19 Dec 2024 21:02:38 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241219/</guid>
-      <description>私がB2の頃、M2の先輩から勉強勉強会というものに招いてもらいました。その勉強会で教えてもらったことは今でもちょこちょこ思い出しています。アドカレに参加するにあたり当時のことを思い出し、当時教えてくれた先輩と同じ学年になったいま自分の経験談も織り交ぜつつ書いてみようと思います。&#xA;今後活動していく上でのライフハック的なことを書いていくので気になったものだけでも覚えてくれたら幸いです。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241219/</guid>
+      <description>&lt;p&gt;私がB2の頃、M2の先輩から勉強勉強会というものに招いてもらいました。その勉強会で教えてもらったことは今でもちょこちょこ思い出しています。アドカレに参加するにあたり当時のことを思い出し、当時教えてくれた先輩と同じ学年になったいま自分の経験談も織り交ぜつつ書いてみようと思います。&lt;/p&gt;&#xA;&lt;p&gt;今後活動していく上でのライフハック的なことを書いていくので気になったものだけでも覚えてくれたら幸いです。&lt;/p&gt;</description>
     </item>
     <item>
       <title>デザインコンペを経て</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241218/</link>
+      <link>http://localhost:1313/blog/post-ac-20241218/</link>
       <pubDate>Wed, 18 Dec 2024 17:21:19 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241218/</guid>
-      <description>はじめに 皆さんこんにちは、伊藤ことあかりんです。 ブログを書くのは大体6か月ぶりですね！</description>
+      <guid>http://localhost:1313/blog/post-ac-20241218/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆さんこんにちは、伊藤ことあかりんです。&#xA;ブログを書くのは大体6か月ぶりですね！&lt;/p&gt;</description>
     </item>
     <item>
       <title>はじめての環境構築</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241217/</link>
+      <link>http://localhost:1313/blog/post-ac-20241217/</link>
       <pubDate>Tue, 17 Dec 2024 12:22:08 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241217/</guid>
-      <description>はじめに こんにちは NUTMEG所属 電気電子情報工学分野　B3のしょうちゃんです。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241217/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは&#xA;NUTMEG所属&#xA;電気電子情報工学分野　B3のしょうちゃんです。&lt;/p&gt;</description>
     </item>
     <item>
       <title>知らないことを知ろう！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241216/</link>
+      <link>http://localhost:1313/blog/post-ac-20241216/</link>
       <pubDate>Mon, 16 Dec 2024 00:18:04 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241216/</guid>
-      <description>はじめに はじめまして。NUTMEG所属のFと申します。 普段は暖房の近くでネコと共にある生活を営んでいます。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241216/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;はじめまして。NUTMEG所属のFと申します。&#xA;普段は暖房の近くでネコと共にある生活を営んでいます。&lt;/p&gt;</description>
     </item>
     <item>
       <title>最小の時間でクオリティを下げない発表資料作りについて</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241215/</link>
+      <link>http://localhost:1313/blog/post-ac-20241215/</link>
       <pubDate>Sun, 15 Dec 2024 19:54:20 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241215/</guid>
-      <description>はじめに こんにちは！NUTMEG所属の准教授です．アドベントカレンダーの15日を担当します． 今回は，私の実践している中で「最小の時間でクオリティを下げない発表資料作り」の方法を共有します．</description>
+      <guid>http://localhost:1313/blog/post-ac-20241215/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは！NUTMEG所属の准教授です．アドベントカレンダーの15日を担当します．&#xA;今回は，私の実践している中で「&lt;strong&gt;最小の時間でクオリティを下げない発表資料作り&lt;/strong&gt;」の方法を共有します．&lt;/p&gt;</description>
     </item>
     <item>
       <title>2024振り返りとあると便利なデスク回りの小物</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241214/</link>
+      <link>http://localhost:1313/blog/post-ac-20241214/</link>
       <pubDate>Sat, 14 Dec 2024 20:13:52 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241214/</guid>
-      <description>はじめに どうも，NUTMEG所属の浅見圭祐（みけ）です！</description>
+      <guid>http://localhost:1313/blog/post-ac-20241214/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;どうも，NUTMEG所属の浅見圭祐（みけ）です！&lt;/p&gt;</description>
     </item>
     <item>
       <title>私の軌跡と残したいこと</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241213/</link>
+      <link>http://localhost:1313/blog/post-ac-20241213/</link>
       <pubDate>Fri, 13 Dec 2024 17:05:29 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241213/</guid>
-      <description>初めに 初めてHackMD使います．現在B3のかげやです．ブログにかける内容は少ないですが，私のこれまでの技大祭情報局での活動と，少ない活動経験から伝えることができることを書き残します．</description>
+      <guid>http://localhost:1313/blog/post-ac-20241213/</guid>
+      <description>&lt;h1 id=&#34;初めに&#34;&gt;初めに&lt;/h1&gt;&#xA;&lt;p&gt;　初めてHackMD使います．現在B3のかげやです．ブログにかける内容は少ないですが，私のこれまでの技大祭情報局での活動と，少ない活動経験から伝えることができることを書き残します．&lt;/p&gt;</description>
     </item>
     <item>
       <title>アドカレのサムネを作りました！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241212/</link>
+      <link>http://localhost:1313/blog/post-ac-20241212/</link>
       <pubDate>Thu, 12 Dec 2024 11:44:51 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241212/</guid>
-      <description>自己紹介 はじめまして！皆がゆめみんと呼んでくれるのがうれしいので、ゆめみんという名前でブログを書かせていただきます！ NUTMEGには今年の春から参加しました。現在はデザインチームとHPチームに所属しています。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241212/</guid>
+      <description>&lt;h1 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h1&gt;&#xA;&lt;p&gt;はじめまして！皆がゆめみんと呼んでくれるのがうれしいので、ゆめみんという名前でブログを書かせていただきます！&#xA;NUTMEGには今年の春から参加しました。現在はデザインチームとHPチームに所属しています。&lt;/p&gt;</description>
     </item>
     <item>
       <title>技育博に行ってきた！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241211/</link>
+      <link>http://localhost:1313/blog/post-ac-20241211/</link>
       <pubDate>Wed, 11 Dec 2024 12:29:29 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241211/</guid>
-      <description>技育博に行ってきた！ またお会いしましたね、2024年の春から技大祭実行委員会情報局に所属しています、情報経営システム工学分野3年の松浦です。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241211/</guid>
+      <description>&lt;h2 id=&#34;技育博に行ってきた&#34;&gt;技育博に行ってきた！&lt;/h2&gt;&#xA;&lt;p&gt;　またお会いしましたね、2024年の春から技大祭実行委員会情報局に所属しています、情報経営システム工学分野3年の松浦です。&lt;/p&gt;</description>
     </item>
     <item>
       <title>最近の活動とゆるっとお部屋キープ術</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241210/</link>
+      <link>http://localhost:1313/blog/post-ac-20241210/</link>
       <pubDate>Tue, 10 Dec 2024 15:42:58 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241210/</guid>
-      <description>はじめに 初めまして、NUTMEGのちくわです。NUTMEGアドカレ企画10日目を担当します。自分のことを知ってもらうために最近の活動とお部屋をきれいに保つコツについてご紹介させていただきます。 現在結構大きめな風邪をひいてしまいタスクが大渋滞しているのでサクッと読める内容となっております！</description>
+      <guid>http://localhost:1313/blog/post-ac-20241210/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;初めまして、NUTMEGのちくわです。NUTMEGアドカレ企画10日目を担当します。自分のことを知ってもらうために最近の活動とお部屋をきれいに保つコツについてご紹介させていただきます。&#xA;現在結構大きめな風邪をひいてしまいタスクが大渋滞しているのでサクッと読める内容となっております！&lt;/p&gt;</description>
     </item>
     <item>
       <title>AIと一緒に5時間でアプリ開発した話</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241209/</link>
+      <link>http://localhost:1313/blog/post-ac-20241209/</link>
       <pubDate>Mon, 09 Dec 2024 13:10:23 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241209/</guid>
-      <description>自己紹介 初めまして、上條遥都(はるじょー)と申します 長岡技術科学大学工学部情報経営システム工学分野の3年生です 趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！ 先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！ 宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑</description>
+      <guid>http://localhost:1313/blog/post-ac-20241209/</guid>
+      <description>&lt;h1 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h1&gt;&#xA;&lt;p&gt;初めまして、上條遥都(はるじょー)と申します&#xA;長岡技術科学大学工学部情報経営システム工学分野の3年生です&#xA;趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！&#xA;先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！&#xA;宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑&lt;/p&gt;</description>
     </item>
     <item>
       <title>衝動的にWEBゲーム作り始めた男の末路</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241208/</link>
+      <link>http://localhost:1313/blog/post-ac-20241208/</link>
       <pubDate>Sun, 08 Dec 2024 18:57:16 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241208/</guid>
-      <description>このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。 時系列的にはアドカレ以前の内容となっています。 ご注意ください。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241208/</guid>
+      <description>&lt;p&gt;このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。&#xA;時系列的にはアドカレ以前の内容となっています。&#xA;ご注意ください。&lt;/p&gt;</description>
     </item>
     <item>
       <title>自作サーバーのすゝめ</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241207/</link>
+      <link>http://localhost:1313/blog/post-ac-20241207/</link>
       <pubDate>Sat, 07 Dec 2024 23:14:02 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241207/</guid>
-      <description>はじめに 皆さんはじめまして！前回のTeXのブログを見てくれた方はお久しぶりです．ぷりんです． 課題に苦しんでいたらいつの間にかインフラチームの長になっていました．今のところは偉大なる先輩方におんぶにだっこですが頑張りたいと思います．</description>
+      <guid>http://localhost:1313/blog/post-ac-20241207/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆さんはじめまして！前回の&lt;a href=&#34;https://blog.nutmeg.cloud/blog/post-20240905/&#34;&gt;TeXのブログ&lt;/a&gt;を見てくれた方はお久しぶりです．ぷりんです．&#xA;課題に苦しんでいたらいつの間にかインフラチームの長になっていました．今のところは偉大なる先輩方におんぶにだっこですが頑張りたいと思います．&lt;/p&gt;</description>
     </item>
     <item>
       <title>Goの実DBを用いたAPIテストの導入</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241206/</link>
+      <link>http://localhost:1313/blog/post-ac-20241206/</link>
       <pubDate>Fri, 06 Dec 2024 16:07:11 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241206/</guid>
-      <description>こんにちは！&#xA;NUTMEGのくぼ（kubosaka）です！</description>
+      <guid>http://localhost:1313/blog/post-ac-20241206/</guid>
+      <description>&lt;p&gt;こんにちは！&lt;/p&gt;&#xA;&lt;p&gt;NUTMEGのくぼ（kubosaka）です！&lt;/p&gt;</description>
     </item>
     <item>
       <title>わくわくすることを沢山したよ！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241205/</link>
+      <link>http://localhost:1313/blog/post-ac-20241205/</link>
       <pubDate>Thu, 05 Dec 2024 17:04:18 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241205/</guid>
-      <description>初めまして！情経3年のわこです。 技大に編入してNUTMEGに入ったら、沢山楽しいことができて成長できたよ！これからも頑張りたい！という内容を書こうと思います。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241205/</guid>
+      <description>&lt;p&gt;初めまして！情経3年のわこです。&#xA;技大に編入してNUTMEGに入ったら、沢山楽しいことができて成長できたよ！これからも頑張りたい！という内容を書こうと思います。&lt;/p&gt;</description>
     </item>
     <item>
       <title>入学から12月までの出来事を振り返る！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241204/</link>
+      <link>http://localhost:1313/blog/post-ac-20241204/</link>
       <pubDate>Wed, 04 Dec 2024 12:19:41 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241204/</guid>
-      <description>はじめに 初めまして、2024年の春から技大祭実行委員会情報局に所属しています、情報経営システム工学分野3年の松浦です。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241204/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;初めまして、2024年の春から技大祭実行委員会情報局に所属しています、情報経営システム工学分野3年の松浦です。&lt;/p&gt;</description>
     </item>
     <item>
       <title>hasura v2のすゝめ</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241203/</link>
+      <link>http://localhost:1313/blog/post-ac-20241203/</link>
       <pubDate>Tue, 03 Dec 2024 11:01:12 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241203/</guid>
-      <description>はじめに 皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。 私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241203/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。&#xA;私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。&lt;strong&gt;Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>配色を数字で評価しよう！〜美度とコントラスト比について〜</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241202/</link>
+      <link>http://localhost:1313/blog/post-ac-20241202/</link>
       <pubDate>Mon, 02 Dec 2024 20:46:03 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241202/</guid>
-      <description>はじめに お疲れ様です！うっちーです！</description>
+      <guid>http://localhost:1313/blog/post-ac-20241202/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;お疲れ様です！うっちーです！&lt;/p&gt;</description>
     </item>
     <item>
       <title>NUTMEGアドカレ企画始まります！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241201/</link>
+      <link>http://localhost:1313/blog/post-ac-20241201/</link>
       <pubDate>Sun, 01 Dec 2024 15:02:24 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241201/</guid>
-      <description>はじめに みなさんこんにちは！ 今年度の情報局長（NUTMEG代表）の「なかたく」です！</description>
+      <guid>http://localhost:1313/blog/post-ac-20241201/</guid>
+      <description>&lt;h1 id=&#34;はじめに&#34;&gt;はじめに&lt;/h1&gt;&#xA;&lt;p&gt;みなさんこんにちは！&#xA;今年度の情報局長（NUTMEG代表）の「なかたく」です！&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Figma on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/tags/figma/</link>
+    <link>http://localhost:1313/tags/figma/</link>
     <description>Recent content in Figma on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 18 Dec 2024 17:21:19 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/figma/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/figma/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>デザインコンペを経て</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241218/</link>
+      <link>http://localhost:1313/blog/post-ac-20241218/</link>
       <pubDate>Wed, 18 Dec 2024 17:21:19 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241218/</guid>
-      <description>はじめに 皆さんこんにちは、伊藤ことあかりんです。 ブログを書くのは大体6か月ぶりですね！</description>
+      <guid>http://localhost:1313/blog/post-ac-20241218/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;皆さんこんにちは、伊藤ことあかりんです。&#xA;ブログを書くのは大体6か月ぶりですね！&lt;/p&gt;</description>
     </item>
     <item>
       <title>アドカレのサムネを作りました！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241212/</link>
+      <link>http://localhost:1313/blog/post-ac-20241212/</link>
       <pubDate>Thu, 12 Dec 2024 11:44:51 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241212/</guid>
-      <description>自己紹介 はじめまして！皆がゆめみんと呼んでくれるのがうれしいので、ゆめみんという名前でブログを書かせていただきます！ NUTMEGには今年の春から参加しました。現在はデザインチームとHPチームに所属しています。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241212/</guid>
+      <description>&lt;h1 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h1&gt;&#xA;&lt;p&gt;はじめまして！皆がゆめみんと呼んでくれるのがうれしいので、ゆめみんという名前でブログを書かせていただきます！&#xA;NUTMEGには今年の春から参加しました。現在はデザインチームとHPチームに所属しています。&lt;/p&gt;</description>
     </item>
     <item>
       <title>衝動的にWEBゲーム作り始めた男の末路</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241208/</link>
+      <link>http://localhost:1313/blog/post-ac-20241208/</link>
       <pubDate>Sun, 08 Dec 2024 18:57:16 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241208/</guid>
-      <description>このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。 時系列的にはアドカレ以前の内容となっています。 ご注意ください。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241208/</guid>
+      <description>&lt;p&gt;このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。&#xA;時系列的にはアドカレ以前の内容となっています。&#xA;ご注意ください。&lt;/p&gt;</description>
     </item>
     <item>
       <title>わくわくすることを沢山したよ！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241205/</link>
+      <link>http://localhost:1313/blog/post-ac-20241205/</link>
       <pubDate>Thu, 05 Dec 2024 17:04:18 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241205/</guid>
-      <description>初めまして！情経3年のわこです。 技大に編入してNUTMEGに入ったら、沢山楽しいことができて成長できたよ！これからも頑張りたい！という内容を書こうと思います。</description>
+      <guid>http://localhost:1313/blog/post-ac-20241205/</guid>
+      <description>&lt;p&gt;初めまして！情経3年のわこです。&#xA;技大に編入してNUTMEGに入ったら、沢山楽しいことができて成長できたよ！これからも頑張りたい！という内容を書こうと思います。&lt;/p&gt;</description>
     </item>
     <item>
       <title>ロゴコンペに参加してみて</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20231201/</link>
+      <link>http://localhost:1313/blog/post-20231201/</link>
       <pubDate>Fri, 01 Dec 2023 20:03:14 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20231201/</guid>
-      <description>はじめに こんにちは。今年NUTMEGに入った長谷川虹です。デザインをデザイナーとして活動しています。今回、今年9月に行われた「ロゴコンペ」についてお話ししたいと思います。このロゴコンペは私にとって初めての大きな仕事でした。ロゴコンペを通じて思ったことをだーっと書いていきます。ちなみに人生初ブログなので温かい目で見てください。</description>
+      <guid>http://localhost:1313/blog/post-20231201/</guid>
+      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは。今年NUTMEGに入った長谷川虹です。デザインをデザイナーとして活動しています。今回、今年9月に行われた「ロゴコンペ」についてお話ししたいと思います。このロゴコンペは私にとって初めての大きな仕事でした。ロゴコンペを通じて思ったことをだーっと書いていきます。ちなみに人生初ブログなので温かい目で見てください。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Figmaの学生プラン・FigJamを導入します</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20221026/</link>
+      <link>http://localhost:1313/blog/post-20221026/</link>
       <pubDate>Wed, 26 Oct 2022 00:36:50 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20221026/</guid>
-      <description>こんにちは！NUTMEGデザインチーム、小林です！&#xA;この度、NUTMEGでは一部のメンバーのみしか利用していなかったFigma・Figjamをメンバー全員に導入することにしました。</description>
+      <guid>http://localhost:1313/blog/post-20221026/</guid>
+      <description>&lt;p&gt;こんにちは！NUTMEGデザインチーム、小林です！&lt;/p&gt;&#xA;&lt;p&gt;この度、NUTMEGでは一部のメンバーのみしか利用していなかったFigma・Figjamをメンバー全員に導入することにしました。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

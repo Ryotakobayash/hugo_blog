@@ -303,6 +303,20 @@ link = "https://github.com/orgs/NUTFes"
   	endLevel = 5       # どのレベルまで目次に表示するか。現在h5
   	startLevel = 2     # どのレベルから目次に表示するか。現在h2
 
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    noHl = false
+    style = 'monokai'
+    tabWidth = 4
 
 [taxonomies]
 tag = "tags"
