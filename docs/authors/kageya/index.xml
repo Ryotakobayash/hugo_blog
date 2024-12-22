@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kageya on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/authors/kageya/</link>
+    <link>http://localhost:1313/authors/kageya/</link>
     <description>Recent content in Kageya on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 13 Dec 2024 17:05:29 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/kageya/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/kageya/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>私の軌跡と残したいこと</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241213/</link>
+      <link>http://localhost:1313/blog/post-ac-20241213/</link>
       <pubDate>Fri, 13 Dec 2024 17:05:29 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241213/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20241213/</guid>
       <description>初めに 初めてHackMD使います．現在B3のかげやです．ブログにかける内容は少ないですが，私のこれまでの技大祭情報局での活動と，少ない活動経験から伝えることができることを書き残します．</description>
     </item>
   </channel>

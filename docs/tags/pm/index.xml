@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PM on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/tags/pm/</link>
+    <link>http://localhost:1313/tags/pm/</link>
     <description>Recent content in PM on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 12 Jun 2024 19:45:55 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/pm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/pm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>初めてのPM〜迫る締切、焦るPM、笑うメンバー〜</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20240612/</link>
+      <link>http://localhost:1313/blog/post-20240612/</link>
       <pubDate>Wed, 12 Jun 2024 19:45:55 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20240612/</guid>
+      <guid>http://localhost:1313/blog/post-20240612/</guid>
       <description>初めに みなさんおはこんばんにちは。パラディンこと原田典です。</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Akiyama on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/authors/akiyama/</link>
+    <link>http://localhost:1313/authors/akiyama/</link>
     <description>Recent content in Akiyama on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 12 Dec 2023 19:32:50 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/authors/akiyama/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/authors/akiyama/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>入学してからの8か月を振り返って</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20231212/</link>
+      <link>http://localhost:1313/blog/post-ac-20231212/</link>
       <pubDate>Tue, 12 Dec 2023 19:32:50 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231212/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20231212/</guid>
       <description>はじめに 皆さんこんにちは！ NUTMEGアドベントカレンダーの12月12日担当の学部3年の秋山峰(みね)です。</description>
     </item>
     <item>
       <title>技大祭情報局(NUTMEG)に入ってみた感想</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20230629/</link>
+      <link>http://localhost:1313/blog/post-20230629/</link>
       <pubDate>Thu, 29 Jun 2023 18:37:29 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20230629/</guid>
+      <guid>http://localhost:1313/blog/post-20230629/</guid>
       <description>はじめに はじめまして。新入生B3の秋山です。4月から技大での生活が始まり、いつの間にか7月に入ろうとしています(早い！)。今回は初心を忘れないようにするためにも、技大祭情報局(NUTMEG)に入ってからの約3か月を振り返り、記録に残してみようと思います。</description>
     </item>
   </channel>

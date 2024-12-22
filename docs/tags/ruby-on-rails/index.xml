@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on Rails on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/tags/ruby-on-rails/</link>
+    <link>http://localhost:1313/tags/ruby-on-rails/</link>
     <description>Recent content in Ruby on Rails on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 09 Jul 2023 18:57:12 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>初めて限界開発に参加しました</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20230609/</link>
+      <link>http://localhost:1313/blog/post-20230609/</link>
       <pubDate>Sun, 09 Jul 2023 18:57:12 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20230609/</guid>
+      <guid>http://localhost:1313/blog/post-20230609/</guid>
       <description>はじめに 初めまして。NUTMEG新入生B3の若月耕紀です。 今回は初めてNUTMEGの限界開発に参加した感想と、私の同期にあたる新入生へ向けて、ちょっとしたメッセージを書いていきます。</description>
     </item>
     <item>
       <title>NUTMEG-Seedsリリースしました！！！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20220319/</link>
+      <link>http://localhost:1313/blog/post-20220319/</link>
       <pubDate>Sun, 20 Mar 2022 03:33:04 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20220319/</guid>
+      <guid>http://localhost:1313/blog/post-20220319/</guid>
       <description>NUTMEGで主にフロントエンドを担当している99Aです． 2022.3.18にNUTMEG-Seedsという学習管理もとい人材管理のアプリケーションをリリースしました！ このアプリはメンバーの学習記録，技術スタック，プロジェクトの参加状況を参照し，チームの管理に特化したアプリです．以下に主な機能を紹介します．</description>
     </item>
   </channel>

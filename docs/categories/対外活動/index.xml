@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>対外活動 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</link>
+    <link>http://localhost:1313/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/</link>
     <description>Recent content in 対外活動 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 14 Dec 2024 20:13:52 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/%E5%AF%BE%E5%A4%96%E6%B4%BB%E5%8B%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2024振り返りとあると便利なデスク回りの小物</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241214/</link>
+      <link>http://localhost:1313/blog/post-ac-20241214/</link>
       <pubDate>Sat, 14 Dec 2024 20:13:52 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241214/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20241214/</guid>
       <description>はじめに どうも，NUTMEG所属の浅見圭祐（みけ）です！</description>
     </item>
     <item>
       <title>ハッカソンに出てきました</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
+      <link>http://localhost:1313/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
+      <guid>http://localhost:1313/blog/post-20240315/</guid>
       <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
     <item>
       <title>技育博に参加してきました！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20230529/</link>
+      <link>http://localhost:1313/blog/post-20230529/</link>
       <pubDate>Mon, 29 May 2023 11:22:36 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20230529/</guid>
+      <guid>http://localhost:1313/blog/post-20230529/</guid>
       <description>はじめに 5/27から地元である青森にSuicaが導入され、紙切符で帰る必要がなくなって嬉しさ満点のNUTMEG２年目花田光です！今回は少し遅くなってしまいましたが、５月14日に開催された技育博に参加した感想をつらつら述べていきたいと思います。</description>
     </item>
     <item>
       <title>JPHACKを振り返る</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20221027-1/</link>
+      <link>http://localhost:1313/blog/post-20221027-1/</link>
       <pubDate>Wed, 26 Oct 2022 17:20:46 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20221027-1/</guid>
+      <guid>http://localhost:1313/blog/post-20221027-1/</guid>
       <description>こんにちは！NUTMEGの藤崎です！ 今回は先日行われたJPHACKSを振り返ろうかと思います。</description>
     </item>
     <item>
       <title>MoneyForwardのサマーインターンに参加しました！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20221006/</link>
+      <link>http://localhost:1313/blog/post-20221006/</link>
       <pubDate>Thu, 06 Oct 2022 18:46:30 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20221006/</guid>
+      <guid>http://localhost:1313/blog/post-20221006/</guid>
       <description>はじめに NUTMEGでフロントエンド中心にPMや開発に携わっている百々です。この度はMoneyForwardさんの就業型サマーインターンシップに参加したので、その体験記を投稿しようと思います。</description>
     </item>
     <item>
       <title>NUTMEG主催のLT会を行いました。</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20220806/</link>
+      <link>http://localhost:1313/blog/post-20220806/</link>
       <pubDate>Thu, 11 Aug 2022 18:28:48 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20220806/</guid>
+      <guid>http://localhost:1313/blog/post-20220806/</guid>
       <description>こんにちは！NUTMEG代表の藤崎です！今日は先日行った外部団体を招いたLT会についていろいろ書きたいなと思います。&#xA;今回のLT会の目的について 今回外部を招いてLT会を開いた一番の目的は、外部との交流を深めるためのきっかけ作りにするためです！</description>
     </item>
     <item>
       <title>技育博に参加してきました！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20220701/</link>
+      <link>http://localhost:1313/blog/post-20220701/</link>
       <pubDate>Thu, 14 Jul 2022 18:40:53 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20220701/</guid>
+      <guid>http://localhost:1313/blog/post-20220701/</guid>
       <description>技育博に参加してきました NUTMEG 新入生の今井です。6/25に行われた技育博に、代表の藤崎さんと一緒に参加してきたので、感想や備忘録をつづらせていただこうかと思います。</description>
     </item>
     <item>
       <title>CAの3daysインターンに参加しました</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20220325/</link>
+      <link>http://localhost:1313/blog/post-20220325/</link>
       <pubDate>Fri, 25 Mar 2022 00:06:33 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20220325/</guid>
+      <guid>http://localhost:1313/blog/post-20220325/</guid>
       <description>こんにちは。NUTMEGでNUTMEGクラウドの開発・運用を行っている大浦です。&#xA;今回は2021年3月に参加させていただいた、サイバーエージェントさんの「3days インフラエンジニア向け クラウド技術体験型インターンシップ ～仮想マシン編～」についてお話させていただきます！</description>
     </item>
     <item>
       <title>技育祭学生LT参加しました</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20220318/</link>
+      <link>http://localhost:1313/blog/post-20220318/</link>
       <pubDate>Fri, 18 Mar 2022 19:14:21 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20220318/</guid>
+      <guid>http://localhost:1313/blog/post-20220318/</guid>
       <description>NUTMEG代表 藤崎です。3月17日の技育祭LT会に参加してきました。内容は3分間でNUTMEGの紹介をしました。当日は400人もの前で発表したので、少し緊張しました&amp;hellip;</description>
     </item>
   </channel>

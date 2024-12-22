@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Next.js on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/tags/next.js/</link>
+    <link>http://localhost:1313/tags/next.js/</link>
     <description>Recent content in Next.js on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 17 Dec 2024 12:22:08 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/next.js/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/next.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>はじめての環境構築</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241217/</link>
+      <link>http://localhost:1313/blog/post-ac-20241217/</link>
       <pubDate>Tue, 17 Dec 2024 12:22:08 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241217/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20241217/</guid>
       <description>はじめに こんにちは NUTMEG所属 電気電子情報工学分野　B3のしょうちゃんです。</description>
     </item>
     <item>
       <title>AIと一緒に5時間でアプリ開発した話</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241209/</link>
+      <link>http://localhost:1313/blog/post-ac-20241209/</link>
       <pubDate>Mon, 09 Dec 2024 13:10:23 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241209/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20241209/</guid>
       <description>自己紹介 初めまして、上條遥都(はるじょー)と申します 長岡技術科学大学工学部情報経営システム工学分野の3年生です 趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！ 先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！ 宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑</description>
     </item>
     <item>
       <title>衝動的にWEBゲーム作り始めた男の末路</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241208/</link>
+      <link>http://localhost:1313/blog/post-ac-20241208/</link>
       <pubDate>Sun, 08 Dec 2024 18:57:16 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241208/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20241208/</guid>
       <description>このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。 時系列的にはアドカレ以前の内容となっています。 ご注意ください。</description>
     </item>
     <item>
       <title>わくわくすることを沢山したよ！</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241205/</link>
+      <link>http://localhost:1313/blog/post-ac-20241205/</link>
       <pubDate>Thu, 05 Dec 2024 17:04:18 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241205/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20241205/</guid>
       <description>初めまして！情経3年のわこです。 技大に編入してNUTMEGに入ったら、沢山楽しいことができて成長できたよ！これからも頑張りたい！という内容を書こうと思います。</description>
     </item>
     <item>
       <title>hasura v2のすゝめ</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20241203/</link>
+      <link>http://localhost:1313/blog/post-ac-20241203/</link>
       <pubDate>Tue, 03 Dec 2024 11:01:12 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241203/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20241203/</guid>
       <description>はじめに 皆様こんにちは。NUTMEG 3年目の比嘉華です。アドカレ3日目になります。まだ序の章でありますが是非ご一読ください。 私たちがBingoプロダクトの運用を始めて2年が経ちました。コードに関してはある程度の完成系が見えており、これからはインフラ関連で安定したサービスを目指しています。本ブログでは、Bingoプロダクトで使用しているバックエンドツールであるHasura Engine v2の概要と構成の一例を共有します。Hasura自体の日本語記事が少ない + 私自身のHasuraの復習も兼ねて書いています。この構成が絶対的な正解というわけではありませんので、より良い方法があればぜひ教えてください。</description>
     </item>
     <item>
       <title>Webアプリ（フロントエンド）開発のtips</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20240716/</link>
+      <link>http://localhost:1313/blog/post-20240716/</link>
       <pubDate>Thu, 18 Jul 2024 18:34:04 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20240716/</guid>
+      <guid>http://localhost:1313/blog/post-20240716/</guid>
       <description>はじめに テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。</description>
     </item>
     <item>
       <title>ハッカソンに出てきました</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
+      <link>http://localhost:1313/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
+      <guid>http://localhost:1313/blog/post-20240315/</guid>
       <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
     <item>
       <title>フロントエンド未経験者が仕事をするためにやった1ヶ月の勉強</title>
-      <link>https://blog.nutmeg.cloud/blog/post-ac-20231221/</link>
+      <link>http://localhost:1313/blog/post-ac-20231221/</link>
       <pubDate>Thu, 21 Dec 2023 20:39:42 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231221/</guid>
+      <guid>http://localhost:1313/blog/post-ac-20231221/</guid>
       <description>はじめに はじめまして。NUTMEGで普段インフラ・バックエンドをしている市之瀬と申します。</description>
     </item>
   </channel>

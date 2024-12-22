@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>実務訓練体験記 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>https://blog.nutmeg.cloud/tags/%E5%AE%9F%E5%8B%99%E8%A8%93%E7%B7%B4%E4%BD%93%E9%A8%93%E8%A8%98/</link>
+    <link>http://localhost:1313/tags/%E5%AE%9F%E5%8B%99%E8%A8%93%E7%B7%B4%E4%BD%93%E9%A8%93%E8%A8%98/</link>
     <description>Recent content in 実務訓練体験記 on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 01 Mar 2024 20:17:53 +0900</lastBuildDate>
-    <atom:link href="https://blog.nutmeg.cloud/tags/%E5%AE%9F%E5%8B%99%E8%A8%93%E7%B7%B4%E4%BD%93%E9%A8%93%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%AE%9F%E5%8B%99%E8%A8%93%E7%B7%B4%E4%BD%93%E9%A8%93%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>実務訓練の感想</title>
-      <link>https://blog.nutmeg.cloud/blog/post-20240301/</link>
+      <link>http://localhost:1313/blog/post-20240301/</link>
       <pubDate>Fri, 01 Mar 2024 20:17:53 +0900</pubDate>
-      <guid>https://blog.nutmeg.cloud/blog/post-20240301/</guid>
+      <guid>http://localhost:1313/blog/post-20240301/</guid>
       <description>はじめに お久しぶりです。NUTMEGののぶです。今回は、大学での実務訓練を通じて学んだことについて記載します。</description>
     </item>
   </channel>
