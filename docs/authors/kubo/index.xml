@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kubo on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
-    <link>http://localhost:1313/authors/kubo/</link>
+    <link>https://blog.nutmeg.cloud/authors/kubo/</link>
     <description>Recent content in Kubo on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 06 Dec 2024 16:07:11 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/kubo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.nutmeg.cloud/authors/kubo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goの実DBを用いたAPIテストの導入</title>
-      <link>http://localhost:1313/blog/post-ac-20241206/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20241206/</link>
       <pubDate>Fri, 06 Dec 2024 16:07:11 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20241206/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241206/</guid>
       <description>こんにちは！&#xA;NUTMEGのくぼ（kubosaka）です！</description>
     </item>
     <item>
       <title>第一次MinIO革命</title>
-      <link>http://localhost:1313/blog/post-20240419/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20240419/</link>
       <pubDate>Fri, 19 Apr 2024 18:33:34 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20240419/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20240419/</guid>
       <description>こんにちは、NUTMEG(技大祭実行委員会 情報局)のkubosakaです。</description>
     </item>
     <item>
       <title>学校祭運営のDX化団体に参加してからの1年を振り返る</title>
-      <link>http://localhost:1313/blog/post-ac-20231208/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20231208/</link>
       <pubDate>Fri, 08 Dec 2023 17:20:01 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-ac-20231208/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20231208/</guid>
       <description>概要 こんにちは。NUTMEGのB4の窪坂(Kubosaka)です。今年はNUMEGの活動としてアドベントカレンダー方式でブログを公開しています。今日は12月8日(金)で3日目です。</description>
     </item>
     <item>
       <title>NUTMEGに参加して</title>
-      <link>http://localhost:1313/blog/post-20221027-2/</link>
+      <link>https://blog.nutmeg.cloud/blog/post-20221027-2/</link>
       <pubDate>Thu, 27 Oct 2022 17:20:53 +0900</pubDate>
-      <guid>http://localhost:1313/blog/post-20221027-2/</guid>
+      <guid>https://blog.nutmeg.cloud/blog/post-20221027-2/</guid>
       <description>初めまして。NUTMEGに10月から参加した窪坂です。 今回ブログ担当に任命されましたので、参加した理由やNUTMEGについてなどを長々と書いていきます。</description>
     </item>
   </channel>

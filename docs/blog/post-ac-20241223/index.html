@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="普段slackでやり取りしているサークルで、discordのボイスチャンネルの入退室をslackで分かるようにしたいという悩みを解決しました。">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-ac-20241223/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="slackでの活動推進">
+  <meta property="og:description" content="普段slackでやり取りしているサークルで、discordのボイスチャンネルの入退室をslackで分かるようにしたいという悩みを解決しました。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-12-23T21:27:31+09:00">
+    <meta property="article:modified_time" content="2024-12-23T21:27:31+09:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="ターミナル">
+    <meta property="article:tag" content="チームづくり">
+    <meta property="article:tag" content="バックエンド">
+    <meta property="article:tag" content="API関係">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="slackでの活動推進">
+  <meta name="twitter:description" content="普段slackでやり取りしているサークルで、discordのボイスチャンネルの入退室をslackで分かるようにしたいという悩みを解決しました。">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024"
+          class="text-primary">Nutmeg advent calendar 2024</a>
+        
+        <h2>slackでの活動推進</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By パラディン
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              23 December 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/Hyaco0IBJe.png" class="img-fluid w-100 mb-4" alt="slackでの活動推進">
+        
+        <div class="content mb-5">
+          <h2 id="はじめに">はじめに</h2>
+<p>みなさん、おはこんばんにちは！
+NUTMEGの、パラディンです！
+アドカレ2024の23日を担当します。</p>
+<p>NUTMEGでは基本的な連絡はslackを使用していますが、オンラインでのミーティングなどはdiscordを使用しています。</p>
+<p>discordの使用頻度は、普段は1on1だったり、突発の作業会がオンラインで開催される場合に使用される程度ですが、長期休みやB4が実務訓練に参加している際は特に高くなります。
+※実務訓練&hellip;長岡技術科学大学のカリキュラムで約5ヶ月の長期インターン</p>
+<p>サークルでは他の人の活動が目に見えるということは重要なことなので、今回は「slack Incoming WebhooksとdiscordBotを使ってdiscordのボイスチャンネル入退室をslackで確認できる」ようにしました。</p>
+<p>コードは<a href="https://github.com/NUTFes/discobot">このリポジトリ</a>にあります。</p>
+<h2 id="1-discord-botの作成">1. Discord Botの作成</h2>
+<h3 id="11-discord-developer-portalにアクセス">1.1 Discord Developer Portalにアクセス</h3>
+<p><a href="https://discord.com/developers/applications">Discord Developer Portal</a> にアクセスし、Discordアカウントでログインします。
+右上の「New Application」をクリックして、新しいアプリケーションを作成します。
+アプリケーションに名前を付けて、「Create」をクリックします。</p>
+<h3 id="12-ボットの作成">1.2 ボットの作成</h3>
+<p>左側のメニューから「Bot」を選択します。
+「Add Bot」ボタンをクリックし、「Yes, do it!」を選択してボットを作成します。
+ボットの「Token」を取得します。このトークンは後で使用するので、安全に保管してください。</p>
+<h3 id="13-privileged-gateway-intentsの有効化">1.3 Privileged Gateway Intentsの有効化</h3>
+<p>ボットの設定画面で「Privileged Gateway Intents」セクションのServer Members Intent を有効にします。
+変更を保存するために「Save Changes」をクリックします。</p>
+<h3 id="14-ボットの権限設定">1.4 ボットの権限設定</h3>
+<p>「OAuth2」 &gt; 「URL Generator」に移動します。
+「Scopes」セクションで bot を選択します。
+「Bot Permissions」セクションで以下の権限を選択します：</p>
+<ul>
+<li>View Channels</li>
+<li>Connect</li>
+<li>Speak</li>
+</ul>
+<p>生成されたURLをコピーし、ブラウザで開いてボットをDiscordサーバーに追加します。</p>
+<h2 id="2-slackでwebhookの設定">2. SlackでWebhookの設定</h2>
+<h3 id="21-slackアプリの作成">2.1 Slackアプリの作成</h3>
+<p><a href="https://api.slack.com/apps">Slack API: Applications</a> にアクセスし、「Create New App」をクリックします。
+「From scratch」を選択し、アプリ名とワークスペースを選択して「Create App」をクリックします。</p>
+<h3 id="22-incoming-webhooksの設定">2.2 Incoming Webhooksの設定</h3>
+<p>アプリの管理画面で「Incoming Webhooks」を選択します。
+「Activate Incoming Webhooks」をオンにします。
+「Add New Webhook to Workspace」をクリックし、通知を送りたいチャンネルを選択します。
+Webhook URLが生成されるので、これを取得します。このURLはいつでもコピーできるので安心してください。</p>
+<h2 id="3-コーディング">3. コーディング</h2>
+<h3 id="ディレクトリ構成">ディレクトリ構成</h3>
+<pre tabindex="0"><code>root
+  ├── .env
+  ├── .gitignore
+  ├── bot.py
+  ├── docker-compose.yml
+  ├── dockerfile
+  └── requirements.txt
+</code></pre><h3 id="env">.env</h3>
+<p>環境変数の設定</p>
+<pre tabindex="0"><code>DISCORD_TOKEN=....
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/....
+</code></pre><h3 id="gitignore">.gitignore</h3>
+<p>リポジトリを公開しているので、環境変数を非公開にするために.envをignoreする</p>
+<pre tabindex="0"><code>.env
+</code></pre><h3 id="botpy">bot.py</h3>
+<p>通知機能の実装</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">discord</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 環境変数をロード</span>
+</span></span><span class="line"><span class="cl"><span class="n">load_dotenv</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># DiscordボットのトークンとSlackのWebhook URLを環境変数から取得</span>
+</span></span><span class="line"><span class="cl"><span class="n">DISCORD_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;DISCORD_TOKEN&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">SLACK_WEBHOOK_URL</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s1">&#39;SLACK_WEBHOOK_URL&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Intentsの設定</span>
+</span></span><span class="line"><span class="cl"><span class="n">intents</span> <span class="o">=</span> <span class="n">discord</span><span class="o">.</span><span class="n">Intents</span><span class="o">.</span><span class="n">default</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">intents</span><span class="o">.</span><span class="n">voice_states</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># ボイスチャンネルの状態を監視</span>
+</span></span><span class="line"><span class="cl"><span class="n">intents</span><span class="o">.</span><span class="n">guilds</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="n">intents</span><span class="o">.</span><span class="n">members</span> <span class="o">=</span> <span class="kc">True</span>  <span class="c1"># メンバー情報を取得</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Discordクライアントの初期化</span>
+</span></span><span class="line"><span class="cl"><span class="n">client</span> <span class="o">=</span> <span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">intents</span><span class="o">=</span><span class="n">intents</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">EXCLUDED_CHANNELS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;1on1&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">send_slack_message</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;text&#34;</span><span class="p">:</span> <span class="n">message</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">SLACK_WEBHOOK_URL</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Slack webhook failed with status </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@client.event</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">on_ready</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Logged in as </span><span class="si">{</span><span class="n">client</span><span class="o">.</span><span class="n">user</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@client.event</span>
+</span></span><span class="line"><span class="cl"><span class="k">async</span> <span class="k">def</span> <span class="nf">on_voice_state_update</span><span class="p">(</span><span class="n">member</span><span class="p">,</span> <span class="n">before</span><span class="p">,</span> <span class="n">after</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">before</span><span class="o">.</span><span class="n">channel</span> <span class="ow">and</span> <span class="n">before</span><span class="o">.</span><span class="n">channel</span><span class="o">.</span><span class="n">name</span> <span class="ow">in</span> <span class="n">EXCLUDED_CHANNELS</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">after</span><span class="o">.</span><span class="n">channel</span> <span class="ow">and</span> <span class="n">after</span><span class="o">.</span><span class="n">channel</span><span class="o">.</span><span class="n">name</span> <span class="ow">in</span> <span class="n">EXCLUDED_CHANNELS</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">before</span><span class="o">.</span><span class="n">channel</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">after</span><span class="o">.</span><span class="n">channel</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># メンバーがボイスチャンネルに参加した</span>
+</span></span><span class="line"><span class="cl">        <span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">member</span><span class="o">.</span><span class="n">display_name</span><span class="si">}</span><span class="s2"> がボイスチャンネル 「</span><span class="si">{</span><span class="n">after</span><span class="o">.</span><span class="n">channel</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">」 に参加しました！&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">send_slack_message</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># elif before.channel is not None and after.channel is None:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#     message = f&#34;{member.display_name} がボイスチャンネル 「{before.channel.name}」 から退出しました！&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#     send_slack_message(message)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">before</span><span class="o">.</span><span class="n">channel</span> <span class="o">!=</span> <span class="n">after</span><span class="o">.</span><span class="n">channel</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">message</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">member</span><span class="o">.</span><span class="n">display_name</span><span class="si">}</span><span class="s2"> がボイスチャンネル 「</span><span class="si">{</span><span class="n">before</span><span class="o">.</span><span class="n">channel</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">」 から 「</span><span class="si">{</span><span class="n">after</span><span class="o">.</span><span class="n">channel</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">」 に移動しました！&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">send_slack_message</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">client</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">DISCORD_TOKEN</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="docker-composeyml">docker-compose.yml</h3>
+<p>また、今回は無料かつ常時稼働させる必要があるので自作のクラウドでホスティングをする。
+そのために、Dockerでコンテナ化をする。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;3&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">discobot</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">build</span><span class="p">:</span><span class="w"> </span><span class="l">./</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;discobot&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">stdin_open</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">tty</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">env_file</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;./.env&#34;</span><span class="p">]</span><span class="w">
+</span></span></span></code></pre></div><h3 id="dockerfile">dockerfile</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> python:3.11-slim</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">WORKDIR</span><span class="s"> /app</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> apt-get update <span class="o">&amp;&amp;</span> apt-get install -y <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    build-essential <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    <span class="o">&amp;&amp;</span> rm -rf /var/lib/apt/lists/*<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">COPY</span> . .<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> pip install --no-cache-dir -r requirements.txt<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">CMD</span> <span class="p">[</span><span class="s2">&#34;python&#34;</span><span class="p">,</span> <span class="s2">&#34;bot.py&#34;</span><span class="p">]</span><span class="err">
+</span></span></span></code></pre></div><h3 id="requirementstxt">requirements.txt</h3>
+<p>Pythonのパッケージを一括インストールできるように、リスト化する</p>
+<pre tabindex="0"><code>discord.py
+requests
+python-dotenv
+</code></pre><h2 id="実装する上での工夫">実装する上での工夫</h2>
+<h3 id="技術選定">技術選定</h3>
+<p>ボイスチャンネル入室のslack通知実装において必須の条件となっていたのが、「<span style="color:red; font-weight:bold">常時稼働</span> &amp; <span style="color:red; font-weight:bold">無料</span>」です。</p>
+<p>これを実装するためにNUTMEGの自作クラウドにデプロイする必要があったので、Dockerでコンテナ化をしました。</p>
+<p>また、B4が実務訓練に行き、discordの使用頻度が高くなる前に完成させたいという思いがあったのでなるべく早く実装できる方法を模索していました。そこで <a href="https://discordpy.readthedocs.io/ja/latest/">discord.py</a> というDiscord APIを利用したアプリケーションを作成するのに便利なPythonライブラリがあるということでこれを使用しました。</p>
+<h3 id="退出はいらん">退出はいらん</h3>
+<p>bot.pyでコメントアウトされている部分がありますが、最初は入質・退室の両方を通知しようと思い実装をしました。
+しかし、退出まで通知されると通知量が多くなってしまいslackの通知チャンネルを見たくなくなります。</p>
+<p>他の人のdiscord活動を見えるようにすることで、本来の目的である「モチベーションを高めたり」、「一緒に作業すること」ができなくなってしまうので入室のみ通知をとれるようにしました。</p>
+<p><img src="https://hackmd.io/_uploads/HyXSeRUSke.png" alt="入退室"></p>
+<h3 id="1on1チャンネルの除外">1on1チャンネルの除外</h3>
+<p>NUTMEGのdiscordには2人しか入れない、1on1をするためのチャンネルが存在します。
+ここを使うことはそうそうありませんが、プライバシー性が高い話をする際に使用されることが考えられるのでこのチャンネルでの入室通知は取らないことにしました。</p>
+<p><img src="https://hackmd.io/_uploads/BJfvQ38Hkl.png" alt="スクリーンショット 2024-12-23 18.54.28"></p>
+<h2 id="作ってみて">作ってみて</h2>
+<p>想像以上にメンバーからの好評な意見をもらいました。
+「通知があると誰がdiscordにいるか分かりやすい！」
+「いちいちslackのtimesでdiscord作業会していることを報告しなくてもいい！」</p>
+<p>また、明らかにdiscordでの通話しながらの活動が増えた気がします。特に11月はほぼ毎日、誰かがdiscordでの活動をしていました！</p>
+<h2 id="最後に">最後に</h2>
+<p>きっかけはサークルの活動をより良いものにするという思いなので、これからもwebアプリだけではなく、幅広く開発していきたいですね。</p>
+<p>ちなみに、「slackのみんなのtimesをXのタイムラインのような形で見られるようにする」という実装もしたので、1か月後くらいに導入してみての結果を踏まえたブログを書こうと思います！</p>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024">Nutmeg advent calendar 2024</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%81%e3%83%bc%e3%83%a0%e3%81%a5%e3%81%8f%e3%82%8a">チームづくり</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+
+</body>
+</html>
