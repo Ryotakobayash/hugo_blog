@@ -1,0 +1,11 @@
+{{- $type := .Get 0 | default "info" -}}
+{{- $icon := "" -}}
+{{- if eq $type "info" -}}{{- $icon = "information-circle-outline" -}}
+{{- else if eq $type "warning" -}}{{- $icon = "warning-outline" -}}
+{{- else if eq $type "success" -}}{{- $icon = "checkmark-circle-outline" -}}
+{{- else if eq $type "danger" -}}{{- $icon = "alert-circle-outline" -}}
+{{- else -}}{{- errorf "unknown type of alert %s" $.Params -}}
+{{- end -}}
+<div class="alert {{ $type }}">
+  <div><ion-icon size="large" name="{{ $icon }}"></ion-icon><p>{{ .Inner | markdownify }}</p></div>
+</div>

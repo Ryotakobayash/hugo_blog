@@ -269,3 +269,62 @@ a.members-flex-box__card__post-list {
 /* GenericStrong */ & .chroma .gs { font-weight:bold }
 /* GenericSubheading */ & .chroma .gu { color:#75715e }
 }
+
+.alert {
+  position: relative;
+  text-align: left;
+  padding: 8px 16px;
+  margin: 1.5em 0 1.5em;
+  border: none;
+  border-left: 3px solid;
+  word-break: break-word;
+}
+
+.alert * {
+  margin-bottom: 0; 
+}
+
+.alert div:first-child {
+  display: flex;
+  gap: 16px
+}
+
+.alert div > div {
+  flex-flow: column;
+}
+
+.alert ion-icon {
+  flex-shrink: 0;
+}
+
+.alert p {
+  margin: 0 0 0
+}
+
+.alert p:first-child {
+  margin: 0
+}
+
+.alert.info {
+  border-color: #349ef3;
+  color: #349ef3;
+  background-color: #fafafa;
+}
+
+.alert.success {
+  border-color: #4dc657;
+  color: #4dc657;
+  background-color: #fafafa;
+}
+
+.alert.warning {
+  border-color: #f5aa0a;
+  color: #f5aa0a;
+  background-color: #fafafa;
+}
+
+.alert.danger {
+  border-color: #f5311d;
+  color: #f5311d;
+  background-color: #fafafa;
+}
