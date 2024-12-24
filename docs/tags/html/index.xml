@@ -6,56 +6,63 @@
     <description>Recent content in HTML on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 09 Nov 2024 23:11:52 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Dec 2024 15:43:58 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Babylon.jsでMMDに挑戦してみた。</title>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20241224/</link>
+      <pubDate>Tue, 24 Dec 2024 15:43:58 +0900</pubDate>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241224/</guid>
+      <description>はじめに こんにちは！NUTMEGの「やま」です。アドベントカレンダー24日目を担当します。</description>
+    </item>
     <item>
       <title>コンポーネントをいい感じに整理しよう（Atomic Design）</title>
       <link>https://blog.nutmeg.cloud/blog/post-20241107/</link>
       <pubDate>Sat, 09 Nov 2024 23:11:52 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20241107/</guid>
-      <description>&lt;h1 id=&#34;概要&#34;&gt;概要&lt;/h1&gt;&#xA;&lt;p&gt;　先日、作成中のBINGOアプリのミーティングで「コンポーネントをいい感じに整理しよう」となり、コンポーネント整理についていろいろ調べました。その時に、Atomic Designを調べたので自分なりにまとめてみました。&#xA;なお、本記事はアプリ開発初心者が書いているため、一部事実と異なる場合があるかもしれません。本記事を参考にする際は、気を付けてください。&lt;/p&gt;</description>
+      <description>概要 先日、作成中のBINGOアプリのミーティングで「コンポーネントをいい感じに整理しよう」となり、コンポーネント整理についていろいろ調べました。その時に、Atomic Designを調べたので自分なりにまとめてみました。 なお、本記事はアプリ開発初心者が書いているため、一部事実と異なる場合があるかもしれません。本記事を参考にする際は、気を付けてください。</description>
     </item>
     <item>
       <title>Webアプリ（フロントエンド）開発のtips</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240716/</link>
       <pubDate>Thu, 18 Jul 2024 18:34:04 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240716/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。&lt;/p&gt;</description>
+      <description>はじめに テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。</description>
     </item>
     <item>
       <title>情報局に入って</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240711/</link>
       <pubDate>Thu, 18 Jul 2024 13:53:41 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240711/</guid>
-      <description>&lt;h2&gt;&#xA;    はじめに&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;皆さんこんにちは！はじめまして！&lt;br&gt;&#xA;まだアイデンティティの定まっていない新入生こと、あかりです！&lt;/p&gt;</description>
+      <description>はじめに 皆さんこんにちは！はじめまして！</description>
     </item>
     <item>
       <title>NUTMEGブログ大改造ビフォーアフター</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240526/</link>
       <pubDate>Sun, 26 May 2024 20:12:57 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240526/</guid>
-      <description>&lt;p&gt;NUTMEGデザイナーチーム 修士2年のryota5884です。この度ふと思い立って後回しにしていたブログの改修をしてみました。多少苦戦したのでその解決方法を後輩への引き継ぎも兼ねてまとめようと思います。&lt;/p&gt;</description>
+      <description>NUTMEGデザイナーチーム 修士2年のryota5884です。この度ふと思い立って後回しにしていたブログの改修をしてみました。多少苦戦したのでその解決方法を後輩への引き継ぎも兼ねてまとめようと思います。</description>
     </item>
     <item>
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
-      <description>&lt;p&gt;こんにちは。現在学部4年の市之瀬です。&#xA;今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。&lt;/p&gt;</description>
+      <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
     <item>
       <title>フロントエンド未経験者が仕事をするためにやった1ヶ月の勉強</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231221/</link>
       <pubDate>Thu, 21 Dec 2023 20:39:42 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231221/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;はじめまして。NUTMEGで普段インフラ・バックエンドをしている市之瀬と申します。&lt;/p&gt;</description>
+      <description>はじめに はじめまして。NUTMEGで普段インフラ・バックエンドをしている市之瀬と申します。</description>
     </item>
     <item>
       <title>NUTMEG-Seedsリリースしました！！！</title>
       <link>https://blog.nutmeg.cloud/blog/post-20220319/</link>
       <pubDate>Sun, 20 Mar 2022 03:33:04 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20220319/</guid>
-      <description>&lt;p&gt;NUTMEGで主にフロントエンドを担当している99Aです．&#xA;2022.3.18にNUTMEG-Seedsという学習管理もとい人材管理のアプリケーションをリリースしました！&#xA;このアプリはメンバーの学習記録，技術スタック，プロジェクトの参加状況を参照し，チームの管理に特化したアプリです．以下に主な機能を紹介します．&lt;/p&gt;</description>
+      <description>NUTMEGで主にフロントエンドを担当している99Aです． 2022.3.18にNUTMEG-Seedsという学習管理もとい人材管理のアプリケーションをリリースしました！ このアプリはメンバーの学習記録，技術スタック，プロジェクトの参加状況を参照し，チームの管理に特化したアプリです．以下に主な機能を紹介します．</description>
     </item>
   </channel>
 </rss>

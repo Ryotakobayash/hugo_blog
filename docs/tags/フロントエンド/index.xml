@@ -6,63 +6,70 @@
     <description>Recent content in フロントエンド on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Dec 2024 13:10:23 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Dec 2024 15:43:58 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/tags/%E3%83%95%E3%83%AD%E3%83%B3%E3%83%88%E3%82%A8%E3%83%B3%E3%83%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Babylon.jsでMMDに挑戦してみた。</title>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20241224/</link>
+      <pubDate>Tue, 24 Dec 2024 15:43:58 +0900</pubDate>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241224/</guid>
+      <description>はじめに こんにちは！NUTMEGの「やま」です。アドベントカレンダー24日目を担当します。</description>
+    </item>
     <item>
       <title>AIと一緒に5時間でアプリ開発した話</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241209/</link>
       <pubDate>Mon, 09 Dec 2024 13:10:23 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241209/</guid>
-      <description>&lt;h1 id=&#34;自己紹介&#34;&gt;自己紹介&lt;/h1&gt;&#xA;&lt;p&gt;初めまして、上條遥都(はるじょー)と申します&#xA;長岡技術科学大学工学部情報経営システム工学分野の3年生です&#xA;趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！&#xA;先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！&#xA;宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑&lt;/p&gt;</description>
+      <description>自己紹介 初めまして、上條遥都(はるじょー)と申します 長岡技術科学大学工学部情報経営システム工学分野の3年生です 趣味は、プログラミング、ファッション、香水、運動、水族館で、最近はとくに香水にはまってます！ 先月、MUCHAさんの北極星という香水を購入したのですが、鼻を抜ける涼やかな香りと淑やかなお茶のような香りが綺麗に調和していて、秋冬の気分を一段階上げてくれる香水でした！ 宣伝ではまったくないんですが、ほんとうにいい匂いで10ml、4000円ほどで買えるのでお手頃です笑笑</description>
     </item>
     <item>
       <title>衝動的にWEBゲーム作り始めた男の末路</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241208/</link>
       <pubDate>Sun, 08 Dec 2024 18:57:16 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241208/</guid>
-      <description>&lt;p&gt;このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。&#xA;時系列的にはアドカレ以前の内容となっています。&#xA;ご注意ください。&lt;/p&gt;</description>
+      <description>このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。 時系列的にはアドカレ以前の内容となっています。 ご注意ください。</description>
     </item>
     <item>
       <title>入学から12月までの出来事を振り返る！</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241204/</link>
       <pubDate>Wed, 04 Dec 2024 12:19:41 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241204/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;初めまして、2024年の春から技大祭実行委員会情報局に所属しています、情報経営システム工学分野3年の松浦です。&lt;/p&gt;</description>
+      <description>はじめに 初めまして、2024年の春から技大祭実行委員会情報局に所属しています、情報経営システム工学分野3年の松浦です。</description>
     </item>
     <item>
       <title>コンポーネントをいい感じに整理しよう（Atomic Design）</title>
       <link>https://blog.nutmeg.cloud/blog/post-20241107/</link>
       <pubDate>Sat, 09 Nov 2024 23:11:52 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20241107/</guid>
-      <description>&lt;h1 id=&#34;概要&#34;&gt;概要&lt;/h1&gt;&#xA;&lt;p&gt;　先日、作成中のBINGOアプリのミーティングで「コンポーネントをいい感じに整理しよう」となり、コンポーネント整理についていろいろ調べました。その時に、Atomic Designを調べたので自分なりにまとめてみました。&#xA;なお、本記事はアプリ開発初心者が書いているため、一部事実と異なる場合があるかもしれません。本記事を参考にする際は、気を付けてください。&lt;/p&gt;</description>
+      <description>概要 先日、作成中のBINGOアプリのミーティングで「コンポーネントをいい感じに整理しよう」となり、コンポーネント整理についていろいろ調べました。その時に、Atomic Designを調べたので自分なりにまとめてみました。 なお、本記事はアプリ開発初心者が書いているため、一部事実と異なる場合があるかもしれません。本記事を参考にする際は、気を付けてください。</description>
     </item>
     <item>
       <title>Webアプリ（フロントエンド）開発のtips</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240716/</link>
       <pubDate>Thu, 18 Jul 2024 18:34:04 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240716/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。&lt;/p&gt;</description>
+      <description>はじめに テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。</description>
     </item>
     <item>
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
-      <description>&lt;p&gt;こんにちは。現在学部4年の市之瀬です。&#xA;今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。&lt;/p&gt;</description>
+      <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
     <item>
       <title>フロントエンド未経験者が仕事をするためにやった1ヶ月の勉強</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20231221/</link>
       <pubDate>Thu, 21 Dec 2023 20:39:42 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20231221/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;はじめまして。NUTMEGで普段インフラ・バックエンドをしている市之瀬と申します。&lt;/p&gt;</description>
+      <description>はじめに はじめまして。NUTMEGで普段インフラ・バックエンドをしている市之瀬と申します。</description>
     </item>
     <item>
       <title>フロントエンドってどうやって強くなるの？教えていまいまい！</title>
       <link>https://blog.nutmeg.cloud/blog/post-20230330/</link>
       <pubDate>Thu, 30 Mar 2023 17:55:52 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20230330/</guid>
-      <description>&lt;p&gt;なんだかんだNUTMEGはフロント人材が少し不足しつつあります。&#xA;フロントエンドをこれから勉強する後輩に向けて書きました。&lt;/p&gt;</description>
+      <description>なんだかんだNUTMEGはフロント人材が少し不足しつつあります。 フロントエンドをこれから勉強する後輩に向けて書きました。</description>
     </item>
   </channel>
 </rss>

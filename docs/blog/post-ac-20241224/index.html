@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <title>NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Babylon.jsとbabylon-mmdを使用して、Webブラウザ上でMMDモデルを表示し、モーションを再生する方法を紹介します。">
+  <meta name="author" content="NUTMEG">
+  <meta name="generator" content="Hugo 0.127.0">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://blog.nutmeg.cloud/images/favicon.png " type="image/x-icon">
+
+  
+  <link rel="stylesheet" href="https://blog.nutmeg.cloud/css/custom_post.css">
+  
+
+  <meta property="og:url" content="https://blog.nutmeg.cloud/blog/post-ac-20241224/">
+  <meta property="og:site_name" content="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局">
+  <meta property="og:title" content="Babylon.jsでMMDに挑戦してみた。">
+  <meta property="og:description" content="Babylon.jsとbabylon-mmdを使用して、Webブラウザ上でMMDモデルを表示し、モーションを再生する方法を紹介します。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-12-24T15:43:58+09:00">
+    <meta property="article:modified_time" content="2024-12-24T15:43:58+09:00">
+    <meta property="article:tag" content="GitHub">
+    <meta property="article:tag" content="TypeScript">
+    <meta property="article:tag" content="MMD">
+    <meta property="article:tag" content="フロントエンド">
+    <meta property="article:tag" content="Babylon.js">
+    <meta property="article:tag" content="HTML">
+    <meta property="og:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://blog.nutmeg.cloud/images/OGP.png">
+  <meta name="twitter:title" content="Babylon.jsでMMDに挑戦してみた。">
+  <meta name="twitter:description" content="Babylon.jsとbabylon-mmdを使用して、Webブラウザ上でMMDモデルを表示し、モーションを再生する方法を紹介します。">
+
+
+  <!-- google analitycs -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'Your ID', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q71WVEHHBF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-Q71WVEHHBF');
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+          src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/nutfes_nutmeg"><i class="ti-twitter-alt"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/nutfes/?hl=ja"><i class="ti-instagram"></i></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/orgs/NUTFes"><i class="ti-github"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <a class="navbar-brand mx-auto desktop-view" href="https://blog.nutmeg.cloud/"><img class="img-fluid"
+            src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/about">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/blog">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.nutmeg.cloud/members">Members</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://blog.nutmeg.cloud//search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <a href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3"
+          class="text-primary">メンバーの趣味</a>
+        
+        <a href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024"
+          class="text-primary">Nutmeg advent calendar 2024</a>
+        
+        <h2>Babylon.jsでMMDに挑戦してみた。</h2>
+        <div class="mb-3 post-meta">
+          <span class="author">
+            
+            
+            <p>
+              
+              
+              By やま
+              
+              
+              
+              
+              <span class="border-bottom border-primary px-2 mx-1"></span>
+              24 December 2024
+              
+            </p>
+          </span>
+        </div>
+        
+        <img src="https://hackmd.io/_uploads/SJwMIHwEyl.png" class="img-fluid w-100 mb-4" alt="Babylon.jsでMMDに挑戦してみた。">
+        
+        <div class="content mb-5">
+          <h2 id="はじめに">はじめに</h2>
+<p>こんにちは！NUTMEGの「やま」です。アドベントカレンダー24日目を担当します。</p>
+<p>JavaScriptのWebGLライブラリといえば<a href="https://threejs.org/">Three.js</a>が有名ですが、Microsoft社が開発している<a href="https://www.babylonjs.com/">Babylon.js</a>も活発に開発されています。</p>
+<p>3D制作やゲーム開発にはUnityが有名どころですが、Web開発であるとThree.jsやBabylon.jsは開発環境の構築やデプロイが手軽なところが良いですね。</p>
+<p>久しぶりにMMDを触っていたこともあり、追加のソフトウェアなしで実現できるWebアプリケーションとしてのMMDビューワーの実装に取り組んでみました。Babylon.jsでMMDモデルやモーションを動作させることについては<a href="https://github.com/noname0310/babylon-mmd">babylon-mmd</a>というライブラリが存在しており、ドキュメントも整備されているため比較的容易に実装することができました。</p>
+<p>ドキュメントやサンプル例を参考にしながら作成した、初学者の記録として見ていただければ幸いです。MMDモデルが表示され、音楽に合わせて踊らせることができるところまでの過程を紹介していこうと思います。</p>
+<p>今回作成したリポジトリは以下からアクセスできます。
+<a href="https://github.com/TkymHrt/test-babylon-mmd">test-babylon-mmd</a></p>
+<h2 id="1-環境構築">1. 環境構築</h2>
+<p>今回使用した主要な技術は以下の通りです。</p>
+<ul>
+<li><strong>Vite</strong>: 高速なビルドツールと開発サーバー。</li>
+<li><strong>TypeScript</strong>: 型安全な JavaScript</li>
+<li><strong>Biome</strong>: コードのフォーマットとリンティングのためのツール。</li>
+<li><strong>Babylon.js</strong>: 強力な 3D レンダリングエンジン。</li>
+<li><strong>babylon-mmd</strong>: Babylon.js で MMD モデルを読み込み、表示するためのライブラリ。</li>
+</ul>
+<hr>
+<h3 id="プロジェクトのセットアップ">プロジェクトのセットアップ</h3>
+<div class="alert info">
+  <div><ion-icon size="large" name="information-circle-outline"></ion-icon><p>Bunを使用していますがnpmなどお好みのランタイムで大丈夫です。</p></div>
+</div>
+<h4 id="テンプレートの作成">テンプレートの作成</h4>
+<ol>
+<li>
+<p>Bun + Vite のテンプレートを作成します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bun create vite <span class="o">[</span>your-project-name<span class="o">]</span>
+</span></span></code></pre></div><p><strong>実行結果</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">✔ Select a framework: › Vanilla
+</span></span><span class="line"><span class="cl">✔ Select a variant: › TypeScript
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Scaffolding project in /home/your-project-name
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Done. Now run:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nb">cd</span> your-project-name
+</span></span><span class="line"><span class="cl">  bun install
+</span></span><span class="line"><span class="cl">  bun run dev
+</span></span></code></pre></div></li>
+<li>
+<p>続けて指示通りプロジェクトのあるディレクトリに移動してコマンドを実行します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">  <span class="nb">cd</span> your-project-name
+</span></span><span class="line"><span class="cl">  bun install
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="biomeのインストール">Biomeのインストール</h4>
+<ol>
+<li>
+<p>Biomeのセットアップを行います。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bun add --dev --exact @biomejs/biome
+</span></span><span class="line"><span class="cl">bunx biome init
+</span></span></code></pre></div><p><code>biome.json</code>はお好みで設定してください。</p>
+<p><strong>設定例</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;$schema&#34;</span><span class="p">:</span> <span class="s2">&#34;https://biomejs.dev/schemas/1.9.4/schema.json&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;vcs&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;enabled&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;clientKind&#34;</span><span class="p">:</span> <span class="s2">&#34;git&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;useIgnoreFile&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;files&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ignoreUnknown&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ignore&#34;</span><span class="p">:</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;formatter&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;enabled&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;indentStyle&#34;</span><span class="p">:</span> <span class="s2">&#34;tab&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;organizeImports&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;enabled&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;linter&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;enabled&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;rules&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;recommended&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;javascript&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;formatter&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;quoteStyle&#34;</span><span class="p">:</span> <span class="s2">&#34;double&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="babylonjsなどの依存関係をインストール">Babylon.jsなどの依存関係をインストール</h4>
+<ol>
+<li>
+<p>Babylon.jsとbabylon-mmdに必要なライブラリを追加します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bun add @babylonjs/core @babylonjs/havok @babylonjs/inspector @babylonjs/materials babylon-mmd
+</span></span></code></pre></div><p><strong>実行結果</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"> bun add @babylonjs/core @babylonjs/havok @babylonjs/inspector @babylonjs/materials babylon-mmd
+</span></span><span class="line"><span class="cl">bun add v1.1.0 <span class="o">(</span>5903a614<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> installed @babylonjs/core@7.39.1
+</span></span><span class="line"><span class="cl"> installed @babylonjs/havok@1.3.10
+</span></span><span class="line"><span class="cl"> installed @babylonjs/inspector@7.39.1
+</span></span><span class="line"><span class="cl"> installed @babylonjs/materials@7.39.1
+</span></span><span class="line"><span class="cl"> installed babylon-mmd@0.59.1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"> <span class="m">18</span> packages installed <span class="o">[</span>10.18s<span class="o">]</span>
+</span></span></code></pre></div></li>
+</ol>
+<h4 id="viteの設定">Viteの設定</h4>
+<ol>
+<li>
+<p><code>vite.config.ts</code>を作成し、MMDのロードをサポートするための設定を記載します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">defineConfig</span> <span class="p">}</span> <span class="kr">from</span> <span class="s1">&#39;vite&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="k">default</span> <span class="nx">defineConfig</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">server</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="s2">&#34;*.wasm&#34;</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;Content-Type&#34;</span><span class="o">:</span> <span class="s2">&#34;application/wasm&#34;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">optimizeDeps</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">exclude</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;babylon-mmd&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="2-mmd関連のアセットの準備">2. MMD関連のアセットの準備</h2>
+<ol>
+<li>
+<p><strong>モデルデータの準備</strong>
+MMDではPMXファイルを用いてMMDモデルをインポートしますが、babylon-mmdではPMXを更に最適化したBPMXファイルを使用することができます。
+PMXファイルの変換についてはbabylon-mmdの作者様が変換ページを公開していますので以下のリンクから変換してください。</p>
+<p><a href="https://noname0310.github.io/babylon-mmd/pmx_converter/">PMX to BPMX Converter</a></p>
+</li>
+<li>
+<p><strong>モーションデータの準備</strong>
+同様に、babylon-mmdではVMDを更に最適化したBVMDファイルを使用することができます。
+babylon-mmdの作者様が変換ページを公開していますので以下のリンクから変換してください。</p>
+<p><a href="https://noname0310.github.io/babylon-mmd/vmd_converter/">VMD to BVMD Converter</a></p>
+<div class="alert info">
+  <div><ion-icon size="large" name="information-circle-outline"></ion-icon><p><pre><code>babylon-mmdでは通常のPMX・VMDファイルもサポートしています。
+</code></pre>
+</p></div>
+</div>
+</li>
+<li>
+<p><strong>音声ファイルの準備</strong>
+お好みの楽曲等の音源を用意してください。</p>
+<div class="alert info">
+  <div><ion-icon size="large" name="information-circle-outline"></ion-icon><p><pre><code>Babylon.jsでサポートされているサウンド形式は、.mp3、.ogg、.wav、.m4a、.mp4です。
+</code></pre>
+</p></div>
+</div>
+</li>
+</ol>
+<h2 id="3-babylonjsの基本的な設定">3. Babylon.jsの基本的な設定</h2>
+<p>まずは、Babylon.jsで基本的なシーンを構築します。</p>
+<ol>
+<li>
+<p><strong>エンジンの初期化</strong>
+<code>src/main.ts</code>を作成し編集します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Engine</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core/Engines/engine&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">createBaseRuntime</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;./baseRuntime&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">buildScene</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;./sceneBuilder&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">initializeEngine() {</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">canvas</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;canvas&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">canvas</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="s2">&#34;renderCanvas&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">canvas</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">engine</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Engine</span><span class="p">(</span><span class="nx">canvas</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">preserveDrawingBuffer</span>: <span class="kt">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">stencil</span>: <span class="kt">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">antialias</span>: <span class="kt">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">alpha</span>: <span class="kt">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">powerPreference</span><span class="o">:</span> <span class="s2">&#34;high-performance&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">runtime</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">createBaseRuntime</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">canvas</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">engine</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sceneBuilder</span><span class="o">:</span> <span class="p">{</span> <span class="nx">build</span>: <span class="kt">buildScene</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nx">runtime</span><span class="p">.</span><span class="nx">run</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;resize&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">engine</span><span class="p">.</span><span class="nx">resize</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;DOMContentLoaded&#34;</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">initializeEngine</span><span class="p">().</span><span class="k">catch</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>ランタイムの作成</strong>
+<code>src/baseRuntime.ts</code>を作成し編集します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="kr">type</span> <span class="p">{</span> <span class="nx">AbstractEngine</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core/Engines/abstractEngine&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="kr">type</span> <span class="p">{</span> <span class="nx">Scene</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core/scene&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">ISceneBuilder</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">build</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">canvas</span>: <span class="kt">HTMLCanvasElement</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">engine</span>: <span class="kt">AbstractEngine</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">)</span><span class="o">:</span> <span class="nx">Scene</span> <span class="o">|</span> <span class="nx">Promise</span><span class="p">&lt;</span><span class="nt">Scene</span><span class="p">&gt;;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">interface</span> <span class="nx">BaseRuntimeInitParams</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">canvas</span>: <span class="kt">HTMLCanvasElement</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">engine</span>: <span class="kt">AbstractEngine</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">sceneBuilder</span>: <span class="kt">ISceneBuilder</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">interface</span> <span class="nx">BaseRuntime</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">run</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">dispose</span><span class="p">()</span><span class="o">:</span> <span class="k">void</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">export</span> <span class="kr">async</span> <span class="kd">function</span> <span class="nx">createBaseRuntime</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">params</span>: <span class="kt">BaseRuntimeInitParams</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span><span class="o">:</span> <span class="nx">Promise</span><span class="p">&lt;</span><span class="nt">BaseRuntime</span><span class="p">&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="p">{</span> <span class="nx">canvas</span><span class="p">,</span> <span class="nx">engine</span><span class="p">,</span> <span class="nx">sceneBuilder</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">params</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">scene</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">sceneBuilder</span><span class="p">.</span><span class="nx">build</span><span class="p">(</span><span class="nx">canvas</span><span class="p">,</span> <span class="nx">engine</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">onResize</span> <span class="o">=</span> <span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">engine</span><span class="p">.</span><span class="nx">resize</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">onTick</span> <span class="o">=</span> <span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="nx">scene</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nx">scene</span><span class="p">.</span><span class="nx">render</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">run</span> <span class="o">=</span> <span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&#34;resize&#34;</span><span class="p">,</span> <span class="nx">onResize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">engine</span><span class="p">.</span><span class="nx">runRenderLoop</span><span class="p">(</span><span class="nx">onTick</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kr">const</span> <span class="nx">dispose</span> <span class="o">=</span> <span class="p">()</span><span class="o">:</span> <span class="k">void</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">window</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s2">&#34;resize&#34;</span><span class="p">,</span> <span class="nx">onResize</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">engine</span><span class="p">.</span><span class="nx">dispose</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">run</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">dispose</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="4-シーンの構築">4. シーンの構築</h2>
+<h3 id="4-1-エンジンの初期設定">4-1. エンジンの初期設定</h3>
+<p><code>src/sceneBuilder.ts</code>を作成し、エンジンの初期設定を行います。ここでは、MMDモデルのスキニング変形を正しく処理するためのSDEFインジェクタの設定と、テクスチャローダーの登録を行います。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">AbstractEngine</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">SdefInjector</span><span class="p">,</span> <span class="nx">registerDxBmpTextureLoader</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;babylon-mmd&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// エンジンの初期設定
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">initializeEngine</span> <span class="o">=</span> <span class="p">(</span><span class="nx">engine</span>: <span class="kt">AbstractEngine</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">SdefInjector</span><span class="p">.</span><span class="nx">OverrideEngineCreateEffect</span><span class="p">(</span><span class="nx">engine</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">registerDxBmpTextureLoader</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>initializeEngine</code> 関数では、<code>SdefInjector</code>でスキニング変形を処理し、<code>registerDxBmpTextureLoader</code>でテクスチャローダーを登録します。</p>
+<h3 id="4-2-シーンの基本設定">4-2. シーンの基本設定</h3>
+<p>次に、シーンの背景色とアンビエントカラーを設定します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Color3</span><span class="p">,</span> <span class="nx">Color4</span><span class="p">,</span> <span class="nx">Scene</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// シーンの基本設定を行う
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">setupScene</span> <span class="o">=</span> <span class="p">(</span><span class="nx">scene</span>: <span class="kt">Scene</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">scene</span><span class="p">.</span><span class="nx">clearColor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Color4</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">scene</span><span class="p">.</span><span class="nx">ambientColor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Color3</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>setupScene</code> 関数では、<code>scene.clearColor</code> で背景色を、<code>scene.ambientColor</code> でアンビエントカラーを定義します。</p>
+<h3 id="4-3-mmdルートノードの作成">4-3. MMDルートノードの作成</h3>
+<p>MMDモデルとカメラを整理するために、ルートとなるトランスフォームノードを作成します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Scene</span><span class="p">,</span> <span class="nx">TransformNode</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// MMDのルートノードを作成する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">createMmdRoot</span> <span class="o">=</span> <span class="p">(</span><span class="nx">scene</span>: <span class="kt">Scene</span><span class="p">)</span><span class="o">:</span> <span class="nx">TransformNode</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">mmdRoot</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TransformNode</span><span class="p">(</span><span class="s2">&#34;mmdRoot&#34;</span><span class="p">,</span> <span class="nx">scene</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRoot</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">z</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">mmdRoot</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>createMmdRoot</code> 関数で<code>mmdRoot</code> という名前の <code>TransformNode</code> を作成し、MMDモデルとカメラの親ノードとします。</p>
+<h3 id="4-4-mmdカメラの作成">4-4. MMDカメラの作成</h3>
+<p>MMDモデルを映すためのカメラを作成し、基本的な設定を行います。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Scene</span><span class="p">,</span> <span class="nx">TransformNode</span><span class="p">,</span> <span class="nx">Vector3</span><span class="p">,</span> <span class="nx">MmdCamera</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// MMDのカメラを作成する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">createMmdCamera</span> <span class="o">=</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">scene</span>: <span class="kt">Scene</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">canvas</span>: <span class="kt">HTMLCanvasElement</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRoot</span>: <span class="kt">TransformNode</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span><span class="o">:</span> <span class="nx">MmdCamera</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">mmdCamera</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MmdCamera</span><span class="p">(</span><span class="s2">&#34;mmdCamera&#34;</span><span class="p">,</span> <span class="k">new</span> <span class="nx">Vector3</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="nx">scene</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdCamera</span><span class="p">.</span><span class="nx">maxZ</span> <span class="o">=</span> <span class="mi">300</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdCamera</span><span class="p">.</span><span class="nx">minZ</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdCamera</span><span class="p">.</span><span class="nx">parent</span> <span class="o">=</span> <span class="nx">mmdRoot</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdCamera</span><span class="p">.</span><span class="nx">attachControl</span><span class="p">(</span><span class="nx">canvas</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdCamera</span><span class="p">.</span><span class="nx">inertia</span> <span class="o">=</span> <span class="mf">0.8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">mmdCamera</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>createMmdCamera</code> 関数で<code>MmdCamera</code>を作成し、位置や描画範囲、操作や動きの慣性などを設定します。</p>
+<h2 id="5-ライティングとシャドウの設定">5. ライティングとシャドウの設定</h2>
+<p>シーンにライティングとシャドウを追加して、よりリアルな見た目を作成します。</p>
+<h3 id="5-1-ディレクショナルライトの作成">5-1. ディレクショナルライトの作成</h3>
+<p>シーン全体を照らすディレクショナルライトを作成します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">DirectionalLight</span><span class="p">,</span> <span class="nx">Scene</span><span class="p">,</span> <span class="nx">Vector3</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// ディレクショナルライトを作成する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">createDirectionalLight</span> <span class="o">=</span> <span class="p">(</span><span class="nx">scene</span>: <span class="kt">Scene</span><span class="p">)</span><span class="o">:</span> <span class="nx">DirectionalLight</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">directionalLight</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DirectionalLight</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;DirectionalLight&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="k">new</span> <span class="nx">Vector3</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">scene</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">directionalLight</span><span class="p">.</span><span class="nx">intensity</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">directionalLight</span><span class="p">.</span><span class="nx">autoCalcShadowZBounds</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">directionalLight</span><span class="p">.</span><span class="nx">autoUpdateExtends</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">directionalLight</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>createDirectionalLight</code> 関数で<code>DirectionalLight</code>を作成し、方向や明るさを設定します。</p>
+<h3 id="5-2-シャドウジェネレーターの作成">5-2. シャドウジェネレーターの作成</h3>
+<p>影を生成するためのシャドウジェネレーターを作成し、設定します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">DirectionalLight</span><span class="p">,</span> <span class="nx">ShadowGenerator</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// シャドウジェネレーターを作成する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">createShadowGenerator</span> <span class="o">=</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">directionalLight</span>: <span class="kt">DirectionalLight</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span><span class="o">:</span> <span class="nx">ShadowGenerator</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">shadowGenerator</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ShadowGenerator</span><span class="p">(</span><span class="mi">4096</span><span class="p">,</span> <span class="nx">directionalLight</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shadowGenerator</span><span class="p">.</span><span class="nx">usePoissonSampling</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shadowGenerator</span><span class="p">.</span><span class="nx">useBlurExponentialShadowMap</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shadowGenerator</span><span class="p">.</span><span class="nx">usePercentageCloserFiltering</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shadowGenerator</span><span class="p">.</span><span class="nx">transparencyShadow</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shadowGenerator</span><span class="p">.</span><span class="nx">forceBackFacesOnly</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shadowGenerator</span><span class="p">.</span><span class="nx">frustumEdgeFalloff</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">shadowGenerator</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>createShadowGenerator</code> 関数で<code>ShadowGenerator</code>を作成し、シャドウの品質や計算方法を調整します。</p>
+<h3 id="5-3-地面の作成">5-3. 地面の作成</h3>
+<p>影を受けるための地面を作成します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">CreateGround</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">DirectionalLight</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Scene</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">TransformNode</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">ShadowOnlyMaterial</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/materials&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 地面を作成する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">createGround</span> <span class="o">=</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">scene</span>: <span class="kt">Scene</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">directionalLight</span>: <span class="kt">DirectionalLight</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRoot</span>: <span class="kt">TransformNode</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span><span class="o">:</span> <span class="nx">TransformNode</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">ground</span> <span class="o">=</span> <span class="nx">CreateGround</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;ground1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span> <span class="nx">width</span>: <span class="kt">100</span><span class="p">,</span> <span class="nx">height</span>: <span class="kt">100</span><span class="p">,</span> <span class="nx">subdivisions</span>: <span class="kt">2</span><span class="p">,</span> <span class="nx">updatable</span>: <span class="kt">false</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">scene</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">shadowOnlyMaterial</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ShadowOnlyMaterial</span><span class="p">(</span><span class="s2">&#34;shadowOnly&#34;</span><span class="p">,</span> <span class="nx">scene</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">ground</span><span class="p">.</span><span class="nx">material</span> <span class="o">=</span> <span class="nx">shadowOnlyMaterial</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shadowOnlyMaterial</span><span class="p">.</span><span class="nx">activeLight</span> <span class="o">=</span> <span class="nx">directionalLight</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shadowOnlyMaterial</span><span class="p">.</span><span class="nx">alpha</span> <span class="o">=</span> <span class="mf">0.4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">ground</span><span class="p">.</span><span class="nx">receiveShadows</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">ground</span><span class="p">.</span><span class="nx">parent</span> <span class="o">=</span> <span class="nx">mmdRoot</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">ground</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>createGround</code> 関数で地面を作成し、影を受けるように設定します。</p>
+<h2 id="6-mmdモデルの表示">6. MMDモデルの表示</h2>
+<p>MMDモデルをシーンにロードして表示します。</p>
+<h3 id="6-1-アセットの並行ロード">6-1. アセットの並行ロード</h3>
+<p>MMDモデル、モーション、カメラモーションを並行してロードします。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Scene</span><span class="p">,</span> <span class="nx">SceneLoader</span><span class="p">,</span> <span class="nx">TransformNode</span><span class="p">,</span> <span class="nx">loadAssetContainerAsync</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="kr">type</span> <span class="p">{</span> <span class="nx">MmdAnimation</span><span class="p">,</span> <span class="nx">MmdMesh</span><span class="p">,</span> <span class="nx">MmdWasmInstance</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;babylon-mmd&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">BpmxLoader</span><span class="p">,</span> <span class="nx">BvmdLoader</span><span class="p">,</span> <span class="nx">MmdStandardMaterialBuilder</span><span class="p">,</span> <span class="nx">getMmdWasmInstance</span><span class="p">,</span> <span class="nx">MmdWasmInstanceTypeSPR</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;babylon-mmd&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// ロードするファイルのパスを定数として定義
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">MOTION_FILE_PATH</span> <span class="o">=</span> <span class="s2">&#34;/gimme_gimme_motion.bvmd&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">CAMERA_MOTION_FILE_PATH</span> <span class="o">=</span> <span class="s2">&#34;/GimmeGimmeC.bvmd&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">MODEL_FILE_PATH</span> <span class="o">=</span> <span class="s2">&#34;/sour_miku_black.bpmx&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// アセットを並行してロード
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">loadAssets</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">scene</span>: <span class="kt">Scene</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">_mmdRoot</span>: <span class="kt">TransformNode</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span><span class="o">:</span> <span class="nx">Promise</span><span class="o">&lt;</span><span class="p">[</span><span class="nx">MmdWasmInstance</span><span class="p">,</span> <span class="nx">MmdAnimation</span><span class="p">,</span> <span class="nx">MmdAnimation</span><span class="p">,</span> <span class="nx">MmdMesh</span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">materialBuilder</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MmdStandardMaterialBuilder</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">bvmdLoader</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BvmdLoader</span><span class="p">(</span><span class="nx">scene</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">bvmdLoader</span><span class="p">.</span><span class="nx">loggingEnabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">SceneLoader</span><span class="p">.</span><span class="nx">RegisterPlugin</span><span class="p">(</span><span class="k">new</span> <span class="nx">BpmxLoader</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">loadingTexts</span>: <span class="kt">string</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">updateLoadingText</span> <span class="o">=</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">engine</span>: <span class="kt">AbstractEngine</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">index</span>: <span class="kt">number</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">text</span>: <span class="kt">string</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span><span class="o">:</span> <span class="k">void</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">loadingTexts</span><span class="p">[</span><span class="nx">index</span><span class="p">]</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">engine</span><span class="p">.</span><span class="nx">loadingUIText</span> <span class="o">=</span> <span class="sb">`&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</span><span class="si">${</span><span class="nx">loadingTexts</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;&lt;br/&gt;&lt;br/&gt;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">Promise</span><span class="p">.</span><span class="nx">all</span><span class="p">([</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">getMmdWasmInstance</span><span class="p">(</span><span class="k">new</span> <span class="nx">MmdWasmInstanceTypeSPR</span><span class="p">()),</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">bvmdLoader</span><span class="p">.</span><span class="nx">loadAsync</span><span class="p">(</span><span class="s2">&#34;motion&#34;</span><span class="p">,</span> <span class="nx">MOTION_FILE_PATH</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">updateLoadingText</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">scene</span><span class="p">.</span><span class="nx">getEngine</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="sb">`モーションを読み込み中... </span><span class="si">${</span><span class="nx">event</span><span class="p">.</span><span class="nx">loaded</span><span class="si">}</span><span class="sb">/</span><span class="si">${</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">event</span><span class="p">.</span><span class="nx">total</span>
+</span></span><span class="line"><span class="cl">                <span class="si">}</span><span class="sb"> (</span><span class="si">${</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">event</span><span class="p">.</span><span class="nx">loaded</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">/</span> <span class="nx">event</span><span class="p">.</span><span class="nx">total</span><span class="p">)</span><span class="si">}</span><span class="sb">%)`</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">bvmdLoader</span><span class="p">.</span><span class="nx">loadAsync</span><span class="p">(</span><span class="s2">&#34;cameraMotion&#34;</span><span class="p">,</span> <span class="nx">CAMERA_MOTION_FILE_PATH</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">updateLoadingText</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">scene</span><span class="p">.</span><span class="nx">getEngine</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="sb">`カメラモーションを読み込み中... </span><span class="si">${</span><span class="nx">event</span><span class="p">.</span><span class="nx">loaded</span><span class="si">}</span><span class="sb">/</span><span class="si">${</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">event</span><span class="p">.</span><span class="nx">total</span>
+</span></span><span class="line"><span class="cl">                <span class="si">}</span><span class="sb"> (</span><span class="si">${</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">event</span><span class="p">.</span><span class="nx">loaded</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">/</span> <span class="nx">event</span><span class="p">.</span><span class="nx">total</span><span class="p">)</span><span class="si">}</span><span class="sb">%)`</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">loadAssetContainerAsync</span><span class="p">(</span><span class="nx">MODEL_FILE_PATH</span><span class="p">,</span> <span class="nx">scene</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">onProgress</span><span class="o">:</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="o">=&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">updateLoadingText</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">scene</span><span class="p">.</span><span class="nx">getEngine</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                    <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="sb">`モデルを読み込み中... </span><span class="si">${</span><span class="nx">event</span><span class="p">.</span><span class="nx">loaded</span><span class="si">}</span><span class="sb">/</span><span class="si">${</span><span class="nx">event</span><span class="p">.</span><span class="nx">total</span><span class="si">}</span><span class="sb"> (</span><span class="si">${</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">loaded</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span> <span class="o">/</span> <span class="nx">event</span><span class="p">.</span><span class="nx">total</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">)</span><span class="si">}</span><span class="sb">%)`</span>
+</span></span><span class="line"><span class="cl">                <span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">pluginOptions</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">mmdmodel</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">loggingEnabled</span>: <span class="kt">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">materialBuilder</span>: <span class="kt">materialBuilder</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}).</span><span class="nx">then</span><span class="p">((</span><span class="nx">result</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">result</span><span class="p">.</span><span class="nx">addAllToScene</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nx">result</span><span class="p">.</span><span class="nx">rootNodes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="kr">as</span> <span class="nx">MmdMesh</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>loadAssets</code> 関数で<code>Promise.all</code>を使用して、MMDモデル、モーション、カメラモーションを並行してロードし、ロード進行状況をユーザーに表示します。</p>
+<h2 id="7-モーションとカメラの適用">7. モーションとカメラの適用</h2>
+<p>ロードしたモーションとカメラモーションをMMDモデルとカメラに適用します。</p>
+<h3 id="7-1-mmdランタイムの設定">7-1. MMDランタイムの設定</h3>
+<p>MMDモデルのアニメーションを制御するためのMMDランタイムを設定します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">Scene</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">TransformNode</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">DirectionalLight</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="kr">type</span> <span class="p">{</span> <span class="nx">MmdAnimation</span><span class="p">,</span> <span class="nx">MmdMesh</span><span class="p">,</span> <span class="nx">MmdWasmInstance</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;babylon-mmd&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">MmdCamera</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">MmdPlayerControl</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">MmdWasmAnimation</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">MmdWasmPhysics</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">MmdWasmRuntime</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">StreamAudioPlayer</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;babylon-mmd&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// MMDランタイムを設定する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">setupMmdRuntime</span> <span class="o">=</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">scene</span>: <span class="kt">Scene</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">wasmInstance</span>: <span class="kt">MmdWasmInstance</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdAnimation</span>: <span class="kt">MmdAnimation</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">cameraAnimation</span>: <span class="kt">MmdAnimation</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">modelMesh</span>: <span class="kt">MmdMesh</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRoot</span>: <span class="kt">TransformNode</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdCamera</span>: <span class="kt">MmdCamera</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">audioPlayer</span>: <span class="kt">StreamAudioPlayer</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">directionalLight</span>: <span class="kt">DirectionalLight</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span><span class="o">:</span> <span class="k">void</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">mmdRuntime</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MmdWasmRuntime</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">wasmInstance</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">scene</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="k">new</span> <span class="nx">MmdWasmPhysics</span><span class="p">(</span><span class="nx">scene</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRuntime</span><span class="p">.</span><span class="nx">loggingEnabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRuntime</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">scene</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRuntime</span><span class="p">.</span><span class="nx">setAudioPlayer</span><span class="p">(</span><span class="nx">audioPlayer</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRuntime</span><span class="p">.</span><span class="nx">playAnimation</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">mmdPlayerControl</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MmdPlayerControl</span><span class="p">(</span><span class="nx">scene</span><span class="p">,</span> <span class="nx">mmdRuntime</span><span class="p">,</span> <span class="nx">audioPlayer</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdPlayerControl</span><span class="p">.</span><span class="nx">showPlayerControl</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRuntime</span><span class="p">.</span><span class="nx">setCamera</span><span class="p">(</span><span class="nx">mmdCamera</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">mmdWasmAnimation</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MmdWasmAnimation</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">mmdAnimation</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">wasmInstance</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">scene</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">cameraWasmAnimation</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MmdWasmAnimation</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">cameraAnimation</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">wasmInstance</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">scene</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdCamera</span><span class="p">.</span><span class="nx">addAnimation</span><span class="p">(</span><span class="nx">cameraWasmAnimation</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdCamera</span><span class="p">.</span><span class="nx">setAnimation</span><span class="p">(</span><span class="s2">&#34;cameraMotion&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">modelMesh</span><span class="p">.</span><span class="nx">parent</span> <span class="o">=</span> <span class="nx">mmdRoot</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">mesh</span> <span class="k">of</span> <span class="nx">modelMesh</span><span class="p">.</span><span class="nx">metadata</span><span class="p">.</span><span class="nx">meshes</span><span class="p">)</span> <span class="nx">mesh</span><span class="p">.</span><span class="nx">receiveShadows</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">shadowGenerator</span> <span class="o">=</span> <span class="nx">createShadowGenerator</span><span class="p">(</span><span class="nx">directionalLight</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">shadowGenerator</span><span class="p">.</span><span class="nx">addShadowCaster</span><span class="p">(</span><span class="nx">modelMesh</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">mmdModel</span> <span class="o">=</span> <span class="nx">mmdRuntime</span><span class="p">.</span><span class="nx">createMmdModel</span><span class="p">(</span><span class="nx">modelMesh</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdModel</span><span class="p">.</span><span class="nx">addAnimation</span><span class="p">(</span><span class="nx">mmdWasmAnimation</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdModel</span><span class="p">.</span><span class="nx">setAnimation</span><span class="p">(</span><span class="s2">&#34;motion&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdRuntime</span><span class="p">.</span><span class="nx">physics</span><span class="o">?</span><span class="p">.</span><span class="nx">createGroundModel</span><span class="o">?</span><span class="p">.([</span><span class="mi">0</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">optimizeScene</span><span class="p">(</span><span class="nx">scene</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>setupMmdRuntime</code> 関数で<code>MmdWasmRuntime</code>を初期化し、モーションとカメラモーションを適用、<code>MmdPlayerControl</code>でアニメーションの制御を可能にします。</p>
+<h2 id="8-vr対応">8. VR対応</h2>
+<p>シーンをVRに対応させます。</p>
+<h3 id="8-1-xrエクスペリエンスの設定">8-1. XRエクスペリエンスの設定</h3>
+<p>VRエクスペリエンスを作成し、基本的な設定を行います。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Scene</span><span class="p">,</span> <span class="nx">TransformNode</span><span class="p">,</span> <span class="nx">WebXRDefaultExperience</span><span class="p">,</span> <span class="nx">WebXRFeatureName</span><span class="p">,</span> <span class="nx">WebXRState</span><span class="p">,</span> <span class="nx">Vector3</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// XRエクスペリエンスを設定する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">setupXRExperience</span> <span class="o">=</span> <span class="kr">async</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">scene</span>: <span class="kt">Scene</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">ground</span>: <span class="kt">TransformNode</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">mmdCamera</span>: <span class="kt">MmdCamera</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span><span class="o">:</span> <span class="nx">Promise</span><span class="p">&lt;</span><span class="nt">WebXRDefaultExperience</span><span class="p">&gt;</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">xr</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">WebXRDefaultExperience</span><span class="p">.</span><span class="nx">CreateAsync</span><span class="p">(</span><span class="nx">scene</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">uiOptions</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">sessionMode</span><span class="o">:</span> <span class="s2">&#34;immersive-vr&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">referenceSpaceType</span><span class="o">:</span> <span class="s2">&#34;local-floor&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">disableDefaultUI</span>: <span class="kt">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">disableTeleportation</span>: <span class="kt">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// カメラのルートノードを作成し、カメラの親に設定
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">cameraRoot</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">TransformNode</span><span class="p">(</span><span class="s2">&#34;cameraRoot&#34;</span><span class="p">,</span> <span class="nx">scene</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">xr</span><span class="p">.</span><span class="nx">baseExperience</span><span class="p">.</span><span class="nx">camera</span><span class="p">.</span><span class="nx">parent</span> <span class="o">=</span> <span class="nx">cameraRoot</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">featuresManager</span> <span class="o">=</span> <span class="nx">xr</span><span class="p">.</span><span class="nx">baseExperience</span><span class="p">.</span><span class="nx">featuresManager</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">featuresManager</span><span class="p">.</span><span class="nx">enableFeature</span><span class="p">(</span><span class="nx">WebXRFeatureName</span><span class="p">.</span><span class="nx">POINTER_SELECTION</span><span class="p">,</span> <span class="s2">&#34;stable&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">xrInput</span>: <span class="kt">xr.input</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">enablePointerSelectionOnAllControllers</span>: <span class="kt">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">featuresManager</span><span class="p">.</span><span class="nx">enableFeature</span><span class="p">(</span><span class="nx">WebXRFeatureName</span><span class="p">.</span><span class="nx">TELEPORTATION</span><span class="p">,</span> <span class="s2">&#34;stable&#34;</span><span class="p">,</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">xrInput</span>: <span class="kt">xr.input</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">floorMeshes</span><span class="o">:</span> <span class="p">[</span><span class="nx">ground</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">defaultTargetMeshOptions</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">teleportationRadius</span>: <span class="kt">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">torusArrowMaterial</span>: <span class="kt">null</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">useMainComponentOnly</span>: <span class="kt">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">snapPositions</span><span class="o">:</span> <span class="p">[</span><span class="k">new</span> <span class="nx">Vector3</span><span class="p">(</span><span class="mf">2.4</span> <span class="o">*</span> <span class="mf">3.5</span> <span class="o">*</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span> <span class="o">*</span> <span class="mi">1</span><span class="p">)],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">xr</span><span class="p">.</span><span class="nx">input</span><span class="p">.</span><span class="nx">onControllerAddedObservable</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">controller</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">controller</span><span class="p">.</span><span class="nx">onMotionControllerInitObservable</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">motionController</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">const</span> <span class="nx">thumbstick</span> <span class="o">=</span> <span class="nx">motionController</span><span class="p">.</span><span class="nx">getComponent</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;xr-standard-thumbstick&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="nx">thumbstick</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="nx">motionController</span><span class="p">.</span><span class="nx">handedness</span> <span class="o">===</span> <span class="s2">&#34;right&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">// 移動操作
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="nx">thumbstick</span><span class="p">.</span><span class="nx">onAxisValueChangedObservable</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">axes</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="nx">xr</span><span class="p">.</span><span class="nx">baseExperience</span><span class="p">.</span><span class="nx">state</span> <span class="o">===</span> <span class="nx">WebXRState</span><span class="p">.</span><span class="nx">IN_XR</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="kr">const</span> <span class="nx">forward</span> <span class="o">=</span> <span class="nx">xr</span><span class="p">.</span><span class="nx">baseExperience</span><span class="p">.</span><span class="nx">camera</span><span class="p">.</span><span class="nx">getDirection</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                                <span class="nx">Vector3</span><span class="p">.</span><span class="nx">Backward</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">);</span>
+</span></span><span class="line"><span class="cl">                            <span class="nx">forward</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                            <span class="nx">forward</span><span class="p">.</span><span class="nx">normalize</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                            <span class="kr">const</span> <span class="nx">right</span> <span class="o">=</span> <span class="nx">xr</span><span class="p">.</span><span class="nx">baseExperience</span><span class="p">.</span><span class="nx">camera</span><span class="p">.</span><span class="nx">getDirection</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                                <span class="nx">Vector3</span><span class="p">.</span><span class="nx">Right</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">);</span>
+</span></span><span class="line"><span class="cl">                            <span class="nx">right</span><span class="p">.</span><span class="nx">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                            <span class="nx">right</span><span class="p">.</span><span class="nx">normalize</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                            <span class="kr">const</span> <span class="nx">movement</span> <span class="o">=</span> <span class="nx">forward</span>
+</span></span><span class="line"><span class="cl">                                <span class="p">.</span><span class="nx">scale</span><span class="p">(</span><span class="nx">axes</span><span class="p">.</span><span class="nx">y</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                <span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">right</span><span class="p">.</span><span class="nx">scale</span><span class="p">(</span><span class="nx">axes</span><span class="p">.</span><span class="nx">x</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                            <span class="nx">cameraRoot</span><span class="p">.</span><span class="nx">position</span><span class="p">.</span><span class="nx">addInPlace</span><span class="p">(</span><span class="nx">movement</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">motionController</span><span class="p">.</span><span class="nx">handedness</span> <span class="o">===</span> <span class="s2">&#34;left&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">// 視点の回転操作
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                    <span class="nx">thumbstick</span><span class="p">.</span><span class="nx">onAxisValueChangedObservable</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">axes</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="nx">xr</span><span class="p">.</span><span class="nx">baseExperience</span><span class="p">.</span><span class="nx">state</span> <span class="o">===</span> <span class="nx">WebXRState</span><span class="p">.</span><span class="nx">IN_XR</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="kr">const</span> <span class="nx">rotationSpeed</span> <span class="o">=</span> <span class="mf">0.05</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                            <span class="nx">cameraRoot</span><span class="p">.</span><span class="nx">rotation</span><span class="p">.</span><span class="nx">y</span> <span class="o">-=</span> <span class="nx">axes</span><span class="p">.</span><span class="nx">x</span> <span class="o">*</span> <span class="nx">rotationSpeed</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                            <span class="nx">cameraRoot</span><span class="p">.</span><span class="nx">rotation</span><span class="p">.</span><span class="nx">x</span> <span class="o">-=</span> <span class="nx">axes</span><span class="p">.</span><span class="nx">y</span> <span class="o">*</span> <span class="nx">rotationSpeed</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                            <span class="c1">// 角度を制限
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                            <span class="nx">cameraRoot</span><span class="p">.</span><span class="nx">rotation</span><span class="p">.</span><span class="nx">x</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                                <span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">cameraRoot</span><span class="p">.</span><span class="nx">rotation</span><span class="p">.</span><span class="nx">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">);</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">xr</span><span class="p">.</span><span class="nx">input</span><span class="p">.</span><span class="nx">onControllerAddedObservable</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">controller</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">controller</span><span class="p">.</span><span class="nx">onMotionControllerInitObservable</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">motionController</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">const</span> <span class="nx">componentIds</span> <span class="o">=</span> <span class="nx">motionController</span><span class="p">.</span><span class="nx">getComponentIds</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">id</span> <span class="k">of</span> <span class="nx">componentIds</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kr">const</span> <span class="nx">component</span> <span class="o">=</span> <span class="nx">motionController</span><span class="p">.</span><span class="nx">getComponent</span><span class="p">(</span><span class="nx">id</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="nx">component</span> <span class="o">&amp;&amp;</span> <span class="nx">component</span><span class="p">.</span><span class="kr">type</span> <span class="o">!==</span> <span class="s2">&#34;thumbstick&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">component</span><span class="p">.</span><span class="nx">onButtonStateChangedObservable</span><span class="p">.</span><span class="nx">add</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="nx">component</span><span class="p">.</span><span class="nx">pressed</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="nx">xr</span><span class="p">.</span><span class="nx">baseExperience</span><span class="p">.</span><span class="nx">exitXRAsync</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">xr</span><span class="p">.</span><span class="nx">baseExperience</span><span class="p">.</span><span class="nx">onStateChangedObservable</span><span class="p">.</span><span class="nx">add</span><span class="p">((</span><span class="nx">state</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">===</span> <span class="nx">WebXRState</span><span class="p">.</span><span class="nx">NOT_IN_XR</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kr">const</span> <span class="nx">defaultPipeline</span> <span class="o">=</span> <span class="nx">scene</span><span class="p">.</span><span class="nx">postProcessRenderPipelineManager</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">supportedPipelines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="kr">as</span> <span class="nx">DefaultRenderingPipeline</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">defaultPipeline</span><span class="p">.</span><span class="nx">fxaaEnabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">defaultPipeline</span><span class="p">.</span><span class="nx">chromaticAberrationEnabled</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kr">const</span> <span class="nx">enterVrButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;enterVrButton&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="nx">enterVrButton</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">enterVrButton</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="s2">&#34;block&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="nx">scene</span><span class="p">.</span><span class="nx">activeCamera</span> <span class="o">=</span> <span class="nx">mmdCamera</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">xr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></div><p><code>setupXRExperience</code> 関数で<code>WebXRDefaultExperience</code>を作成し、VRモードを有効にします。コントローラーの入力を検知し、移動や視点変更を実装します。</p>
+<h3 id="8-2-vrモードに入るボタンの設定">8-2. VRモードに入るボタンの設定</h3>
+<p>ユーザーがVRモードに入るためのボタンを作成し、設定します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-typescript" data-lang="typescript"><span class="line"><span class="cl"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Scene</span><span class="p">,</span> <span class="nx">WebXRDefaultExperience</span><span class="p">,</span> <span class="nx">DefaultRenderingPipeline</span> <span class="p">}</span> <span class="kr">from</span> <span class="s2">&#34;@babylonjs/core&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// VRモードに入るボタンを設定する
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">setupEnterVrButton</span> <span class="o">=</span> <span class="p">(</span><span class="nx">scene</span>: <span class="kt">Scene</span><span class="p">,</span> <span class="nx">xr</span>: <span class="kt">WebXRDefaultExperience</span><span class="p">)</span><span class="o">:</span> <span class="k">void</span> <span class="o">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">enterVrButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s2">&#34;button&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">enterVrButton</span><span class="p">.</span><span class="nx">id</span> <span class="o">=</span> <span class="s2">&#34;enterVrButton&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">enterVrButton</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&#34;VRモード&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">document</span><span class="p">.</span>
+</span></span></code></pre></div><p><code>setupEnterVrButton</code>関数で<code>enterVrButton</code>を作成し、VRモードへの切り替えを実装します。</p>
+<p>以上の内容を組み合わせたものを<a href="https://github.com/TkymHrt/test-babylon-mmd">リポジトリ</a>に公開しています。</p>
+<h2 id="デモ動画">デモ動画</h2>
+<p>実際に動作するデモです。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9-nIZsC3OKQ?si=lk9dym3dskL8XtMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c_FyB_odMZA?si=MYmleDNCEwO2RXQx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2 id="まとめ">まとめ</h2>
+<p>Babylon.jsとbabylon-mmdを活用することで、Webブラウザ上でMMDモデルの表示とモーション再生を実現できました。TypeScriptやViteなどのモダンなツールを使用することで、効率的かつ快適な開発が可能でした。Babylon.jsやMMDに興味を持っていいただけていれば幸いです。</p>
+<h2 id="参考">参考</h2>
+<ol>
+<li><a href="https://doc.babylonjs.com/">Babylon.js 公式ドキュメント</a></li>
+<li><a href="https://noname0310.github.io/babylon-mmd/">babylon-mmd 公式ドキュメント</a></li>
+<li><a href="https://github.com/noname0310/babylon-mmd">babylon-mmd GitHub リポジトリ</a></li>
+<li><a href="https://onedrive.live.com/edit?id=95C741421F306C96!s668eef439f0e4f43ae15d6dcd7edd08c&amp;resid=95C741421F306C96!s668eef439f0e4f43ae15d6dcd7edd08c&amp;cid=95c741421f306c96&amp;ithint=file%2Cpptx&amp;redeem=aHR0cHM6Ly8xZHJ2Lm1zL3AvYy85NWM3NDE0MjFmMzA2Yzk2L0VVUHZqbVlPbjBOUHJoWFczTmZ0MEl3QnBoSXNIWUxxYnVwcnN5N0l2TW5ZSHc_ZT1DdHhwRVQ&amp;migratedtospo=true&amp;wdo=2">babylon-mmd 作者の登壇スライド</a></li>
+</ol>
+<h3 id="デモで使用しました">デモで使用しました。</h3>
+<ol>
+<li><a href="https://bowlroll.net/file/146103">Sour式初音ミクVer.1.02</a></li>
+<li><a href="https://bowlroll.net/file/215305?rf=nvpc&amp;rp=watch&amp;ra=video_detail">GimmeGimmeモーション配布用</a></li>
+<li><a href="https://www.youtube.com/watch?v=ERo-sPa1a5g">八王子P × Giga「Gimme×Gimme feat. 初音ミク・鏡音リン」
+</a></li>
+</ol>
+
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 text-center mb-5">
+        <a href="https://blog.nutmeg.cloud/"><img src="https://blog.nutmeg.cloud/images/NUTMEG-logo_all_color_horizontal.png" alt="NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局"></a>
+      </div>
+      
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/nutfes_nutmeg">twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.instagram.com/nutfes/?hl=ja">instagram</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/orgs/NUTFes">github</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2023">Nutmeg advent calendar 2023</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/nutmeg-advent-calendar-2024">Nutmeg advent calendar 2024</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88">イベント</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%81%e3%83%bc%e3%83%a0%e3%81%a5%e3%81%8f%e3%82%8a">チームづくり</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%81%ae%e8%b6%a3%e5%91%b3">メンバーの趣味</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e5%af%be%e5%a4%96%e6%b4%bb%e5%8b%95">対外活動</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="https://blog.nutmeg.cloud/categories/%e6%b4%bb%e5%8b%95%e3%81%ae%e6%a7%98%e5%ad%90">活動の様子</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/about">About</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/blog">Post</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.nutmeg.cloud/members">Members</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        © NUTMEG 2024
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://blog.nutmeg.cloud/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://blog.nutmeg.cloud/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/slick/slick.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/fuse.min.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/mark.js"></script>
+
+<script src="https://blog.nutmeg.cloud/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://blog.nutmeg.cloud/js/script.min.js"></script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>

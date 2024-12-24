@@ -6,49 +6,56 @@
     <description>Recent content in GitHub on NUTMEG | 長岡技術科学大学 技大祭実行委員会 情報局</description>
     <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 23 Dec 2024 21:27:31 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Dec 2024 15:43:58 +0900</lastBuildDate>
     <atom:link href="https://blog.nutmeg.cloud/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Babylon.jsでMMDに挑戦してみた。</title>
+      <link>https://blog.nutmeg.cloud/blog/post-ac-20241224/</link>
+      <pubDate>Tue, 24 Dec 2024 15:43:58 +0900</pubDate>
+      <guid>https://blog.nutmeg.cloud/blog/post-ac-20241224/</guid>
+      <description>はじめに こんにちは！NUTMEGの「やま」です。アドベントカレンダー24日目を担当します。</description>
+    </item>
     <item>
       <title>slackでの活動推進</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241223/</link>
       <pubDate>Mon, 23 Dec 2024 21:27:31 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241223/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;みなさん、おはこんばんにちは！&#xA;NUTMEGの、パラディンです！&#xA;アドカレ2024の23日を担当します。&lt;/p&gt;</description>
+      <description>はじめに みなさん、おはこんばんにちは！ NUTMEGの、パラディンです！ アドカレ2024の23日を担当します。</description>
     </item>
     <item>
       <title>IaCのすゝめ</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241222/</link>
       <pubDate>Sun, 22 Dec 2024 20:36:20 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241222/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;NUTMEGの、のせ（市之瀬）です。&#xA;アドカレ2024の22日を担当します。&lt;/p&gt;</description>
+      <description>はじめに NUTMEGの、のせ（市之瀬）です。 アドカレ2024の22日を担当します。</description>
     </item>
     <item>
       <title>はじめての環境構築</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241217/</link>
       <pubDate>Tue, 17 Dec 2024 12:22:08 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241217/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;こんにちは&#xA;NUTMEG所属&#xA;電気電子情報工学分野　B3のしょうちゃんです。&lt;/p&gt;</description>
+      <description>はじめに こんにちは NUTMEG所属 電気電子情報工学分野　B3のしょうちゃんです。</description>
     </item>
     <item>
       <title>衝動的にWEBゲーム作り始めた男の末路</title>
       <link>https://blog.nutmeg.cloud/blog/post-ac-20241208/</link>
       <pubDate>Sun, 08 Dec 2024 18:57:16 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-ac-20241208/</guid>
-      <description>&lt;p&gt;このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。&#xA;時系列的にはアドカレ以前の内容となっています。&#xA;ご注意ください。&lt;/p&gt;</description>
+      <description>このブログは本来11/27に公開される予定でしたが、内田がブログ発表の日に寝坊をかましたせいでアドカレよりも後の公開となっております。 時系列的にはアドカレ以前の内容となっています。 ご注意ください。</description>
     </item>
     <item>
       <title>Webアプリ（フロントエンド）開発のtips</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240716/</link>
       <pubDate>Thu, 18 Jul 2024 18:34:04 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240716/</guid>
-      <description>&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;&#xA;&lt;p&gt;テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。&lt;/p&gt;</description>
+      <description>はじめに テスト期間中でいっぱい勉強しているみなさんの頭に追い討ちをかけるためにブログを作成しました。たかすかです。</description>
     </item>
     <item>
       <title>ハッカソンに出てきました</title>
       <link>https://blog.nutmeg.cloud/blog/post-20240315/</link>
       <pubDate>Fri, 15 Mar 2024 20:20:27 +0900</pubDate>
       <guid>https://blog.nutmeg.cloud/blog/post-20240315/</guid>
-      <description>&lt;p&gt;こんにちは。現在学部4年の市之瀬です。&#xA;今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。&lt;/p&gt;</description>
+      <description>こんにちは。現在学部4年の市之瀬です。 今回は先日ハッカソンに出たとき作ったものと、そこで得た学びを共有しようと思います。</description>
     </item>
   </channel>
 </rss>
